@@ -1,0 +1,2048 @@
+[
+  {
+    "id": "CP_EDU_000001",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid demo_0_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid demo_0_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    demo_0_ptr(&x);\n    demo_0_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid demo_0_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    demo_0_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000002",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid explain_1_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid explain_1_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    explain_1_ptr(&x);\n    explain_1_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid explain_1_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    explain_1_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000003",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid show_2_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid show_2_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    show_2_ptr(&x);\n    show_2_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid show_2_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    show_2_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000004",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid illustrate_3_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid illustrate_3_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    illustrate_3_ptr(&x);\n    illustrate_3_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid illustrate_3_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    illustrate_3_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000005",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid concept_4_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid concept_4_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    concept_4_ptr(&x);\n    concept_4_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid concept_4_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    concept_4_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000006",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid example_5_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid example_5_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    example_5_ptr(&x);\n    example_5_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid example_5_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    example_5_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000007",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid learn_6_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid learn_6_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    learn_6_ptr(&x);\n    learn_6_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid learn_6_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    learn_6_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000008",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid teach_7_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid teach_7_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    teach_7_ptr(&x);\n    teach_7_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid teach_7_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    teach_7_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000009",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid guide_8_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid guide_8_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    guide_8_ptr(&x);\n    guide_8_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid guide_8_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    guide_8_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000010",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid tutorial_9_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid tutorial_9_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    tutorial_9_ptr(&x);\n    tutorial_9_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid tutorial_9_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    tutorial_9_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000011",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid run_10_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid run_10_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    run_10_ptr(&x);\n    run_10_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid run_10_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    run_10_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000012",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid execute_11_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid execute_11_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    execute_11_ptr(&x);\n    execute_11_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid execute_11_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    execute_11_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000013",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid process_12_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid process_12_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    process_12_ptr(&x);\n    process_12_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid process_12_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    process_12_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000014",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid handle_13_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid handle_13_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    handle_13_ptr(&x);\n    handle_13_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid handle_13_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    handle_13_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000015",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid manage_14_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid manage_14_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    manage_14_ptr(&x);\n    manage_14_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid manage_14_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    manage_14_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000016",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid setup_15_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid setup_15_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    setup_15_ptr(&x);\n    setup_15_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid setup_15_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    setup_15_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000017",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid configure_16_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid configure_16_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    configure_16_ptr(&x);\n    configure_16_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid configure_16_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    configure_16_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000018",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid build_17_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid build_17_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    build_17_ptr(&x);\n    build_17_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid build_17_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    build_17_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000019",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid create_18_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid create_18_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    create_18_ptr(&x);\n    create_18_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid create_18_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    create_18_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000020",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid test_19_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid test_19_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    test_19_ptr(&x);\n    test_19_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid test_19_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    test_19_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000021",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid demo_20_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid demo_20_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    demo_20_ptr(&x);\n    demo_20_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid demo_20_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    demo_20_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000022",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid explain_21_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid explain_21_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    explain_21_ptr(&x);\n    explain_21_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid explain_21_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    explain_21_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000023",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid show_22_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid show_22_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    show_22_ptr(&x);\n    show_22_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid show_22_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    show_22_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000024",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid illustrate_23_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid illustrate_23_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    illustrate_23_ptr(&x);\n    illustrate_23_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid illustrate_23_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    illustrate_23_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000025",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid concept_24_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid concept_24_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    concept_24_ptr(&x);\n    concept_24_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid concept_24_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    concept_24_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000026",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid example_25_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid example_25_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    example_25_ptr(&x);\n    example_25_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid example_25_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    example_25_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000027",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid learn_26_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid learn_26_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    learn_26_ptr(&x);\n    learn_26_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid learn_26_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    learn_26_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000028",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid teach_27_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid teach_27_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    teach_27_ptr(&x);\n    teach_27_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid teach_27_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    teach_27_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000029",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid guide_28_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid guide_28_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    guide_28_ptr(&x);\n    guide_28_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid guide_28_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    guide_28_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000030",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid tutorial_29_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid tutorial_29_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    tutorial_29_ptr(&x);\n    tutorial_29_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid tutorial_29_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    tutorial_29_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000031",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid run_30_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid run_30_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    run_30_ptr(&x);\n    run_30_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid run_30_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    run_30_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000032",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid execute_31_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid execute_31_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    execute_31_ptr(&x);\n    execute_31_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid execute_31_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    execute_31_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000033",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid process_32_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid process_32_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    process_32_ptr(&x);\n    process_32_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid process_32_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    process_32_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000034",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid handle_33_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid handle_33_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    handle_33_ptr(&x);\n    handle_33_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid handle_33_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    handle_33_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000035",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid manage_34_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid manage_34_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    manage_34_ptr(&x);\n    manage_34_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid manage_34_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    manage_34_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000036",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid setup_35_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid setup_35_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    setup_35_ptr(&x);\n    setup_35_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid setup_35_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    setup_35_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000037",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid configure_36_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid configure_36_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    configure_36_ptr(&x);\n    configure_36_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid configure_36_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    configure_36_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000038",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid build_37_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid build_37_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    build_37_ptr(&x);\n    build_37_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid build_37_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    build_37_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000039",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid create_38_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid create_38_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    create_38_ptr(&x);\n    create_38_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid create_38_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    create_38_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000040",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid test_39_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid test_39_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    test_39_ptr(&x);\n    test_39_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid test_39_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    test_39_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000041",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid demo_40_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid demo_40_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    demo_40_ptr(&x);\n    demo_40_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid demo_40_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    demo_40_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000042",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid explain_41_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid explain_41_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    explain_41_ptr(&x);\n    explain_41_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid explain_41_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    explain_41_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000043",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid show_42_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid show_42_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    show_42_ptr(&x);\n    show_42_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid show_42_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    show_42_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000044",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid illustrate_43_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid illustrate_43_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    illustrate_43_ptr(&x);\n    illustrate_43_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid illustrate_43_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    illustrate_43_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000045",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid concept_44_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid concept_44_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    concept_44_ptr(&x);\n    concept_44_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid concept_44_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    concept_44_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000046",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid example_45_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid example_45_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    example_45_ptr(&x);\n    example_45_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid example_45_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    example_45_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000047",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid learn_46_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid learn_46_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    learn_46_ptr(&x);\n    learn_46_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid learn_46_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    learn_46_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000048",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid teach_47_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid teach_47_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    teach_47_ptr(&x);\n    teach_47_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid teach_47_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    teach_47_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000049",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid guide_48_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid guide_48_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    guide_48_ptr(&x);\n    guide_48_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid guide_48_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    guide_48_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000050",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid tutorial_49_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid tutorial_49_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    tutorial_49_ptr(&x);\n    tutorial_49_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid tutorial_49_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    tutorial_49_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000051",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid run_50_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid run_50_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    run_50_ptr(&x);\n    run_50_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid run_50_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    run_50_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000052",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid execute_51_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid execute_51_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    execute_51_ptr(&x);\n    execute_51_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid execute_51_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    execute_51_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000053",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid process_52_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid process_52_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    process_52_ptr(&x);\n    process_52_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid process_52_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    process_52_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000054",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid handle_53_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid handle_53_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    handle_53_ptr(&x);\n    handle_53_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid handle_53_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    handle_53_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000055",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid manage_54_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid manage_54_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    manage_54_ptr(&x);\n    manage_54_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid manage_54_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    manage_54_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000056",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid setup_55_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid setup_55_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    setup_55_ptr(&x);\n    setup_55_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid setup_55_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    setup_55_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000057",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid configure_56_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid configure_56_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    configure_56_ptr(&x);\n    configure_56_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid configure_56_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    configure_56_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000058",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid build_57_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid build_57_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    build_57_ptr(&x);\n    build_57_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid build_57_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    build_57_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000059",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid create_58_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid create_58_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    create_58_ptr(&x);\n    create_58_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid create_58_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    create_58_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000060",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid test_59_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid test_59_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    test_59_ptr(&x);\n    test_59_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid test_59_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    test_59_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000061",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid demo_60_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid demo_60_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    demo_60_ptr(&x);\n    demo_60_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid demo_60_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    demo_60_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000062",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the difference between a pointer and a reference.",
+    "input": {
+      "title": "Pointers vs References",
+      "code": "#include <iostream>\n\nvoid explain_61_ptr(int* p) {\n    if (p) *p = 10;\n}\n\nvoid explain_61_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    explain_61_ptr(&x);\n    explain_61_ref(x);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A pointer (`int*`) holds a memory address, can be reassigned, and can be null. A reference (`int&`) is an alias for an existing object, cannot be null, and cannot be reseated after initialization.",
+      "beginner": "A pointer is like an address written on a piece of paper (which can be blank). A reference is just a nickname for a person standing right next to you.",
+      "analogy": "A pointer is a URL link to a webpage. A reference is simply opening the webpage in a new tab.",
+      "solution": "Use references by default for function parameters, and use pointers only when the value can optionally be null or when managing dynamic memory.",
+      "prevention": "Avoid using raw pointers when references will suffice. Always check pointers for null before dereferencing.",
+      "optimized_code": "#include <iostream>\n\nvoid explain_61_ref(int& r) {\n    r = 20;\n}\n\nint main() {\n    int x = 0;\n    explain_61_ref(x);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "references",
+        "core-concepts"
+      ]
+    }
+  }
+]

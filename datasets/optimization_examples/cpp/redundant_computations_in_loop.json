@@ -1,0 +1,2081 @@
+[
+  {
+    "id": "CP_OPTIM_000187",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* count_0 = \"hello world\";\n    for (size_t i = 0; i < strlen(count_0); ++i) {\n        std::cout << count_0[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* count_0 = \"hello world\";\n    size_t len = strlen(count_0);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << count_0[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000188",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* total_1 = \"hello world\";\n    for (size_t i = 0; i < strlen(total_1); ++i) {\n        std::cout << total_1[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* total_1 = \"hello world\";\n    size_t len = strlen(total_1);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << total_1[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000189",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* index_2 = \"hello world\";\n    for (size_t i = 0; i < strlen(index_2); ++i) {\n        std::cout << index_2[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* index_2 = \"hello world\";\n    size_t len = strlen(index_2);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << index_2[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000190",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* sum_3 = \"hello world\";\n    for (size_t i = 0; i < strlen(sum_3); ++i) {\n        std::cout << sum_3[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* sum_3 = \"hello world\";\n    size_t len = strlen(sum_3);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << sum_3[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000191",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* average_4 = \"hello world\";\n    for (size_t i = 0; i < strlen(average_4); ++i) {\n        std::cout << average_4[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* average_4 = \"hello world\";\n    size_t len = strlen(average_4);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << average_4[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000192",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* result_5 = \"hello world\";\n    for (size_t i = 0; i < strlen(result_5); ++i) {\n        std::cout << result_5[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* result_5 = \"hello world\";\n    size_t len = strlen(result_5);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << result_5[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000193",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* value_6 = \"hello world\";\n    for (size_t i = 0; i < strlen(value_6); ++i) {\n        std::cout << value_6[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* value_6 = \"hello world\";\n    size_t len = strlen(value_6);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << value_6[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000194",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* temp_7 = \"hello world\";\n    for (size_t i = 0; i < strlen(temp_7); ++i) {\n        std::cout << temp_7[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* temp_7 = \"hello world\";\n    size_t len = strlen(temp_7);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << temp_7[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000195",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* max_val_8 = \"hello world\";\n    for (size_t i = 0; i < strlen(max_val_8); ++i) {\n        std::cout << max_val_8[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* max_val_8 = \"hello world\";\n    size_t len = strlen(max_val_8);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << max_val_8[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000196",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* min_val_9 = \"hello world\";\n    for (size_t i = 0; i < strlen(min_val_9); ++i) {\n        std::cout << min_val_9[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* min_val_9 = \"hello world\";\n    size_t len = strlen(min_val_9);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << min_val_9[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000197",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* counter_10 = \"hello world\";\n    for (size_t i = 0; i < strlen(counter_10); ++i) {\n        std::cout << counter_10[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* counter_10 = \"hello world\";\n    size_t len = strlen(counter_10);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << counter_10[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000198",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* limit_11 = \"hello world\";\n    for (size_t i = 0; i < strlen(limit_11); ++i) {\n        std::cout << limit_11[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* limit_11 = \"hello world\";\n    size_t len = strlen(limit_11);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << limit_11[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000199",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* threshold_12 = \"hello world\";\n    for (size_t i = 0; i < strlen(threshold_12); ++i) {\n        std::cout << threshold_12[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* threshold_12 = \"hello world\";\n    size_t len = strlen(threshold_12);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << threshold_12[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000200",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* score_13 = \"hello world\";\n    for (size_t i = 0; i < strlen(score_13); ++i) {\n        std::cout << score_13[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* score_13 = \"hello world\";\n    size_t len = strlen(score_13);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << score_13[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000201",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* age_14 = \"hello world\";\n    for (size_t i = 0; i < strlen(age_14); ++i) {\n        std::cout << age_14[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* age_14 = \"hello world\";\n    size_t len = strlen(age_14);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << age_14[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000202",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* size_15 = \"hello world\";\n    for (size_t i = 0; i < strlen(size_15); ++i) {\n        std::cout << size_15[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* size_15 = \"hello world\";\n    size_t len = strlen(size_15);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << size_15[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000203",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* length_16 = \"hello world\";\n    for (size_t i = 0; i < strlen(length_16); ++i) {\n        std::cout << length_16[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* length_16 = \"hello world\";\n    size_t len = strlen(length_16);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << length_16[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000204",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* width_17 = \"hello world\";\n    for (size_t i = 0; i < strlen(width_17); ++i) {\n        std::cout << width_17[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* width_17 = \"hello world\";\n    size_t len = strlen(width_17);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << width_17[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000205",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* height_18 = \"hello world\";\n    for (size_t i = 0; i < strlen(height_18); ++i) {\n        std::cout << height_18[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* height_18 = \"hello world\";\n    size_t len = strlen(height_18);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << height_18[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000206",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* depth_19 = \"hello world\";\n    for (size_t i = 0; i < strlen(depth_19); ++i) {\n        std::cout << depth_19[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* depth_19 = \"hello world\";\n    size_t len = strlen(depth_19);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << depth_19[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000207",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* count_20 = \"hello world\";\n    for (size_t i = 0; i < strlen(count_20); ++i) {\n        std::cout << count_20[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* count_20 = \"hello world\";\n    size_t len = strlen(count_20);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << count_20[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000208",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* total_21 = \"hello world\";\n    for (size_t i = 0; i < strlen(total_21); ++i) {\n        std::cout << total_21[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* total_21 = \"hello world\";\n    size_t len = strlen(total_21);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << total_21[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000209",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* index_22 = \"hello world\";\n    for (size_t i = 0; i < strlen(index_22); ++i) {\n        std::cout << index_22[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* index_22 = \"hello world\";\n    size_t len = strlen(index_22);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << index_22[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000210",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* sum_23 = \"hello world\";\n    for (size_t i = 0; i < strlen(sum_23); ++i) {\n        std::cout << sum_23[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* sum_23 = \"hello world\";\n    size_t len = strlen(sum_23);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << sum_23[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000211",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* average_24 = \"hello world\";\n    for (size_t i = 0; i < strlen(average_24); ++i) {\n        std::cout << average_24[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* average_24 = \"hello world\";\n    size_t len = strlen(average_24);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << average_24[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000212",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* result_25 = \"hello world\";\n    for (size_t i = 0; i < strlen(result_25); ++i) {\n        std::cout << result_25[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* result_25 = \"hello world\";\n    size_t len = strlen(result_25);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << result_25[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000213",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* value_26 = \"hello world\";\n    for (size_t i = 0; i < strlen(value_26); ++i) {\n        std::cout << value_26[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* value_26 = \"hello world\";\n    size_t len = strlen(value_26);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << value_26[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000214",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* temp_27 = \"hello world\";\n    for (size_t i = 0; i < strlen(temp_27); ++i) {\n        std::cout << temp_27[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* temp_27 = \"hello world\";\n    size_t len = strlen(temp_27);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << temp_27[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000215",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* max_val_28 = \"hello world\";\n    for (size_t i = 0; i < strlen(max_val_28); ++i) {\n        std::cout << max_val_28[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* max_val_28 = \"hello world\";\n    size_t len = strlen(max_val_28);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << max_val_28[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000216",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* min_val_29 = \"hello world\";\n    for (size_t i = 0; i < strlen(min_val_29); ++i) {\n        std::cout << min_val_29[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* min_val_29 = \"hello world\";\n    size_t len = strlen(min_val_29);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << min_val_29[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000217",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* counter_30 = \"hello world\";\n    for (size_t i = 0; i < strlen(counter_30); ++i) {\n        std::cout << counter_30[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* counter_30 = \"hello world\";\n    size_t len = strlen(counter_30);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << counter_30[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000218",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* limit_31 = \"hello world\";\n    for (size_t i = 0; i < strlen(limit_31); ++i) {\n        std::cout << limit_31[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* limit_31 = \"hello world\";\n    size_t len = strlen(limit_31);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << limit_31[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000219",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* threshold_32 = \"hello world\";\n    for (size_t i = 0; i < strlen(threshold_32); ++i) {\n        std::cout << threshold_32[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* threshold_32 = \"hello world\";\n    size_t len = strlen(threshold_32);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << threshold_32[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000220",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* score_33 = \"hello world\";\n    for (size_t i = 0; i < strlen(score_33); ++i) {\n        std::cout << score_33[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* score_33 = \"hello world\";\n    size_t len = strlen(score_33);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << score_33[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000221",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* age_34 = \"hello world\";\n    for (size_t i = 0; i < strlen(age_34); ++i) {\n        std::cout << age_34[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* age_34 = \"hello world\";\n    size_t len = strlen(age_34);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << age_34[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000222",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* size_35 = \"hello world\";\n    for (size_t i = 0; i < strlen(size_35); ++i) {\n        std::cout << size_35[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* size_35 = \"hello world\";\n    size_t len = strlen(size_35);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << size_35[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000223",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* length_36 = \"hello world\";\n    for (size_t i = 0; i < strlen(length_36); ++i) {\n        std::cout << length_36[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* length_36 = \"hello world\";\n    size_t len = strlen(length_36);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << length_36[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000224",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* width_37 = \"hello world\";\n    for (size_t i = 0; i < strlen(width_37); ++i) {\n        std::cout << width_37[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* width_37 = \"hello world\";\n    size_t len = strlen(width_37);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << width_37[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000225",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* height_38 = \"hello world\";\n    for (size_t i = 0; i < strlen(height_38); ++i) {\n        std::cout << height_38[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* height_38 = \"hello world\";\n    size_t len = strlen(height_38);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << height_38[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000226",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* depth_39 = \"hello world\";\n    for (size_t i = 0; i < strlen(depth_39); ++i) {\n        std::cout << depth_39[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* depth_39 = \"hello world\";\n    size_t len = strlen(depth_39);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << depth_39[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000227",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* count_40 = \"hello world\";\n    for (size_t i = 0; i < strlen(count_40); ++i) {\n        std::cout << count_40[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* count_40 = \"hello world\";\n    size_t len = strlen(count_40);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << count_40[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000228",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* total_41 = \"hello world\";\n    for (size_t i = 0; i < strlen(total_41); ++i) {\n        std::cout << total_41[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* total_41 = \"hello world\";\n    size_t len = strlen(total_41);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << total_41[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000229",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* index_42 = \"hello world\";\n    for (size_t i = 0; i < strlen(index_42); ++i) {\n        std::cout << index_42[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* index_42 = \"hello world\";\n    size_t len = strlen(index_42);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << index_42[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000230",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* sum_43 = \"hello world\";\n    for (size_t i = 0; i < strlen(sum_43); ++i) {\n        std::cout << sum_43[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* sum_43 = \"hello world\";\n    size_t len = strlen(sum_43);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << sum_43[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000231",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* average_44 = \"hello world\";\n    for (size_t i = 0; i < strlen(average_44); ++i) {\n        std::cout << average_44[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* average_44 = \"hello world\";\n    size_t len = strlen(average_44);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << average_44[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000232",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* result_45 = \"hello world\";\n    for (size_t i = 0; i < strlen(result_45); ++i) {\n        std::cout << result_45[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* result_45 = \"hello world\";\n    size_t len = strlen(result_45);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << result_45[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000233",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* value_46 = \"hello world\";\n    for (size_t i = 0; i < strlen(value_46); ++i) {\n        std::cout << value_46[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* value_46 = \"hello world\";\n    size_t len = strlen(value_46);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << value_46[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000234",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* temp_47 = \"hello world\";\n    for (size_t i = 0; i < strlen(temp_47); ++i) {\n        std::cout << temp_47[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* temp_47 = \"hello world\";\n    size_t len = strlen(temp_47);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << temp_47[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000235",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* max_val_48 = \"hello world\";\n    for (size_t i = 0; i < strlen(max_val_48); ++i) {\n        std::cout << max_val_48[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* max_val_48 = \"hello world\";\n    size_t len = strlen(max_val_48);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << max_val_48[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000236",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* min_val_49 = \"hello world\";\n    for (size_t i = 0; i < strlen(min_val_49); ++i) {\n        std::cout << min_val_49[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* min_val_49 = \"hello world\";\n    size_t len = strlen(min_val_49);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << min_val_49[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000237",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* counter_50 = \"hello world\";\n    for (size_t i = 0; i < strlen(counter_50); ++i) {\n        std::cout << counter_50[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* counter_50 = \"hello world\";\n    size_t len = strlen(counter_50);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << counter_50[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000238",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* limit_51 = \"hello world\";\n    for (size_t i = 0; i < strlen(limit_51); ++i) {\n        std::cout << limit_51[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* limit_51 = \"hello world\";\n    size_t len = strlen(limit_51);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << limit_51[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000239",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* threshold_52 = \"hello world\";\n    for (size_t i = 0; i < strlen(threshold_52); ++i) {\n        std::cout << threshold_52[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* threshold_52 = \"hello world\";\n    size_t len = strlen(threshold_52);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << threshold_52[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000240",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* score_53 = \"hello world\";\n    for (size_t i = 0; i < strlen(score_53); ++i) {\n        std::cout << score_53[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* score_53 = \"hello world\";\n    size_t len = strlen(score_53);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << score_53[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000241",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* age_54 = \"hello world\";\n    for (size_t i = 0; i < strlen(age_54); ++i) {\n        std::cout << age_54[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* age_54 = \"hello world\";\n    size_t len = strlen(age_54);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << age_54[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000242",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* size_55 = \"hello world\";\n    for (size_t i = 0; i < strlen(size_55); ++i) {\n        std::cout << size_55[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* size_55 = \"hello world\";\n    size_t len = strlen(size_55);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << size_55[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000243",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* length_56 = \"hello world\";\n    for (size_t i = 0; i < strlen(length_56); ++i) {\n        std::cout << length_56[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* length_56 = \"hello world\";\n    size_t len = strlen(length_56);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << length_56[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000244",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* width_57 = \"hello world\";\n    for (size_t i = 0; i < strlen(width_57); ++i) {\n        std::cout << width_57[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* width_57 = \"hello world\";\n    size_t len = strlen(width_57);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << width_57[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000245",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* height_58 = \"hello world\";\n    for (size_t i = 0; i < strlen(height_58); ++i) {\n        std::cout << height_58[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* height_58 = \"hello world\";\n    size_t len = strlen(height_58);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << height_58[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000246",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* depth_59 = \"hello world\";\n    for (size_t i = 0; i < strlen(depth_59); ++i) {\n        std::cout << depth_59[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* depth_59 = \"hello world\";\n    size_t len = strlen(depth_59);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << depth_59[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000247",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* count_60 = \"hello world\";\n    for (size_t i = 0; i < strlen(count_60); ++i) {\n        std::cout << count_60[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* count_60 = \"hello world\";\n    size_t len = strlen(count_60);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << count_60[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000248",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* total_61 = \"hello world\";\n    for (size_t i = 0; i < strlen(total_61); ++i) {\n        std::cout << total_61[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* total_61 = \"hello world\";\n    size_t len = strlen(total_61);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << total_61[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000249",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the loop condition.",
+    "input": {
+      "title": "strlen in Loop Condition",
+      "code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* index_62 = \"hello world\";\n    for (size_t i = 0; i < strlen(index_62); ++i) {\n        std::cout << index_62[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`strlen` is an O(N) operation. Calling it inside the loop condition causes it to be re-evaluated every iteration, turning an O(N) loop into an O(N^2) operation.",
+      "beginner": "You are recalculating the length of the string on every single step of the loop. This wastes a lot of time.",
+      "analogy": "It's like recounting every single dollar in your wallet before paying for each item at the grocery store.",
+      "solution": "Store the length in a variable before the loop, or use `std::string`.",
+      "prevention": "Cache expensive function calls outside loops if the result doesn't change.",
+      "optimized_code": "#include <iostream>\n#include <cstring>\n\nint main() {\n    const char* index_62 = \"hello world\";\n    size_t len = strlen(index_62);\n    for (size_t i = 0; i < len; ++i) {\n        std::cout << index_62[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "redundancy",
+        "strlen"
+      ]
+    }
+  }
+]

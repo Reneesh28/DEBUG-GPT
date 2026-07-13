@@ -1,0 +1,2081 @@
+[
+  {
+    "id": "CP_LOGIC_000438",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint count_0 = 100;\n\nvoid print() {\n    int count_0 = 50;\n    std::cout << count_0 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `count_0` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `count_0` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint count_0 = 100;\n\nvoid print() {\n    count_0 = 50;\n    std::cout << count_0 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000439",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint total_1 = 100;\n\nvoid print() {\n    int total_1 = 50;\n    std::cout << total_1 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `total_1` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `total_1` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint total_1 = 100;\n\nvoid print() {\n    total_1 = 50;\n    std::cout << total_1 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000440",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint index_2 = 100;\n\nvoid print() {\n    int index_2 = 50;\n    std::cout << index_2 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `index_2` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `index_2` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint index_2 = 100;\n\nvoid print() {\n    index_2 = 50;\n    std::cout << index_2 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000441",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint sum_3 = 100;\n\nvoid print() {\n    int sum_3 = 50;\n    std::cout << sum_3 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `sum_3` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `sum_3` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint sum_3 = 100;\n\nvoid print() {\n    sum_3 = 50;\n    std::cout << sum_3 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000442",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint average_4 = 100;\n\nvoid print() {\n    int average_4 = 50;\n    std::cout << average_4 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `average_4` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `average_4` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint average_4 = 100;\n\nvoid print() {\n    average_4 = 50;\n    std::cout << average_4 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000443",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint result_5 = 100;\n\nvoid print() {\n    int result_5 = 50;\n    std::cout << result_5 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `result_5` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `result_5` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint result_5 = 100;\n\nvoid print() {\n    result_5 = 50;\n    std::cout << result_5 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000444",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint value_6 = 100;\n\nvoid print() {\n    int value_6 = 50;\n    std::cout << value_6 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `value_6` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `value_6` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint value_6 = 100;\n\nvoid print() {\n    value_6 = 50;\n    std::cout << value_6 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000445",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint temp_7 = 100;\n\nvoid print() {\n    int temp_7 = 50;\n    std::cout << temp_7 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `temp_7` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `temp_7` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint temp_7 = 100;\n\nvoid print() {\n    temp_7 = 50;\n    std::cout << temp_7 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000446",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint max_val_8 = 100;\n\nvoid print() {\n    int max_val_8 = 50;\n    std::cout << max_val_8 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `max_val_8` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `max_val_8` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint max_val_8 = 100;\n\nvoid print() {\n    max_val_8 = 50;\n    std::cout << max_val_8 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000447",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint min_val_9 = 100;\n\nvoid print() {\n    int min_val_9 = 50;\n    std::cout << min_val_9 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `min_val_9` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `min_val_9` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint min_val_9 = 100;\n\nvoid print() {\n    min_val_9 = 50;\n    std::cout << min_val_9 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000448",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint counter_10 = 100;\n\nvoid print() {\n    int counter_10 = 50;\n    std::cout << counter_10 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `counter_10` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `counter_10` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint counter_10 = 100;\n\nvoid print() {\n    counter_10 = 50;\n    std::cout << counter_10 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000449",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint limit_11 = 100;\n\nvoid print() {\n    int limit_11 = 50;\n    std::cout << limit_11 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `limit_11` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `limit_11` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint limit_11 = 100;\n\nvoid print() {\n    limit_11 = 50;\n    std::cout << limit_11 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000450",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint threshold_12 = 100;\n\nvoid print() {\n    int threshold_12 = 50;\n    std::cout << threshold_12 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `threshold_12` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `threshold_12` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint threshold_12 = 100;\n\nvoid print() {\n    threshold_12 = 50;\n    std::cout << threshold_12 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000451",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint score_13 = 100;\n\nvoid print() {\n    int score_13 = 50;\n    std::cout << score_13 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `score_13` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `score_13` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint score_13 = 100;\n\nvoid print() {\n    score_13 = 50;\n    std::cout << score_13 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000452",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint age_14 = 100;\n\nvoid print() {\n    int age_14 = 50;\n    std::cout << age_14 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `age_14` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `age_14` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint age_14 = 100;\n\nvoid print() {\n    age_14 = 50;\n    std::cout << age_14 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000453",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint size_15 = 100;\n\nvoid print() {\n    int size_15 = 50;\n    std::cout << size_15 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `size_15` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `size_15` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint size_15 = 100;\n\nvoid print() {\n    size_15 = 50;\n    std::cout << size_15 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000454",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint length_16 = 100;\n\nvoid print() {\n    int length_16 = 50;\n    std::cout << length_16 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `length_16` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `length_16` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint length_16 = 100;\n\nvoid print() {\n    length_16 = 50;\n    std::cout << length_16 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000455",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint width_17 = 100;\n\nvoid print() {\n    int width_17 = 50;\n    std::cout << width_17 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `width_17` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `width_17` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint width_17 = 100;\n\nvoid print() {\n    width_17 = 50;\n    std::cout << width_17 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000456",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint height_18 = 100;\n\nvoid print() {\n    int height_18 = 50;\n    std::cout << height_18 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `height_18` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `height_18` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint height_18 = 100;\n\nvoid print() {\n    height_18 = 50;\n    std::cout << height_18 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000457",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint depth_19 = 100;\n\nvoid print() {\n    int depth_19 = 50;\n    std::cout << depth_19 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `depth_19` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `depth_19` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint depth_19 = 100;\n\nvoid print() {\n    depth_19 = 50;\n    std::cout << depth_19 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000458",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint count_20 = 100;\n\nvoid print() {\n    int count_20 = 50;\n    std::cout << count_20 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `count_20` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `count_20` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint count_20 = 100;\n\nvoid print() {\n    count_20 = 50;\n    std::cout << count_20 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000459",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint total_21 = 100;\n\nvoid print() {\n    int total_21 = 50;\n    std::cout << total_21 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `total_21` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `total_21` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint total_21 = 100;\n\nvoid print() {\n    total_21 = 50;\n    std::cout << total_21 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000460",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint index_22 = 100;\n\nvoid print() {\n    int index_22 = 50;\n    std::cout << index_22 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `index_22` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `index_22` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint index_22 = 100;\n\nvoid print() {\n    index_22 = 50;\n    std::cout << index_22 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000461",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint sum_23 = 100;\n\nvoid print() {\n    int sum_23 = 50;\n    std::cout << sum_23 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `sum_23` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `sum_23` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint sum_23 = 100;\n\nvoid print() {\n    sum_23 = 50;\n    std::cout << sum_23 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000462",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint average_24 = 100;\n\nvoid print() {\n    int average_24 = 50;\n    std::cout << average_24 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `average_24` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `average_24` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint average_24 = 100;\n\nvoid print() {\n    average_24 = 50;\n    std::cout << average_24 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000463",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint result_25 = 100;\n\nvoid print() {\n    int result_25 = 50;\n    std::cout << result_25 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `result_25` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `result_25` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint result_25 = 100;\n\nvoid print() {\n    result_25 = 50;\n    std::cout << result_25 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000464",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint value_26 = 100;\n\nvoid print() {\n    int value_26 = 50;\n    std::cout << value_26 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `value_26` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `value_26` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint value_26 = 100;\n\nvoid print() {\n    value_26 = 50;\n    std::cout << value_26 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000465",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint temp_27 = 100;\n\nvoid print() {\n    int temp_27 = 50;\n    std::cout << temp_27 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `temp_27` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `temp_27` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint temp_27 = 100;\n\nvoid print() {\n    temp_27 = 50;\n    std::cout << temp_27 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000466",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint max_val_28 = 100;\n\nvoid print() {\n    int max_val_28 = 50;\n    std::cout << max_val_28 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `max_val_28` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `max_val_28` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint max_val_28 = 100;\n\nvoid print() {\n    max_val_28 = 50;\n    std::cout << max_val_28 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000467",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint min_val_29 = 100;\n\nvoid print() {\n    int min_val_29 = 50;\n    std::cout << min_val_29 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `min_val_29` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `min_val_29` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint min_val_29 = 100;\n\nvoid print() {\n    min_val_29 = 50;\n    std::cout << min_val_29 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000468",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint counter_30 = 100;\n\nvoid print() {\n    int counter_30 = 50;\n    std::cout << counter_30 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `counter_30` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `counter_30` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint counter_30 = 100;\n\nvoid print() {\n    counter_30 = 50;\n    std::cout << counter_30 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000469",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint limit_31 = 100;\n\nvoid print() {\n    int limit_31 = 50;\n    std::cout << limit_31 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `limit_31` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `limit_31` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint limit_31 = 100;\n\nvoid print() {\n    limit_31 = 50;\n    std::cout << limit_31 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000470",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint threshold_32 = 100;\n\nvoid print() {\n    int threshold_32 = 50;\n    std::cout << threshold_32 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `threshold_32` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `threshold_32` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint threshold_32 = 100;\n\nvoid print() {\n    threshold_32 = 50;\n    std::cout << threshold_32 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000471",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint score_33 = 100;\n\nvoid print() {\n    int score_33 = 50;\n    std::cout << score_33 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `score_33` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `score_33` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint score_33 = 100;\n\nvoid print() {\n    score_33 = 50;\n    std::cout << score_33 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000472",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint age_34 = 100;\n\nvoid print() {\n    int age_34 = 50;\n    std::cout << age_34 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `age_34` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `age_34` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint age_34 = 100;\n\nvoid print() {\n    age_34 = 50;\n    std::cout << age_34 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000473",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint size_35 = 100;\n\nvoid print() {\n    int size_35 = 50;\n    std::cout << size_35 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `size_35` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `size_35` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint size_35 = 100;\n\nvoid print() {\n    size_35 = 50;\n    std::cout << size_35 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000474",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint length_36 = 100;\n\nvoid print() {\n    int length_36 = 50;\n    std::cout << length_36 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `length_36` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `length_36` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint length_36 = 100;\n\nvoid print() {\n    length_36 = 50;\n    std::cout << length_36 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000475",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint width_37 = 100;\n\nvoid print() {\n    int width_37 = 50;\n    std::cout << width_37 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `width_37` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `width_37` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint width_37 = 100;\n\nvoid print() {\n    width_37 = 50;\n    std::cout << width_37 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000476",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint height_38 = 100;\n\nvoid print() {\n    int height_38 = 50;\n    std::cout << height_38 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `height_38` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `height_38` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint height_38 = 100;\n\nvoid print() {\n    height_38 = 50;\n    std::cout << height_38 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000477",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint depth_39 = 100;\n\nvoid print() {\n    int depth_39 = 50;\n    std::cout << depth_39 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `depth_39` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `depth_39` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint depth_39 = 100;\n\nvoid print() {\n    depth_39 = 50;\n    std::cout << depth_39 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000478",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint count_40 = 100;\n\nvoid print() {\n    int count_40 = 50;\n    std::cout << count_40 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `count_40` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `count_40` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint count_40 = 100;\n\nvoid print() {\n    count_40 = 50;\n    std::cout << count_40 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000479",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint total_41 = 100;\n\nvoid print() {\n    int total_41 = 50;\n    std::cout << total_41 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `total_41` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `total_41` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint total_41 = 100;\n\nvoid print() {\n    total_41 = 50;\n    std::cout << total_41 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000480",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint index_42 = 100;\n\nvoid print() {\n    int index_42 = 50;\n    std::cout << index_42 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `index_42` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `index_42` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint index_42 = 100;\n\nvoid print() {\n    index_42 = 50;\n    std::cout << index_42 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000481",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint sum_43 = 100;\n\nvoid print() {\n    int sum_43 = 50;\n    std::cout << sum_43 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `sum_43` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `sum_43` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint sum_43 = 100;\n\nvoid print() {\n    sum_43 = 50;\n    std::cout << sum_43 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000482",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint average_44 = 100;\n\nvoid print() {\n    int average_44 = 50;\n    std::cout << average_44 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `average_44` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `average_44` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint average_44 = 100;\n\nvoid print() {\n    average_44 = 50;\n    std::cout << average_44 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000483",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint result_45 = 100;\n\nvoid print() {\n    int result_45 = 50;\n    std::cout << result_45 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `result_45` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `result_45` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint result_45 = 100;\n\nvoid print() {\n    result_45 = 50;\n    std::cout << result_45 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000484",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint value_46 = 100;\n\nvoid print() {\n    int value_46 = 50;\n    std::cout << value_46 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `value_46` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `value_46` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint value_46 = 100;\n\nvoid print() {\n    value_46 = 50;\n    std::cout << value_46 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000485",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint temp_47 = 100;\n\nvoid print() {\n    int temp_47 = 50;\n    std::cout << temp_47 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `temp_47` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `temp_47` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint temp_47 = 100;\n\nvoid print() {\n    temp_47 = 50;\n    std::cout << temp_47 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000486",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint max_val_48 = 100;\n\nvoid print() {\n    int max_val_48 = 50;\n    std::cout << max_val_48 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `max_val_48` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `max_val_48` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint max_val_48 = 100;\n\nvoid print() {\n    max_val_48 = 50;\n    std::cout << max_val_48 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000487",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint min_val_49 = 100;\n\nvoid print() {\n    int min_val_49 = 50;\n    std::cout << min_val_49 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `min_val_49` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `min_val_49` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint min_val_49 = 100;\n\nvoid print() {\n    min_val_49 = 50;\n    std::cout << min_val_49 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000488",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint counter_50 = 100;\n\nvoid print() {\n    int counter_50 = 50;\n    std::cout << counter_50 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `counter_50` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `counter_50` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint counter_50 = 100;\n\nvoid print() {\n    counter_50 = 50;\n    std::cout << counter_50 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000489",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint limit_51 = 100;\n\nvoid print() {\n    int limit_51 = 50;\n    std::cout << limit_51 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `limit_51` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `limit_51` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint limit_51 = 100;\n\nvoid print() {\n    limit_51 = 50;\n    std::cout << limit_51 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000490",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint threshold_52 = 100;\n\nvoid print() {\n    int threshold_52 = 50;\n    std::cout << threshold_52 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `threshold_52` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `threshold_52` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint threshold_52 = 100;\n\nvoid print() {\n    threshold_52 = 50;\n    std::cout << threshold_52 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000491",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint score_53 = 100;\n\nvoid print() {\n    int score_53 = 50;\n    std::cout << score_53 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `score_53` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `score_53` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint score_53 = 100;\n\nvoid print() {\n    score_53 = 50;\n    std::cout << score_53 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000492",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint age_54 = 100;\n\nvoid print() {\n    int age_54 = 50;\n    std::cout << age_54 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `age_54` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `age_54` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint age_54 = 100;\n\nvoid print() {\n    age_54 = 50;\n    std::cout << age_54 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000493",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint size_55 = 100;\n\nvoid print() {\n    int size_55 = 50;\n    std::cout << size_55 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `size_55` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `size_55` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint size_55 = 100;\n\nvoid print() {\n    size_55 = 50;\n    std::cout << size_55 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000494",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint length_56 = 100;\n\nvoid print() {\n    int length_56 = 50;\n    std::cout << length_56 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `length_56` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `length_56` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint length_56 = 100;\n\nvoid print() {\n    length_56 = 50;\n    std::cout << length_56 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000495",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint width_57 = 100;\n\nvoid print() {\n    int width_57 = 50;\n    std::cout << width_57 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `width_57` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `width_57` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint width_57 = 100;\n\nvoid print() {\n    width_57 = 50;\n    std::cout << width_57 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000496",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint height_58 = 100;\n\nvoid print() {\n    int height_58 = 50;\n    std::cout << height_58 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `height_58` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `height_58` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint height_58 = 100;\n\nvoid print() {\n    height_58 = 50;\n    std::cout << height_58 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000497",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint depth_59 = 100;\n\nvoid print() {\n    int depth_59 = 50;\n    std::cout << depth_59 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `depth_59` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `depth_59` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint depth_59 = 100;\n\nvoid print() {\n    depth_59 = 50;\n    std::cout << depth_59 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000498",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint count_60 = 100;\n\nvoid print() {\n    int count_60 = 50;\n    std::cout << count_60 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `count_60` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `count_60` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint count_60 = 100;\n\nvoid print() {\n    count_60 = 50;\n    std::cout << count_60 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000499",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint total_61 = 100;\n\nvoid print() {\n    int total_61 = 50;\n    std::cout << total_61 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `total_61` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `total_61` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint total_61 = 100;\n\nvoid print() {\n    total_61 = 50;\n    std::cout << total_61 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000500",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the local variable shadowing.",
+    "input": {
+      "title": "Variable Shadowing",
+      "code": "#include <iostream>\n\nint index_62 = 100;\n\nvoid print() {\n    int index_62 = 50;\n    std::cout << index_62 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "error_message": "No error. Prints 50 instead of global 100 if the intent was to use the global."
+    },
+    "output": {
+      "technical": "The local variable `index_62` declared inside `print()` shadows the global variable of the same name. Changes or accesses within the function apply only to the local variable.",
+      "beginner": "You created a new variable with the same name `index_62` inside the function, hiding the original one from outside.",
+      "analogy": "If you have a friend named John in the room and someone yells 'Hey John!', your friend will answer, even if the president (also named John) is in the next room over.",
+      "solution": "Remove the `int ` type declaration inside the function to use the global variable, or rename the local variable.",
+      "prevention": "Avoid naming local variables identically to global variables or class members. Turn on `-Wshadow` compiler warnings.",
+      "optimized_code": "#include <iostream>\n\nint index_62 = 100;\n\nvoid print() {\n    index_62 = 50;\n    std::cout << index_62 << std::endl;\n}\n\nint main() {\n    print();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "scope",
+        "shadowing",
+        "variables"
+      ]
+    }
+  }
+]

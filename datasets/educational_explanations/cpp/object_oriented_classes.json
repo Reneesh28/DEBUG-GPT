@@ -1,0 +1,2048 @@
+[
+  {
+    "id": "CP_EDU_000125",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int data_0;\npublic:\n    DataStore(int v) : data_0(v) {}\n    int get_value() const { return data_0; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int data_0;\npublic:\n    explicit DataStore(int v) : data_0(v) {}\n    [[nodiscard]] int get_value() const { return data_0; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000126",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int value_1;\npublic:\n    DataStore(int v) : value_1(v) {}\n    int get_value() const { return value_1; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int value_1;\npublic:\n    explicit DataStore(int v) : value_1(v) {}\n    [[nodiscard]] int get_value() const { return value_1; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000127",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int item_2;\npublic:\n    DataStore(int v) : item_2(v) {}\n    int get_value() const { return item_2; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int item_2;\npublic:\n    explicit DataStore(int v) : item_2(v) {}\n    [[nodiscard]] int get_value() const { return item_2; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000128",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int element_3;\npublic:\n    DataStore(int v) : element_3(v) {}\n    int get_value() const { return element_3; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int element_3;\npublic:\n    explicit DataStore(int v) : element_3(v) {}\n    [[nodiscard]] int get_value() const { return element_3; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000129",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int count_4;\npublic:\n    DataStore(int v) : count_4(v) {}\n    int get_value() const { return count_4; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int count_4;\npublic:\n    explicit DataStore(int v) : count_4(v) {}\n    [[nodiscard]] int get_value() const { return count_4; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000130",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int size_5;\npublic:\n    DataStore(int v) : size_5(v) {}\n    int get_value() const { return size_5; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int size_5;\npublic:\n    explicit DataStore(int v) : size_5(v) {}\n    [[nodiscard]] int get_value() const { return size_5; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000131",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int index_6;\npublic:\n    DataStore(int v) : index_6(v) {}\n    int get_value() const { return index_6; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int index_6;\npublic:\n    explicit DataStore(int v) : index_6(v) {}\n    [[nodiscard]] int get_value() const { return index_6; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000132",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int result_7;\npublic:\n    DataStore(int v) : result_7(v) {}\n    int get_value() const { return result_7; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int result_7;\npublic:\n    explicit DataStore(int v) : result_7(v) {}\n    [[nodiscard]] int get_value() const { return result_7; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000133",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int temp_8;\npublic:\n    DataStore(int v) : temp_8(v) {}\n    int get_value() const { return temp_8; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int temp_8;\npublic:\n    explicit DataStore(int v) : temp_8(v) {}\n    [[nodiscard]] int get_value() const { return temp_8; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000134",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int cache_9;\npublic:\n    DataStore(int v) : cache_9(v) {}\n    int get_value() const { return cache_9; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int cache_9;\npublic:\n    explicit DataStore(int v) : cache_9(v) {}\n    [[nodiscard]] int get_value() const { return cache_9; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000135",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int buffer_10;\npublic:\n    DataStore(int v) : buffer_10(v) {}\n    int get_value() const { return buffer_10; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int buffer_10;\npublic:\n    explicit DataStore(int v) : buffer_10(v) {}\n    [[nodiscard]] int get_value() const { return buffer_10; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000136",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int node_11;\npublic:\n    DataStore(int v) : node_11(v) {}\n    int get_value() const { return node_11; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int node_11;\npublic:\n    explicit DataStore(int v) : node_11(v) {}\n    [[nodiscard]] int get_value() const { return node_11; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000137",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int record_12;\npublic:\n    DataStore(int v) : record_12(v) {}\n    int get_value() const { return record_12; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int record_12;\npublic:\n    explicit DataStore(int v) : record_12(v) {}\n    [[nodiscard]] int get_value() const { return record_12; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000138",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int entry_13;\npublic:\n    DataStore(int v) : entry_13(v) {}\n    int get_value() const { return entry_13; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int entry_13;\npublic:\n    explicit DataStore(int v) : entry_13(v) {}\n    [[nodiscard]] int get_value() const { return entry_13; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000139",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int key_14;\npublic:\n    DataStore(int v) : key_14(v) {}\n    int get_value() const { return key_14; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int key_14;\npublic:\n    explicit DataStore(int v) : key_14(v) {}\n    [[nodiscard]] int get_value() const { return key_14; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000140",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int param_15;\npublic:\n    DataStore(int v) : param_15(v) {}\n    int get_value() const { return param_15; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int param_15;\npublic:\n    explicit DataStore(int v) : param_15(v) {}\n    [[nodiscard]] int get_value() const { return param_15; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000141",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int arg_16;\npublic:\n    DataStore(int v) : arg_16(v) {}\n    int get_value() const { return arg_16; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int arg_16;\npublic:\n    explicit DataStore(int v) : arg_16(v) {}\n    [[nodiscard]] int get_value() const { return arg_16; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000142",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int obj_17;\npublic:\n    DataStore(int v) : obj_17(v) {}\n    int get_value() const { return obj_17; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int obj_17;\npublic:\n    explicit DataStore(int v) : obj_17(v) {}\n    [[nodiscard]] int get_value() const { return obj_17; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000143",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int entity_18;\npublic:\n    DataStore(int v) : entity_18(v) {}\n    int get_value() const { return entity_18; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int entity_18;\npublic:\n    explicit DataStore(int v) : entity_18(v) {}\n    [[nodiscard]] int get_value() const { return entity_18; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000144",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int model_19;\npublic:\n    DataStore(int v) : model_19(v) {}\n    int get_value() const { return model_19; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int model_19;\npublic:\n    explicit DataStore(int v) : model_19(v) {}\n    [[nodiscard]] int get_value() const { return model_19; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000145",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int data_20;\npublic:\n    DataStore(int v) : data_20(v) {}\n    int get_value() const { return data_20; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int data_20;\npublic:\n    explicit DataStore(int v) : data_20(v) {}\n    [[nodiscard]] int get_value() const { return data_20; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000146",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int value_21;\npublic:\n    DataStore(int v) : value_21(v) {}\n    int get_value() const { return value_21; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int value_21;\npublic:\n    explicit DataStore(int v) : value_21(v) {}\n    [[nodiscard]] int get_value() const { return value_21; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000147",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int item_22;\npublic:\n    DataStore(int v) : item_22(v) {}\n    int get_value() const { return item_22; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int item_22;\npublic:\n    explicit DataStore(int v) : item_22(v) {}\n    [[nodiscard]] int get_value() const { return item_22; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000148",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int element_23;\npublic:\n    DataStore(int v) : element_23(v) {}\n    int get_value() const { return element_23; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int element_23;\npublic:\n    explicit DataStore(int v) : element_23(v) {}\n    [[nodiscard]] int get_value() const { return element_23; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000149",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int count_24;\npublic:\n    DataStore(int v) : count_24(v) {}\n    int get_value() const { return count_24; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int count_24;\npublic:\n    explicit DataStore(int v) : count_24(v) {}\n    [[nodiscard]] int get_value() const { return count_24; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000150",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int size_25;\npublic:\n    DataStore(int v) : size_25(v) {}\n    int get_value() const { return size_25; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int size_25;\npublic:\n    explicit DataStore(int v) : size_25(v) {}\n    [[nodiscard]] int get_value() const { return size_25; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000151",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int index_26;\npublic:\n    DataStore(int v) : index_26(v) {}\n    int get_value() const { return index_26; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int index_26;\npublic:\n    explicit DataStore(int v) : index_26(v) {}\n    [[nodiscard]] int get_value() const { return index_26; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000152",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int result_27;\npublic:\n    DataStore(int v) : result_27(v) {}\n    int get_value() const { return result_27; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int result_27;\npublic:\n    explicit DataStore(int v) : result_27(v) {}\n    [[nodiscard]] int get_value() const { return result_27; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000153",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int temp_28;\npublic:\n    DataStore(int v) : temp_28(v) {}\n    int get_value() const { return temp_28; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int temp_28;\npublic:\n    explicit DataStore(int v) : temp_28(v) {}\n    [[nodiscard]] int get_value() const { return temp_28; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000154",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int cache_29;\npublic:\n    DataStore(int v) : cache_29(v) {}\n    int get_value() const { return cache_29; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int cache_29;\npublic:\n    explicit DataStore(int v) : cache_29(v) {}\n    [[nodiscard]] int get_value() const { return cache_29; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000155",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int buffer_30;\npublic:\n    DataStore(int v) : buffer_30(v) {}\n    int get_value() const { return buffer_30; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int buffer_30;\npublic:\n    explicit DataStore(int v) : buffer_30(v) {}\n    [[nodiscard]] int get_value() const { return buffer_30; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000156",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int node_31;\npublic:\n    DataStore(int v) : node_31(v) {}\n    int get_value() const { return node_31; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int node_31;\npublic:\n    explicit DataStore(int v) : node_31(v) {}\n    [[nodiscard]] int get_value() const { return node_31; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000157",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int record_32;\npublic:\n    DataStore(int v) : record_32(v) {}\n    int get_value() const { return record_32; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int record_32;\npublic:\n    explicit DataStore(int v) : record_32(v) {}\n    [[nodiscard]] int get_value() const { return record_32; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000158",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int entry_33;\npublic:\n    DataStore(int v) : entry_33(v) {}\n    int get_value() const { return entry_33; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int entry_33;\npublic:\n    explicit DataStore(int v) : entry_33(v) {}\n    [[nodiscard]] int get_value() const { return entry_33; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000159",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int key_34;\npublic:\n    DataStore(int v) : key_34(v) {}\n    int get_value() const { return key_34; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int key_34;\npublic:\n    explicit DataStore(int v) : key_34(v) {}\n    [[nodiscard]] int get_value() const { return key_34; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000160",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int param_35;\npublic:\n    DataStore(int v) : param_35(v) {}\n    int get_value() const { return param_35; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int param_35;\npublic:\n    explicit DataStore(int v) : param_35(v) {}\n    [[nodiscard]] int get_value() const { return param_35; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000161",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int arg_36;\npublic:\n    DataStore(int v) : arg_36(v) {}\n    int get_value() const { return arg_36; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int arg_36;\npublic:\n    explicit DataStore(int v) : arg_36(v) {}\n    [[nodiscard]] int get_value() const { return arg_36; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000162",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int obj_37;\npublic:\n    DataStore(int v) : obj_37(v) {}\n    int get_value() const { return obj_37; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int obj_37;\npublic:\n    explicit DataStore(int v) : obj_37(v) {}\n    [[nodiscard]] int get_value() const { return obj_37; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000163",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int entity_38;\npublic:\n    DataStore(int v) : entity_38(v) {}\n    int get_value() const { return entity_38; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int entity_38;\npublic:\n    explicit DataStore(int v) : entity_38(v) {}\n    [[nodiscard]] int get_value() const { return entity_38; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000164",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int model_39;\npublic:\n    DataStore(int v) : model_39(v) {}\n    int get_value() const { return model_39; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int model_39;\npublic:\n    explicit DataStore(int v) : model_39(v) {}\n    [[nodiscard]] int get_value() const { return model_39; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000165",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int data_40;\npublic:\n    DataStore(int v) : data_40(v) {}\n    int get_value() const { return data_40; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int data_40;\npublic:\n    explicit DataStore(int v) : data_40(v) {}\n    [[nodiscard]] int get_value() const { return data_40; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000166",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int value_41;\npublic:\n    DataStore(int v) : value_41(v) {}\n    int get_value() const { return value_41; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int value_41;\npublic:\n    explicit DataStore(int v) : value_41(v) {}\n    [[nodiscard]] int get_value() const { return value_41; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000167",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int item_42;\npublic:\n    DataStore(int v) : item_42(v) {}\n    int get_value() const { return item_42; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int item_42;\npublic:\n    explicit DataStore(int v) : item_42(v) {}\n    [[nodiscard]] int get_value() const { return item_42; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000168",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int element_43;\npublic:\n    DataStore(int v) : element_43(v) {}\n    int get_value() const { return element_43; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int element_43;\npublic:\n    explicit DataStore(int v) : element_43(v) {}\n    [[nodiscard]] int get_value() const { return element_43; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000169",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int count_44;\npublic:\n    DataStore(int v) : count_44(v) {}\n    int get_value() const { return count_44; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int count_44;\npublic:\n    explicit DataStore(int v) : count_44(v) {}\n    [[nodiscard]] int get_value() const { return count_44; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000170",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int size_45;\npublic:\n    DataStore(int v) : size_45(v) {}\n    int get_value() const { return size_45; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int size_45;\npublic:\n    explicit DataStore(int v) : size_45(v) {}\n    [[nodiscard]] int get_value() const { return size_45; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000171",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int index_46;\npublic:\n    DataStore(int v) : index_46(v) {}\n    int get_value() const { return index_46; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int index_46;\npublic:\n    explicit DataStore(int v) : index_46(v) {}\n    [[nodiscard]] int get_value() const { return index_46; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000172",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int result_47;\npublic:\n    DataStore(int v) : result_47(v) {}\n    int get_value() const { return result_47; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int result_47;\npublic:\n    explicit DataStore(int v) : result_47(v) {}\n    [[nodiscard]] int get_value() const { return result_47; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000173",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int temp_48;\npublic:\n    DataStore(int v) : temp_48(v) {}\n    int get_value() const { return temp_48; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int temp_48;\npublic:\n    explicit DataStore(int v) : temp_48(v) {}\n    [[nodiscard]] int get_value() const { return temp_48; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000174",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int cache_49;\npublic:\n    DataStore(int v) : cache_49(v) {}\n    int get_value() const { return cache_49; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int cache_49;\npublic:\n    explicit DataStore(int v) : cache_49(v) {}\n    [[nodiscard]] int get_value() const { return cache_49; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000175",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int buffer_50;\npublic:\n    DataStore(int v) : buffer_50(v) {}\n    int get_value() const { return buffer_50; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int buffer_50;\npublic:\n    explicit DataStore(int v) : buffer_50(v) {}\n    [[nodiscard]] int get_value() const { return buffer_50; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000176",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int node_51;\npublic:\n    DataStore(int v) : node_51(v) {}\n    int get_value() const { return node_51; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int node_51;\npublic:\n    explicit DataStore(int v) : node_51(v) {}\n    [[nodiscard]] int get_value() const { return node_51; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000177",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int record_52;\npublic:\n    DataStore(int v) : record_52(v) {}\n    int get_value() const { return record_52; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int record_52;\npublic:\n    explicit DataStore(int v) : record_52(v) {}\n    [[nodiscard]] int get_value() const { return record_52; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000178",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int entry_53;\npublic:\n    DataStore(int v) : entry_53(v) {}\n    int get_value() const { return entry_53; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int entry_53;\npublic:\n    explicit DataStore(int v) : entry_53(v) {}\n    [[nodiscard]] int get_value() const { return entry_53; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000179",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int key_54;\npublic:\n    DataStore(int v) : key_54(v) {}\n    int get_value() const { return key_54; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int key_54;\npublic:\n    explicit DataStore(int v) : key_54(v) {}\n    [[nodiscard]] int get_value() const { return key_54; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000180",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int param_55;\npublic:\n    DataStore(int v) : param_55(v) {}\n    int get_value() const { return param_55; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int param_55;\npublic:\n    explicit DataStore(int v) : param_55(v) {}\n    [[nodiscard]] int get_value() const { return param_55; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000181",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int arg_56;\npublic:\n    DataStore(int v) : arg_56(v) {}\n    int get_value() const { return arg_56; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int arg_56;\npublic:\n    explicit DataStore(int v) : arg_56(v) {}\n    [[nodiscard]] int get_value() const { return arg_56; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000182",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int obj_57;\npublic:\n    DataStore(int v) : obj_57(v) {}\n    int get_value() const { return obj_57; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int obj_57;\npublic:\n    explicit DataStore(int v) : obj_57(v) {}\n    [[nodiscard]] int get_value() const { return obj_57; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000183",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int entity_58;\npublic:\n    DataStore(int v) : entity_58(v) {}\n    int get_value() const { return entity_58; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int entity_58;\npublic:\n    explicit DataStore(int v) : entity_58(v) {}\n    [[nodiscard]] int get_value() const { return entity_58; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000184",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int model_59;\npublic:\n    DataStore(int v) : model_59(v) {}\n    int get_value() const { return model_59; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int model_59;\npublic:\n    explicit DataStore(int v) : model_59(v) {}\n    [[nodiscard]] int get_value() const { return model_59; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000185",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int data_60;\npublic:\n    DataStore(int v) : data_60(v) {}\n    int get_value() const { return data_60; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int data_60;\npublic:\n    explicit DataStore(int v) : data_60(v) {}\n    [[nodiscard]] int get_value() const { return data_60; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000186",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain encapsulation and access modifiers.",
+    "input": {
+      "title": "Encapsulation in Classes",
+      "code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int value_61;\npublic:\n    DataStore(int v) : value_61(v) {}\n    int get_value() const { return value_61; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Encapsulation hides internal state (`private`) and exposes behavior through `public` methods. This maintains object invariants and prevents external code from making invalid modifications.",
+      "beginner": "Classes let you group data and functions together. Making data 'private' puts it behind a locked door, and 'public' functions are the safe window where people can ask for that data.",
+      "analogy": "It's like a vending machine. The money and snacks are locked inside (private). You can only interact with it using the buttons and coin slot (public).",
+      "solution": "Keep member variables `private` and provide getters/setters only when absolutely necessary.",
+      "prevention": "Making variables public destroys encapsulation and makes code hard to refactor safely.",
+      "optimized_code": "#include <iostream>\n\nclass DataStore {\nprivate:\n    int value_61;\npublic:\n    explicit DataStore(int v) : value_61(v) {}\n    [[nodiscard]] int get_value() const { return value_61; }\n};\n\nint main() {\n    DataStore ds(42);\n    std::cout << ds.get_value() << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "oop",
+        "classes",
+        "encapsulation"
+      ]
+    }
+  }
+]

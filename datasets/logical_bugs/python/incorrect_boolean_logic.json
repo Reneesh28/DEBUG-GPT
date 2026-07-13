@@ -1,0 +1,2048 @@
+[
+  {
+    "id": "PY_LOGIC_000187",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "count_0 = 5\nif count_0 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `count_0 == 3 or 5` is evaluated as `(count_0 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if count_0 == 3 or count_0 == 5:` or use `in`: `if count_0 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "count_0 = 5\nif count_0 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000188",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "total_1 = 5\nif total_1 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `total_1 == 3 or 5` is evaluated as `(total_1 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if total_1 == 3 or total_1 == 5:` or use `in`: `if total_1 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "total_1 = 5\nif total_1 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000189",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "index_2 = 5\nif index_2 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `index_2 == 3 or 5` is evaluated as `(index_2 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if index_2 == 3 or index_2 == 5:` or use `in`: `if index_2 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "index_2 = 5\nif index_2 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000190",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "sum_3 = 5\nif sum_3 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `sum_3 == 3 or 5` is evaluated as `(sum_3 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if sum_3 == 3 or sum_3 == 5:` or use `in`: `if sum_3 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "sum_3 = 5\nif sum_3 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000191",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "average_4 = 5\nif average_4 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `average_4 == 3 or 5` is evaluated as `(average_4 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if average_4 == 3 or average_4 == 5:` or use `in`: `if average_4 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "average_4 = 5\nif average_4 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000192",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "result_5 = 5\nif result_5 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `result_5 == 3 or 5` is evaluated as `(result_5 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if result_5 == 3 or result_5 == 5:` or use `in`: `if result_5 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "result_5 = 5\nif result_5 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000193",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "value_6 = 5\nif value_6 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `value_6 == 3 or 5` is evaluated as `(value_6 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if value_6 == 3 or value_6 == 5:` or use `in`: `if value_6 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "value_6 = 5\nif value_6 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000194",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "temp_7 = 5\nif temp_7 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `temp_7 == 3 or 5` is evaluated as `(temp_7 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if temp_7 == 3 or temp_7 == 5:` or use `in`: `if temp_7 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "temp_7 = 5\nif temp_7 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000195",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "max_val_8 = 5\nif max_val_8 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `max_val_8 == 3 or 5` is evaluated as `(max_val_8 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if max_val_8 == 3 or max_val_8 == 5:` or use `in`: `if max_val_8 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "max_val_8 = 5\nif max_val_8 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000196",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "min_val_9 = 5\nif min_val_9 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `min_val_9 == 3 or 5` is evaluated as `(min_val_9 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if min_val_9 == 3 or min_val_9 == 5:` or use `in`: `if min_val_9 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "min_val_9 = 5\nif min_val_9 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000197",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "counter_10 = 5\nif counter_10 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `counter_10 == 3 or 5` is evaluated as `(counter_10 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if counter_10 == 3 or counter_10 == 5:` or use `in`: `if counter_10 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "counter_10 = 5\nif counter_10 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000198",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "limit_11 = 5\nif limit_11 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `limit_11 == 3 or 5` is evaluated as `(limit_11 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if limit_11 == 3 or limit_11 == 5:` or use `in`: `if limit_11 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "limit_11 = 5\nif limit_11 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000199",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "threshold_12 = 5\nif threshold_12 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `threshold_12 == 3 or 5` is evaluated as `(threshold_12 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if threshold_12 == 3 or threshold_12 == 5:` or use `in`: `if threshold_12 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "threshold_12 = 5\nif threshold_12 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000200",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "score_13 = 5\nif score_13 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `score_13 == 3 or 5` is evaluated as `(score_13 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if score_13 == 3 or score_13 == 5:` or use `in`: `if score_13 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "score_13 = 5\nif score_13 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000201",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "age_14 = 5\nif age_14 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `age_14 == 3 or 5` is evaluated as `(age_14 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if age_14 == 3 or age_14 == 5:` or use `in`: `if age_14 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "age_14 = 5\nif age_14 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000202",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "size_15 = 5\nif size_15 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `size_15 == 3 or 5` is evaluated as `(size_15 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if size_15 == 3 or size_15 == 5:` or use `in`: `if size_15 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "size_15 = 5\nif size_15 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000203",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "length_16 = 5\nif length_16 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `length_16 == 3 or 5` is evaluated as `(length_16 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if length_16 == 3 or length_16 == 5:` or use `in`: `if length_16 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "length_16 = 5\nif length_16 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000204",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "width_17 = 5\nif width_17 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `width_17 == 3 or 5` is evaluated as `(width_17 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if width_17 == 3 or width_17 == 5:` or use `in`: `if width_17 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "width_17 = 5\nif width_17 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000205",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "height_18 = 5\nif height_18 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `height_18 == 3 or 5` is evaluated as `(height_18 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if height_18 == 3 or height_18 == 5:` or use `in`: `if height_18 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "height_18 = 5\nif height_18 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000206",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "depth_19 = 5\nif depth_19 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `depth_19 == 3 or 5` is evaluated as `(depth_19 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if depth_19 == 3 or depth_19 == 5:` or use `in`: `if depth_19 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "depth_19 = 5\nif depth_19 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000207",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "count_20 = 5\nif count_20 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `count_20 == 3 or 5` is evaluated as `(count_20 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if count_20 == 3 or count_20 == 5:` or use `in`: `if count_20 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "count_20 = 5\nif count_20 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000208",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "total_21 = 5\nif total_21 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `total_21 == 3 or 5` is evaluated as `(total_21 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if total_21 == 3 or total_21 == 5:` or use `in`: `if total_21 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "total_21 = 5\nif total_21 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000209",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "index_22 = 5\nif index_22 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `index_22 == 3 or 5` is evaluated as `(index_22 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if index_22 == 3 or index_22 == 5:` or use `in`: `if index_22 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "index_22 = 5\nif index_22 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000210",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "sum_23 = 5\nif sum_23 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `sum_23 == 3 or 5` is evaluated as `(sum_23 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if sum_23 == 3 or sum_23 == 5:` or use `in`: `if sum_23 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "sum_23 = 5\nif sum_23 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000211",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "average_24 = 5\nif average_24 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `average_24 == 3 or 5` is evaluated as `(average_24 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if average_24 == 3 or average_24 == 5:` or use `in`: `if average_24 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "average_24 = 5\nif average_24 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000212",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "result_25 = 5\nif result_25 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `result_25 == 3 or 5` is evaluated as `(result_25 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if result_25 == 3 or result_25 == 5:` or use `in`: `if result_25 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "result_25 = 5\nif result_25 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000213",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "value_26 = 5\nif value_26 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `value_26 == 3 or 5` is evaluated as `(value_26 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if value_26 == 3 or value_26 == 5:` or use `in`: `if value_26 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "value_26 = 5\nif value_26 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000214",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "temp_27 = 5\nif temp_27 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `temp_27 == 3 or 5` is evaluated as `(temp_27 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if temp_27 == 3 or temp_27 == 5:` or use `in`: `if temp_27 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "temp_27 = 5\nif temp_27 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000215",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "max_val_28 = 5\nif max_val_28 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `max_val_28 == 3 or 5` is evaluated as `(max_val_28 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if max_val_28 == 3 or max_val_28 == 5:` or use `in`: `if max_val_28 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "max_val_28 = 5\nif max_val_28 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000216",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "min_val_29 = 5\nif min_val_29 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `min_val_29 == 3 or 5` is evaluated as `(min_val_29 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if min_val_29 == 3 or min_val_29 == 5:` or use `in`: `if min_val_29 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "min_val_29 = 5\nif min_val_29 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000217",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "counter_30 = 5\nif counter_30 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `counter_30 == 3 or 5` is evaluated as `(counter_30 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if counter_30 == 3 or counter_30 == 5:` or use `in`: `if counter_30 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "counter_30 = 5\nif counter_30 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000218",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "limit_31 = 5\nif limit_31 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `limit_31 == 3 or 5` is evaluated as `(limit_31 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if limit_31 == 3 or limit_31 == 5:` or use `in`: `if limit_31 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "limit_31 = 5\nif limit_31 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000219",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "threshold_32 = 5\nif threshold_32 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `threshold_32 == 3 or 5` is evaluated as `(threshold_32 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if threshold_32 == 3 or threshold_32 == 5:` or use `in`: `if threshold_32 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "threshold_32 = 5\nif threshold_32 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000220",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "score_33 = 5\nif score_33 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `score_33 == 3 or 5` is evaluated as `(score_33 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if score_33 == 3 or score_33 == 5:` or use `in`: `if score_33 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "score_33 = 5\nif score_33 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000221",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "age_34 = 5\nif age_34 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `age_34 == 3 or 5` is evaluated as `(age_34 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if age_34 == 3 or age_34 == 5:` or use `in`: `if age_34 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "age_34 = 5\nif age_34 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000222",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "size_35 = 5\nif size_35 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `size_35 == 3 or 5` is evaluated as `(size_35 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if size_35 == 3 or size_35 == 5:` or use `in`: `if size_35 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "size_35 = 5\nif size_35 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000223",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "length_36 = 5\nif length_36 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `length_36 == 3 or 5` is evaluated as `(length_36 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if length_36 == 3 or length_36 == 5:` or use `in`: `if length_36 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "length_36 = 5\nif length_36 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000224",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "width_37 = 5\nif width_37 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `width_37 == 3 or 5` is evaluated as `(width_37 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if width_37 == 3 or width_37 == 5:` or use `in`: `if width_37 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "width_37 = 5\nif width_37 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000225",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "height_38 = 5\nif height_38 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `height_38 == 3 or 5` is evaluated as `(height_38 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if height_38 == 3 or height_38 == 5:` or use `in`: `if height_38 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "height_38 = 5\nif height_38 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000226",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "depth_39 = 5\nif depth_39 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `depth_39 == 3 or 5` is evaluated as `(depth_39 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if depth_39 == 3 or depth_39 == 5:` or use `in`: `if depth_39 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "depth_39 = 5\nif depth_39 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000227",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "count_40 = 5\nif count_40 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `count_40 == 3 or 5` is evaluated as `(count_40 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if count_40 == 3 or count_40 == 5:` or use `in`: `if count_40 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "count_40 = 5\nif count_40 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000228",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "total_41 = 5\nif total_41 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `total_41 == 3 or 5` is evaluated as `(total_41 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if total_41 == 3 or total_41 == 5:` or use `in`: `if total_41 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "total_41 = 5\nif total_41 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000229",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "index_42 = 5\nif index_42 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `index_42 == 3 or 5` is evaluated as `(index_42 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if index_42 == 3 or index_42 == 5:` or use `in`: `if index_42 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "index_42 = 5\nif index_42 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000230",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "sum_43 = 5\nif sum_43 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `sum_43 == 3 or 5` is evaluated as `(sum_43 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if sum_43 == 3 or sum_43 == 5:` or use `in`: `if sum_43 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "sum_43 = 5\nif sum_43 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000231",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "average_44 = 5\nif average_44 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `average_44 == 3 or 5` is evaluated as `(average_44 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if average_44 == 3 or average_44 == 5:` or use `in`: `if average_44 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "average_44 = 5\nif average_44 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000232",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "result_45 = 5\nif result_45 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `result_45 == 3 or 5` is evaluated as `(result_45 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if result_45 == 3 or result_45 == 5:` or use `in`: `if result_45 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "result_45 = 5\nif result_45 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000233",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "value_46 = 5\nif value_46 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `value_46 == 3 or 5` is evaluated as `(value_46 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if value_46 == 3 or value_46 == 5:` or use `in`: `if value_46 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "value_46 = 5\nif value_46 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000234",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "temp_47 = 5\nif temp_47 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `temp_47 == 3 or 5` is evaluated as `(temp_47 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if temp_47 == 3 or temp_47 == 5:` or use `in`: `if temp_47 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "temp_47 = 5\nif temp_47 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000235",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "max_val_48 = 5\nif max_val_48 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `max_val_48 == 3 or 5` is evaluated as `(max_val_48 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if max_val_48 == 3 or max_val_48 == 5:` or use `in`: `if max_val_48 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "max_val_48 = 5\nif max_val_48 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000236",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "min_val_49 = 5\nif min_val_49 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `min_val_49 == 3 or 5` is evaluated as `(min_val_49 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if min_val_49 == 3 or min_val_49 == 5:` or use `in`: `if min_val_49 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "min_val_49 = 5\nif min_val_49 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000237",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "counter_50 = 5\nif counter_50 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `counter_50 == 3 or 5` is evaluated as `(counter_50 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if counter_50 == 3 or counter_50 == 5:` or use `in`: `if counter_50 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "counter_50 = 5\nif counter_50 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000238",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "limit_51 = 5\nif limit_51 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `limit_51 == 3 or 5` is evaluated as `(limit_51 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if limit_51 == 3 or limit_51 == 5:` or use `in`: `if limit_51 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "limit_51 = 5\nif limit_51 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000239",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "threshold_52 = 5\nif threshold_52 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `threshold_52 == 3 or 5` is evaluated as `(threshold_52 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if threshold_52 == 3 or threshold_52 == 5:` or use `in`: `if threshold_52 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "threshold_52 = 5\nif threshold_52 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000240",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "score_53 = 5\nif score_53 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `score_53 == 3 or 5` is evaluated as `(score_53 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if score_53 == 3 or score_53 == 5:` or use `in`: `if score_53 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "score_53 = 5\nif score_53 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000241",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "age_54 = 5\nif age_54 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `age_54 == 3 or 5` is evaluated as `(age_54 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if age_54 == 3 or age_54 == 5:` or use `in`: `if age_54 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "age_54 = 5\nif age_54 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000242",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "size_55 = 5\nif size_55 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `size_55 == 3 or 5` is evaluated as `(size_55 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if size_55 == 3 or size_55 == 5:` or use `in`: `if size_55 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "size_55 = 5\nif size_55 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000243",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "length_56 = 5\nif length_56 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `length_56 == 3 or 5` is evaluated as `(length_56 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if length_56 == 3 or length_56 == 5:` or use `in`: `if length_56 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "length_56 = 5\nif length_56 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000244",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "width_57 = 5\nif width_57 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `width_57 == 3 or 5` is evaluated as `(width_57 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if width_57 == 3 or width_57 == 5:` or use `in`: `if width_57 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "width_57 = 5\nif width_57 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000245",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "height_58 = 5\nif height_58 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `height_58 == 3 or 5` is evaluated as `(height_58 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if height_58 == 3 or height_58 == 5:` or use `in`: `if height_58 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "height_58 = 5\nif height_58 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000246",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "depth_59 = 5\nif depth_59 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `depth_59 == 3 or 5` is evaluated as `(depth_59 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if depth_59 == 3 or depth_59 == 5:` or use `in`: `if depth_59 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "depth_59 = 5\nif depth_59 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000247",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "count_60 = 5\nif count_60 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `count_60 == 3 or 5` is evaluated as `(count_60 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if count_60 == 3 or count_60 == 5:` or use `in`: `if count_60 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "count_60 = 5\nif count_60 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000248",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the chained equality / or condition.",
+    "input": {
+      "title": "Misusing OR in IF Statement",
+      "code": "total_61 = 5\nif total_61 == 3 or 5:\n    print(\"Matches\")\n",
+      "error_message": "No error, but ALWAYS evaluates to True."
+    },
+    "output": {
+      "technical": "The condition `total_61 == 3 or 5` is evaluated as `(total_61 == 3) or (5)`. Since the integer 5 is truthy, the entire expression is always True.",
+      "beginner": "Python reads this as 'Check if the variable equals 3. If not, check if 5 is true.' Since 5 is a number, it's considered 'true'.",
+      "analogy": "It's like asking 'Is the pet a cat, or is 5 a number?' The answer will always be 'yes' because 5 is a number.",
+      "solution": "Be explicit: `if total_61 == 3 or total_61 == 5:` or use `in`: `if total_61 in [3, 5]:`.",
+      "prevention": "Remember that `or` separates complete logical expressions, not just values.",
+      "optimized_code": "total_61 = 5\nif total_61 in [3, 5]:\n    print(\"Matches\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "if",
+        "boolean",
+        "logic"
+      ]
+    }
+  }
+]

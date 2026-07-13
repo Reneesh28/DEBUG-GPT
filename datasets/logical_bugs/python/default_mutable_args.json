@@ -1,0 +1,1986 @@
+[
+  {
+    "id": "PY_LOGIC_000125",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def calculate_0(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(calculate_0(1))\nprint(calculate_0(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def calculate_0(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(calculate_0(1))\nprint(calculate_0(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000126",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def process_1(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(process_1(1))\nprint(process_1(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def process_1(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(process_1(1))\nprint(process_1(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000127",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def compute_2(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(compute_2(1))\nprint(compute_2(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def compute_2(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(compute_2(1))\nprint(compute_2(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000128",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def execute_3(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(execute_3(1))\nprint(execute_3(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def execute_3(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(execute_3(1))\nprint(execute_3(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000129",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def run_4(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(run_4(1))\nprint(run_4(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def run_4(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(run_4(1))\nprint(run_4(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000130",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def start_5(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(start_5(1))\nprint(start_5(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def start_5(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(start_5(1))\nprint(start_5(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000131",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def initialize_6(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(initialize_6(1))\nprint(initialize_6(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def initialize_6(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(initialize_6(1))\nprint(initialize_6(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000132",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def update_7(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(update_7(1))\nprint(update_7(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def update_7(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(update_7(1))\nprint(update_7(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000133",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def render_8(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(render_8(1))\nprint(render_8(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def render_8(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(render_8(1))\nprint(render_8(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000134",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def display_9(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(display_9(1))\nprint(display_9(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def display_9(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(display_9(1))\nprint(display_9(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000135",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def fetch_10(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(fetch_10(1))\nprint(fetch_10(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def fetch_10(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(fetch_10(1))\nprint(fetch_10(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000136",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def load_11(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(load_11(1))\nprint(load_11(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def load_11(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(load_11(1))\nprint(load_11(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000137",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def save_12(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(save_12(1))\nprint(save_12(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def save_12(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(save_12(1))\nprint(save_12(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000138",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def delete_13(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(delete_13(1))\nprint(delete_13(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def delete_13(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(delete_13(1))\nprint(delete_13(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000139",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def create_14(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(create_14(1))\nprint(create_14(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def create_14(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(create_14(1))\nprint(create_14(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000140",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def read_15(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(read_15(1))\nprint(read_15(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def read_15(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(read_15(1))\nprint(read_15(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000141",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def write_16(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(write_16(1))\nprint(write_16(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def write_16(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(write_16(1))\nprint(write_16(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000142",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def parse_17(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(parse_17(1))\nprint(parse_17(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def parse_17(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(parse_17(1))\nprint(parse_17(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000143",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def validate_18(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(validate_18(1))\nprint(validate_18(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def validate_18(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(validate_18(1))\nprint(validate_18(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000144",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def verify_19(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(verify_19(1))\nprint(verify_19(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def verify_19(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(verify_19(1))\nprint(verify_19(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000145",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def calculate_20(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(calculate_20(1))\nprint(calculate_20(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def calculate_20(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(calculate_20(1))\nprint(calculate_20(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000146",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def process_21(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(process_21(1))\nprint(process_21(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def process_21(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(process_21(1))\nprint(process_21(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000147",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def compute_22(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(compute_22(1))\nprint(compute_22(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def compute_22(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(compute_22(1))\nprint(compute_22(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000148",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def execute_23(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(execute_23(1))\nprint(execute_23(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def execute_23(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(execute_23(1))\nprint(execute_23(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000149",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def run_24(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(run_24(1))\nprint(run_24(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def run_24(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(run_24(1))\nprint(run_24(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000150",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def start_25(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(start_25(1))\nprint(start_25(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def start_25(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(start_25(1))\nprint(start_25(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000151",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def initialize_26(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(initialize_26(1))\nprint(initialize_26(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def initialize_26(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(initialize_26(1))\nprint(initialize_26(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000152",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def update_27(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(update_27(1))\nprint(update_27(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def update_27(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(update_27(1))\nprint(update_27(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000153",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def render_28(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(render_28(1))\nprint(render_28(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def render_28(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(render_28(1))\nprint(render_28(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000154",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def display_29(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(display_29(1))\nprint(display_29(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def display_29(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(display_29(1))\nprint(display_29(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000155",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def fetch_30(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(fetch_30(1))\nprint(fetch_30(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def fetch_30(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(fetch_30(1))\nprint(fetch_30(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000156",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def load_31(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(load_31(1))\nprint(load_31(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def load_31(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(load_31(1))\nprint(load_31(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000157",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def save_32(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(save_32(1))\nprint(save_32(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def save_32(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(save_32(1))\nprint(save_32(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000158",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def delete_33(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(delete_33(1))\nprint(delete_33(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def delete_33(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(delete_33(1))\nprint(delete_33(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000159",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def create_34(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(create_34(1))\nprint(create_34(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def create_34(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(create_34(1))\nprint(create_34(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000160",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def read_35(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(read_35(1))\nprint(read_35(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def read_35(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(read_35(1))\nprint(read_35(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000161",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def write_36(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(write_36(1))\nprint(write_36(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def write_36(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(write_36(1))\nprint(write_36(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000162",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def parse_37(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(parse_37(1))\nprint(parse_37(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def parse_37(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(parse_37(1))\nprint(parse_37(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000163",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def validate_38(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(validate_38(1))\nprint(validate_38(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def validate_38(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(validate_38(1))\nprint(validate_38(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000164",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def verify_39(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(verify_39(1))\nprint(verify_39(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def verify_39(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(verify_39(1))\nprint(verify_39(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000165",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def calculate_40(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(calculate_40(1))\nprint(calculate_40(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def calculate_40(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(calculate_40(1))\nprint(calculate_40(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000166",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def process_41(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(process_41(1))\nprint(process_41(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def process_41(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(process_41(1))\nprint(process_41(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000167",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def compute_42(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(compute_42(1))\nprint(compute_42(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def compute_42(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(compute_42(1))\nprint(compute_42(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000168",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def execute_43(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(execute_43(1))\nprint(execute_43(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def execute_43(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(execute_43(1))\nprint(execute_43(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000169",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def run_44(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(run_44(1))\nprint(run_44(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def run_44(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(run_44(1))\nprint(run_44(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000170",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def start_45(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(start_45(1))\nprint(start_45(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def start_45(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(start_45(1))\nprint(start_45(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000171",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def initialize_46(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(initialize_46(1))\nprint(initialize_46(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def initialize_46(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(initialize_46(1))\nprint(initialize_46(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000172",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def update_47(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(update_47(1))\nprint(update_47(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def update_47(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(update_47(1))\nprint(update_47(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000173",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def render_48(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(render_48(1))\nprint(render_48(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def render_48(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(render_48(1))\nprint(render_48(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000174",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def display_49(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(display_49(1))\nprint(display_49(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def display_49(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(display_49(1))\nprint(display_49(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000175",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def fetch_50(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(fetch_50(1))\nprint(fetch_50(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def fetch_50(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(fetch_50(1))\nprint(fetch_50(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000176",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def load_51(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(load_51(1))\nprint(load_51(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def load_51(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(load_51(1))\nprint(load_51(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000177",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def save_52(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(save_52(1))\nprint(save_52(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def save_52(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(save_52(1))\nprint(save_52(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000178",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def delete_53(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(delete_53(1))\nprint(delete_53(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def delete_53(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(delete_53(1))\nprint(delete_53(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000179",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def create_54(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(create_54(1))\nprint(create_54(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def create_54(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(create_54(1))\nprint(create_54(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000180",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def read_55(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(read_55(1))\nprint(read_55(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def read_55(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(read_55(1))\nprint(read_55(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000181",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def write_56(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(write_56(1))\nprint(write_56(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def write_56(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(write_56(1))\nprint(write_56(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000182",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def parse_57(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(parse_57(1))\nprint(parse_57(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def parse_57(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(parse_57(1))\nprint(parse_57(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000183",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def validate_58(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(validate_58(1))\nprint(validate_58(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def validate_58(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(validate_58(1))\nprint(validate_58(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000184",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def verify_59(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(verify_59(1))\nprint(verify_59(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def verify_59(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(verify_59(1))\nprint(verify_59(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000185",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def calculate_60(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(calculate_60(1))\nprint(calculate_60(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def calculate_60(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(calculate_60(1))\nprint(calculate_60(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000186",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the mutable default argument.",
+    "input": {
+      "title": "Mutable Default Argument",
+      "code": "def process_61(val, arr=[]):\n    arr.append(val)\n    return arr\n\nprint(process_61(1))\nprint(process_61(2))\n",
+      "error_message": "No error, but prints [1] then [1, 2] instead of [1] and [2]."
+    },
+    "output": {
+      "technical": "Default arguments in Python are evaluated once at function definition time. The list `arr` is shared across all function calls that don't provide their own list.",
+      "beginner": "The empty list is created once when Python reads the file. Every time you call the function, it uses that exact same shared list.",
+      "analogy": "It's like placing a blank piece of paper on a shared desk. Every person who visits the desk writes on the exact same piece of paper.",
+      "solution": "Set the default to `None` and initialize the list inside the function.",
+      "prevention": "Never use mutable objects (like lists or dictionaries) as default arguments.",
+      "optimized_code": "def process_61(val, arr=None):\n    if arr is None:\n        arr = []\n    arr.append(val)\n    return arr\n\nprint(process_61(1))\nprint(process_61(2))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "functions",
+        "mutable-default"
+      ]
+    }
+  }
+]

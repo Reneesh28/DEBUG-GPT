@@ -1,0 +1,2048 @@
+[
+  {
+    "id": "CP_OPTIM_000125",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_0 = {1, 2, 3, 4, 5};\n    for (auto it = count_0.begin(); it != count_0.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_0 = {1, 2, 3, 4, 5};\n    for (auto it = count_0.begin(); it != count_0.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000126",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> total_1 = {1, 2, 3, 4, 5};\n    for (auto it = total_1.begin(); it != total_1.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> total_1 = {1, 2, 3, 4, 5};\n    for (auto it = total_1.begin(); it != total_1.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000127",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> index_2 = {1, 2, 3, 4, 5};\n    for (auto it = index_2.begin(); it != index_2.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> index_2 = {1, 2, 3, 4, 5};\n    for (auto it = index_2.begin(); it != index_2.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000128",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> sum_3 = {1, 2, 3, 4, 5};\n    for (auto it = sum_3.begin(); it != sum_3.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> sum_3 = {1, 2, 3, 4, 5};\n    for (auto it = sum_3.begin(); it != sum_3.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000129",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> average_4 = {1, 2, 3, 4, 5};\n    for (auto it = average_4.begin(); it != average_4.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> average_4 = {1, 2, 3, 4, 5};\n    for (auto it = average_4.begin(); it != average_4.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000130",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> result_5 = {1, 2, 3, 4, 5};\n    for (auto it = result_5.begin(); it != result_5.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> result_5 = {1, 2, 3, 4, 5};\n    for (auto it = result_5.begin(); it != result_5.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000131",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> value_6 = {1, 2, 3, 4, 5};\n    for (auto it = value_6.begin(); it != value_6.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> value_6 = {1, 2, 3, 4, 5};\n    for (auto it = value_6.begin(); it != value_6.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000132",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> temp_7 = {1, 2, 3, 4, 5};\n    for (auto it = temp_7.begin(); it != temp_7.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> temp_7 = {1, 2, 3, 4, 5};\n    for (auto it = temp_7.begin(); it != temp_7.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000133",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> max_val_8 = {1, 2, 3, 4, 5};\n    for (auto it = max_val_8.begin(); it != max_val_8.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> max_val_8 = {1, 2, 3, 4, 5};\n    for (auto it = max_val_8.begin(); it != max_val_8.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000134",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> min_val_9 = {1, 2, 3, 4, 5};\n    for (auto it = min_val_9.begin(); it != min_val_9.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> min_val_9 = {1, 2, 3, 4, 5};\n    for (auto it = min_val_9.begin(); it != min_val_9.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000135",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> counter_10 = {1, 2, 3, 4, 5};\n    for (auto it = counter_10.begin(); it != counter_10.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> counter_10 = {1, 2, 3, 4, 5};\n    for (auto it = counter_10.begin(); it != counter_10.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000136",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> limit_11 = {1, 2, 3, 4, 5};\n    for (auto it = limit_11.begin(); it != limit_11.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> limit_11 = {1, 2, 3, 4, 5};\n    for (auto it = limit_11.begin(); it != limit_11.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000137",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> threshold_12 = {1, 2, 3, 4, 5};\n    for (auto it = threshold_12.begin(); it != threshold_12.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> threshold_12 = {1, 2, 3, 4, 5};\n    for (auto it = threshold_12.begin(); it != threshold_12.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000138",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> score_13 = {1, 2, 3, 4, 5};\n    for (auto it = score_13.begin(); it != score_13.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> score_13 = {1, 2, 3, 4, 5};\n    for (auto it = score_13.begin(); it != score_13.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000139",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> age_14 = {1, 2, 3, 4, 5};\n    for (auto it = age_14.begin(); it != age_14.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> age_14 = {1, 2, 3, 4, 5};\n    for (auto it = age_14.begin(); it != age_14.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000140",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> size_15 = {1, 2, 3, 4, 5};\n    for (auto it = size_15.begin(); it != size_15.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> size_15 = {1, 2, 3, 4, 5};\n    for (auto it = size_15.begin(); it != size_15.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000141",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> length_16 = {1, 2, 3, 4, 5};\n    for (auto it = length_16.begin(); it != length_16.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> length_16 = {1, 2, 3, 4, 5};\n    for (auto it = length_16.begin(); it != length_16.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000142",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> width_17 = {1, 2, 3, 4, 5};\n    for (auto it = width_17.begin(); it != width_17.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> width_17 = {1, 2, 3, 4, 5};\n    for (auto it = width_17.begin(); it != width_17.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000143",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> height_18 = {1, 2, 3, 4, 5};\n    for (auto it = height_18.begin(); it != height_18.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> height_18 = {1, 2, 3, 4, 5};\n    for (auto it = height_18.begin(); it != height_18.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000144",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> depth_19 = {1, 2, 3, 4, 5};\n    for (auto it = depth_19.begin(); it != depth_19.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> depth_19 = {1, 2, 3, 4, 5};\n    for (auto it = depth_19.begin(); it != depth_19.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000145",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_20 = {1, 2, 3, 4, 5};\n    for (auto it = count_20.begin(); it != count_20.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_20 = {1, 2, 3, 4, 5};\n    for (auto it = count_20.begin(); it != count_20.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000146",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> total_21 = {1, 2, 3, 4, 5};\n    for (auto it = total_21.begin(); it != total_21.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> total_21 = {1, 2, 3, 4, 5};\n    for (auto it = total_21.begin(); it != total_21.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000147",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> index_22 = {1, 2, 3, 4, 5};\n    for (auto it = index_22.begin(); it != index_22.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> index_22 = {1, 2, 3, 4, 5};\n    for (auto it = index_22.begin(); it != index_22.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000148",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> sum_23 = {1, 2, 3, 4, 5};\n    for (auto it = sum_23.begin(); it != sum_23.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> sum_23 = {1, 2, 3, 4, 5};\n    for (auto it = sum_23.begin(); it != sum_23.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000149",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> average_24 = {1, 2, 3, 4, 5};\n    for (auto it = average_24.begin(); it != average_24.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> average_24 = {1, 2, 3, 4, 5};\n    for (auto it = average_24.begin(); it != average_24.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000150",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> result_25 = {1, 2, 3, 4, 5};\n    for (auto it = result_25.begin(); it != result_25.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> result_25 = {1, 2, 3, 4, 5};\n    for (auto it = result_25.begin(); it != result_25.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000151",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> value_26 = {1, 2, 3, 4, 5};\n    for (auto it = value_26.begin(); it != value_26.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> value_26 = {1, 2, 3, 4, 5};\n    for (auto it = value_26.begin(); it != value_26.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000152",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> temp_27 = {1, 2, 3, 4, 5};\n    for (auto it = temp_27.begin(); it != temp_27.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> temp_27 = {1, 2, 3, 4, 5};\n    for (auto it = temp_27.begin(); it != temp_27.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000153",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> max_val_28 = {1, 2, 3, 4, 5};\n    for (auto it = max_val_28.begin(); it != max_val_28.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> max_val_28 = {1, 2, 3, 4, 5};\n    for (auto it = max_val_28.begin(); it != max_val_28.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000154",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> min_val_29 = {1, 2, 3, 4, 5};\n    for (auto it = min_val_29.begin(); it != min_val_29.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> min_val_29 = {1, 2, 3, 4, 5};\n    for (auto it = min_val_29.begin(); it != min_val_29.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000155",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> counter_30 = {1, 2, 3, 4, 5};\n    for (auto it = counter_30.begin(); it != counter_30.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> counter_30 = {1, 2, 3, 4, 5};\n    for (auto it = counter_30.begin(); it != counter_30.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000156",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> limit_31 = {1, 2, 3, 4, 5};\n    for (auto it = limit_31.begin(); it != limit_31.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> limit_31 = {1, 2, 3, 4, 5};\n    for (auto it = limit_31.begin(); it != limit_31.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000157",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> threshold_32 = {1, 2, 3, 4, 5};\n    for (auto it = threshold_32.begin(); it != threshold_32.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> threshold_32 = {1, 2, 3, 4, 5};\n    for (auto it = threshold_32.begin(); it != threshold_32.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000158",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> score_33 = {1, 2, 3, 4, 5};\n    for (auto it = score_33.begin(); it != score_33.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> score_33 = {1, 2, 3, 4, 5};\n    for (auto it = score_33.begin(); it != score_33.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000159",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> age_34 = {1, 2, 3, 4, 5};\n    for (auto it = age_34.begin(); it != age_34.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> age_34 = {1, 2, 3, 4, 5};\n    for (auto it = age_34.begin(); it != age_34.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000160",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> size_35 = {1, 2, 3, 4, 5};\n    for (auto it = size_35.begin(); it != size_35.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> size_35 = {1, 2, 3, 4, 5};\n    for (auto it = size_35.begin(); it != size_35.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000161",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> length_36 = {1, 2, 3, 4, 5};\n    for (auto it = length_36.begin(); it != length_36.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> length_36 = {1, 2, 3, 4, 5};\n    for (auto it = length_36.begin(); it != length_36.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000162",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> width_37 = {1, 2, 3, 4, 5};\n    for (auto it = width_37.begin(); it != width_37.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> width_37 = {1, 2, 3, 4, 5};\n    for (auto it = width_37.begin(); it != width_37.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000163",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> height_38 = {1, 2, 3, 4, 5};\n    for (auto it = height_38.begin(); it != height_38.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> height_38 = {1, 2, 3, 4, 5};\n    for (auto it = height_38.begin(); it != height_38.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000164",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> depth_39 = {1, 2, 3, 4, 5};\n    for (auto it = depth_39.begin(); it != depth_39.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> depth_39 = {1, 2, 3, 4, 5};\n    for (auto it = depth_39.begin(); it != depth_39.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000165",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_40 = {1, 2, 3, 4, 5};\n    for (auto it = count_40.begin(); it != count_40.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_40 = {1, 2, 3, 4, 5};\n    for (auto it = count_40.begin(); it != count_40.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000166",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> total_41 = {1, 2, 3, 4, 5};\n    for (auto it = total_41.begin(); it != total_41.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> total_41 = {1, 2, 3, 4, 5};\n    for (auto it = total_41.begin(); it != total_41.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000167",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> index_42 = {1, 2, 3, 4, 5};\n    for (auto it = index_42.begin(); it != index_42.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> index_42 = {1, 2, 3, 4, 5};\n    for (auto it = index_42.begin(); it != index_42.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000168",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> sum_43 = {1, 2, 3, 4, 5};\n    for (auto it = sum_43.begin(); it != sum_43.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> sum_43 = {1, 2, 3, 4, 5};\n    for (auto it = sum_43.begin(); it != sum_43.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000169",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> average_44 = {1, 2, 3, 4, 5};\n    for (auto it = average_44.begin(); it != average_44.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> average_44 = {1, 2, 3, 4, 5};\n    for (auto it = average_44.begin(); it != average_44.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000170",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> result_45 = {1, 2, 3, 4, 5};\n    for (auto it = result_45.begin(); it != result_45.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> result_45 = {1, 2, 3, 4, 5};\n    for (auto it = result_45.begin(); it != result_45.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000171",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> value_46 = {1, 2, 3, 4, 5};\n    for (auto it = value_46.begin(); it != value_46.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> value_46 = {1, 2, 3, 4, 5};\n    for (auto it = value_46.begin(); it != value_46.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000172",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> temp_47 = {1, 2, 3, 4, 5};\n    for (auto it = temp_47.begin(); it != temp_47.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> temp_47 = {1, 2, 3, 4, 5};\n    for (auto it = temp_47.begin(); it != temp_47.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000173",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> max_val_48 = {1, 2, 3, 4, 5};\n    for (auto it = max_val_48.begin(); it != max_val_48.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> max_val_48 = {1, 2, 3, 4, 5};\n    for (auto it = max_val_48.begin(); it != max_val_48.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000174",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> min_val_49 = {1, 2, 3, 4, 5};\n    for (auto it = min_val_49.begin(); it != min_val_49.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> min_val_49 = {1, 2, 3, 4, 5};\n    for (auto it = min_val_49.begin(); it != min_val_49.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000175",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> counter_50 = {1, 2, 3, 4, 5};\n    for (auto it = counter_50.begin(); it != counter_50.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> counter_50 = {1, 2, 3, 4, 5};\n    for (auto it = counter_50.begin(); it != counter_50.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000176",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> limit_51 = {1, 2, 3, 4, 5};\n    for (auto it = limit_51.begin(); it != limit_51.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> limit_51 = {1, 2, 3, 4, 5};\n    for (auto it = limit_51.begin(); it != limit_51.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000177",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> threshold_52 = {1, 2, 3, 4, 5};\n    for (auto it = threshold_52.begin(); it != threshold_52.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> threshold_52 = {1, 2, 3, 4, 5};\n    for (auto it = threshold_52.begin(); it != threshold_52.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000178",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> score_53 = {1, 2, 3, 4, 5};\n    for (auto it = score_53.begin(); it != score_53.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> score_53 = {1, 2, 3, 4, 5};\n    for (auto it = score_53.begin(); it != score_53.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000179",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> age_54 = {1, 2, 3, 4, 5};\n    for (auto it = age_54.begin(); it != age_54.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> age_54 = {1, 2, 3, 4, 5};\n    for (auto it = age_54.begin(); it != age_54.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000180",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> size_55 = {1, 2, 3, 4, 5};\n    for (auto it = size_55.begin(); it != size_55.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> size_55 = {1, 2, 3, 4, 5};\n    for (auto it = size_55.begin(); it != size_55.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000181",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> length_56 = {1, 2, 3, 4, 5};\n    for (auto it = length_56.begin(); it != length_56.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> length_56 = {1, 2, 3, 4, 5};\n    for (auto it = length_56.begin(); it != length_56.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000182",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> width_57 = {1, 2, 3, 4, 5};\n    for (auto it = width_57.begin(); it != width_57.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> width_57 = {1, 2, 3, 4, 5};\n    for (auto it = width_57.begin(); it != width_57.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000183",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> height_58 = {1, 2, 3, 4, 5};\n    for (auto it = height_58.begin(); it != height_58.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> height_58 = {1, 2, 3, 4, 5};\n    for (auto it = height_58.begin(); it != height_58.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000184",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> depth_59 = {1, 2, 3, 4, 5};\n    for (auto it = depth_59.begin(); it != depth_59.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> depth_59 = {1, 2, 3, 4, 5};\n    for (auto it = depth_59.begin(); it != depth_59.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000185",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_60 = {1, 2, 3, 4, 5};\n    for (auto it = count_60.begin(); it != count_60.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_60 = {1, 2, 3, 4, 5};\n    for (auto it = count_60.begin(); it != count_60.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000186",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the iterator increment operation.",
+    "input": {
+      "title": "Postfix Iterator Increment",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> total_61 = {1, 2, 3, 4, 5};\n    for (auto it = total_61.begin(); it != total_61.end(); it++) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Postfix increment (`it++`) on an iterator creates a temporary copy of the iterator before incrementing it. Prefix increment (`++it`) increments in place and returns a reference, avoiding the copy.",
+      "beginner": "Using `it++` creates a temporary throwaway copy of the position marker. `++it` is faster because it just moves the marker directly.",
+      "analogy": "It's like taking a picture of yourself before taking a step, just in case you need to remember where you were, even though nobody asked for the picture.",
+      "solution": "Change `it++` to `++it` in the loop condition.",
+      "prevention": "Always use prefix increment (`++i` or `++it`) unless you specifically need the pre-incremented value.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> total_61 = {1, 2, 3, 4, 5};\n    for (auto it = total_61.begin(); it != total_61.end(); ++it) {\n        std::cout << *it << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) with copy overhead",
+        "after": "O(1) in-place"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "iterators",
+        "increment",
+        "performance"
+      ]
+    }
+  }
+]

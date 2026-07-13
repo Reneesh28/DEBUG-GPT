@@ -1,0 +1,2048 @@
+[
+  {
+    "id": "CP_LOGIC_000125",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int count_0 = 0;\n    while (count_0 < 10) {\n        std::cout << count_0 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `count_0` is never modified inside the `while` loop body, so the condition `count_0 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `count_0` inside the loop (e.g., `count_0++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int count_0 = 0;\n    while (count_0 < 10) {\n        std::cout << count_0 << std::endl;\n        count_0++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000126",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int total_1 = 0;\n    while (total_1 < 10) {\n        std::cout << total_1 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `total_1` is never modified inside the `while` loop body, so the condition `total_1 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `total_1` inside the loop (e.g., `total_1++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total_1 = 0;\n    while (total_1 < 10) {\n        std::cout << total_1 << std::endl;\n        total_1++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000127",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int index_2 = 0;\n    while (index_2 < 10) {\n        std::cout << index_2 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `index_2` is never modified inside the `while` loop body, so the condition `index_2 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `index_2` inside the loop (e.g., `index_2++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int index_2 = 0;\n    while (index_2 < 10) {\n        std::cout << index_2 << std::endl;\n        index_2++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000128",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int sum_3 = 0;\n    while (sum_3 < 10) {\n        std::cout << sum_3 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `sum_3` is never modified inside the `while` loop body, so the condition `sum_3 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `sum_3` inside the loop (e.g., `sum_3++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int sum_3 = 0;\n    while (sum_3 < 10) {\n        std::cout << sum_3 << std::endl;\n        sum_3++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000129",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int average_4 = 0;\n    while (average_4 < 10) {\n        std::cout << average_4 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `average_4` is never modified inside the `while` loop body, so the condition `average_4 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `average_4` inside the loop (e.g., `average_4++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int average_4 = 0;\n    while (average_4 < 10) {\n        std::cout << average_4 << std::endl;\n        average_4++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000130",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int result_5 = 0;\n    while (result_5 < 10) {\n        std::cout << result_5 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `result_5` is never modified inside the `while` loop body, so the condition `result_5 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `result_5` inside the loop (e.g., `result_5++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int result_5 = 0;\n    while (result_5 < 10) {\n        std::cout << result_5 << std::endl;\n        result_5++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000131",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int value_6 = 0;\n    while (value_6 < 10) {\n        std::cout << value_6 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `value_6` is never modified inside the `while` loop body, so the condition `value_6 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `value_6` inside the loop (e.g., `value_6++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int value_6 = 0;\n    while (value_6 < 10) {\n        std::cout << value_6 << std::endl;\n        value_6++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000132",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int temp_7 = 0;\n    while (temp_7 < 10) {\n        std::cout << temp_7 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `temp_7` is never modified inside the `while` loop body, so the condition `temp_7 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `temp_7` inside the loop (e.g., `temp_7++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int temp_7 = 0;\n    while (temp_7 < 10) {\n        std::cout << temp_7 << std::endl;\n        temp_7++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000133",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int max_val_8 = 0;\n    while (max_val_8 < 10) {\n        std::cout << max_val_8 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `max_val_8` is never modified inside the `while` loop body, so the condition `max_val_8 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `max_val_8` inside the loop (e.g., `max_val_8++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int max_val_8 = 0;\n    while (max_val_8 < 10) {\n        std::cout << max_val_8 << std::endl;\n        max_val_8++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000134",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int min_val_9 = 0;\n    while (min_val_9 < 10) {\n        std::cout << min_val_9 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `min_val_9` is never modified inside the `while` loop body, so the condition `min_val_9 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `min_val_9` inside the loop (e.g., `min_val_9++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int min_val_9 = 0;\n    while (min_val_9 < 10) {\n        std::cout << min_val_9 << std::endl;\n        min_val_9++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000135",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int counter_10 = 0;\n    while (counter_10 < 10) {\n        std::cout << counter_10 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `counter_10` is never modified inside the `while` loop body, so the condition `counter_10 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `counter_10` inside the loop (e.g., `counter_10++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int counter_10 = 0;\n    while (counter_10 < 10) {\n        std::cout << counter_10 << std::endl;\n        counter_10++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000136",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int limit_11 = 0;\n    while (limit_11 < 10) {\n        std::cout << limit_11 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `limit_11` is never modified inside the `while` loop body, so the condition `limit_11 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `limit_11` inside the loop (e.g., `limit_11++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int limit_11 = 0;\n    while (limit_11 < 10) {\n        std::cout << limit_11 << std::endl;\n        limit_11++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000137",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int threshold_12 = 0;\n    while (threshold_12 < 10) {\n        std::cout << threshold_12 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `threshold_12` is never modified inside the `while` loop body, so the condition `threshold_12 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `threshold_12` inside the loop (e.g., `threshold_12++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int threshold_12 = 0;\n    while (threshold_12 < 10) {\n        std::cout << threshold_12 << std::endl;\n        threshold_12++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000138",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int score_13 = 0;\n    while (score_13 < 10) {\n        std::cout << score_13 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `score_13` is never modified inside the `while` loop body, so the condition `score_13 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `score_13` inside the loop (e.g., `score_13++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int score_13 = 0;\n    while (score_13 < 10) {\n        std::cout << score_13 << std::endl;\n        score_13++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000139",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int age_14 = 0;\n    while (age_14 < 10) {\n        std::cout << age_14 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `age_14` is never modified inside the `while` loop body, so the condition `age_14 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `age_14` inside the loop (e.g., `age_14++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int age_14 = 0;\n    while (age_14 < 10) {\n        std::cout << age_14 << std::endl;\n        age_14++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000140",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int size_15 = 0;\n    while (size_15 < 10) {\n        std::cout << size_15 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `size_15` is never modified inside the `while` loop body, so the condition `size_15 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `size_15` inside the loop (e.g., `size_15++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int size_15 = 0;\n    while (size_15 < 10) {\n        std::cout << size_15 << std::endl;\n        size_15++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000141",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int length_16 = 0;\n    while (length_16 < 10) {\n        std::cout << length_16 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `length_16` is never modified inside the `while` loop body, so the condition `length_16 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `length_16` inside the loop (e.g., `length_16++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int length_16 = 0;\n    while (length_16 < 10) {\n        std::cout << length_16 << std::endl;\n        length_16++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000142",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int width_17 = 0;\n    while (width_17 < 10) {\n        std::cout << width_17 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `width_17` is never modified inside the `while` loop body, so the condition `width_17 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `width_17` inside the loop (e.g., `width_17++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int width_17 = 0;\n    while (width_17 < 10) {\n        std::cout << width_17 << std::endl;\n        width_17++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000143",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int height_18 = 0;\n    while (height_18 < 10) {\n        std::cout << height_18 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `height_18` is never modified inside the `while` loop body, so the condition `height_18 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `height_18` inside the loop (e.g., `height_18++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int height_18 = 0;\n    while (height_18 < 10) {\n        std::cout << height_18 << std::endl;\n        height_18++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000144",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int depth_19 = 0;\n    while (depth_19 < 10) {\n        std::cout << depth_19 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `depth_19` is never modified inside the `while` loop body, so the condition `depth_19 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `depth_19` inside the loop (e.g., `depth_19++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int depth_19 = 0;\n    while (depth_19 < 10) {\n        std::cout << depth_19 << std::endl;\n        depth_19++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000145",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int count_20 = 0;\n    while (count_20 < 10) {\n        std::cout << count_20 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `count_20` is never modified inside the `while` loop body, so the condition `count_20 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `count_20` inside the loop (e.g., `count_20++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int count_20 = 0;\n    while (count_20 < 10) {\n        std::cout << count_20 << std::endl;\n        count_20++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000146",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int total_21 = 0;\n    while (total_21 < 10) {\n        std::cout << total_21 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `total_21` is never modified inside the `while` loop body, so the condition `total_21 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `total_21` inside the loop (e.g., `total_21++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total_21 = 0;\n    while (total_21 < 10) {\n        std::cout << total_21 << std::endl;\n        total_21++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000147",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int index_22 = 0;\n    while (index_22 < 10) {\n        std::cout << index_22 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `index_22` is never modified inside the `while` loop body, so the condition `index_22 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `index_22` inside the loop (e.g., `index_22++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int index_22 = 0;\n    while (index_22 < 10) {\n        std::cout << index_22 << std::endl;\n        index_22++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000148",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int sum_23 = 0;\n    while (sum_23 < 10) {\n        std::cout << sum_23 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `sum_23` is never modified inside the `while` loop body, so the condition `sum_23 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `sum_23` inside the loop (e.g., `sum_23++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int sum_23 = 0;\n    while (sum_23 < 10) {\n        std::cout << sum_23 << std::endl;\n        sum_23++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000149",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int average_24 = 0;\n    while (average_24 < 10) {\n        std::cout << average_24 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `average_24` is never modified inside the `while` loop body, so the condition `average_24 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `average_24` inside the loop (e.g., `average_24++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int average_24 = 0;\n    while (average_24 < 10) {\n        std::cout << average_24 << std::endl;\n        average_24++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000150",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int result_25 = 0;\n    while (result_25 < 10) {\n        std::cout << result_25 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `result_25` is never modified inside the `while` loop body, so the condition `result_25 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `result_25` inside the loop (e.g., `result_25++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int result_25 = 0;\n    while (result_25 < 10) {\n        std::cout << result_25 << std::endl;\n        result_25++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000151",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int value_26 = 0;\n    while (value_26 < 10) {\n        std::cout << value_26 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `value_26` is never modified inside the `while` loop body, so the condition `value_26 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `value_26` inside the loop (e.g., `value_26++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int value_26 = 0;\n    while (value_26 < 10) {\n        std::cout << value_26 << std::endl;\n        value_26++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000152",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int temp_27 = 0;\n    while (temp_27 < 10) {\n        std::cout << temp_27 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `temp_27` is never modified inside the `while` loop body, so the condition `temp_27 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `temp_27` inside the loop (e.g., `temp_27++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int temp_27 = 0;\n    while (temp_27 < 10) {\n        std::cout << temp_27 << std::endl;\n        temp_27++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000153",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int max_val_28 = 0;\n    while (max_val_28 < 10) {\n        std::cout << max_val_28 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `max_val_28` is never modified inside the `while` loop body, so the condition `max_val_28 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `max_val_28` inside the loop (e.g., `max_val_28++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int max_val_28 = 0;\n    while (max_val_28 < 10) {\n        std::cout << max_val_28 << std::endl;\n        max_val_28++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000154",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int min_val_29 = 0;\n    while (min_val_29 < 10) {\n        std::cout << min_val_29 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `min_val_29` is never modified inside the `while` loop body, so the condition `min_val_29 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `min_val_29` inside the loop (e.g., `min_val_29++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int min_val_29 = 0;\n    while (min_val_29 < 10) {\n        std::cout << min_val_29 << std::endl;\n        min_val_29++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000155",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int counter_30 = 0;\n    while (counter_30 < 10) {\n        std::cout << counter_30 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `counter_30` is never modified inside the `while` loop body, so the condition `counter_30 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `counter_30` inside the loop (e.g., `counter_30++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int counter_30 = 0;\n    while (counter_30 < 10) {\n        std::cout << counter_30 << std::endl;\n        counter_30++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000156",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int limit_31 = 0;\n    while (limit_31 < 10) {\n        std::cout << limit_31 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `limit_31` is never modified inside the `while` loop body, so the condition `limit_31 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `limit_31` inside the loop (e.g., `limit_31++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int limit_31 = 0;\n    while (limit_31 < 10) {\n        std::cout << limit_31 << std::endl;\n        limit_31++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000157",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int threshold_32 = 0;\n    while (threshold_32 < 10) {\n        std::cout << threshold_32 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `threshold_32` is never modified inside the `while` loop body, so the condition `threshold_32 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `threshold_32` inside the loop (e.g., `threshold_32++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int threshold_32 = 0;\n    while (threshold_32 < 10) {\n        std::cout << threshold_32 << std::endl;\n        threshold_32++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000158",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int score_33 = 0;\n    while (score_33 < 10) {\n        std::cout << score_33 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `score_33` is never modified inside the `while` loop body, so the condition `score_33 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `score_33` inside the loop (e.g., `score_33++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int score_33 = 0;\n    while (score_33 < 10) {\n        std::cout << score_33 << std::endl;\n        score_33++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000159",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int age_34 = 0;\n    while (age_34 < 10) {\n        std::cout << age_34 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `age_34` is never modified inside the `while` loop body, so the condition `age_34 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `age_34` inside the loop (e.g., `age_34++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int age_34 = 0;\n    while (age_34 < 10) {\n        std::cout << age_34 << std::endl;\n        age_34++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000160",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int size_35 = 0;\n    while (size_35 < 10) {\n        std::cout << size_35 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `size_35` is never modified inside the `while` loop body, so the condition `size_35 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `size_35` inside the loop (e.g., `size_35++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int size_35 = 0;\n    while (size_35 < 10) {\n        std::cout << size_35 << std::endl;\n        size_35++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000161",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int length_36 = 0;\n    while (length_36 < 10) {\n        std::cout << length_36 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `length_36` is never modified inside the `while` loop body, so the condition `length_36 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `length_36` inside the loop (e.g., `length_36++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int length_36 = 0;\n    while (length_36 < 10) {\n        std::cout << length_36 << std::endl;\n        length_36++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000162",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int width_37 = 0;\n    while (width_37 < 10) {\n        std::cout << width_37 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `width_37` is never modified inside the `while` loop body, so the condition `width_37 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `width_37` inside the loop (e.g., `width_37++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int width_37 = 0;\n    while (width_37 < 10) {\n        std::cout << width_37 << std::endl;\n        width_37++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000163",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int height_38 = 0;\n    while (height_38 < 10) {\n        std::cout << height_38 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `height_38` is never modified inside the `while` loop body, so the condition `height_38 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `height_38` inside the loop (e.g., `height_38++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int height_38 = 0;\n    while (height_38 < 10) {\n        std::cout << height_38 << std::endl;\n        height_38++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000164",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int depth_39 = 0;\n    while (depth_39 < 10) {\n        std::cout << depth_39 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `depth_39` is never modified inside the `while` loop body, so the condition `depth_39 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `depth_39` inside the loop (e.g., `depth_39++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int depth_39 = 0;\n    while (depth_39 < 10) {\n        std::cout << depth_39 << std::endl;\n        depth_39++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000165",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int count_40 = 0;\n    while (count_40 < 10) {\n        std::cout << count_40 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `count_40` is never modified inside the `while` loop body, so the condition `count_40 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `count_40` inside the loop (e.g., `count_40++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int count_40 = 0;\n    while (count_40 < 10) {\n        std::cout << count_40 << std::endl;\n        count_40++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000166",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int total_41 = 0;\n    while (total_41 < 10) {\n        std::cout << total_41 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `total_41` is never modified inside the `while` loop body, so the condition `total_41 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `total_41` inside the loop (e.g., `total_41++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total_41 = 0;\n    while (total_41 < 10) {\n        std::cout << total_41 << std::endl;\n        total_41++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000167",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int index_42 = 0;\n    while (index_42 < 10) {\n        std::cout << index_42 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `index_42` is never modified inside the `while` loop body, so the condition `index_42 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `index_42` inside the loop (e.g., `index_42++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int index_42 = 0;\n    while (index_42 < 10) {\n        std::cout << index_42 << std::endl;\n        index_42++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000168",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int sum_43 = 0;\n    while (sum_43 < 10) {\n        std::cout << sum_43 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `sum_43` is never modified inside the `while` loop body, so the condition `sum_43 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `sum_43` inside the loop (e.g., `sum_43++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int sum_43 = 0;\n    while (sum_43 < 10) {\n        std::cout << sum_43 << std::endl;\n        sum_43++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000169",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int average_44 = 0;\n    while (average_44 < 10) {\n        std::cout << average_44 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `average_44` is never modified inside the `while` loop body, so the condition `average_44 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `average_44` inside the loop (e.g., `average_44++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int average_44 = 0;\n    while (average_44 < 10) {\n        std::cout << average_44 << std::endl;\n        average_44++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000170",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int result_45 = 0;\n    while (result_45 < 10) {\n        std::cout << result_45 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `result_45` is never modified inside the `while` loop body, so the condition `result_45 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `result_45` inside the loop (e.g., `result_45++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int result_45 = 0;\n    while (result_45 < 10) {\n        std::cout << result_45 << std::endl;\n        result_45++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000171",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int value_46 = 0;\n    while (value_46 < 10) {\n        std::cout << value_46 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `value_46` is never modified inside the `while` loop body, so the condition `value_46 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `value_46` inside the loop (e.g., `value_46++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int value_46 = 0;\n    while (value_46 < 10) {\n        std::cout << value_46 << std::endl;\n        value_46++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000172",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int temp_47 = 0;\n    while (temp_47 < 10) {\n        std::cout << temp_47 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `temp_47` is never modified inside the `while` loop body, so the condition `temp_47 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `temp_47` inside the loop (e.g., `temp_47++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int temp_47 = 0;\n    while (temp_47 < 10) {\n        std::cout << temp_47 << std::endl;\n        temp_47++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000173",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int max_val_48 = 0;\n    while (max_val_48 < 10) {\n        std::cout << max_val_48 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `max_val_48` is never modified inside the `while` loop body, so the condition `max_val_48 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `max_val_48` inside the loop (e.g., `max_val_48++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int max_val_48 = 0;\n    while (max_val_48 < 10) {\n        std::cout << max_val_48 << std::endl;\n        max_val_48++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000174",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int min_val_49 = 0;\n    while (min_val_49 < 10) {\n        std::cout << min_val_49 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `min_val_49` is never modified inside the `while` loop body, so the condition `min_val_49 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `min_val_49` inside the loop (e.g., `min_val_49++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int min_val_49 = 0;\n    while (min_val_49 < 10) {\n        std::cout << min_val_49 << std::endl;\n        min_val_49++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000175",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int counter_50 = 0;\n    while (counter_50 < 10) {\n        std::cout << counter_50 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `counter_50` is never modified inside the `while` loop body, so the condition `counter_50 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `counter_50` inside the loop (e.g., `counter_50++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int counter_50 = 0;\n    while (counter_50 < 10) {\n        std::cout << counter_50 << std::endl;\n        counter_50++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000176",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int limit_51 = 0;\n    while (limit_51 < 10) {\n        std::cout << limit_51 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `limit_51` is never modified inside the `while` loop body, so the condition `limit_51 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `limit_51` inside the loop (e.g., `limit_51++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int limit_51 = 0;\n    while (limit_51 < 10) {\n        std::cout << limit_51 << std::endl;\n        limit_51++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000177",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int threshold_52 = 0;\n    while (threshold_52 < 10) {\n        std::cout << threshold_52 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `threshold_52` is never modified inside the `while` loop body, so the condition `threshold_52 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `threshold_52` inside the loop (e.g., `threshold_52++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int threshold_52 = 0;\n    while (threshold_52 < 10) {\n        std::cout << threshold_52 << std::endl;\n        threshold_52++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000178",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int score_53 = 0;\n    while (score_53 < 10) {\n        std::cout << score_53 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `score_53` is never modified inside the `while` loop body, so the condition `score_53 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `score_53` inside the loop (e.g., `score_53++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int score_53 = 0;\n    while (score_53 < 10) {\n        std::cout << score_53 << std::endl;\n        score_53++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000179",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int age_54 = 0;\n    while (age_54 < 10) {\n        std::cout << age_54 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `age_54` is never modified inside the `while` loop body, so the condition `age_54 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `age_54` inside the loop (e.g., `age_54++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int age_54 = 0;\n    while (age_54 < 10) {\n        std::cout << age_54 << std::endl;\n        age_54++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000180",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int size_55 = 0;\n    while (size_55 < 10) {\n        std::cout << size_55 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `size_55` is never modified inside the `while` loop body, so the condition `size_55 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `size_55` inside the loop (e.g., `size_55++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int size_55 = 0;\n    while (size_55 < 10) {\n        std::cout << size_55 << std::endl;\n        size_55++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000181",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int length_56 = 0;\n    while (length_56 < 10) {\n        std::cout << length_56 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `length_56` is never modified inside the `while` loop body, so the condition `length_56 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `length_56` inside the loop (e.g., `length_56++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int length_56 = 0;\n    while (length_56 < 10) {\n        std::cout << length_56 << std::endl;\n        length_56++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000182",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int width_57 = 0;\n    while (width_57 < 10) {\n        std::cout << width_57 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `width_57` is never modified inside the `while` loop body, so the condition `width_57 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `width_57` inside the loop (e.g., `width_57++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int width_57 = 0;\n    while (width_57 < 10) {\n        std::cout << width_57 << std::endl;\n        width_57++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000183",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int height_58 = 0;\n    while (height_58 < 10) {\n        std::cout << height_58 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `height_58` is never modified inside the `while` loop body, so the condition `height_58 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `height_58` inside the loop (e.g., `height_58++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int height_58 = 0;\n    while (height_58 < 10) {\n        std::cout << height_58 << std::endl;\n        height_58++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000184",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int depth_59 = 0;\n    while (depth_59 < 10) {\n        std::cout << depth_59 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `depth_59` is never modified inside the `while` loop body, so the condition `depth_59 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `depth_59` inside the loop (e.g., `depth_59++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int depth_59 = 0;\n    while (depth_59 < 10) {\n        std::cout << depth_59 << std::endl;\n        depth_59++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000185",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int count_60 = 0;\n    while (count_60 < 10) {\n        std::cout << count_60 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `count_60` is never modified inside the `while` loop body, so the condition `count_60 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `count_60` inside the loop (e.g., `count_60++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int count_60 = 0;\n    while (count_60 < 10) {\n        std::cout << count_60 << std::endl;\n        count_60++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000186",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Increment in While Loop",
+      "code": "#include <iostream>\n\nint main() {\n    int total_61 = 0;\n    while (total_61 < 10) {\n        std::cout << total_61 << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Program hangs, printing 0 infinitely."
+    },
+    "output": {
+      "technical": "The variable `total_61` is never modified inside the `while` loop body, so the condition `total_61 < 10` remains perpetually true.",
+      "beginner": "You forgot to increase your counter variable, so it stays at 0 forever, and the loop never finishes.",
+      "analogy": "It's like telling someone to run until they reach the finish line, but they're running on a treadmill.",
+      "solution": "Increment `total_61` inside the loop (e.g., `total_61++;`).",
+      "prevention": "Always verify that loop conditions are updated within the loop body.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total_61 = 0;\n    while (total_61 < 10) {\n        std::cout << total_61 << std::endl;\n        total_61++;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "infinite",
+        "while"
+      ]
+    }
+  }
+]

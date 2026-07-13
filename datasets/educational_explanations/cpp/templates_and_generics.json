@@ -1,0 +1,2081 @@
+[
+  {
+    "id": "CP_EDU_000249",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT demo_0(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << demo_0(10, 20) << std::endl;\n    std::cout << demo_0(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000250",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT explain_1(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << explain_1(10, 20) << std::endl;\n    std::cout << explain_1(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000251",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT show_2(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << show_2(10, 20) << std::endl;\n    std::cout << show_2(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000252",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT illustrate_3(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << illustrate_3(10, 20) << std::endl;\n    std::cout << illustrate_3(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000253",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT concept_4(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << concept_4(10, 20) << std::endl;\n    std::cout << concept_4(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000254",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT example_5(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << example_5(10, 20) << std::endl;\n    std::cout << example_5(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000255",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT learn_6(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << learn_6(10, 20) << std::endl;\n    std::cout << learn_6(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000256",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT teach_7(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << teach_7(10, 20) << std::endl;\n    std::cout << teach_7(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000257",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT guide_8(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << guide_8(10, 20) << std::endl;\n    std::cout << guide_8(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000258",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT tutorial_9(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << tutorial_9(10, 20) << std::endl;\n    std::cout << tutorial_9(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000259",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT run_10(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << run_10(10, 20) << std::endl;\n    std::cout << run_10(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000260",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT execute_11(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << execute_11(10, 20) << std::endl;\n    std::cout << execute_11(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000261",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT process_12(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << process_12(10, 20) << std::endl;\n    std::cout << process_12(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000262",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT handle_13(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << handle_13(10, 20) << std::endl;\n    std::cout << handle_13(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000263",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT manage_14(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << manage_14(10, 20) << std::endl;\n    std::cout << manage_14(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000264",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT setup_15(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << setup_15(10, 20) << std::endl;\n    std::cout << setup_15(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000265",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT configure_16(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << configure_16(10, 20) << std::endl;\n    std::cout << configure_16(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000266",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT build_17(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << build_17(10, 20) << std::endl;\n    std::cout << build_17(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000267",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT create_18(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << create_18(10, 20) << std::endl;\n    std::cout << create_18(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000268",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT test_19(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << test_19(10, 20) << std::endl;\n    std::cout << test_19(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000269",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT demo_20(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << demo_20(10, 20) << std::endl;\n    std::cout << demo_20(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000270",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT explain_21(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << explain_21(10, 20) << std::endl;\n    std::cout << explain_21(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000271",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT show_22(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << show_22(10, 20) << std::endl;\n    std::cout << show_22(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000272",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT illustrate_23(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << illustrate_23(10, 20) << std::endl;\n    std::cout << illustrate_23(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000273",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT concept_24(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << concept_24(10, 20) << std::endl;\n    std::cout << concept_24(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000274",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT example_25(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << example_25(10, 20) << std::endl;\n    std::cout << example_25(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000275",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT learn_26(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << learn_26(10, 20) << std::endl;\n    std::cout << learn_26(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000276",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT teach_27(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << teach_27(10, 20) << std::endl;\n    std::cout << teach_27(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000277",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT guide_28(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << guide_28(10, 20) << std::endl;\n    std::cout << guide_28(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000278",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT tutorial_29(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << tutorial_29(10, 20) << std::endl;\n    std::cout << tutorial_29(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000279",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT run_30(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << run_30(10, 20) << std::endl;\n    std::cout << run_30(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000280",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT execute_31(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << execute_31(10, 20) << std::endl;\n    std::cout << execute_31(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000281",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT process_32(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << process_32(10, 20) << std::endl;\n    std::cout << process_32(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000282",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT handle_33(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << handle_33(10, 20) << std::endl;\n    std::cout << handle_33(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000283",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT manage_34(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << manage_34(10, 20) << std::endl;\n    std::cout << manage_34(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000284",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT setup_35(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << setup_35(10, 20) << std::endl;\n    std::cout << setup_35(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000285",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT configure_36(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << configure_36(10, 20) << std::endl;\n    std::cout << configure_36(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000286",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT build_37(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << build_37(10, 20) << std::endl;\n    std::cout << build_37(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000287",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT create_38(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << create_38(10, 20) << std::endl;\n    std::cout << create_38(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000288",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT test_39(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << test_39(10, 20) << std::endl;\n    std::cout << test_39(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000289",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT demo_40(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << demo_40(10, 20) << std::endl;\n    std::cout << demo_40(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000290",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT explain_41(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << explain_41(10, 20) << std::endl;\n    std::cout << explain_41(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000291",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT show_42(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << show_42(10, 20) << std::endl;\n    std::cout << show_42(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000292",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT illustrate_43(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << illustrate_43(10, 20) << std::endl;\n    std::cout << illustrate_43(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000293",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT concept_44(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << concept_44(10, 20) << std::endl;\n    std::cout << concept_44(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000294",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT example_45(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << example_45(10, 20) << std::endl;\n    std::cout << example_45(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000295",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT learn_46(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << learn_46(10, 20) << std::endl;\n    std::cout << learn_46(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000296",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT teach_47(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << teach_47(10, 20) << std::endl;\n    std::cout << teach_47(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000297",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT guide_48(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << guide_48(10, 20) << std::endl;\n    std::cout << guide_48(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000298",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT tutorial_49(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << tutorial_49(10, 20) << std::endl;\n    std::cout << tutorial_49(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000299",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT run_50(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << run_50(10, 20) << std::endl;\n    std::cout << run_50(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000300",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT execute_51(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << execute_51(10, 20) << std::endl;\n    std::cout << execute_51(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000301",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT process_52(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << process_52(10, 20) << std::endl;\n    std::cout << process_52(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000302",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT handle_53(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << handle_53(10, 20) << std::endl;\n    std::cout << handle_53(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000303",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT manage_54(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << manage_54(10, 20) << std::endl;\n    std::cout << manage_54(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000304",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT setup_55(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << setup_55(10, 20) << std::endl;\n    std::cout << setup_55(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000305",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT configure_56(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << configure_56(10, 20) << std::endl;\n    std::cout << configure_56(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000306",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT build_57(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << build_57(10, 20) << std::endl;\n    std::cout << build_57(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000307",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT create_58(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << create_58(10, 20) << std::endl;\n    std::cout << create_58(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000308",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT test_59(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << test_59(10, 20) << std::endl;\n    std::cout << test_59(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000309",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT demo_60(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << demo_60(10, 20) << std::endl;\n    std::cout << demo_60(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000310",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT explain_61(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << explain_61(10, 20) << std::endl;\n    std::cout << explain_61(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000311",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain C++ templates.",
+    "input": {
+      "title": "Function Templates",
+      "code": "#include <iostream>\n\ntemplate <typename T>\nT show_62(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    std::cout << show_62(10, 20) << std::endl;\n    std::cout << show_62(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Templates allow writing generic code. The compiler performs monomorphization, generating a separate, strongly-typed function for each data type (e.g., `int`, `double`) instantiated.",
+      "beginner": "Templates let you write a function once using a placeholder type 'T'. The computer automatically creates the correct versions for integers, decimals, or text when it compiles the code.",
+      "analogy": "A template is like a cookie cutter. The cookie cutter (template) isn't a cookie, but it can make cookies out of chocolate chip dough, sugar dough, or gingerbread dough.",
+      "solution": "Use templates to avoid code duplication when logic is identical across multiple types.",
+      "prevention": "Template errors can be notoriously long; understand that they usually mean a type didn't support a required operation (like `>`).",
+      "optimized_code": "#include <iostream>\n#include <algorithm>\n\nint main() {\n    std::cout << std::max(10, 20) << std::endl;\n    std::cout << std::max(3.14, 2.71) << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "templates",
+        "generics",
+        "types"
+      ]
+    }
+  }
+]

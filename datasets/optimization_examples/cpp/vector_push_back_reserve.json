@@ -1,0 +1,2048 @@
+[
+  {
+    "id": "CP_OPTIM_000063",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_0;\n    for (int i = 0; i < 100000; ++i) {\n        count_0.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `count_0.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_0;\n    count_0.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        count_0.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000064",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> total_1;\n    for (int i = 0; i < 100000; ++i) {\n        total_1.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `total_1.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> total_1;\n    total_1.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        total_1.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000065",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> index_2;\n    for (int i = 0; i < 100000; ++i) {\n        index_2.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `index_2.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> index_2;\n    index_2.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        index_2.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000066",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> sum_3;\n    for (int i = 0; i < 100000; ++i) {\n        sum_3.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `sum_3.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> sum_3;\n    sum_3.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        sum_3.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000067",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> average_4;\n    for (int i = 0; i < 100000; ++i) {\n        average_4.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `average_4.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> average_4;\n    average_4.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        average_4.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000068",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> result_5;\n    for (int i = 0; i < 100000; ++i) {\n        result_5.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `result_5.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> result_5;\n    result_5.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        result_5.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000069",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> value_6;\n    for (int i = 0; i < 100000; ++i) {\n        value_6.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `value_6.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> value_6;\n    value_6.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        value_6.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000070",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> temp_7;\n    for (int i = 0; i < 100000; ++i) {\n        temp_7.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `temp_7.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> temp_7;\n    temp_7.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        temp_7.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000071",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> max_val_8;\n    for (int i = 0; i < 100000; ++i) {\n        max_val_8.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `max_val_8.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> max_val_8;\n    max_val_8.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        max_val_8.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000072",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> min_val_9;\n    for (int i = 0; i < 100000; ++i) {\n        min_val_9.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `min_val_9.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> min_val_9;\n    min_val_9.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        min_val_9.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000073",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> counter_10;\n    for (int i = 0; i < 100000; ++i) {\n        counter_10.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `counter_10.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> counter_10;\n    counter_10.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        counter_10.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000074",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> limit_11;\n    for (int i = 0; i < 100000; ++i) {\n        limit_11.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `limit_11.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> limit_11;\n    limit_11.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        limit_11.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000075",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> threshold_12;\n    for (int i = 0; i < 100000; ++i) {\n        threshold_12.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `threshold_12.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> threshold_12;\n    threshold_12.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        threshold_12.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000076",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> score_13;\n    for (int i = 0; i < 100000; ++i) {\n        score_13.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `score_13.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> score_13;\n    score_13.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        score_13.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000077",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> age_14;\n    for (int i = 0; i < 100000; ++i) {\n        age_14.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `age_14.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> age_14;\n    age_14.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        age_14.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000078",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> size_15;\n    for (int i = 0; i < 100000; ++i) {\n        size_15.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `size_15.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> size_15;\n    size_15.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        size_15.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000079",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> length_16;\n    for (int i = 0; i < 100000; ++i) {\n        length_16.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `length_16.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> length_16;\n    length_16.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        length_16.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000080",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> width_17;\n    for (int i = 0; i < 100000; ++i) {\n        width_17.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `width_17.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> width_17;\n    width_17.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        width_17.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000081",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> height_18;\n    for (int i = 0; i < 100000; ++i) {\n        height_18.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `height_18.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> height_18;\n    height_18.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        height_18.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000082",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> depth_19;\n    for (int i = 0; i < 100000; ++i) {\n        depth_19.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `depth_19.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> depth_19;\n    depth_19.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        depth_19.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000083",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_20;\n    for (int i = 0; i < 100000; ++i) {\n        count_20.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `count_20.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_20;\n    count_20.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        count_20.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000084",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> total_21;\n    for (int i = 0; i < 100000; ++i) {\n        total_21.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `total_21.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> total_21;\n    total_21.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        total_21.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000085",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> index_22;\n    for (int i = 0; i < 100000; ++i) {\n        index_22.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `index_22.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> index_22;\n    index_22.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        index_22.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000086",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> sum_23;\n    for (int i = 0; i < 100000; ++i) {\n        sum_23.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `sum_23.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> sum_23;\n    sum_23.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        sum_23.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000087",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> average_24;\n    for (int i = 0; i < 100000; ++i) {\n        average_24.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `average_24.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> average_24;\n    average_24.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        average_24.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000088",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> result_25;\n    for (int i = 0; i < 100000; ++i) {\n        result_25.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `result_25.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> result_25;\n    result_25.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        result_25.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000089",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> value_26;\n    for (int i = 0; i < 100000; ++i) {\n        value_26.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `value_26.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> value_26;\n    value_26.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        value_26.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000090",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> temp_27;\n    for (int i = 0; i < 100000; ++i) {\n        temp_27.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `temp_27.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> temp_27;\n    temp_27.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        temp_27.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000091",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> max_val_28;\n    for (int i = 0; i < 100000; ++i) {\n        max_val_28.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `max_val_28.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> max_val_28;\n    max_val_28.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        max_val_28.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000092",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> min_val_29;\n    for (int i = 0; i < 100000; ++i) {\n        min_val_29.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `min_val_29.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> min_val_29;\n    min_val_29.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        min_val_29.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000093",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> counter_30;\n    for (int i = 0; i < 100000; ++i) {\n        counter_30.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `counter_30.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> counter_30;\n    counter_30.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        counter_30.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000094",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> limit_31;\n    for (int i = 0; i < 100000; ++i) {\n        limit_31.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `limit_31.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> limit_31;\n    limit_31.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        limit_31.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000095",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> threshold_32;\n    for (int i = 0; i < 100000; ++i) {\n        threshold_32.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `threshold_32.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> threshold_32;\n    threshold_32.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        threshold_32.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000096",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> score_33;\n    for (int i = 0; i < 100000; ++i) {\n        score_33.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `score_33.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> score_33;\n    score_33.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        score_33.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000097",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> age_34;\n    for (int i = 0; i < 100000; ++i) {\n        age_34.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `age_34.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> age_34;\n    age_34.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        age_34.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000098",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> size_35;\n    for (int i = 0; i < 100000; ++i) {\n        size_35.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `size_35.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> size_35;\n    size_35.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        size_35.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000099",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> length_36;\n    for (int i = 0; i < 100000; ++i) {\n        length_36.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `length_36.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> length_36;\n    length_36.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        length_36.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000100",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> width_37;\n    for (int i = 0; i < 100000; ++i) {\n        width_37.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `width_37.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> width_37;\n    width_37.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        width_37.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000101",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> height_38;\n    for (int i = 0; i < 100000; ++i) {\n        height_38.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `height_38.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> height_38;\n    height_38.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        height_38.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000102",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> depth_39;\n    for (int i = 0; i < 100000; ++i) {\n        depth_39.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `depth_39.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> depth_39;\n    depth_39.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        depth_39.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000103",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_40;\n    for (int i = 0; i < 100000; ++i) {\n        count_40.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `count_40.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_40;\n    count_40.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        count_40.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000104",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> total_41;\n    for (int i = 0; i < 100000; ++i) {\n        total_41.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `total_41.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> total_41;\n    total_41.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        total_41.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000105",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> index_42;\n    for (int i = 0; i < 100000; ++i) {\n        index_42.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `index_42.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> index_42;\n    index_42.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        index_42.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000106",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> sum_43;\n    for (int i = 0; i < 100000; ++i) {\n        sum_43.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `sum_43.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> sum_43;\n    sum_43.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        sum_43.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000107",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> average_44;\n    for (int i = 0; i < 100000; ++i) {\n        average_44.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `average_44.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> average_44;\n    average_44.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        average_44.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000108",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> result_45;\n    for (int i = 0; i < 100000; ++i) {\n        result_45.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `result_45.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> result_45;\n    result_45.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        result_45.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000109",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> value_46;\n    for (int i = 0; i < 100000; ++i) {\n        value_46.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `value_46.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> value_46;\n    value_46.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        value_46.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000110",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> temp_47;\n    for (int i = 0; i < 100000; ++i) {\n        temp_47.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `temp_47.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> temp_47;\n    temp_47.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        temp_47.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000111",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> max_val_48;\n    for (int i = 0; i < 100000; ++i) {\n        max_val_48.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `max_val_48.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> max_val_48;\n    max_val_48.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        max_val_48.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000112",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> min_val_49;\n    for (int i = 0; i < 100000; ++i) {\n        min_val_49.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `min_val_49.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> min_val_49;\n    min_val_49.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        min_val_49.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000113",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> counter_50;\n    for (int i = 0; i < 100000; ++i) {\n        counter_50.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `counter_50.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> counter_50;\n    counter_50.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        counter_50.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000114",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> limit_51;\n    for (int i = 0; i < 100000; ++i) {\n        limit_51.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `limit_51.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> limit_51;\n    limit_51.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        limit_51.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000115",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> threshold_52;\n    for (int i = 0; i < 100000; ++i) {\n        threshold_52.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `threshold_52.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> threshold_52;\n    threshold_52.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        threshold_52.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000116",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> score_53;\n    for (int i = 0; i < 100000; ++i) {\n        score_53.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `score_53.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> score_53;\n    score_53.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        score_53.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000117",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> age_54;\n    for (int i = 0; i < 100000; ++i) {\n        age_54.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `age_54.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> age_54;\n    age_54.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        age_54.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000118",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> size_55;\n    for (int i = 0; i < 100000; ++i) {\n        size_55.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `size_55.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> size_55;\n    size_55.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        size_55.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000119",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> length_56;\n    for (int i = 0; i < 100000; ++i) {\n        length_56.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `length_56.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> length_56;\n    length_56.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        length_56.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000120",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> width_57;\n    for (int i = 0; i < 100000; ++i) {\n        width_57.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `width_57.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> width_57;\n    width_57.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        width_57.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000121",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> height_58;\n    for (int i = 0; i < 100000; ++i) {\n        height_58.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `height_58.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> height_58;\n    height_58.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        height_58.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000122",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> depth_59;\n    for (int i = 0; i < 100000; ++i) {\n        depth_59.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `depth_59.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> depth_59;\n    depth_59.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        depth_59.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000123",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_60;\n    for (int i = 0; i < 100000; ++i) {\n        count_60.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `count_60.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_60;\n    count_60.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        count_60.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000124",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the vector memory allocations.",
+    "input": {
+      "title": "Missing Vector Reserve",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> total_61;\n    for (int i = 0; i < 100000; ++i) {\n        total_61.push_back(i);\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Repeatedly calling `push_back` without reserving capacity causes the vector to reallocate and copy its contents multiple times, resulting in unnecessary overhead.",
+      "beginner": "The list keeps running out of space and has to pause, buy a bigger box, and move everything over. If we know the size in advance, we should buy the big box immediately.",
+      "analogy": "It's like moving to a slightly larger house every time you buy a new piece of furniture.",
+      "solution": "Use `total_61.reserve(100000)` before the loop.",
+      "prevention": "Always use `.reserve()` when the final size of a vector is known or can be tightly estimated.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> total_61;\n    total_61.reserve(100000);\n    for (int i = 0; i < 100000; ++i) {\n        total_61.push_back(i);\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N) with reallocations",
+        "after": "O(N) with zero reallocations"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "reserve",
+        "allocation"
+      ]
+    }
+  }
+]

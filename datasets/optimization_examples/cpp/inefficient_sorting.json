@@ -1,0 +1,2081 @@
+[
+  {
+    "id": "CP_OPTIM_000250",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_0 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < count_0.size(); ++i) {\n        for (size_t j = 0; j < count_0.size() - i - 1; ++j) {\n            if (count_0[j] > count_0[j+1]) {\n                int temp = count_0[j];\n                count_0[j] = count_0[j+1];\n                count_0[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(count_0.begin(), count_0.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> count_0 = {5, 2, 9, 1, 5, 6};\n    std::sort(count_0.begin(), count_0.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000251",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> total_1 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < total_1.size(); ++i) {\n        for (size_t j = 0; j < total_1.size() - i - 1; ++j) {\n            if (total_1[j] > total_1[j+1]) {\n                int temp = total_1[j];\n                total_1[j] = total_1[j+1];\n                total_1[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(total_1.begin(), total_1.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> total_1 = {5, 2, 9, 1, 5, 6};\n    std::sort(total_1.begin(), total_1.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000252",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> index_2 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < index_2.size(); ++i) {\n        for (size_t j = 0; j < index_2.size() - i - 1; ++j) {\n            if (index_2[j] > index_2[j+1]) {\n                int temp = index_2[j];\n                index_2[j] = index_2[j+1];\n                index_2[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(index_2.begin(), index_2.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> index_2 = {5, 2, 9, 1, 5, 6};\n    std::sort(index_2.begin(), index_2.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000253",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> sum_3 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < sum_3.size(); ++i) {\n        for (size_t j = 0; j < sum_3.size() - i - 1; ++j) {\n            if (sum_3[j] > sum_3[j+1]) {\n                int temp = sum_3[j];\n                sum_3[j] = sum_3[j+1];\n                sum_3[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(sum_3.begin(), sum_3.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> sum_3 = {5, 2, 9, 1, 5, 6};\n    std::sort(sum_3.begin(), sum_3.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000254",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> average_4 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < average_4.size(); ++i) {\n        for (size_t j = 0; j < average_4.size() - i - 1; ++j) {\n            if (average_4[j] > average_4[j+1]) {\n                int temp = average_4[j];\n                average_4[j] = average_4[j+1];\n                average_4[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(average_4.begin(), average_4.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> average_4 = {5, 2, 9, 1, 5, 6};\n    std::sort(average_4.begin(), average_4.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000255",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> result_5 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < result_5.size(); ++i) {\n        for (size_t j = 0; j < result_5.size() - i - 1; ++j) {\n            if (result_5[j] > result_5[j+1]) {\n                int temp = result_5[j];\n                result_5[j] = result_5[j+1];\n                result_5[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(result_5.begin(), result_5.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> result_5 = {5, 2, 9, 1, 5, 6};\n    std::sort(result_5.begin(), result_5.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000256",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> value_6 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < value_6.size(); ++i) {\n        for (size_t j = 0; j < value_6.size() - i - 1; ++j) {\n            if (value_6[j] > value_6[j+1]) {\n                int temp = value_6[j];\n                value_6[j] = value_6[j+1];\n                value_6[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(value_6.begin(), value_6.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> value_6 = {5, 2, 9, 1, 5, 6};\n    std::sort(value_6.begin(), value_6.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000257",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> temp_7 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < temp_7.size(); ++i) {\n        for (size_t j = 0; j < temp_7.size() - i - 1; ++j) {\n            if (temp_7[j] > temp_7[j+1]) {\n                int temp = temp_7[j];\n                temp_7[j] = temp_7[j+1];\n                temp_7[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(temp_7.begin(), temp_7.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> temp_7 = {5, 2, 9, 1, 5, 6};\n    std::sort(temp_7.begin(), temp_7.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000258",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> max_val_8 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < max_val_8.size(); ++i) {\n        for (size_t j = 0; j < max_val_8.size() - i - 1; ++j) {\n            if (max_val_8[j] > max_val_8[j+1]) {\n                int temp = max_val_8[j];\n                max_val_8[j] = max_val_8[j+1];\n                max_val_8[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(max_val_8.begin(), max_val_8.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> max_val_8 = {5, 2, 9, 1, 5, 6};\n    std::sort(max_val_8.begin(), max_val_8.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000259",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> min_val_9 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < min_val_9.size(); ++i) {\n        for (size_t j = 0; j < min_val_9.size() - i - 1; ++j) {\n            if (min_val_9[j] > min_val_9[j+1]) {\n                int temp = min_val_9[j];\n                min_val_9[j] = min_val_9[j+1];\n                min_val_9[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(min_val_9.begin(), min_val_9.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> min_val_9 = {5, 2, 9, 1, 5, 6};\n    std::sort(min_val_9.begin(), min_val_9.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000260",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> counter_10 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < counter_10.size(); ++i) {\n        for (size_t j = 0; j < counter_10.size() - i - 1; ++j) {\n            if (counter_10[j] > counter_10[j+1]) {\n                int temp = counter_10[j];\n                counter_10[j] = counter_10[j+1];\n                counter_10[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(counter_10.begin(), counter_10.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> counter_10 = {5, 2, 9, 1, 5, 6};\n    std::sort(counter_10.begin(), counter_10.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000261",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> limit_11 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < limit_11.size(); ++i) {\n        for (size_t j = 0; j < limit_11.size() - i - 1; ++j) {\n            if (limit_11[j] > limit_11[j+1]) {\n                int temp = limit_11[j];\n                limit_11[j] = limit_11[j+1];\n                limit_11[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(limit_11.begin(), limit_11.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> limit_11 = {5, 2, 9, 1, 5, 6};\n    std::sort(limit_11.begin(), limit_11.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000262",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> threshold_12 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < threshold_12.size(); ++i) {\n        for (size_t j = 0; j < threshold_12.size() - i - 1; ++j) {\n            if (threshold_12[j] > threshold_12[j+1]) {\n                int temp = threshold_12[j];\n                threshold_12[j] = threshold_12[j+1];\n                threshold_12[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(threshold_12.begin(), threshold_12.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> threshold_12 = {5, 2, 9, 1, 5, 6};\n    std::sort(threshold_12.begin(), threshold_12.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000263",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> score_13 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < score_13.size(); ++i) {\n        for (size_t j = 0; j < score_13.size() - i - 1; ++j) {\n            if (score_13[j] > score_13[j+1]) {\n                int temp = score_13[j];\n                score_13[j] = score_13[j+1];\n                score_13[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(score_13.begin(), score_13.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> score_13 = {5, 2, 9, 1, 5, 6};\n    std::sort(score_13.begin(), score_13.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000264",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> age_14 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < age_14.size(); ++i) {\n        for (size_t j = 0; j < age_14.size() - i - 1; ++j) {\n            if (age_14[j] > age_14[j+1]) {\n                int temp = age_14[j];\n                age_14[j] = age_14[j+1];\n                age_14[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(age_14.begin(), age_14.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> age_14 = {5, 2, 9, 1, 5, 6};\n    std::sort(age_14.begin(), age_14.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000265",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> size_15 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < size_15.size(); ++i) {\n        for (size_t j = 0; j < size_15.size() - i - 1; ++j) {\n            if (size_15[j] > size_15[j+1]) {\n                int temp = size_15[j];\n                size_15[j] = size_15[j+1];\n                size_15[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(size_15.begin(), size_15.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> size_15 = {5, 2, 9, 1, 5, 6};\n    std::sort(size_15.begin(), size_15.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000266",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> length_16 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < length_16.size(); ++i) {\n        for (size_t j = 0; j < length_16.size() - i - 1; ++j) {\n            if (length_16[j] > length_16[j+1]) {\n                int temp = length_16[j];\n                length_16[j] = length_16[j+1];\n                length_16[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(length_16.begin(), length_16.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> length_16 = {5, 2, 9, 1, 5, 6};\n    std::sort(length_16.begin(), length_16.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000267",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> width_17 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < width_17.size(); ++i) {\n        for (size_t j = 0; j < width_17.size() - i - 1; ++j) {\n            if (width_17[j] > width_17[j+1]) {\n                int temp = width_17[j];\n                width_17[j] = width_17[j+1];\n                width_17[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(width_17.begin(), width_17.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> width_17 = {5, 2, 9, 1, 5, 6};\n    std::sort(width_17.begin(), width_17.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000268",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> height_18 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < height_18.size(); ++i) {\n        for (size_t j = 0; j < height_18.size() - i - 1; ++j) {\n            if (height_18[j] > height_18[j+1]) {\n                int temp = height_18[j];\n                height_18[j] = height_18[j+1];\n                height_18[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(height_18.begin(), height_18.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> height_18 = {5, 2, 9, 1, 5, 6};\n    std::sort(height_18.begin(), height_18.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000269",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> depth_19 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < depth_19.size(); ++i) {\n        for (size_t j = 0; j < depth_19.size() - i - 1; ++j) {\n            if (depth_19[j] > depth_19[j+1]) {\n                int temp = depth_19[j];\n                depth_19[j] = depth_19[j+1];\n                depth_19[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(depth_19.begin(), depth_19.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> depth_19 = {5, 2, 9, 1, 5, 6};\n    std::sort(depth_19.begin(), depth_19.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000270",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_20 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < count_20.size(); ++i) {\n        for (size_t j = 0; j < count_20.size() - i - 1; ++j) {\n            if (count_20[j] > count_20[j+1]) {\n                int temp = count_20[j];\n                count_20[j] = count_20[j+1];\n                count_20[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(count_20.begin(), count_20.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> count_20 = {5, 2, 9, 1, 5, 6};\n    std::sort(count_20.begin(), count_20.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000271",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> total_21 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < total_21.size(); ++i) {\n        for (size_t j = 0; j < total_21.size() - i - 1; ++j) {\n            if (total_21[j] > total_21[j+1]) {\n                int temp = total_21[j];\n                total_21[j] = total_21[j+1];\n                total_21[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(total_21.begin(), total_21.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> total_21 = {5, 2, 9, 1, 5, 6};\n    std::sort(total_21.begin(), total_21.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000272",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> index_22 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < index_22.size(); ++i) {\n        for (size_t j = 0; j < index_22.size() - i - 1; ++j) {\n            if (index_22[j] > index_22[j+1]) {\n                int temp = index_22[j];\n                index_22[j] = index_22[j+1];\n                index_22[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(index_22.begin(), index_22.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> index_22 = {5, 2, 9, 1, 5, 6};\n    std::sort(index_22.begin(), index_22.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000273",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> sum_23 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < sum_23.size(); ++i) {\n        for (size_t j = 0; j < sum_23.size() - i - 1; ++j) {\n            if (sum_23[j] > sum_23[j+1]) {\n                int temp = sum_23[j];\n                sum_23[j] = sum_23[j+1];\n                sum_23[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(sum_23.begin(), sum_23.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> sum_23 = {5, 2, 9, 1, 5, 6};\n    std::sort(sum_23.begin(), sum_23.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000274",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> average_24 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < average_24.size(); ++i) {\n        for (size_t j = 0; j < average_24.size() - i - 1; ++j) {\n            if (average_24[j] > average_24[j+1]) {\n                int temp = average_24[j];\n                average_24[j] = average_24[j+1];\n                average_24[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(average_24.begin(), average_24.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> average_24 = {5, 2, 9, 1, 5, 6};\n    std::sort(average_24.begin(), average_24.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000275",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> result_25 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < result_25.size(); ++i) {\n        for (size_t j = 0; j < result_25.size() - i - 1; ++j) {\n            if (result_25[j] > result_25[j+1]) {\n                int temp = result_25[j];\n                result_25[j] = result_25[j+1];\n                result_25[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(result_25.begin(), result_25.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> result_25 = {5, 2, 9, 1, 5, 6};\n    std::sort(result_25.begin(), result_25.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000276",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> value_26 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < value_26.size(); ++i) {\n        for (size_t j = 0; j < value_26.size() - i - 1; ++j) {\n            if (value_26[j] > value_26[j+1]) {\n                int temp = value_26[j];\n                value_26[j] = value_26[j+1];\n                value_26[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(value_26.begin(), value_26.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> value_26 = {5, 2, 9, 1, 5, 6};\n    std::sort(value_26.begin(), value_26.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000277",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> temp_27 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < temp_27.size(); ++i) {\n        for (size_t j = 0; j < temp_27.size() - i - 1; ++j) {\n            if (temp_27[j] > temp_27[j+1]) {\n                int temp = temp_27[j];\n                temp_27[j] = temp_27[j+1];\n                temp_27[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(temp_27.begin(), temp_27.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> temp_27 = {5, 2, 9, 1, 5, 6};\n    std::sort(temp_27.begin(), temp_27.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000278",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> max_val_28 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < max_val_28.size(); ++i) {\n        for (size_t j = 0; j < max_val_28.size() - i - 1; ++j) {\n            if (max_val_28[j] > max_val_28[j+1]) {\n                int temp = max_val_28[j];\n                max_val_28[j] = max_val_28[j+1];\n                max_val_28[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(max_val_28.begin(), max_val_28.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> max_val_28 = {5, 2, 9, 1, 5, 6};\n    std::sort(max_val_28.begin(), max_val_28.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000279",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> min_val_29 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < min_val_29.size(); ++i) {\n        for (size_t j = 0; j < min_val_29.size() - i - 1; ++j) {\n            if (min_val_29[j] > min_val_29[j+1]) {\n                int temp = min_val_29[j];\n                min_val_29[j] = min_val_29[j+1];\n                min_val_29[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(min_val_29.begin(), min_val_29.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> min_val_29 = {5, 2, 9, 1, 5, 6};\n    std::sort(min_val_29.begin(), min_val_29.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000280",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> counter_30 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < counter_30.size(); ++i) {\n        for (size_t j = 0; j < counter_30.size() - i - 1; ++j) {\n            if (counter_30[j] > counter_30[j+1]) {\n                int temp = counter_30[j];\n                counter_30[j] = counter_30[j+1];\n                counter_30[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(counter_30.begin(), counter_30.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> counter_30 = {5, 2, 9, 1, 5, 6};\n    std::sort(counter_30.begin(), counter_30.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000281",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> limit_31 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < limit_31.size(); ++i) {\n        for (size_t j = 0; j < limit_31.size() - i - 1; ++j) {\n            if (limit_31[j] > limit_31[j+1]) {\n                int temp = limit_31[j];\n                limit_31[j] = limit_31[j+1];\n                limit_31[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(limit_31.begin(), limit_31.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> limit_31 = {5, 2, 9, 1, 5, 6};\n    std::sort(limit_31.begin(), limit_31.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000282",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> threshold_32 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < threshold_32.size(); ++i) {\n        for (size_t j = 0; j < threshold_32.size() - i - 1; ++j) {\n            if (threshold_32[j] > threshold_32[j+1]) {\n                int temp = threshold_32[j];\n                threshold_32[j] = threshold_32[j+1];\n                threshold_32[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(threshold_32.begin(), threshold_32.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> threshold_32 = {5, 2, 9, 1, 5, 6};\n    std::sort(threshold_32.begin(), threshold_32.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000283",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> score_33 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < score_33.size(); ++i) {\n        for (size_t j = 0; j < score_33.size() - i - 1; ++j) {\n            if (score_33[j] > score_33[j+1]) {\n                int temp = score_33[j];\n                score_33[j] = score_33[j+1];\n                score_33[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(score_33.begin(), score_33.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> score_33 = {5, 2, 9, 1, 5, 6};\n    std::sort(score_33.begin(), score_33.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000284",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> age_34 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < age_34.size(); ++i) {\n        for (size_t j = 0; j < age_34.size() - i - 1; ++j) {\n            if (age_34[j] > age_34[j+1]) {\n                int temp = age_34[j];\n                age_34[j] = age_34[j+1];\n                age_34[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(age_34.begin(), age_34.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> age_34 = {5, 2, 9, 1, 5, 6};\n    std::sort(age_34.begin(), age_34.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000285",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> size_35 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < size_35.size(); ++i) {\n        for (size_t j = 0; j < size_35.size() - i - 1; ++j) {\n            if (size_35[j] > size_35[j+1]) {\n                int temp = size_35[j];\n                size_35[j] = size_35[j+1];\n                size_35[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(size_35.begin(), size_35.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> size_35 = {5, 2, 9, 1, 5, 6};\n    std::sort(size_35.begin(), size_35.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000286",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> length_36 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < length_36.size(); ++i) {\n        for (size_t j = 0; j < length_36.size() - i - 1; ++j) {\n            if (length_36[j] > length_36[j+1]) {\n                int temp = length_36[j];\n                length_36[j] = length_36[j+1];\n                length_36[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(length_36.begin(), length_36.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> length_36 = {5, 2, 9, 1, 5, 6};\n    std::sort(length_36.begin(), length_36.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000287",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> width_37 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < width_37.size(); ++i) {\n        for (size_t j = 0; j < width_37.size() - i - 1; ++j) {\n            if (width_37[j] > width_37[j+1]) {\n                int temp = width_37[j];\n                width_37[j] = width_37[j+1];\n                width_37[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(width_37.begin(), width_37.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> width_37 = {5, 2, 9, 1, 5, 6};\n    std::sort(width_37.begin(), width_37.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000288",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> height_38 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < height_38.size(); ++i) {\n        for (size_t j = 0; j < height_38.size() - i - 1; ++j) {\n            if (height_38[j] > height_38[j+1]) {\n                int temp = height_38[j];\n                height_38[j] = height_38[j+1];\n                height_38[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(height_38.begin(), height_38.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> height_38 = {5, 2, 9, 1, 5, 6};\n    std::sort(height_38.begin(), height_38.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000289",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> depth_39 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < depth_39.size(); ++i) {\n        for (size_t j = 0; j < depth_39.size() - i - 1; ++j) {\n            if (depth_39[j] > depth_39[j+1]) {\n                int temp = depth_39[j];\n                depth_39[j] = depth_39[j+1];\n                depth_39[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(depth_39.begin(), depth_39.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> depth_39 = {5, 2, 9, 1, 5, 6};\n    std::sort(depth_39.begin(), depth_39.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000290",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_40 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < count_40.size(); ++i) {\n        for (size_t j = 0; j < count_40.size() - i - 1; ++j) {\n            if (count_40[j] > count_40[j+1]) {\n                int temp = count_40[j];\n                count_40[j] = count_40[j+1];\n                count_40[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(count_40.begin(), count_40.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> count_40 = {5, 2, 9, 1, 5, 6};\n    std::sort(count_40.begin(), count_40.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000291",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> total_41 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < total_41.size(); ++i) {\n        for (size_t j = 0; j < total_41.size() - i - 1; ++j) {\n            if (total_41[j] > total_41[j+1]) {\n                int temp = total_41[j];\n                total_41[j] = total_41[j+1];\n                total_41[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(total_41.begin(), total_41.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> total_41 = {5, 2, 9, 1, 5, 6};\n    std::sort(total_41.begin(), total_41.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000292",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> index_42 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < index_42.size(); ++i) {\n        for (size_t j = 0; j < index_42.size() - i - 1; ++j) {\n            if (index_42[j] > index_42[j+1]) {\n                int temp = index_42[j];\n                index_42[j] = index_42[j+1];\n                index_42[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(index_42.begin(), index_42.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> index_42 = {5, 2, 9, 1, 5, 6};\n    std::sort(index_42.begin(), index_42.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000293",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> sum_43 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < sum_43.size(); ++i) {\n        for (size_t j = 0; j < sum_43.size() - i - 1; ++j) {\n            if (sum_43[j] > sum_43[j+1]) {\n                int temp = sum_43[j];\n                sum_43[j] = sum_43[j+1];\n                sum_43[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(sum_43.begin(), sum_43.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> sum_43 = {5, 2, 9, 1, 5, 6};\n    std::sort(sum_43.begin(), sum_43.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000294",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> average_44 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < average_44.size(); ++i) {\n        for (size_t j = 0; j < average_44.size() - i - 1; ++j) {\n            if (average_44[j] > average_44[j+1]) {\n                int temp = average_44[j];\n                average_44[j] = average_44[j+1];\n                average_44[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(average_44.begin(), average_44.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> average_44 = {5, 2, 9, 1, 5, 6};\n    std::sort(average_44.begin(), average_44.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000295",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> result_45 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < result_45.size(); ++i) {\n        for (size_t j = 0; j < result_45.size() - i - 1; ++j) {\n            if (result_45[j] > result_45[j+1]) {\n                int temp = result_45[j];\n                result_45[j] = result_45[j+1];\n                result_45[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(result_45.begin(), result_45.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> result_45 = {5, 2, 9, 1, 5, 6};\n    std::sort(result_45.begin(), result_45.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000296",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> value_46 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < value_46.size(); ++i) {\n        for (size_t j = 0; j < value_46.size() - i - 1; ++j) {\n            if (value_46[j] > value_46[j+1]) {\n                int temp = value_46[j];\n                value_46[j] = value_46[j+1];\n                value_46[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(value_46.begin(), value_46.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> value_46 = {5, 2, 9, 1, 5, 6};\n    std::sort(value_46.begin(), value_46.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000297",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> temp_47 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < temp_47.size(); ++i) {\n        for (size_t j = 0; j < temp_47.size() - i - 1; ++j) {\n            if (temp_47[j] > temp_47[j+1]) {\n                int temp = temp_47[j];\n                temp_47[j] = temp_47[j+1];\n                temp_47[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(temp_47.begin(), temp_47.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> temp_47 = {5, 2, 9, 1, 5, 6};\n    std::sort(temp_47.begin(), temp_47.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000298",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> max_val_48 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < max_val_48.size(); ++i) {\n        for (size_t j = 0; j < max_val_48.size() - i - 1; ++j) {\n            if (max_val_48[j] > max_val_48[j+1]) {\n                int temp = max_val_48[j];\n                max_val_48[j] = max_val_48[j+1];\n                max_val_48[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(max_val_48.begin(), max_val_48.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> max_val_48 = {5, 2, 9, 1, 5, 6};\n    std::sort(max_val_48.begin(), max_val_48.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000299",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> min_val_49 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < min_val_49.size(); ++i) {\n        for (size_t j = 0; j < min_val_49.size() - i - 1; ++j) {\n            if (min_val_49[j] > min_val_49[j+1]) {\n                int temp = min_val_49[j];\n                min_val_49[j] = min_val_49[j+1];\n                min_val_49[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(min_val_49.begin(), min_val_49.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> min_val_49 = {5, 2, 9, 1, 5, 6};\n    std::sort(min_val_49.begin(), min_val_49.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000300",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> counter_50 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < counter_50.size(); ++i) {\n        for (size_t j = 0; j < counter_50.size() - i - 1; ++j) {\n            if (counter_50[j] > counter_50[j+1]) {\n                int temp = counter_50[j];\n                counter_50[j] = counter_50[j+1];\n                counter_50[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(counter_50.begin(), counter_50.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> counter_50 = {5, 2, 9, 1, 5, 6};\n    std::sort(counter_50.begin(), counter_50.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000301",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> limit_51 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < limit_51.size(); ++i) {\n        for (size_t j = 0; j < limit_51.size() - i - 1; ++j) {\n            if (limit_51[j] > limit_51[j+1]) {\n                int temp = limit_51[j];\n                limit_51[j] = limit_51[j+1];\n                limit_51[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(limit_51.begin(), limit_51.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> limit_51 = {5, 2, 9, 1, 5, 6};\n    std::sort(limit_51.begin(), limit_51.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000302",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> threshold_52 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < threshold_52.size(); ++i) {\n        for (size_t j = 0; j < threshold_52.size() - i - 1; ++j) {\n            if (threshold_52[j] > threshold_52[j+1]) {\n                int temp = threshold_52[j];\n                threshold_52[j] = threshold_52[j+1];\n                threshold_52[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(threshold_52.begin(), threshold_52.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> threshold_52 = {5, 2, 9, 1, 5, 6};\n    std::sort(threshold_52.begin(), threshold_52.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000303",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> score_53 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < score_53.size(); ++i) {\n        for (size_t j = 0; j < score_53.size() - i - 1; ++j) {\n            if (score_53[j] > score_53[j+1]) {\n                int temp = score_53[j];\n                score_53[j] = score_53[j+1];\n                score_53[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(score_53.begin(), score_53.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> score_53 = {5, 2, 9, 1, 5, 6};\n    std::sort(score_53.begin(), score_53.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000304",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> age_54 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < age_54.size(); ++i) {\n        for (size_t j = 0; j < age_54.size() - i - 1; ++j) {\n            if (age_54[j] > age_54[j+1]) {\n                int temp = age_54[j];\n                age_54[j] = age_54[j+1];\n                age_54[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(age_54.begin(), age_54.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> age_54 = {5, 2, 9, 1, 5, 6};\n    std::sort(age_54.begin(), age_54.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000305",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> size_55 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < size_55.size(); ++i) {\n        for (size_t j = 0; j < size_55.size() - i - 1; ++j) {\n            if (size_55[j] > size_55[j+1]) {\n                int temp = size_55[j];\n                size_55[j] = size_55[j+1];\n                size_55[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(size_55.begin(), size_55.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> size_55 = {5, 2, 9, 1, 5, 6};\n    std::sort(size_55.begin(), size_55.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000306",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> length_56 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < length_56.size(); ++i) {\n        for (size_t j = 0; j < length_56.size() - i - 1; ++j) {\n            if (length_56[j] > length_56[j+1]) {\n                int temp = length_56[j];\n                length_56[j] = length_56[j+1];\n                length_56[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(length_56.begin(), length_56.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> length_56 = {5, 2, 9, 1, 5, 6};\n    std::sort(length_56.begin(), length_56.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000307",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> width_57 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < width_57.size(); ++i) {\n        for (size_t j = 0; j < width_57.size() - i - 1; ++j) {\n            if (width_57[j] > width_57[j+1]) {\n                int temp = width_57[j];\n                width_57[j] = width_57[j+1];\n                width_57[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(width_57.begin(), width_57.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> width_57 = {5, 2, 9, 1, 5, 6};\n    std::sort(width_57.begin(), width_57.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000308",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> height_58 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < height_58.size(); ++i) {\n        for (size_t j = 0; j < height_58.size() - i - 1; ++j) {\n            if (height_58[j] > height_58[j+1]) {\n                int temp = height_58[j];\n                height_58[j] = height_58[j+1];\n                height_58[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(height_58.begin(), height_58.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> height_58 = {5, 2, 9, 1, 5, 6};\n    std::sort(height_58.begin(), height_58.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000309",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> depth_59 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < depth_59.size(); ++i) {\n        for (size_t j = 0; j < depth_59.size() - i - 1; ++j) {\n            if (depth_59[j] > depth_59[j+1]) {\n                int temp = depth_59[j];\n                depth_59[j] = depth_59[j+1];\n                depth_59[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(depth_59.begin(), depth_59.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> depth_59 = {5, 2, 9, 1, 5, 6};\n    std::sort(depth_59.begin(), depth_59.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000310",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_60 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < count_60.size(); ++i) {\n        for (size_t j = 0; j < count_60.size() - i - 1; ++j) {\n            if (count_60[j] > count_60[j+1]) {\n                int temp = count_60[j];\n                count_60[j] = count_60[j+1];\n                count_60[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(count_60.begin(), count_60.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> count_60 = {5, 2, 9, 1, 5, 6};\n    std::sort(count_60.begin(), count_60.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000311",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> total_61 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < total_61.size(); ++i) {\n        for (size_t j = 0; j < total_61.size() - i - 1; ++j) {\n            if (total_61[j] > total_61[j+1]) {\n                int temp = total_61[j];\n                total_61[j] = total_61[j+1];\n                total_61[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(total_61.begin(), total_61.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> total_61 = {5, 2, 9, 1, 5, 6};\n    std::sort(total_61.begin(), total_61.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000312",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the array sorting algorithm.",
+    "input": {
+      "title": "Bubble Sort instead of std::sort",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> index_62 = {5, 2, 9, 1, 5, 6};\n    for (size_t i = 0; i < index_62.size(); ++i) {\n        for (size_t j = 0; j < index_62.size() - i - 1; ++j) {\n            if (index_62[j] > index_62[j+1]) {\n                int temp = index_62[j];\n                index_62[j] = index_62[j+1];\n                index_62[j+1] = temp;\n            }\n        }\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The code implements Bubble Sort, which has an average and worst-case time complexity of O(N^2). `std::sort` from the `<algorithm>` library uses Introsort, which runs in O(N log N).",
+      "beginner": "You wrote your own sorting system that is very slow for large lists. C++ has a built-in sort that is incredibly fast.",
+      "analogy": "It's like alphabetizing a library by swapping adjacent books one by one, instead of organizing them into categories first.",
+      "solution": "Include `<algorithm>` and use `std::sort(index_62.begin(), index_62.end());`.",
+      "prevention": "Never write your own sort function unless it's an educational exercise. Always use `std::sort`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> index_62 = {5, 2, 9, 1, 5, 6};\n    std::sort(index_62.begin(), index_62.end());\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "algorithm",
+        "sorting",
+        "performance"
+      ]
+    }
+  }
+]

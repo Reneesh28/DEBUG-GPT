@@ -1,0 +1,2048 @@
+[
+  {
+    "id": "PY_EDU_000001",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef demo_0(entity):\n    entity.quack()\n\ndemo_0(Duck())\ndemo_0(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef demo_0(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000002",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef explain_1(entity):\n    entity.quack()\n\nexplain_1(Duck())\nexplain_1(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef explain_1(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000003",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef show_2(entity):\n    entity.quack()\n\nshow_2(Duck())\nshow_2(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef show_2(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000004",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef illustrate_3(entity):\n    entity.quack()\n\nillustrate_3(Duck())\nillustrate_3(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef illustrate_3(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000005",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef concept_4(entity):\n    entity.quack()\n\nconcept_4(Duck())\nconcept_4(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef concept_4(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000006",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef example_5(entity):\n    entity.quack()\n\nexample_5(Duck())\nexample_5(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef example_5(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000007",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef learn_6(entity):\n    entity.quack()\n\nlearn_6(Duck())\nlearn_6(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef learn_6(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000008",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef teach_7(entity):\n    entity.quack()\n\nteach_7(Duck())\nteach_7(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef teach_7(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000009",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef guide_8(entity):\n    entity.quack()\n\nguide_8(Duck())\nguide_8(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef guide_8(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000010",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef tutorial_9(entity):\n    entity.quack()\n\ntutorial_9(Duck())\ntutorial_9(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef tutorial_9(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000011",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef run_10(entity):\n    entity.quack()\n\nrun_10(Duck())\nrun_10(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef run_10(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000012",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef execute_11(entity):\n    entity.quack()\n\nexecute_11(Duck())\nexecute_11(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef execute_11(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000013",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef process_12(entity):\n    entity.quack()\n\nprocess_12(Duck())\nprocess_12(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef process_12(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000014",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef handle_13(entity):\n    entity.quack()\n\nhandle_13(Duck())\nhandle_13(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef handle_13(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000015",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef manage_14(entity):\n    entity.quack()\n\nmanage_14(Duck())\nmanage_14(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef manage_14(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000016",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef setup_15(entity):\n    entity.quack()\n\nsetup_15(Duck())\nsetup_15(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef setup_15(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000017",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef configure_16(entity):\n    entity.quack()\n\nconfigure_16(Duck())\nconfigure_16(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef configure_16(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000018",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef build_17(entity):\n    entity.quack()\n\nbuild_17(Duck())\nbuild_17(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef build_17(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000019",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef create_18(entity):\n    entity.quack()\n\ncreate_18(Duck())\ncreate_18(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef create_18(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000020",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef test_19(entity):\n    entity.quack()\n\ntest_19(Duck())\ntest_19(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef test_19(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000021",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef demo_20(entity):\n    entity.quack()\n\ndemo_20(Duck())\ndemo_20(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef demo_20(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000022",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef explain_21(entity):\n    entity.quack()\n\nexplain_21(Duck())\nexplain_21(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef explain_21(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000023",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef show_22(entity):\n    entity.quack()\n\nshow_22(Duck())\nshow_22(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef show_22(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000024",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef illustrate_23(entity):\n    entity.quack()\n\nillustrate_23(Duck())\nillustrate_23(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef illustrate_23(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000025",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef concept_24(entity):\n    entity.quack()\n\nconcept_24(Duck())\nconcept_24(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef concept_24(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000026",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef example_25(entity):\n    entity.quack()\n\nexample_25(Duck())\nexample_25(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef example_25(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000027",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef learn_26(entity):\n    entity.quack()\n\nlearn_26(Duck())\nlearn_26(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef learn_26(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000028",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef teach_27(entity):\n    entity.quack()\n\nteach_27(Duck())\nteach_27(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef teach_27(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000029",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef guide_28(entity):\n    entity.quack()\n\nguide_28(Duck())\nguide_28(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef guide_28(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000030",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef tutorial_29(entity):\n    entity.quack()\n\ntutorial_29(Duck())\ntutorial_29(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef tutorial_29(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000031",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef run_30(entity):\n    entity.quack()\n\nrun_30(Duck())\nrun_30(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef run_30(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000032",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef execute_31(entity):\n    entity.quack()\n\nexecute_31(Duck())\nexecute_31(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef execute_31(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000033",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef process_32(entity):\n    entity.quack()\n\nprocess_32(Duck())\nprocess_32(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef process_32(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000034",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef handle_33(entity):\n    entity.quack()\n\nhandle_33(Duck())\nhandle_33(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef handle_33(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000035",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef manage_34(entity):\n    entity.quack()\n\nmanage_34(Duck())\nmanage_34(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef manage_34(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000036",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef setup_35(entity):\n    entity.quack()\n\nsetup_35(Duck())\nsetup_35(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef setup_35(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000037",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef configure_36(entity):\n    entity.quack()\n\nconfigure_36(Duck())\nconfigure_36(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef configure_36(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000038",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef build_37(entity):\n    entity.quack()\n\nbuild_37(Duck())\nbuild_37(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef build_37(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000039",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef create_38(entity):\n    entity.quack()\n\ncreate_38(Duck())\ncreate_38(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef create_38(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000040",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef test_39(entity):\n    entity.quack()\n\ntest_39(Duck())\ntest_39(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef test_39(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000041",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef demo_40(entity):\n    entity.quack()\n\ndemo_40(Duck())\ndemo_40(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef demo_40(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000042",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef explain_41(entity):\n    entity.quack()\n\nexplain_41(Duck())\nexplain_41(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef explain_41(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000043",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef show_42(entity):\n    entity.quack()\n\nshow_42(Duck())\nshow_42(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef show_42(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000044",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef illustrate_43(entity):\n    entity.quack()\n\nillustrate_43(Duck())\nillustrate_43(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef illustrate_43(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000045",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef concept_44(entity):\n    entity.quack()\n\nconcept_44(Duck())\nconcept_44(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef concept_44(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000046",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef example_45(entity):\n    entity.quack()\n\nexample_45(Duck())\nexample_45(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef example_45(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000047",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef learn_46(entity):\n    entity.quack()\n\nlearn_46(Duck())\nlearn_46(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef learn_46(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000048",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef teach_47(entity):\n    entity.quack()\n\nteach_47(Duck())\nteach_47(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef teach_47(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000049",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef guide_48(entity):\n    entity.quack()\n\nguide_48(Duck())\nguide_48(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef guide_48(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000050",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef tutorial_49(entity):\n    entity.quack()\n\ntutorial_49(Duck())\ntutorial_49(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef tutorial_49(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000051",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef run_50(entity):\n    entity.quack()\n\nrun_50(Duck())\nrun_50(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef run_50(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000052",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef execute_51(entity):\n    entity.quack()\n\nexecute_51(Duck())\nexecute_51(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef execute_51(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000053",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef process_52(entity):\n    entity.quack()\n\nprocess_52(Duck())\nprocess_52(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef process_52(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000054",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef handle_53(entity):\n    entity.quack()\n\nhandle_53(Duck())\nhandle_53(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef handle_53(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000055",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef manage_54(entity):\n    entity.quack()\n\nmanage_54(Duck())\nmanage_54(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef manage_54(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000056",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef setup_55(entity):\n    entity.quack()\n\nsetup_55(Duck())\nsetup_55(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef setup_55(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000057",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef configure_56(entity):\n    entity.quack()\n\nconfigure_56(Duck())\nconfigure_56(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef configure_56(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000058",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef build_57(entity):\n    entity.quack()\n\nbuild_57(Duck())\nbuild_57(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef build_57(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000059",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef create_58(entity):\n    entity.quack()\n\ncreate_58(Duck())\ncreate_58(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef create_58(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000060",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef test_59(entity):\n    entity.quack()\n\ntest_59(Duck())\ntest_59(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef test_59(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000061",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef demo_60(entity):\n    entity.quack()\n\ndemo_60(Duck())\ndemo_60(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef demo_60(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000062",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain dynamic typing and duck typing.",
+    "input": {
+      "title": "Duck Typing",
+      "code": "class Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef explain_61(entity):\n    entity.quack()\n\nexplain_61(Duck())\nexplain_61(Person())\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Python uses Duck Typing, an application of dynamic typing. Type checking is deferred to runtime. As long as the object passed into `{fn}()` has a `quack` method, the code works, regardless of the object's actual class hierarchy.",
+      "beginner": "In Python, if it walks like a duck and quacks like a duck, it's a duck! Python doesn't care exactly what class an object is, it just cares if the object can do the specific action requested.",
+      "analogy": "It's like a USB port. Your computer doesn't care if you plug in a mouse, a keyboard, or a fan. As long as it has a USB plug, it works.",
+      "solution": "Take advantage of duck typing to write flexible functions that can accept any object with the required methods.",
+      "prevention": "If you need strict interfaces, use Python's `typing` module and `Protocol`.",
+      "optimized_code": "from typing import Protocol\n\nclass Quacker(Protocol):\n    def quack(self) -> None: ...\n\nclass Duck:\n    def quack(self):\n        print(\"Quack!\")\n\nclass Person:\n    def quack(self):\n        print(\"I am acting like a duck!\")\n\ndef explain_61(entity: Quacker):\n    entity.quack()\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "types",
+        "duck-typing",
+        "oop"
+      ]
+    }
+  }
+]

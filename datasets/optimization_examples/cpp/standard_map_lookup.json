@@ -1,0 +1,2081 @@
+[
+  {
+    "id": "CP_OPTIM_000313",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> count_0 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (count_0.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << count_0[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> count_0 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = count_0.find(\"apple\");\n    if (it != count_0.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000314",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> total_1 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (total_1.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << total_1[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> total_1 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = total_1.find(\"apple\");\n    if (it != total_1.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000315",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> index_2 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (index_2.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << index_2[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> index_2 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = index_2.find(\"apple\");\n    if (it != index_2.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000316",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> sum_3 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (sum_3.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << sum_3[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> sum_3 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = sum_3.find(\"apple\");\n    if (it != sum_3.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000317",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> average_4 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (average_4.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << average_4[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> average_4 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = average_4.find(\"apple\");\n    if (it != average_4.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000318",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> result_5 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (result_5.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << result_5[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> result_5 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = result_5.find(\"apple\");\n    if (it != result_5.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000319",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> value_6 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (value_6.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << value_6[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> value_6 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = value_6.find(\"apple\");\n    if (it != value_6.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000320",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> temp_7 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (temp_7.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << temp_7[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> temp_7 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = temp_7.find(\"apple\");\n    if (it != temp_7.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000321",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> max_val_8 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (max_val_8.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << max_val_8[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> max_val_8 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = max_val_8.find(\"apple\");\n    if (it != max_val_8.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000322",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> min_val_9 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (min_val_9.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << min_val_9[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> min_val_9 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = min_val_9.find(\"apple\");\n    if (it != min_val_9.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000323",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> counter_10 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (counter_10.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << counter_10[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> counter_10 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = counter_10.find(\"apple\");\n    if (it != counter_10.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000324",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> limit_11 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (limit_11.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << limit_11[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> limit_11 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = limit_11.find(\"apple\");\n    if (it != limit_11.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000325",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> threshold_12 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (threshold_12.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << threshold_12[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> threshold_12 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = threshold_12.find(\"apple\");\n    if (it != threshold_12.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000326",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> score_13 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (score_13.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << score_13[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> score_13 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = score_13.find(\"apple\");\n    if (it != score_13.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000327",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> age_14 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (age_14.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << age_14[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> age_14 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = age_14.find(\"apple\");\n    if (it != age_14.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000328",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> size_15 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (size_15.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << size_15[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> size_15 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = size_15.find(\"apple\");\n    if (it != size_15.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000329",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> length_16 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (length_16.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << length_16[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> length_16 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = length_16.find(\"apple\");\n    if (it != length_16.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000330",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> width_17 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (width_17.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << width_17[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> width_17 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = width_17.find(\"apple\");\n    if (it != width_17.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000331",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> height_18 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (height_18.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << height_18[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> height_18 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = height_18.find(\"apple\");\n    if (it != height_18.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000332",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> depth_19 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (depth_19.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << depth_19[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> depth_19 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = depth_19.find(\"apple\");\n    if (it != depth_19.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000333",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> count_20 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (count_20.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << count_20[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> count_20 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = count_20.find(\"apple\");\n    if (it != count_20.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000334",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> total_21 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (total_21.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << total_21[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> total_21 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = total_21.find(\"apple\");\n    if (it != total_21.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000335",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> index_22 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (index_22.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << index_22[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> index_22 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = index_22.find(\"apple\");\n    if (it != index_22.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000336",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> sum_23 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (sum_23.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << sum_23[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> sum_23 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = sum_23.find(\"apple\");\n    if (it != sum_23.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000337",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> average_24 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (average_24.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << average_24[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> average_24 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = average_24.find(\"apple\");\n    if (it != average_24.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000338",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> result_25 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (result_25.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << result_25[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> result_25 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = result_25.find(\"apple\");\n    if (it != result_25.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000339",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> value_26 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (value_26.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << value_26[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> value_26 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = value_26.find(\"apple\");\n    if (it != value_26.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000340",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> temp_27 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (temp_27.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << temp_27[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> temp_27 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = temp_27.find(\"apple\");\n    if (it != temp_27.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000341",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> max_val_28 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (max_val_28.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << max_val_28[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> max_val_28 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = max_val_28.find(\"apple\");\n    if (it != max_val_28.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000342",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> min_val_29 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (min_val_29.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << min_val_29[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> min_val_29 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = min_val_29.find(\"apple\");\n    if (it != min_val_29.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000343",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> counter_30 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (counter_30.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << counter_30[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> counter_30 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = counter_30.find(\"apple\");\n    if (it != counter_30.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000344",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> limit_31 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (limit_31.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << limit_31[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> limit_31 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = limit_31.find(\"apple\");\n    if (it != limit_31.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000345",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> threshold_32 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (threshold_32.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << threshold_32[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> threshold_32 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = threshold_32.find(\"apple\");\n    if (it != threshold_32.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000346",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> score_33 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (score_33.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << score_33[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> score_33 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = score_33.find(\"apple\");\n    if (it != score_33.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000347",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> age_34 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (age_34.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << age_34[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> age_34 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = age_34.find(\"apple\");\n    if (it != age_34.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000348",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> size_35 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (size_35.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << size_35[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> size_35 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = size_35.find(\"apple\");\n    if (it != size_35.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000349",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> length_36 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (length_36.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << length_36[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> length_36 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = length_36.find(\"apple\");\n    if (it != length_36.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000350",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> width_37 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (width_37.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << width_37[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> width_37 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = width_37.find(\"apple\");\n    if (it != width_37.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000351",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> height_38 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (height_38.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << height_38[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> height_38 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = height_38.find(\"apple\");\n    if (it != height_38.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000352",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> depth_39 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (depth_39.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << depth_39[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> depth_39 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = depth_39.find(\"apple\");\n    if (it != depth_39.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000353",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> count_40 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (count_40.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << count_40[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> count_40 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = count_40.find(\"apple\");\n    if (it != count_40.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000354",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> total_41 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (total_41.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << total_41[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> total_41 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = total_41.find(\"apple\");\n    if (it != total_41.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000355",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> index_42 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (index_42.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << index_42[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> index_42 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = index_42.find(\"apple\");\n    if (it != index_42.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000356",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> sum_43 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (sum_43.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << sum_43[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> sum_43 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = sum_43.find(\"apple\");\n    if (it != sum_43.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000357",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> average_44 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (average_44.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << average_44[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> average_44 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = average_44.find(\"apple\");\n    if (it != average_44.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000358",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> result_45 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (result_45.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << result_45[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> result_45 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = result_45.find(\"apple\");\n    if (it != result_45.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000359",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> value_46 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (value_46.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << value_46[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> value_46 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = value_46.find(\"apple\");\n    if (it != value_46.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000360",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> temp_47 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (temp_47.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << temp_47[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> temp_47 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = temp_47.find(\"apple\");\n    if (it != temp_47.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000361",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> max_val_48 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (max_val_48.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << max_val_48[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> max_val_48 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = max_val_48.find(\"apple\");\n    if (it != max_val_48.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000362",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> min_val_49 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (min_val_49.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << min_val_49[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> min_val_49 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = min_val_49.find(\"apple\");\n    if (it != min_val_49.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000363",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> counter_50 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (counter_50.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << counter_50[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> counter_50 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = counter_50.find(\"apple\");\n    if (it != counter_50.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000364",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> limit_51 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (limit_51.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << limit_51[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> limit_51 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = limit_51.find(\"apple\");\n    if (it != limit_51.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000365",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> threshold_52 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (threshold_52.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << threshold_52[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> threshold_52 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = threshold_52.find(\"apple\");\n    if (it != threshold_52.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000366",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> score_53 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (score_53.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << score_53[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> score_53 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = score_53.find(\"apple\");\n    if (it != score_53.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000367",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> age_54 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (age_54.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << age_54[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> age_54 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = age_54.find(\"apple\");\n    if (it != age_54.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000368",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> size_55 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (size_55.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << size_55[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> size_55 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = size_55.find(\"apple\");\n    if (it != size_55.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000369",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> length_56 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (length_56.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << length_56[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> length_56 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = length_56.find(\"apple\");\n    if (it != length_56.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000370",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> width_57 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (width_57.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << width_57[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> width_57 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = width_57.find(\"apple\");\n    if (it != width_57.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000371",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> height_58 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (height_58.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << height_58[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> height_58 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = height_58.find(\"apple\");\n    if (it != height_58.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000372",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> depth_59 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (depth_59.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << depth_59[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> depth_59 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = depth_59.find(\"apple\");\n    if (it != depth_59.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000373",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> count_60 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (count_60.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << count_60[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> count_60 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = count_60.find(\"apple\");\n    if (it != count_60.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000374",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> total_61 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (total_61.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << total_61[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> total_61 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = total_61.find(\"apple\");\n    if (it != total_61.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000375",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the map key lookup.",
+    "input": {
+      "title": "Double Map Lookup",
+      "code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> index_62 = {{\"apple\", 1}, {\"banana\", 2}};\n    if (index_62.count(\"apple\") > 0) {\n        std::cout << \"Count: \" << index_62[\"apple\"] << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `count()` followed by `operator[]` performs two separate O(log N) searches in the map. Using `find()` performs a single search.",
+      "beginner": "You are asking the map to search for 'apple' twice: once to see if it exists, and a second time to get its value.",
+      "analogy": "It's like looking up a word in the dictionary to see if it exists, closing the book, and then looking it up again to read the definition.",
+      "solution": "Use `auto it = map.find(key);` and check `if (it != map.end())`.",
+      "prevention": "Use `find()` when you need to check existence and retrieve the value.",
+      "optimized_code": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> index_62 = {{\"apple\", 1}, {\"banana\", 2}};\n    auto it = index_62.find(\"apple\");\n    if (it != index_62.end()) {\n        std::cout << \"Count: \" << it->second << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "2 * O(log N)",
+        "after": "O(log N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "map",
+        "lookup",
+        "performance"
+      ]
+    }
+  }
+]

@@ -1,0 +1,2081 @@
+[
+  {
+    "id": "PY_OPTIM_000249",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "count_0 = [1] * 1000\ncount = 0\nwhile count < len(count_0):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(count_0)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "count_0 = [1] * 1000\ncount = 0\nlength = len(count_0)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000250",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "total_1 = [1] * 1000\ncount = 0\nwhile count < len(total_1):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(total_1)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "total_1 = [1] * 1000\ncount = 0\nlength = len(total_1)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000251",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "index_2 = [1] * 1000\ncount = 0\nwhile count < len(index_2):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(index_2)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "index_2 = [1] * 1000\ncount = 0\nlength = len(index_2)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000252",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "sum_3 = [1] * 1000\ncount = 0\nwhile count < len(sum_3):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(sum_3)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "sum_3 = [1] * 1000\ncount = 0\nlength = len(sum_3)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000253",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "average_4 = [1] * 1000\ncount = 0\nwhile count < len(average_4):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(average_4)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "average_4 = [1] * 1000\ncount = 0\nlength = len(average_4)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000254",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "result_5 = [1] * 1000\ncount = 0\nwhile count < len(result_5):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(result_5)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "result_5 = [1] * 1000\ncount = 0\nlength = len(result_5)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000255",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "value_6 = [1] * 1000\ncount = 0\nwhile count < len(value_6):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(value_6)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "value_6 = [1] * 1000\ncount = 0\nlength = len(value_6)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000256",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "temp_7 = [1] * 1000\ncount = 0\nwhile count < len(temp_7):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(temp_7)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "temp_7 = [1] * 1000\ncount = 0\nlength = len(temp_7)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000257",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "max_val_8 = [1] * 1000\ncount = 0\nwhile count < len(max_val_8):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(max_val_8)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "max_val_8 = [1] * 1000\ncount = 0\nlength = len(max_val_8)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000258",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "min_val_9 = [1] * 1000\ncount = 0\nwhile count < len(min_val_9):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(min_val_9)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "min_val_9 = [1] * 1000\ncount = 0\nlength = len(min_val_9)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000259",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "counter_10 = [1] * 1000\ncount = 0\nwhile count < len(counter_10):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(counter_10)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "counter_10 = [1] * 1000\ncount = 0\nlength = len(counter_10)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000260",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "limit_11 = [1] * 1000\ncount = 0\nwhile count < len(limit_11):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(limit_11)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "limit_11 = [1] * 1000\ncount = 0\nlength = len(limit_11)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000261",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "threshold_12 = [1] * 1000\ncount = 0\nwhile count < len(threshold_12):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(threshold_12)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "threshold_12 = [1] * 1000\ncount = 0\nlength = len(threshold_12)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000262",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "score_13 = [1] * 1000\ncount = 0\nwhile count < len(score_13):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(score_13)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "score_13 = [1] * 1000\ncount = 0\nlength = len(score_13)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000263",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "age_14 = [1] * 1000\ncount = 0\nwhile count < len(age_14):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(age_14)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "age_14 = [1] * 1000\ncount = 0\nlength = len(age_14)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000264",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "size_15 = [1] * 1000\ncount = 0\nwhile count < len(size_15):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(size_15)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "size_15 = [1] * 1000\ncount = 0\nlength = len(size_15)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000265",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "length_16 = [1] * 1000\ncount = 0\nwhile count < len(length_16):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(length_16)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "length_16 = [1] * 1000\ncount = 0\nlength = len(length_16)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000266",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "width_17 = [1] * 1000\ncount = 0\nwhile count < len(width_17):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(width_17)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "width_17 = [1] * 1000\ncount = 0\nlength = len(width_17)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000267",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "height_18 = [1] * 1000\ncount = 0\nwhile count < len(height_18):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(height_18)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "height_18 = [1] * 1000\ncount = 0\nlength = len(height_18)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000268",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "depth_19 = [1] * 1000\ncount = 0\nwhile count < len(depth_19):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(depth_19)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "depth_19 = [1] * 1000\ncount = 0\nlength = len(depth_19)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000269",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "count_20 = [1] * 1000\ncount = 0\nwhile count < len(count_20):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(count_20)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "count_20 = [1] * 1000\ncount = 0\nlength = len(count_20)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000270",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "total_21 = [1] * 1000\ncount = 0\nwhile count < len(total_21):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(total_21)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "total_21 = [1] * 1000\ncount = 0\nlength = len(total_21)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000271",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "index_22 = [1] * 1000\ncount = 0\nwhile count < len(index_22):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(index_22)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "index_22 = [1] * 1000\ncount = 0\nlength = len(index_22)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000272",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "sum_23 = [1] * 1000\ncount = 0\nwhile count < len(sum_23):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(sum_23)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "sum_23 = [1] * 1000\ncount = 0\nlength = len(sum_23)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000273",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "average_24 = [1] * 1000\ncount = 0\nwhile count < len(average_24):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(average_24)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "average_24 = [1] * 1000\ncount = 0\nlength = len(average_24)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000274",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "result_25 = [1] * 1000\ncount = 0\nwhile count < len(result_25):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(result_25)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "result_25 = [1] * 1000\ncount = 0\nlength = len(result_25)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000275",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "value_26 = [1] * 1000\ncount = 0\nwhile count < len(value_26):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(value_26)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "value_26 = [1] * 1000\ncount = 0\nlength = len(value_26)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000276",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "temp_27 = [1] * 1000\ncount = 0\nwhile count < len(temp_27):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(temp_27)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "temp_27 = [1] * 1000\ncount = 0\nlength = len(temp_27)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000277",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "max_val_28 = [1] * 1000\ncount = 0\nwhile count < len(max_val_28):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(max_val_28)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "max_val_28 = [1] * 1000\ncount = 0\nlength = len(max_val_28)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000278",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "min_val_29 = [1] * 1000\ncount = 0\nwhile count < len(min_val_29):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(min_val_29)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "min_val_29 = [1] * 1000\ncount = 0\nlength = len(min_val_29)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000279",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "counter_30 = [1] * 1000\ncount = 0\nwhile count < len(counter_30):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(counter_30)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "counter_30 = [1] * 1000\ncount = 0\nlength = len(counter_30)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000280",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "limit_31 = [1] * 1000\ncount = 0\nwhile count < len(limit_31):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(limit_31)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "limit_31 = [1] * 1000\ncount = 0\nlength = len(limit_31)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000281",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "threshold_32 = [1] * 1000\ncount = 0\nwhile count < len(threshold_32):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(threshold_32)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "threshold_32 = [1] * 1000\ncount = 0\nlength = len(threshold_32)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000282",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "score_33 = [1] * 1000\ncount = 0\nwhile count < len(score_33):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(score_33)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "score_33 = [1] * 1000\ncount = 0\nlength = len(score_33)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000283",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "age_34 = [1] * 1000\ncount = 0\nwhile count < len(age_34):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(age_34)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "age_34 = [1] * 1000\ncount = 0\nlength = len(age_34)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000284",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "size_35 = [1] * 1000\ncount = 0\nwhile count < len(size_35):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(size_35)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "size_35 = [1] * 1000\ncount = 0\nlength = len(size_35)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000285",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "length_36 = [1] * 1000\ncount = 0\nwhile count < len(length_36):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(length_36)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "length_36 = [1] * 1000\ncount = 0\nlength = len(length_36)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000286",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "width_37 = [1] * 1000\ncount = 0\nwhile count < len(width_37):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(width_37)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "width_37 = [1] * 1000\ncount = 0\nlength = len(width_37)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000287",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "height_38 = [1] * 1000\ncount = 0\nwhile count < len(height_38):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(height_38)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "height_38 = [1] * 1000\ncount = 0\nlength = len(height_38)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000288",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "depth_39 = [1] * 1000\ncount = 0\nwhile count < len(depth_39):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(depth_39)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "depth_39 = [1] * 1000\ncount = 0\nlength = len(depth_39)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000289",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "count_40 = [1] * 1000\ncount = 0\nwhile count < len(count_40):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(count_40)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "count_40 = [1] * 1000\ncount = 0\nlength = len(count_40)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000290",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "total_41 = [1] * 1000\ncount = 0\nwhile count < len(total_41):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(total_41)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "total_41 = [1] * 1000\ncount = 0\nlength = len(total_41)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000291",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "index_42 = [1] * 1000\ncount = 0\nwhile count < len(index_42):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(index_42)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "index_42 = [1] * 1000\ncount = 0\nlength = len(index_42)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000292",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "sum_43 = [1] * 1000\ncount = 0\nwhile count < len(sum_43):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(sum_43)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "sum_43 = [1] * 1000\ncount = 0\nlength = len(sum_43)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000293",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "average_44 = [1] * 1000\ncount = 0\nwhile count < len(average_44):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(average_44)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "average_44 = [1] * 1000\ncount = 0\nlength = len(average_44)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000294",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "result_45 = [1] * 1000\ncount = 0\nwhile count < len(result_45):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(result_45)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "result_45 = [1] * 1000\ncount = 0\nlength = len(result_45)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000295",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "value_46 = [1] * 1000\ncount = 0\nwhile count < len(value_46):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(value_46)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "value_46 = [1] * 1000\ncount = 0\nlength = len(value_46)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000296",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "temp_47 = [1] * 1000\ncount = 0\nwhile count < len(temp_47):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(temp_47)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "temp_47 = [1] * 1000\ncount = 0\nlength = len(temp_47)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000297",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "max_val_48 = [1] * 1000\ncount = 0\nwhile count < len(max_val_48):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(max_val_48)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "max_val_48 = [1] * 1000\ncount = 0\nlength = len(max_val_48)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000298",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "min_val_49 = [1] * 1000\ncount = 0\nwhile count < len(min_val_49):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(min_val_49)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "min_val_49 = [1] * 1000\ncount = 0\nlength = len(min_val_49)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000299",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "counter_50 = [1] * 1000\ncount = 0\nwhile count < len(counter_50):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(counter_50)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "counter_50 = [1] * 1000\ncount = 0\nlength = len(counter_50)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000300",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "limit_51 = [1] * 1000\ncount = 0\nwhile count < len(limit_51):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(limit_51)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "limit_51 = [1] * 1000\ncount = 0\nlength = len(limit_51)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000301",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "threshold_52 = [1] * 1000\ncount = 0\nwhile count < len(threshold_52):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(threshold_52)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "threshold_52 = [1] * 1000\ncount = 0\nlength = len(threshold_52)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000302",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "score_53 = [1] * 1000\ncount = 0\nwhile count < len(score_53):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(score_53)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "score_53 = [1] * 1000\ncount = 0\nlength = len(score_53)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000303",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "age_54 = [1] * 1000\ncount = 0\nwhile count < len(age_54):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(age_54)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "age_54 = [1] * 1000\ncount = 0\nlength = len(age_54)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000304",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "size_55 = [1] * 1000\ncount = 0\nwhile count < len(size_55):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(size_55)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "size_55 = [1] * 1000\ncount = 0\nlength = len(size_55)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000305",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "length_56 = [1] * 1000\ncount = 0\nwhile count < len(length_56):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(length_56)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "length_56 = [1] * 1000\ncount = 0\nlength = len(length_56)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000306",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "width_57 = [1] * 1000\ncount = 0\nwhile count < len(width_57):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(width_57)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "width_57 = [1] * 1000\ncount = 0\nlength = len(width_57)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000307",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "height_58 = [1] * 1000\ncount = 0\nwhile count < len(height_58):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(height_58)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "height_58 = [1] * 1000\ncount = 0\nlength = len(height_58)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000308",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "depth_59 = [1] * 1000\ncount = 0\nwhile count < len(depth_59):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(depth_59)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "depth_59 = [1] * 1000\ncount = 0\nlength = len(depth_59)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000309",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "count_60 = [1] * 1000\ncount = 0\nwhile count < len(count_60):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(count_60)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "count_60 = [1] * 1000\ncount = 0\nlength = len(count_60)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000310",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "total_61 = [1] * 1000\ncount = 0\nwhile count < len(total_61):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(total_61)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "total_61 = [1] * 1000\ncount = 0\nlength = len(total_61)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000311",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize redundant function calls.",
+    "input": {
+      "title": "Calling len() in loop condition",
+      "code": "index_62 = [1] * 1000\ncount = 0\nwhile count < len(index_62):\n    count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "While `len()` in Python is fast (O(1)), placing it in a `while` loop condition adds unnecessary function call overhead on every iteration.",
+      "beginner": "You are asking Python for the length of the list every single time the loop runs, even though the length never changes.",
+      "analogy": "It's like checking your watch every 2 seconds to see if a minute has passed.",
+      "solution": "Calculate `len(index_62)` once before the loop and store it in a variable.",
+      "prevention": "Cache static function results in variables before entering a loop.",
+      "optimized_code": "index_62 = [1] * 1000\ncount = 0\nlength = len(index_62)\nwhile count < length:\n    count += 1\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "function-call",
+        "overhead"
+      ]
+    }
+  }
+]

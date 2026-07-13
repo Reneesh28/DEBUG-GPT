@@ -1,0 +1,2081 @@
+[
+  {
+    "id": "CP_EDU_000312",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> data_0;\n    data_0.push_back(1);\n    data_0.push_back(2);\n    for(int n : data_0) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> data_0 = {1, 2};\n    for(const auto& n : data_0) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000313",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> value_1;\n    value_1.push_back(1);\n    value_1.push_back(2);\n    for(int n : value_1) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> value_1 = {1, 2};\n    for(const auto& n : value_1) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000314",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> item_2;\n    item_2.push_back(1);\n    item_2.push_back(2);\n    for(int n : item_2) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> item_2 = {1, 2};\n    for(const auto& n : item_2) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000315",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> element_3;\n    element_3.push_back(1);\n    element_3.push_back(2);\n    for(int n : element_3) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> element_3 = {1, 2};\n    for(const auto& n : element_3) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000316",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_4;\n    count_4.push_back(1);\n    count_4.push_back(2);\n    for(int n : count_4) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_4 = {1, 2};\n    for(const auto& n : count_4) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000317",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> size_5;\n    size_5.push_back(1);\n    size_5.push_back(2);\n    for(int n : size_5) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> size_5 = {1, 2};\n    for(const auto& n : size_5) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000318",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> index_6;\n    index_6.push_back(1);\n    index_6.push_back(2);\n    for(int n : index_6) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> index_6 = {1, 2};\n    for(const auto& n : index_6) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000319",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> result_7;\n    result_7.push_back(1);\n    result_7.push_back(2);\n    for(int n : result_7) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> result_7 = {1, 2};\n    for(const auto& n : result_7) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000320",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> temp_8;\n    temp_8.push_back(1);\n    temp_8.push_back(2);\n    for(int n : temp_8) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> temp_8 = {1, 2};\n    for(const auto& n : temp_8) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000321",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> cache_9;\n    cache_9.push_back(1);\n    cache_9.push_back(2);\n    for(int n : cache_9) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> cache_9 = {1, 2};\n    for(const auto& n : cache_9) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000322",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> buffer_10;\n    buffer_10.push_back(1);\n    buffer_10.push_back(2);\n    for(int n : buffer_10) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> buffer_10 = {1, 2};\n    for(const auto& n : buffer_10) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000323",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> node_11;\n    node_11.push_back(1);\n    node_11.push_back(2);\n    for(int n : node_11) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> node_11 = {1, 2};\n    for(const auto& n : node_11) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000324",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> record_12;\n    record_12.push_back(1);\n    record_12.push_back(2);\n    for(int n : record_12) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> record_12 = {1, 2};\n    for(const auto& n : record_12) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000325",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> entry_13;\n    entry_13.push_back(1);\n    entry_13.push_back(2);\n    for(int n : entry_13) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> entry_13 = {1, 2};\n    for(const auto& n : entry_13) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000326",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> key_14;\n    key_14.push_back(1);\n    key_14.push_back(2);\n    for(int n : key_14) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> key_14 = {1, 2};\n    for(const auto& n : key_14) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000327",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> param_15;\n    param_15.push_back(1);\n    param_15.push_back(2);\n    for(int n : param_15) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> param_15 = {1, 2};\n    for(const auto& n : param_15) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000328",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> arg_16;\n    arg_16.push_back(1);\n    arg_16.push_back(2);\n    for(int n : arg_16) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> arg_16 = {1, 2};\n    for(const auto& n : arg_16) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000329",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> obj_17;\n    obj_17.push_back(1);\n    obj_17.push_back(2);\n    for(int n : obj_17) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> obj_17 = {1, 2};\n    for(const auto& n : obj_17) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000330",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> entity_18;\n    entity_18.push_back(1);\n    entity_18.push_back(2);\n    for(int n : entity_18) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> entity_18 = {1, 2};\n    for(const auto& n : entity_18) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000331",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> model_19;\n    model_19.push_back(1);\n    model_19.push_back(2);\n    for(int n : model_19) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> model_19 = {1, 2};\n    for(const auto& n : model_19) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000332",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> data_20;\n    data_20.push_back(1);\n    data_20.push_back(2);\n    for(int n : data_20) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> data_20 = {1, 2};\n    for(const auto& n : data_20) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000333",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> value_21;\n    value_21.push_back(1);\n    value_21.push_back(2);\n    for(int n : value_21) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> value_21 = {1, 2};\n    for(const auto& n : value_21) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000334",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> item_22;\n    item_22.push_back(1);\n    item_22.push_back(2);\n    for(int n : item_22) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> item_22 = {1, 2};\n    for(const auto& n : item_22) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000335",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> element_23;\n    element_23.push_back(1);\n    element_23.push_back(2);\n    for(int n : element_23) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> element_23 = {1, 2};\n    for(const auto& n : element_23) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000336",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_24;\n    count_24.push_back(1);\n    count_24.push_back(2);\n    for(int n : count_24) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_24 = {1, 2};\n    for(const auto& n : count_24) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000337",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> size_25;\n    size_25.push_back(1);\n    size_25.push_back(2);\n    for(int n : size_25) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> size_25 = {1, 2};\n    for(const auto& n : size_25) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000338",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> index_26;\n    index_26.push_back(1);\n    index_26.push_back(2);\n    for(int n : index_26) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> index_26 = {1, 2};\n    for(const auto& n : index_26) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000339",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> result_27;\n    result_27.push_back(1);\n    result_27.push_back(2);\n    for(int n : result_27) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> result_27 = {1, 2};\n    for(const auto& n : result_27) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000340",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> temp_28;\n    temp_28.push_back(1);\n    temp_28.push_back(2);\n    for(int n : temp_28) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> temp_28 = {1, 2};\n    for(const auto& n : temp_28) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000341",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> cache_29;\n    cache_29.push_back(1);\n    cache_29.push_back(2);\n    for(int n : cache_29) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> cache_29 = {1, 2};\n    for(const auto& n : cache_29) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000342",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> buffer_30;\n    buffer_30.push_back(1);\n    buffer_30.push_back(2);\n    for(int n : buffer_30) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> buffer_30 = {1, 2};\n    for(const auto& n : buffer_30) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000343",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> node_31;\n    node_31.push_back(1);\n    node_31.push_back(2);\n    for(int n : node_31) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> node_31 = {1, 2};\n    for(const auto& n : node_31) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000344",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> record_32;\n    record_32.push_back(1);\n    record_32.push_back(2);\n    for(int n : record_32) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> record_32 = {1, 2};\n    for(const auto& n : record_32) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000345",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> entry_33;\n    entry_33.push_back(1);\n    entry_33.push_back(2);\n    for(int n : entry_33) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> entry_33 = {1, 2};\n    for(const auto& n : entry_33) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000346",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> key_34;\n    key_34.push_back(1);\n    key_34.push_back(2);\n    for(int n : key_34) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> key_34 = {1, 2};\n    for(const auto& n : key_34) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000347",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> param_35;\n    param_35.push_back(1);\n    param_35.push_back(2);\n    for(int n : param_35) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> param_35 = {1, 2};\n    for(const auto& n : param_35) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000348",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> arg_36;\n    arg_36.push_back(1);\n    arg_36.push_back(2);\n    for(int n : arg_36) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> arg_36 = {1, 2};\n    for(const auto& n : arg_36) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000349",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> obj_37;\n    obj_37.push_back(1);\n    obj_37.push_back(2);\n    for(int n : obj_37) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> obj_37 = {1, 2};\n    for(const auto& n : obj_37) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000350",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> entity_38;\n    entity_38.push_back(1);\n    entity_38.push_back(2);\n    for(int n : entity_38) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> entity_38 = {1, 2};\n    for(const auto& n : entity_38) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000351",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> model_39;\n    model_39.push_back(1);\n    model_39.push_back(2);\n    for(int n : model_39) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> model_39 = {1, 2};\n    for(const auto& n : model_39) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000352",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> data_40;\n    data_40.push_back(1);\n    data_40.push_back(2);\n    for(int n : data_40) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> data_40 = {1, 2};\n    for(const auto& n : data_40) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000353",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> value_41;\n    value_41.push_back(1);\n    value_41.push_back(2);\n    for(int n : value_41) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> value_41 = {1, 2};\n    for(const auto& n : value_41) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000354",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> item_42;\n    item_42.push_back(1);\n    item_42.push_back(2);\n    for(int n : item_42) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> item_42 = {1, 2};\n    for(const auto& n : item_42) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000355",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> element_43;\n    element_43.push_back(1);\n    element_43.push_back(2);\n    for(int n : element_43) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> element_43 = {1, 2};\n    for(const auto& n : element_43) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000356",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_44;\n    count_44.push_back(1);\n    count_44.push_back(2);\n    for(int n : count_44) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_44 = {1, 2};\n    for(const auto& n : count_44) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000357",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> size_45;\n    size_45.push_back(1);\n    size_45.push_back(2);\n    for(int n : size_45) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> size_45 = {1, 2};\n    for(const auto& n : size_45) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000358",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> index_46;\n    index_46.push_back(1);\n    index_46.push_back(2);\n    for(int n : index_46) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> index_46 = {1, 2};\n    for(const auto& n : index_46) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000359",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> result_47;\n    result_47.push_back(1);\n    result_47.push_back(2);\n    for(int n : result_47) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> result_47 = {1, 2};\n    for(const auto& n : result_47) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000360",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> temp_48;\n    temp_48.push_back(1);\n    temp_48.push_back(2);\n    for(int n : temp_48) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> temp_48 = {1, 2};\n    for(const auto& n : temp_48) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000361",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> cache_49;\n    cache_49.push_back(1);\n    cache_49.push_back(2);\n    for(int n : cache_49) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> cache_49 = {1, 2};\n    for(const auto& n : cache_49) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000362",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> buffer_50;\n    buffer_50.push_back(1);\n    buffer_50.push_back(2);\n    for(int n : buffer_50) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> buffer_50 = {1, 2};\n    for(const auto& n : buffer_50) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000363",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> node_51;\n    node_51.push_back(1);\n    node_51.push_back(2);\n    for(int n : node_51) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> node_51 = {1, 2};\n    for(const auto& n : node_51) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000364",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> record_52;\n    record_52.push_back(1);\n    record_52.push_back(2);\n    for(int n : record_52) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> record_52 = {1, 2};\n    for(const auto& n : record_52) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000365",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> entry_53;\n    entry_53.push_back(1);\n    entry_53.push_back(2);\n    for(int n : entry_53) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> entry_53 = {1, 2};\n    for(const auto& n : entry_53) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000366",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> key_54;\n    key_54.push_back(1);\n    key_54.push_back(2);\n    for(int n : key_54) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> key_54 = {1, 2};\n    for(const auto& n : key_54) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000367",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> param_55;\n    param_55.push_back(1);\n    param_55.push_back(2);\n    for(int n : param_55) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> param_55 = {1, 2};\n    for(const auto& n : param_55) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000368",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> arg_56;\n    arg_56.push_back(1);\n    arg_56.push_back(2);\n    for(int n : arg_56) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> arg_56 = {1, 2};\n    for(const auto& n : arg_56) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000369",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> obj_57;\n    obj_57.push_back(1);\n    obj_57.push_back(2);\n    for(int n : obj_57) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> obj_57 = {1, 2};\n    for(const auto& n : obj_57) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000370",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> entity_58;\n    entity_58.push_back(1);\n    entity_58.push_back(2);\n    for(int n : entity_58) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> entity_58 = {1, 2};\n    for(const auto& n : entity_58) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000371",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> model_59;\n    model_59.push_back(1);\n    model_59.push_back(2);\n    for(int n : model_59) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> model_59 = {1, 2};\n    for(const auto& n : model_59) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000372",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> data_60;\n    data_60.push_back(1);\n    data_60.push_back(2);\n    for(int n : data_60) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> data_60 = {1, 2};\n    for(const auto& n : data_60) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000373",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> value_61;\n    value_61.push_back(1);\n    value_61.push_back(2);\n    for(int n : value_61) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> value_61 = {1, 2};\n    for(const auto& n : value_61) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000374",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain std::vector.",
+    "input": {
+      "title": "Dynamic Arrays with std::vector",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> item_62;\n    item_62.push_back(1);\n    item_62.push_back(2);\n    for(int n : item_62) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "`std::vector` is a sequence container that encapsulates dynamic size arrays. It manages its own heap memory, automatically reallocating and moving elements when its capacity is exceeded.",
+      "beginner": "A vector is a super-powered list. Unlike basic arrays where you have to know the size in advance, a vector can grow and shrink automatically as you add or remove items.",
+      "analogy": "A regular array is like a bus; it has a fixed number of seats. A vector is like a train; if it gets full, the conductor just attaches another car to the back.",
+      "solution": "Use `std::vector` as your default array in C++. It is safe, fast, and handles memory automatically.",
+      "prevention": "Pass vectors by `const &` to avoid expensive copies.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> item_62 = {1, 2};\n    for(const auto& n : item_62) {\n        std::cout << n << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "stl",
+        "containers"
+      ]
+    }
+  }
+]

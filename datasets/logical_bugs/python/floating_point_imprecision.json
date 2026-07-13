@@ -1,0 +1,2081 @@
+[
+  {
+    "id": "PY_LOGIC_000249",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "count_0 = 0.1 + 0.2\nif count_0 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\ncount_0 = 0.1 + 0.2\nif math.isclose(count_0, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000250",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "total_1 = 0.1 + 0.2\nif total_1 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\ntotal_1 = 0.1 + 0.2\nif math.isclose(total_1, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000251",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "index_2 = 0.1 + 0.2\nif index_2 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nindex_2 = 0.1 + 0.2\nif math.isclose(index_2, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000252",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "sum_3 = 0.1 + 0.2\nif sum_3 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nsum_3 = 0.1 + 0.2\nif math.isclose(sum_3, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000253",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "average_4 = 0.1 + 0.2\nif average_4 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\naverage_4 = 0.1 + 0.2\nif math.isclose(average_4, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000254",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "result_5 = 0.1 + 0.2\nif result_5 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nresult_5 = 0.1 + 0.2\nif math.isclose(result_5, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000255",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "value_6 = 0.1 + 0.2\nif value_6 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nvalue_6 = 0.1 + 0.2\nif math.isclose(value_6, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000256",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "temp_7 = 0.1 + 0.2\nif temp_7 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\ntemp_7 = 0.1 + 0.2\nif math.isclose(temp_7, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000257",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "max_val_8 = 0.1 + 0.2\nif max_val_8 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nmax_val_8 = 0.1 + 0.2\nif math.isclose(max_val_8, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000258",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "min_val_9 = 0.1 + 0.2\nif min_val_9 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nmin_val_9 = 0.1 + 0.2\nif math.isclose(min_val_9, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000259",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "counter_10 = 0.1 + 0.2\nif counter_10 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\ncounter_10 = 0.1 + 0.2\nif math.isclose(counter_10, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000260",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "limit_11 = 0.1 + 0.2\nif limit_11 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nlimit_11 = 0.1 + 0.2\nif math.isclose(limit_11, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000261",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "threshold_12 = 0.1 + 0.2\nif threshold_12 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nthreshold_12 = 0.1 + 0.2\nif math.isclose(threshold_12, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000262",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "score_13 = 0.1 + 0.2\nif score_13 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nscore_13 = 0.1 + 0.2\nif math.isclose(score_13, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000263",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "age_14 = 0.1 + 0.2\nif age_14 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nage_14 = 0.1 + 0.2\nif math.isclose(age_14, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000264",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "size_15 = 0.1 + 0.2\nif size_15 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nsize_15 = 0.1 + 0.2\nif math.isclose(size_15, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000265",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "length_16 = 0.1 + 0.2\nif length_16 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nlength_16 = 0.1 + 0.2\nif math.isclose(length_16, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000266",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "width_17 = 0.1 + 0.2\nif width_17 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nwidth_17 = 0.1 + 0.2\nif math.isclose(width_17, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000267",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "height_18 = 0.1 + 0.2\nif height_18 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nheight_18 = 0.1 + 0.2\nif math.isclose(height_18, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000268",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "depth_19 = 0.1 + 0.2\nif depth_19 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\ndepth_19 = 0.1 + 0.2\nif math.isclose(depth_19, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000269",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "count_20 = 0.1 + 0.2\nif count_20 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\ncount_20 = 0.1 + 0.2\nif math.isclose(count_20, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000270",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "total_21 = 0.1 + 0.2\nif total_21 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\ntotal_21 = 0.1 + 0.2\nif math.isclose(total_21, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000271",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "index_22 = 0.1 + 0.2\nif index_22 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nindex_22 = 0.1 + 0.2\nif math.isclose(index_22, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000272",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "sum_23 = 0.1 + 0.2\nif sum_23 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nsum_23 = 0.1 + 0.2\nif math.isclose(sum_23, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000273",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "average_24 = 0.1 + 0.2\nif average_24 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\naverage_24 = 0.1 + 0.2\nif math.isclose(average_24, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000274",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "result_25 = 0.1 + 0.2\nif result_25 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nresult_25 = 0.1 + 0.2\nif math.isclose(result_25, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000275",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "value_26 = 0.1 + 0.2\nif value_26 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nvalue_26 = 0.1 + 0.2\nif math.isclose(value_26, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000276",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "temp_27 = 0.1 + 0.2\nif temp_27 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\ntemp_27 = 0.1 + 0.2\nif math.isclose(temp_27, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000277",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "max_val_28 = 0.1 + 0.2\nif max_val_28 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nmax_val_28 = 0.1 + 0.2\nif math.isclose(max_val_28, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000278",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "min_val_29 = 0.1 + 0.2\nif min_val_29 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nmin_val_29 = 0.1 + 0.2\nif math.isclose(min_val_29, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000279",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "counter_30 = 0.1 + 0.2\nif counter_30 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\ncounter_30 = 0.1 + 0.2\nif math.isclose(counter_30, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000280",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "limit_31 = 0.1 + 0.2\nif limit_31 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nlimit_31 = 0.1 + 0.2\nif math.isclose(limit_31, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000281",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "threshold_32 = 0.1 + 0.2\nif threshold_32 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nthreshold_32 = 0.1 + 0.2\nif math.isclose(threshold_32, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000282",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "score_33 = 0.1 + 0.2\nif score_33 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nscore_33 = 0.1 + 0.2\nif math.isclose(score_33, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000283",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "age_34 = 0.1 + 0.2\nif age_34 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nage_34 = 0.1 + 0.2\nif math.isclose(age_34, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000284",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "size_35 = 0.1 + 0.2\nif size_35 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nsize_35 = 0.1 + 0.2\nif math.isclose(size_35, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000285",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "length_36 = 0.1 + 0.2\nif length_36 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nlength_36 = 0.1 + 0.2\nif math.isclose(length_36, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000286",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "width_37 = 0.1 + 0.2\nif width_37 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nwidth_37 = 0.1 + 0.2\nif math.isclose(width_37, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000287",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "height_38 = 0.1 + 0.2\nif height_38 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nheight_38 = 0.1 + 0.2\nif math.isclose(height_38, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000288",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "depth_39 = 0.1 + 0.2\nif depth_39 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\ndepth_39 = 0.1 + 0.2\nif math.isclose(depth_39, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000289",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "count_40 = 0.1 + 0.2\nif count_40 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\ncount_40 = 0.1 + 0.2\nif math.isclose(count_40, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000290",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "total_41 = 0.1 + 0.2\nif total_41 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\ntotal_41 = 0.1 + 0.2\nif math.isclose(total_41, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000291",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "index_42 = 0.1 + 0.2\nif index_42 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nindex_42 = 0.1 + 0.2\nif math.isclose(index_42, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000292",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "sum_43 = 0.1 + 0.2\nif sum_43 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nsum_43 = 0.1 + 0.2\nif math.isclose(sum_43, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000293",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "average_44 = 0.1 + 0.2\nif average_44 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\naverage_44 = 0.1 + 0.2\nif math.isclose(average_44, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000294",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "result_45 = 0.1 + 0.2\nif result_45 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nresult_45 = 0.1 + 0.2\nif math.isclose(result_45, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000295",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "value_46 = 0.1 + 0.2\nif value_46 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nvalue_46 = 0.1 + 0.2\nif math.isclose(value_46, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000296",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "temp_47 = 0.1 + 0.2\nif temp_47 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\ntemp_47 = 0.1 + 0.2\nif math.isclose(temp_47, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000297",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "max_val_48 = 0.1 + 0.2\nif max_val_48 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nmax_val_48 = 0.1 + 0.2\nif math.isclose(max_val_48, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000298",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "min_val_49 = 0.1 + 0.2\nif min_val_49 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nmin_val_49 = 0.1 + 0.2\nif math.isclose(min_val_49, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000299",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "counter_50 = 0.1 + 0.2\nif counter_50 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\ncounter_50 = 0.1 + 0.2\nif math.isclose(counter_50, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000300",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "limit_51 = 0.1 + 0.2\nif limit_51 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nlimit_51 = 0.1 + 0.2\nif math.isclose(limit_51, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000301",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "threshold_52 = 0.1 + 0.2\nif threshold_52 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nthreshold_52 = 0.1 + 0.2\nif math.isclose(threshold_52, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000302",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "score_53 = 0.1 + 0.2\nif score_53 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nscore_53 = 0.1 + 0.2\nif math.isclose(score_53, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000303",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "age_54 = 0.1 + 0.2\nif age_54 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nage_54 = 0.1 + 0.2\nif math.isclose(age_54, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000304",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "size_55 = 0.1 + 0.2\nif size_55 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nsize_55 = 0.1 + 0.2\nif math.isclose(size_55, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000305",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "length_56 = 0.1 + 0.2\nif length_56 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nlength_56 = 0.1 + 0.2\nif math.isclose(length_56, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000306",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "width_57 = 0.1 + 0.2\nif width_57 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nwidth_57 = 0.1 + 0.2\nif math.isclose(width_57, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000307",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "height_58 = 0.1 + 0.2\nif height_58 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nheight_58 = 0.1 + 0.2\nif math.isclose(height_58, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000308",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "depth_59 = 0.1 + 0.2\nif depth_59 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\ndepth_59 = 0.1 + 0.2\nif math.isclose(depth_59, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000309",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "count_60 = 0.1 + 0.2\nif count_60 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\ncount_60 = 0.1 + 0.2\nif math.isclose(count_60, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000310",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "total_61 = 0.1 + 0.2\nif total_61 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\ntotal_61 = 0.1 + 0.2\nif math.isclose(total_61, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000311",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the floating point equality check.",
+    "input": {
+      "title": "Float Precision Bug",
+      "code": "index_62 = 0.1 + 0.2\nif index_62 == 0.3:\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "error_message": "No error. Prints 'Not Equal'."
+    },
+    "output": {
+      "technical": "Floating-point numbers are represented in binary, leading to precision loss. `0.1 + 0.2` actually equals `0.30000000000000004`, so strict equality `== 0.3` fails.",
+      "beginner": "Computers do math in base-2 (binary). Some simple decimals like 0.1 cannot be perfectly represented, causing microscopic math errors.",
+      "analogy": "It's like trying to write 1/3 as a decimal (0.333...). You can never write it perfectly. Computers have the same issue with 0.1.",
+      "solution": "Use `math.isclose()` to compare floats with a tolerance, or round the result.",
+      "prevention": "Never use strict equality `==` to compare floating-point numbers.",
+      "optimized_code": "import math\nindex_62 = 0.1 + 0.2\nif math.isclose(index_62, 0.3):\n    print(\"Equal\")\nelse:\n    print(\"Not Equal\")\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "math",
+        "floats",
+        "precision"
+      ]
+    }
+  }
+]

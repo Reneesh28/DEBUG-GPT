@@ -1,0 +1,2048 @@
+[
+  {
+    "id": "PY_OPTIM_000063",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "count_0 = []\nfor i in range(10000):\n    count_0.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[count_0 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "count_0 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000064",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "total_1 = []\nfor i in range(10000):\n    total_1.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[total_1 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "total_1 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000065",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "index_2 = []\nfor i in range(10000):\n    index_2.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[index_2 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "index_2 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000066",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "sum_3 = []\nfor i in range(10000):\n    sum_3.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[sum_3 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "sum_3 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000067",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "average_4 = []\nfor i in range(10000):\n    average_4.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[average_4 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "average_4 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000068",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "result_5 = []\nfor i in range(10000):\n    result_5.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[result_5 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "result_5 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000069",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "value_6 = []\nfor i in range(10000):\n    value_6.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[value_6 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "value_6 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000070",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "temp_7 = []\nfor i in range(10000):\n    temp_7.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[temp_7 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "temp_7 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000071",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "max_val_8 = []\nfor i in range(10000):\n    max_val_8.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[max_val_8 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "max_val_8 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000072",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "min_val_9 = []\nfor i in range(10000):\n    min_val_9.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[min_val_9 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "min_val_9 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000073",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "counter_10 = []\nfor i in range(10000):\n    counter_10.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[counter_10 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "counter_10 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000074",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "limit_11 = []\nfor i in range(10000):\n    limit_11.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[limit_11 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "limit_11 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000075",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "threshold_12 = []\nfor i in range(10000):\n    threshold_12.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[threshold_12 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "threshold_12 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000076",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "score_13 = []\nfor i in range(10000):\n    score_13.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[score_13 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "score_13 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000077",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "age_14 = []\nfor i in range(10000):\n    age_14.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[age_14 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "age_14 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000078",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "size_15 = []\nfor i in range(10000):\n    size_15.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[size_15 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "size_15 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000079",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "length_16 = []\nfor i in range(10000):\n    length_16.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[length_16 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "length_16 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000080",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "width_17 = []\nfor i in range(10000):\n    width_17.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[width_17 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "width_17 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000081",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "height_18 = []\nfor i in range(10000):\n    height_18.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[height_18 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "height_18 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000082",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "depth_19 = []\nfor i in range(10000):\n    depth_19.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[depth_19 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "depth_19 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000083",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "count_20 = []\nfor i in range(10000):\n    count_20.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[count_20 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "count_20 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000084",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "total_21 = []\nfor i in range(10000):\n    total_21.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[total_21 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "total_21 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000085",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "index_22 = []\nfor i in range(10000):\n    index_22.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[index_22 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "index_22 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000086",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "sum_23 = []\nfor i in range(10000):\n    sum_23.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[sum_23 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "sum_23 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000087",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "average_24 = []\nfor i in range(10000):\n    average_24.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[average_24 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "average_24 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000088",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "result_25 = []\nfor i in range(10000):\n    result_25.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[result_25 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "result_25 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000089",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "value_26 = []\nfor i in range(10000):\n    value_26.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[value_26 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "value_26 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000090",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "temp_27 = []\nfor i in range(10000):\n    temp_27.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[temp_27 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "temp_27 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000091",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "max_val_28 = []\nfor i in range(10000):\n    max_val_28.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[max_val_28 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "max_val_28 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000092",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "min_val_29 = []\nfor i in range(10000):\n    min_val_29.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[min_val_29 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "min_val_29 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000093",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "counter_30 = []\nfor i in range(10000):\n    counter_30.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[counter_30 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "counter_30 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000094",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "limit_31 = []\nfor i in range(10000):\n    limit_31.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[limit_31 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "limit_31 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000095",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "threshold_32 = []\nfor i in range(10000):\n    threshold_32.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[threshold_32 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "threshold_32 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000096",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "score_33 = []\nfor i in range(10000):\n    score_33.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[score_33 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "score_33 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000097",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "age_34 = []\nfor i in range(10000):\n    age_34.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[age_34 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "age_34 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000098",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "size_35 = []\nfor i in range(10000):\n    size_35.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[size_35 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "size_35 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000099",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "length_36 = []\nfor i in range(10000):\n    length_36.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[length_36 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "length_36 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000100",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "width_37 = []\nfor i in range(10000):\n    width_37.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[width_37 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "width_37 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000101",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "height_38 = []\nfor i in range(10000):\n    height_38.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[height_38 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "height_38 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000102",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "depth_39 = []\nfor i in range(10000):\n    depth_39.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[depth_39 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "depth_39 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000103",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "count_40 = []\nfor i in range(10000):\n    count_40.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[count_40 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "count_40 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000104",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "total_41 = []\nfor i in range(10000):\n    total_41.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[total_41 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "total_41 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000105",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "index_42 = []\nfor i in range(10000):\n    index_42.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[index_42 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "index_42 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000106",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "sum_43 = []\nfor i in range(10000):\n    sum_43.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[sum_43 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "sum_43 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000107",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "average_44 = []\nfor i in range(10000):\n    average_44.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[average_44 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "average_44 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000108",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "result_45 = []\nfor i in range(10000):\n    result_45.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[result_45 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "result_45 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000109",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "value_46 = []\nfor i in range(10000):\n    value_46.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[value_46 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "value_46 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000110",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "temp_47 = []\nfor i in range(10000):\n    temp_47.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[temp_47 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "temp_47 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000111",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "max_val_48 = []\nfor i in range(10000):\n    max_val_48.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[max_val_48 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "max_val_48 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000112",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "min_val_49 = []\nfor i in range(10000):\n    min_val_49.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[min_val_49 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "min_val_49 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000113",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "counter_50 = []\nfor i in range(10000):\n    counter_50.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[counter_50 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "counter_50 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000114",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "limit_51 = []\nfor i in range(10000):\n    limit_51.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[limit_51 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "limit_51 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000115",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "threshold_52 = []\nfor i in range(10000):\n    threshold_52.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[threshold_52 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "threshold_52 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000116",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "score_53 = []\nfor i in range(10000):\n    score_53.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[score_53 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "score_53 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000117",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "age_54 = []\nfor i in range(10000):\n    age_54.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[age_54 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "age_54 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000118",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "size_55 = []\nfor i in range(10000):\n    size_55.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[size_55 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "size_55 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000119",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "length_56 = []\nfor i in range(10000):\n    length_56.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[length_56 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "length_56 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000120",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "width_57 = []\nfor i in range(10000):\n    width_57.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[width_57 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "width_57 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000121",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "height_58 = []\nfor i in range(10000):\n    height_58.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[height_58 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "height_58 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000122",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "depth_59 = []\nfor i in range(10000):\n    depth_59.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[depth_59 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "depth_59 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000123",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "count_60 = []\nfor i in range(10000):\n    count_60.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[count_60 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "count_60 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000124",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the list creation.",
+    "input": {
+      "title": "Appending in a Loop",
+      "code": "total_61 = []\nfor i in range(10000):\n    total_61.append(i * 2)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using a `for` loop with `.append()` incurs Python-level function call overhead for every element. List comprehensions are optimized in C and are much faster.",
+      "beginner": "List comprehensions are a faster, built-in shortcut for building lists compared to standard loops.",
+      "analogy": "It's like using an assembly line to build cars instead of having one mechanic build them one at a time.",
+      "solution": "Replace the loop with a list comprehension: `[total_61 = [i * 2 for i in range(10000)]]`.",
+      "prevention": "Use list comprehensions for simple map and filter operations.",
+      "optimized_code": "total_61 = [i * 2 for i in range(10000)]\n",
+      "complexity": {
+        "before": "O(N) with overhead",
+        "after": "O(N) optimized in C"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list-comprehension",
+        "append",
+        "speed"
+      ]
+    }
+  }
+]

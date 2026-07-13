@@ -1,0 +1,2081 @@
+[
+  {
+    "id": "PY_LOGIC_000438",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000439",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000440",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000441",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000442",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000443",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000444",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000445",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000446",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000447",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000448",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000449",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000450",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000451",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000452",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000453",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000454",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000455",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000456",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000457",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000458",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000459",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000460",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000461",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000462",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000463",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000464",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000465",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000466",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000467",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000468",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000469",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000470",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000471",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000472",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000473",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000474",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000475",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000476",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000477",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000478",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000479",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000480",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000481",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000482",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000483",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000484",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000485",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000486",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000487",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000488",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000489",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000490",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000491",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000492",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000493",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000494",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000495",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000496",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000497",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000498",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000499",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000500",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the shadowing of the built-in function 'sum'.",
+    "input": {
+      "title": "Overwriting Built-in Functions",
+      "code": "sum = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "error_message": "TypeError: 'int' object is not callable"
+    },
+    "output": {
+      "technical": "The variable name `sum` shadows the built-in Python function `sum()`. When the code tries to call `sum(my_list)`, it attempts to call the integer `10`, causing a TypeError.",
+      "beginner": "You created a variable named `sum`, which destroyed Python's built-in `sum` math tool.",
+      "analogy": "It's like hiring a guy named 'Doctor' to mow your lawn, and then getting confused when he doesn't know how to treat a patient.",
+      "solution": "Rename the variable `sum` to something else, like `total_sum`.",
+      "prevention": "Avoid using Python keywords and built-in function names (e.g., list, dict, str, int, sum, max, min) as variable names.",
+      "optimized_code": "total_val = 10\nmy_list = [1, 2, 3]\ntotal = sum(my_list)\nprint(total)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "variables",
+        "built-ins",
+        "shadowing"
+      ]
+    }
+  }
+]

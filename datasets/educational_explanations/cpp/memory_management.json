@@ -1,0 +1,2048 @@
+[
+  {
+    "id": "CP_EDU_000063",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000064",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000065",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000066",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000067",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000068",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000069",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000070",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000071",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000072",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000073",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000074",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000075",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000076",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000077",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000078",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000079",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000080",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000081",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000082",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000083",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000084",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000085",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000086",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000087",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000088",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000089",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000090",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000091",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000092",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000093",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000094",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000095",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000096",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000097",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000098",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000099",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000100",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000101",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000102",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000103",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000104",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000105",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000106",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000107",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000108",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000109",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000110",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000111",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000112",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000113",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000114",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000115",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000116",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000117",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000118",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000119",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000120",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000121",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000122",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000123",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000124",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain the stack vs the heap.",
+    "input": {
+      "title": "Stack and Heap Allocation",
+      "code": "#include <iostream>\n\nvoid allocate() {\n    int stack_var = 5; // Stack\n    int* heap_var = new int(10); // Heap\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n    delete heap_var;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Stack memory is managed automatically via scope and is fast but limited in size. Heap memory is allocated dynamically using `new`, managed manually (or via smart pointers), and persists until `delete` is called.",
+      "beginner": "The stack is a small, organized scratchpad the computer cleans up for you automatically. The heap is a massive warehouse where you can store huge things, but you have to clean it up yourself.",
+      "analogy": "The stack is a hotel room (you stay temporarily, and the maid cleans up when you leave). The heap is an apartment (you furnish it, but you are responsible for moving everything out).",
+      "solution": "Use stack allocation whenever possible. When heap allocation is required, use RAII (smart pointers).",
+      "prevention": "Failing to call `delete` on heap memory causes memory leaks.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid allocate() {\n    int stack_var = 5;\n    auto heap_var = std::make_unique<int>(10);\n    std::cout << stack_var << \", \" << *heap_var << std::endl;\n}\n\nint main() {\n    allocate();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "heap",
+        "stack"
+      ]
+    }
+  }
+]

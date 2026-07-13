@@ -1,0 +1,2081 @@
+[
+  {
+    "id": "PY_LOGIC_000312",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000313",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000314",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000315",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000316",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000317",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000318",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000319",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000320",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000321",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000322",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000323",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000324",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000325",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000326",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000327",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000328",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000329",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000330",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000331",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000332",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000333",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000334",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000335",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000336",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000337",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000338",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000339",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000340",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000341",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000342",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000343",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000344",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000345",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000346",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000347",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000348",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000349",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000350",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000351",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000352",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000353",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000354",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000355",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000356",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000357",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000358",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000359",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000360",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000361",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000362",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000363",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000364",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000365",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000366",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000367",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000368",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000369",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000370",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000371",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000372",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000373",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000374",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the list modification impacting both variables.",
+    "input": {
+      "title": "Shallow Copy Assignment",
+      "code": "list_a = [1, 2, 3]\nlist_b = list_a\nlist_b.append(4)\nprint(list_a)\n",
+      "error_message": "No error. Modifies list_a unexpectedly (prints [1, 2, 3, 4])."
+    },
+    "output": {
+      "technical": "Assigning `list_b = list_a` does not copy the list; it assigns a reference to the same underlying memory object. Modifying `list_b` mutates the single shared list.",
+      "beginner": "You didn't make a copy of the list. You just gave the same list two different names.",
+      "analogy": "If you call a person 'John' and 'Mr. Smith', changing the shirt on 'John' means 'Mr. Smith' is also wearing a new shirt. They are the same person.",
+      "solution": "Create a true copy using `.copy()`, `[:]`, or the `copy` module.",
+      "prevention": "Use `.copy()` when you need a distinct clone of a list or dictionary.",
+      "optimized_code": "list_a = [1, 2, 3]\nlist_b = list_a.copy()\nlist_b.append(4)\nprint(list_a)\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "references",
+        "copy"
+      ]
+    }
+  }
+]

@@ -1,0 +1,2081 @@
+[
+  {
+    "id": "PY_OPTIM_000375",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000376",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000377",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000378",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000379",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000380",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000381",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000382",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000383",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000384",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000385",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000386",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000387",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000388",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000389",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000390",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000391",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000392",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000393",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000394",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000395",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000396",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000397",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000398",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000399",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000400",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000401",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000402",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000403",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000404",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000405",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000406",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000407",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000408",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000409",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000410",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000411",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000412",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000413",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000414",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000415",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000416",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000417",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000418",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000419",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000420",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000421",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000422",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000423",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000424",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000425",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000426",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000427",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000428",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000429",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000430",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000431",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000432",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000433",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000434",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000435",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000436",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000437",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the scope of variables inside loops.",
+    "input": {
+      "title": "Accessing Global inside Loop",
+      "code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    total = 0\n    for i in range(10000):\n        total += i * GLOBAL_MULTIPLIER\n    return total\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Accessing global variables involves dictionary lookups in the `globals()` dictionary, which is significantly slower than accessing local variables (which use C arrays under the hood).",
+      "beginner": "Python takes longer to find 'global' variables outside a function. If you use it a lot, copy it locally first.",
+      "analogy": "It's like keeping your hammer in the garage instead of on your toolbelt while framing a house.",
+      "solution": "Assign the global variable to a local variable before the loop.",
+      "prevention": "Cache global references locally if they are accessed inside performance-critical loops.",
+      "optimized_code": "GLOBAL_MULTIPLIER = 2\n\ndef calculate():\n    local_mult = GLOBAL_MULTIPLIER\n    total = 0\n    for i in range(10000):\n        total += i * local_mult\n    return total\n",
+      "complexity": {
+        "before": "O(N) with global lookup",
+        "after": "O(N) with local lookup"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "scope",
+        "global",
+        "loop"
+      ]
+    }
+  }
+]

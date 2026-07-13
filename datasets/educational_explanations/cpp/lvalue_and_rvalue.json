@@ -1,0 +1,2081 @@
+[
+  {
+    "id": "CP_EDU_000438",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string data_0) {\n    std::cout << data_0 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string data_0) {\n    std::cout << data_0 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000439",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string value_1) {\n    std::cout << value_1 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string value_1) {\n    std::cout << value_1 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000440",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string item_2) {\n    std::cout << item_2 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string item_2) {\n    std::cout << item_2 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000441",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string element_3) {\n    std::cout << element_3 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string element_3) {\n    std::cout << element_3 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000442",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string count_4) {\n    std::cout << count_4 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string count_4) {\n    std::cout << count_4 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000443",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string size_5) {\n    std::cout << size_5 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string size_5) {\n    std::cout << size_5 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000444",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string index_6) {\n    std::cout << index_6 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string index_6) {\n    std::cout << index_6 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000445",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string result_7) {\n    std::cout << result_7 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string result_7) {\n    std::cout << result_7 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000446",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string temp_8) {\n    std::cout << temp_8 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string temp_8) {\n    std::cout << temp_8 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000447",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string cache_9) {\n    std::cout << cache_9 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string cache_9) {\n    std::cout << cache_9 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000448",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string buffer_10) {\n    std::cout << buffer_10 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string buffer_10) {\n    std::cout << buffer_10 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000449",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string node_11) {\n    std::cout << node_11 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string node_11) {\n    std::cout << node_11 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000450",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string record_12) {\n    std::cout << record_12 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string record_12) {\n    std::cout << record_12 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000451",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string entry_13) {\n    std::cout << entry_13 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string entry_13) {\n    std::cout << entry_13 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000452",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string key_14) {\n    std::cout << key_14 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string key_14) {\n    std::cout << key_14 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000453",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string param_15) {\n    std::cout << param_15 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string param_15) {\n    std::cout << param_15 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000454",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string arg_16) {\n    std::cout << arg_16 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string arg_16) {\n    std::cout << arg_16 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000455",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string obj_17) {\n    std::cout << obj_17 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string obj_17) {\n    std::cout << obj_17 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000456",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string entity_18) {\n    std::cout << entity_18 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string entity_18) {\n    std::cout << entity_18 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000457",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string model_19) {\n    std::cout << model_19 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string model_19) {\n    std::cout << model_19 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000458",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string data_20) {\n    std::cout << data_20 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string data_20) {\n    std::cout << data_20 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000459",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string value_21) {\n    std::cout << value_21 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string value_21) {\n    std::cout << value_21 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000460",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string item_22) {\n    std::cout << item_22 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string item_22) {\n    std::cout << item_22 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000461",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string element_23) {\n    std::cout << element_23 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string element_23) {\n    std::cout << element_23 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000462",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string count_24) {\n    std::cout << count_24 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string count_24) {\n    std::cout << count_24 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000463",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string size_25) {\n    std::cout << size_25 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string size_25) {\n    std::cout << size_25 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000464",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string index_26) {\n    std::cout << index_26 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string index_26) {\n    std::cout << index_26 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000465",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string result_27) {\n    std::cout << result_27 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string result_27) {\n    std::cout << result_27 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000466",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string temp_28) {\n    std::cout << temp_28 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string temp_28) {\n    std::cout << temp_28 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000467",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string cache_29) {\n    std::cout << cache_29 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string cache_29) {\n    std::cout << cache_29 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000468",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string buffer_30) {\n    std::cout << buffer_30 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string buffer_30) {\n    std::cout << buffer_30 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000469",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string node_31) {\n    std::cout << node_31 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string node_31) {\n    std::cout << node_31 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000470",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string record_32) {\n    std::cout << record_32 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string record_32) {\n    std::cout << record_32 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000471",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string entry_33) {\n    std::cout << entry_33 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string entry_33) {\n    std::cout << entry_33 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000472",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string key_34) {\n    std::cout << key_34 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string key_34) {\n    std::cout << key_34 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000473",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string param_35) {\n    std::cout << param_35 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string param_35) {\n    std::cout << param_35 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000474",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string arg_36) {\n    std::cout << arg_36 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string arg_36) {\n    std::cout << arg_36 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000475",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string obj_37) {\n    std::cout << obj_37 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string obj_37) {\n    std::cout << obj_37 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000476",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string entity_38) {\n    std::cout << entity_38 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string entity_38) {\n    std::cout << entity_38 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000477",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string model_39) {\n    std::cout << model_39 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string model_39) {\n    std::cout << model_39 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000478",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string data_40) {\n    std::cout << data_40 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string data_40) {\n    std::cout << data_40 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000479",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string value_41) {\n    std::cout << value_41 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string value_41) {\n    std::cout << value_41 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000480",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string item_42) {\n    std::cout << item_42 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string item_42) {\n    std::cout << item_42 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000481",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string element_43) {\n    std::cout << element_43 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string element_43) {\n    std::cout << element_43 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000482",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string count_44) {\n    std::cout << count_44 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string count_44) {\n    std::cout << count_44 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000483",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string size_45) {\n    std::cout << size_45 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string size_45) {\n    std::cout << size_45 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000484",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string index_46) {\n    std::cout << index_46 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string index_46) {\n    std::cout << index_46 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000485",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string result_47) {\n    std::cout << result_47 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string result_47) {\n    std::cout << result_47 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000486",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string temp_48) {\n    std::cout << temp_48 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string temp_48) {\n    std::cout << temp_48 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000487",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string cache_49) {\n    std::cout << cache_49 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string cache_49) {\n    std::cout << cache_49 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000488",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string buffer_50) {\n    std::cout << buffer_50 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string buffer_50) {\n    std::cout << buffer_50 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000489",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string node_51) {\n    std::cout << node_51 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string node_51) {\n    std::cout << node_51 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000490",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string record_52) {\n    std::cout << record_52 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string record_52) {\n    std::cout << record_52 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000491",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string entry_53) {\n    std::cout << entry_53 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string entry_53) {\n    std::cout << entry_53 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000492",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string key_54) {\n    std::cout << key_54 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string key_54) {\n    std::cout << key_54 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000493",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string param_55) {\n    std::cout << param_55 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string param_55) {\n    std::cout << param_55 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000494",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string arg_56) {\n    std::cout << arg_56 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string arg_56) {\n    std::cout << arg_56 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000495",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string obj_57) {\n    std::cout << obj_57 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string obj_57) {\n    std::cout << obj_57 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000496",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string entity_58) {\n    std::cout << entity_58 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string entity_58) {\n    std::cout << entity_58 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000497",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string model_59) {\n    std::cout << model_59 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string model_59) {\n    std::cout << model_59 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000498",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string data_60) {\n    std::cout << data_60 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string data_60) {\n    std::cout << data_60 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000499",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string value_61) {\n    std::cout << value_61 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string value_61) {\n    std::cout << value_61 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000500",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain lvalues, rvalues, and move semantics.",
+    "input": {
+      "title": "Move Semantics",
+      "code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string item_62) {\n    std::cout << item_62 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "An lvalue is an object with an identifiable memory address. An rvalue is a temporary value. `std::move` casts an lvalue to an rvalue reference (`&&`), enabling the compiler to 'steal' its resources rather than copy them.",
+      "beginner": "Normally, giving data to a function makes a copy. 'Move semantics' lets you say 'I'm done with this variable, you can just take it', which is incredibly fast because it skips copying.",
+      "analogy": "Copying is like reading a document and writing an exact copy on a new sheet of paper. Moving is just handing the original piece of paper to someone else.",
+      "solution": "Use `std::move` to transfer ownership of heavy objects (like vectors and strings) when the original variable is no longer needed.",
+      "prevention": "Do not access an object after it has been moved from, as its state is valid but unspecified (usually empty).",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <utility>\n\nvoid print(std::string item_62) {\n    std::cout << item_62 << std::endl;\n}\n\nint main() {\n    std::string str = \"Hello\";\n    print(std::move(str));\n    // str is now empty\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1) transfer",
+        "after": "O(1) transfer"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "move-semantics",
+        "rvalue",
+        "performance"
+      ]
+    }
+  }
+]

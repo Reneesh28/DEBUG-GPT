@@ -1,0 +1,2048 @@
+[
+  {
+    "id": "CP_LOGIC_000001",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int count_0[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << count_0[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int count_0[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << count_0[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000002",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int total_1[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << total_1[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total_1[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << total_1[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000003",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int index_2[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << index_2[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int index_2[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << index_2[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000004",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int sum_3[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << sum_3[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int sum_3[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << sum_3[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000005",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int average_4[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << average_4[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int average_4[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << average_4[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000006",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int result_5[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << result_5[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int result_5[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << result_5[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000007",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int value_6[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << value_6[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int value_6[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << value_6[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000008",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int temp_7[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << temp_7[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int temp_7[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << temp_7[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000009",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int max_val_8[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << max_val_8[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int max_val_8[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << max_val_8[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000010",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int min_val_9[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << min_val_9[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int min_val_9[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << min_val_9[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000011",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int counter_10[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << counter_10[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int counter_10[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << counter_10[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000012",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int limit_11[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << limit_11[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int limit_11[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << limit_11[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000013",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int threshold_12[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << threshold_12[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int threshold_12[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << threshold_12[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000014",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int score_13[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << score_13[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int score_13[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << score_13[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000015",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int age_14[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << age_14[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int age_14[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << age_14[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000016",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int size_15[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << size_15[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int size_15[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << size_15[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000017",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int length_16[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << length_16[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int length_16[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << length_16[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000018",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int width_17[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << width_17[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int width_17[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << width_17[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000019",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int height_18[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << height_18[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int height_18[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << height_18[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000020",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int depth_19[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << depth_19[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int depth_19[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << depth_19[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000021",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int count_20[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << count_20[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int count_20[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << count_20[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000022",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int total_21[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << total_21[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total_21[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << total_21[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000023",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int index_22[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << index_22[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int index_22[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << index_22[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000024",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int sum_23[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << sum_23[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int sum_23[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << sum_23[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000025",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int average_24[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << average_24[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int average_24[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << average_24[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000026",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int result_25[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << result_25[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int result_25[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << result_25[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000027",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int value_26[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << value_26[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int value_26[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << value_26[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000028",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int temp_27[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << temp_27[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int temp_27[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << temp_27[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000029",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int max_val_28[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << max_val_28[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int max_val_28[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << max_val_28[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000030",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int min_val_29[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << min_val_29[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int min_val_29[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << min_val_29[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000031",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int counter_30[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << counter_30[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int counter_30[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << counter_30[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000032",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int limit_31[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << limit_31[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int limit_31[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << limit_31[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000033",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int threshold_32[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << threshold_32[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int threshold_32[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << threshold_32[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000034",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int score_33[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << score_33[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int score_33[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << score_33[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000035",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int age_34[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << age_34[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int age_34[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << age_34[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000036",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int size_35[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << size_35[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int size_35[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << size_35[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000037",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int length_36[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << length_36[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int length_36[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << length_36[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000038",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int width_37[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << width_37[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int width_37[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << width_37[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000039",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int height_38[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << height_38[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int height_38[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << height_38[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000040",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int depth_39[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << depth_39[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int depth_39[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << depth_39[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000041",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int count_40[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << count_40[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int count_40[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << count_40[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000042",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int total_41[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << total_41[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total_41[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << total_41[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000043",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int index_42[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << index_42[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int index_42[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << index_42[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000044",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int sum_43[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << sum_43[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int sum_43[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << sum_43[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000045",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int average_44[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << average_44[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int average_44[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << average_44[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000046",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int result_45[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << result_45[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int result_45[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << result_45[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000047",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int value_46[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << value_46[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int value_46[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << value_46[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000048",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int temp_47[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << temp_47[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int temp_47[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << temp_47[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000049",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int max_val_48[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << max_val_48[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int max_val_48[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << max_val_48[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000050",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int min_val_49[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << min_val_49[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int min_val_49[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << min_val_49[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000051",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int counter_50[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << counter_50[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int counter_50[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << counter_50[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000052",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int limit_51[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << limit_51[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int limit_51[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << limit_51[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000053",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int threshold_52[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << threshold_52[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int threshold_52[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << threshold_52[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000054",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int score_53[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << score_53[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int score_53[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << score_53[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000055",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int age_54[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << age_54[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int age_54[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << age_54[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000056",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int size_55[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << size_55[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int size_55[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << size_55[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000057",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int length_56[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << length_56[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int length_56[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << length_56[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000058",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int width_57[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << width_57[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int width_57[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << width_57[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000059",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int height_58[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << height_58[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int height_58[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << height_58[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000060",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int depth_59[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << depth_59[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int depth_59[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << depth_59[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000061",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int count_60[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << count_60[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int count_60[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << count_60[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000062",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the off-by-one error in the loop boundary.",
+    "input": {
+      "title": "Off-By-One Array Traversal",
+      "code": "#include <iostream>\n\nint main() {\n    int total_61[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i <= 5; i++) {\n        std::cout << total_61[i] << \" \";\n    }\n    return 0;\n}\n",
+      "error_message": "No compiler error, but runtime behavior prints garbage or crashes due to out-of-bounds access."
+    },
+    "output": {
+      "technical": "The loop condition `i <= 5` attempts to access index 5, which is outside the bounds of a 5-element array (valid indices are 0 to 4). This results in undefined behavior.",
+      "beginner": "Your loop goes one step too far. Since arrays start counting at 0, the 5th item is at index 4.",
+      "analogy": "It's like walking a dog on a 4-foot leash, but throwing the ball 5 feet away. The dog will hit the end of the leash and choke.",
+      "solution": "Change the loop condition from `<=` to `<`.",
+      "prevention": "When iterating over arrays, always use `< length` instead of `<= length`.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total_61[5] = {1, 2, 3, 4, 5};\n    for (int i = 0; i < 5; i++) {\n        std::cout << total_61[i] << \" \";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "off-by-one",
+        "array"
+      ]
+    }
+  }
+]

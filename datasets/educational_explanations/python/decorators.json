@@ -1,0 +1,2048 @@
+[
+  {
+    "id": "PY_EDU_000187",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef demo_0():\n    print(\"Inside the function\")\n\ndemo_0()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000188",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef explain_1():\n    print(\"Inside the function\")\n\nexplain_1()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000189",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef show_2():\n    print(\"Inside the function\")\n\nshow_2()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000190",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef illustrate_3():\n    print(\"Inside the function\")\n\nillustrate_3()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000191",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef concept_4():\n    print(\"Inside the function\")\n\nconcept_4()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000192",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef example_5():\n    print(\"Inside the function\")\n\nexample_5()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000193",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef learn_6():\n    print(\"Inside the function\")\n\nlearn_6()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000194",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef teach_7():\n    print(\"Inside the function\")\n\nteach_7()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000195",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef guide_8():\n    print(\"Inside the function\")\n\nguide_8()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000196",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef tutorial_9():\n    print(\"Inside the function\")\n\ntutorial_9()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000197",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef run_10():\n    print(\"Inside the function\")\n\nrun_10()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000198",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef execute_11():\n    print(\"Inside the function\")\n\nexecute_11()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000199",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef process_12():\n    print(\"Inside the function\")\n\nprocess_12()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000200",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef handle_13():\n    print(\"Inside the function\")\n\nhandle_13()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000201",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef manage_14():\n    print(\"Inside the function\")\n\nmanage_14()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000202",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef setup_15():\n    print(\"Inside the function\")\n\nsetup_15()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000203",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef configure_16():\n    print(\"Inside the function\")\n\nconfigure_16()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000204",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef build_17():\n    print(\"Inside the function\")\n\nbuild_17()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000205",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef create_18():\n    print(\"Inside the function\")\n\ncreate_18()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000206",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef test_19():\n    print(\"Inside the function\")\n\ntest_19()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000207",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef demo_20():\n    print(\"Inside the function\")\n\ndemo_20()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000208",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef explain_21():\n    print(\"Inside the function\")\n\nexplain_21()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000209",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef show_22():\n    print(\"Inside the function\")\n\nshow_22()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000210",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef illustrate_23():\n    print(\"Inside the function\")\n\nillustrate_23()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000211",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef concept_24():\n    print(\"Inside the function\")\n\nconcept_24()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000212",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef example_25():\n    print(\"Inside the function\")\n\nexample_25()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000213",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef learn_26():\n    print(\"Inside the function\")\n\nlearn_26()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000214",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef teach_27():\n    print(\"Inside the function\")\n\nteach_27()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000215",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef guide_28():\n    print(\"Inside the function\")\n\nguide_28()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000216",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef tutorial_29():\n    print(\"Inside the function\")\n\ntutorial_29()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000217",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef run_30():\n    print(\"Inside the function\")\n\nrun_30()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000218",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef execute_31():\n    print(\"Inside the function\")\n\nexecute_31()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000219",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef process_32():\n    print(\"Inside the function\")\n\nprocess_32()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000220",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef handle_33():\n    print(\"Inside the function\")\n\nhandle_33()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000221",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef manage_34():\n    print(\"Inside the function\")\n\nmanage_34()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000222",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef setup_35():\n    print(\"Inside the function\")\n\nsetup_35()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000223",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef configure_36():\n    print(\"Inside the function\")\n\nconfigure_36()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000224",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef build_37():\n    print(\"Inside the function\")\n\nbuild_37()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000225",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef create_38():\n    print(\"Inside the function\")\n\ncreate_38()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000226",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef test_39():\n    print(\"Inside the function\")\n\ntest_39()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000227",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef demo_40():\n    print(\"Inside the function\")\n\ndemo_40()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000228",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef explain_41():\n    print(\"Inside the function\")\n\nexplain_41()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000229",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef show_42():\n    print(\"Inside the function\")\n\nshow_42()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000230",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef illustrate_43():\n    print(\"Inside the function\")\n\nillustrate_43()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000231",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef concept_44():\n    print(\"Inside the function\")\n\nconcept_44()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000232",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef example_45():\n    print(\"Inside the function\")\n\nexample_45()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000233",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef learn_46():\n    print(\"Inside the function\")\n\nlearn_46()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000234",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef teach_47():\n    print(\"Inside the function\")\n\nteach_47()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000235",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef guide_48():\n    print(\"Inside the function\")\n\nguide_48()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000236",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef tutorial_49():\n    print(\"Inside the function\")\n\ntutorial_49()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000237",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef run_50():\n    print(\"Inside the function\")\n\nrun_50()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000238",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef execute_51():\n    print(\"Inside the function\")\n\nexecute_51()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000239",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef process_52():\n    print(\"Inside the function\")\n\nprocess_52()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000240",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef handle_53():\n    print(\"Inside the function\")\n\nhandle_53()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000241",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef manage_54():\n    print(\"Inside the function\")\n\nmanage_54()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000242",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef setup_55():\n    print(\"Inside the function\")\n\nsetup_55()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000243",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef configure_56():\n    print(\"Inside the function\")\n\nconfigure_56()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000244",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef build_57():\n    print(\"Inside the function\")\n\nbuild_57()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000245",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef create_58():\n    print(\"Inside the function\")\n\ncreate_58()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000246",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef test_59():\n    print(\"Inside the function\")\n\ntest_59()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000247",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef demo_60():\n    print(\"Inside the function\")\n\ndemo_60()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000248",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain Python decorators.",
+    "input": {
+      "title": "Decorators",
+      "code": "def my_decorator(func):\n    def wrapper():\n        print(\"Before the function\")\n        func()\n        print(\"After the function\")\n    return wrapper\n\n@my_decorator\ndef explain_61():\n    print(\"Inside the function\")\n\nexplain_61()\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "A decorator is a higher-order function that takes a function, wraps it in another function to add behavior, and returns the new function. The `@` syntax is syntactic sugar for `{fn} = my_decorator({fn})`.",
+      "beginner": "A decorator is a 'wrapper' that you can easily snap onto any function. It lets you run code before or after the function without modifying the function itself.",
+      "analogy": "It's like wrapping a fragile glass cup (your function) in bubble wrap (the decorator) before shipping it. The cup is unchanged, but you've added safety around it.",
+      "solution": "Use decorators for logging, authentication, timing, or caching across multiple functions.",
+      "prevention": "Always use `functools.wraps` inside your decorators so that the original function's name and documentation aren't lost.",
+      "optimized_code": "from functools import wraps\n\ndef my_decorator(func):\n    @wraps(func)\n    def wrapper(*args, **kwargs):\n        print(\"Before\")\n        result = func(*args, **kwargs)\n        print(\"After\")\n        return result\n    return wrapper\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "decorators",
+        "functions",
+        "wrappers"
+      ]
+    }
+  }
+]

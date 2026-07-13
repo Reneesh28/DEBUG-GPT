@@ -1,0 +1,2048 @@
+[
+  {
+    "id": "PY_OPTIM_000001",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "count_0 = \"\"\nfor i in range(10000):\n    count_0 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\ncount_0 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000002",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "total_1 = \"\"\nfor i in range(10000):\n    total_1 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\ntotal_1 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000003",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "index_2 = \"\"\nfor i in range(10000):\n    index_2 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nindex_2 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000004",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "sum_3 = \"\"\nfor i in range(10000):\n    sum_3 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nsum_3 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000005",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "average_4 = \"\"\nfor i in range(10000):\n    average_4 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\naverage_4 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000006",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "result_5 = \"\"\nfor i in range(10000):\n    result_5 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nresult_5 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000007",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "value_6 = \"\"\nfor i in range(10000):\n    value_6 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nvalue_6 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000008",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "temp_7 = \"\"\nfor i in range(10000):\n    temp_7 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\ntemp_7 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000009",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "max_val_8 = \"\"\nfor i in range(10000):\n    max_val_8 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nmax_val_8 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000010",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "min_val_9 = \"\"\nfor i in range(10000):\n    min_val_9 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nmin_val_9 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000011",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "counter_10 = \"\"\nfor i in range(10000):\n    counter_10 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\ncounter_10 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000012",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "limit_11 = \"\"\nfor i in range(10000):\n    limit_11 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nlimit_11 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000013",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "threshold_12 = \"\"\nfor i in range(10000):\n    threshold_12 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nthreshold_12 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000014",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "score_13 = \"\"\nfor i in range(10000):\n    score_13 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nscore_13 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000015",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "age_14 = \"\"\nfor i in range(10000):\n    age_14 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nage_14 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000016",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "size_15 = \"\"\nfor i in range(10000):\n    size_15 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nsize_15 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000017",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "length_16 = \"\"\nfor i in range(10000):\n    length_16 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nlength_16 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000018",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "width_17 = \"\"\nfor i in range(10000):\n    width_17 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nwidth_17 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000019",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "height_18 = \"\"\nfor i in range(10000):\n    height_18 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nheight_18 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000020",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "depth_19 = \"\"\nfor i in range(10000):\n    depth_19 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\ndepth_19 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000021",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "count_20 = \"\"\nfor i in range(10000):\n    count_20 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\ncount_20 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000022",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "total_21 = \"\"\nfor i in range(10000):\n    total_21 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\ntotal_21 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000023",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "index_22 = \"\"\nfor i in range(10000):\n    index_22 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nindex_22 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000024",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "sum_23 = \"\"\nfor i in range(10000):\n    sum_23 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nsum_23 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000025",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "average_24 = \"\"\nfor i in range(10000):\n    average_24 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\naverage_24 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000026",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "result_25 = \"\"\nfor i in range(10000):\n    result_25 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nresult_25 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000027",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "value_26 = \"\"\nfor i in range(10000):\n    value_26 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nvalue_26 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000028",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "temp_27 = \"\"\nfor i in range(10000):\n    temp_27 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\ntemp_27 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000029",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "max_val_28 = \"\"\nfor i in range(10000):\n    max_val_28 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nmax_val_28 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000030",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "min_val_29 = \"\"\nfor i in range(10000):\n    min_val_29 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nmin_val_29 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000031",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "counter_30 = \"\"\nfor i in range(10000):\n    counter_30 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\ncounter_30 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000032",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "limit_31 = \"\"\nfor i in range(10000):\n    limit_31 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nlimit_31 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000033",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "threshold_32 = \"\"\nfor i in range(10000):\n    threshold_32 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nthreshold_32 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000034",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "score_33 = \"\"\nfor i in range(10000):\n    score_33 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nscore_33 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000035",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "age_34 = \"\"\nfor i in range(10000):\n    age_34 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nage_34 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000036",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "size_35 = \"\"\nfor i in range(10000):\n    size_35 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nsize_35 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000037",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "length_36 = \"\"\nfor i in range(10000):\n    length_36 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nlength_36 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000038",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "width_37 = \"\"\nfor i in range(10000):\n    width_37 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nwidth_37 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000039",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "height_38 = \"\"\nfor i in range(10000):\n    height_38 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nheight_38 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000040",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "depth_39 = \"\"\nfor i in range(10000):\n    depth_39 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\ndepth_39 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000041",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "count_40 = \"\"\nfor i in range(10000):\n    count_40 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\ncount_40 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000042",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "total_41 = \"\"\nfor i in range(10000):\n    total_41 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\ntotal_41 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000043",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "index_42 = \"\"\nfor i in range(10000):\n    index_42 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nindex_42 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000044",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "sum_43 = \"\"\nfor i in range(10000):\n    sum_43 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nsum_43 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000045",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "average_44 = \"\"\nfor i in range(10000):\n    average_44 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\naverage_44 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000046",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "result_45 = \"\"\nfor i in range(10000):\n    result_45 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nresult_45 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000047",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "value_46 = \"\"\nfor i in range(10000):\n    value_46 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nvalue_46 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000048",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "temp_47 = \"\"\nfor i in range(10000):\n    temp_47 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\ntemp_47 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000049",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "max_val_48 = \"\"\nfor i in range(10000):\n    max_val_48 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nmax_val_48 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000050",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "min_val_49 = \"\"\nfor i in range(10000):\n    min_val_49 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nmin_val_49 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000051",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "counter_50 = \"\"\nfor i in range(10000):\n    counter_50 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\ncounter_50 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000052",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "limit_51 = \"\"\nfor i in range(10000):\n    limit_51 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nlimit_51 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000053",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "threshold_52 = \"\"\nfor i in range(10000):\n    threshold_52 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nthreshold_52 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000054",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "score_53 = \"\"\nfor i in range(10000):\n    score_53 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nscore_53 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000055",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "age_54 = \"\"\nfor i in range(10000):\n    age_54 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nage_54 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000056",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "size_55 = \"\"\nfor i in range(10000):\n    size_55 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nsize_55 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000057",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "length_56 = \"\"\nfor i in range(10000):\n    length_56 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nlength_56 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000058",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "width_57 = \"\"\nfor i in range(10000):\n    width_57 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nwidth_57 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000059",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "height_58 = \"\"\nfor i in range(10000):\n    height_58 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\nheight_58 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000060",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "depth_59 = \"\"\nfor i in range(10000):\n    depth_59 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\ndepth_59 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000061",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "count_60 = \"\"\nfor i in range(10000):\n    count_60 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\ncount_60 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000062",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "String Concatenation in Loop",
+      "code": "total_61 = \"\"\nfor i in range(10000):\n    total_61 += str(i)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Strings are immutable in Python. Using `+=` in a loop creates a new string object and copies the old contents every iteration, leading to O(N^2) complexity.",
+      "beginner": "Because words cannot be changed in Python, adding a letter forces Python to make a complete copy of the whole word every single time.",
+      "analogy": "Like painting a new identical portrait every time you want to add a freckle.",
+      "solution": "Collect parts in a list and join them at the end using `\"\".join(list)`.",
+      "prevention": "Always use `.join()` when combining many string fragments.",
+      "optimized_code": "parts = []\nfor i in range(10000):\n    parts.append(str(i))\ntotal_61 = \"\".join(parts)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "string",
+        "join",
+        "performance"
+      ]
+    }
+  }
+]

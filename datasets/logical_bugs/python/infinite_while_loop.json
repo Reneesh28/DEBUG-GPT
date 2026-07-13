@@ -1,0 +1,2018 @@
+[
+  {
+    "id": "PY_LOGIC_000375",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "count_0 = 5\nwhile count_0 > 0:\n    print(count_0)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `count_0 > 0` is always true because `count_0` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `count_0` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "count_0 = 5\nwhile count_0 > 0:\n    print(count_0)\n    count_0 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000376",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "total_1 = 5\nwhile total_1 > 0:\n    print(total_1)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `total_1 > 0` is always true because `total_1` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `total_1` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "total_1 = 5\nwhile total_1 > 0:\n    print(total_1)\n    total_1 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000377",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "index_2 = 5\nwhile index_2 > 0:\n    print(index_2)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `index_2 > 0` is always true because `index_2` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `index_2` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "index_2 = 5\nwhile index_2 > 0:\n    print(index_2)\n    index_2 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000378",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "sum_3 = 5\nwhile sum_3 > 0:\n    print(sum_3)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `sum_3 > 0` is always true because `sum_3` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `sum_3` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "sum_3 = 5\nwhile sum_3 > 0:\n    print(sum_3)\n    sum_3 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000379",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "average_4 = 5\nwhile average_4 > 0:\n    print(average_4)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `average_4 > 0` is always true because `average_4` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `average_4` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "average_4 = 5\nwhile average_4 > 0:\n    print(average_4)\n    average_4 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000380",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "result_5 = 5\nwhile result_5 > 0:\n    print(result_5)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `result_5 > 0` is always true because `result_5` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `result_5` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "result_5 = 5\nwhile result_5 > 0:\n    print(result_5)\n    result_5 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000381",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "value_6 = 5\nwhile value_6 > 0:\n    print(value_6)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `value_6 > 0` is always true because `value_6` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `value_6` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "value_6 = 5\nwhile value_6 > 0:\n    print(value_6)\n    value_6 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000382",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "temp_7 = 5\nwhile temp_7 > 0:\n    print(temp_7)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `temp_7 > 0` is always true because `temp_7` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `temp_7` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "temp_7 = 5\nwhile temp_7 > 0:\n    print(temp_7)\n    temp_7 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000383",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "max_val_8 = 5\nwhile max_val_8 > 0:\n    print(max_val_8)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `max_val_8 > 0` is always true because `max_val_8` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `max_val_8` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "max_val_8 = 5\nwhile max_val_8 > 0:\n    print(max_val_8)\n    max_val_8 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000384",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "min_val_9 = 5\nwhile min_val_9 > 0:\n    print(min_val_9)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `min_val_9 > 0` is always true because `min_val_9` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `min_val_9` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "min_val_9 = 5\nwhile min_val_9 > 0:\n    print(min_val_9)\n    min_val_9 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000385",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "counter_10 = 5\nwhile counter_10 > 0:\n    print(counter_10)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `counter_10 > 0` is always true because `counter_10` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `counter_10` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "counter_10 = 5\nwhile counter_10 > 0:\n    print(counter_10)\n    counter_10 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000386",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "limit_11 = 5\nwhile limit_11 > 0:\n    print(limit_11)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `limit_11 > 0` is always true because `limit_11` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `limit_11` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "limit_11 = 5\nwhile limit_11 > 0:\n    print(limit_11)\n    limit_11 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000387",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "threshold_12 = 5\nwhile threshold_12 > 0:\n    print(threshold_12)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `threshold_12 > 0` is always true because `threshold_12` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `threshold_12` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "threshold_12 = 5\nwhile threshold_12 > 0:\n    print(threshold_12)\n    threshold_12 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000388",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "score_13 = 5\nwhile score_13 > 0:\n    print(score_13)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `score_13 > 0` is always true because `score_13` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `score_13` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "score_13 = 5\nwhile score_13 > 0:\n    print(score_13)\n    score_13 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000389",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "age_14 = 5\nwhile age_14 > 0:\n    print(age_14)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `age_14 > 0` is always true because `age_14` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `age_14` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "age_14 = 5\nwhile age_14 > 0:\n    print(age_14)\n    age_14 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000390",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "size_15 = 5\nwhile size_15 > 0:\n    print(size_15)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `size_15 > 0` is always true because `size_15` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `size_15` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "size_15 = 5\nwhile size_15 > 0:\n    print(size_15)\n    size_15 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000391",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "length_16 = 5\nwhile length_16 > 0:\n    print(length_16)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `length_16 > 0` is always true because `length_16` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `length_16` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "length_16 = 5\nwhile length_16 > 0:\n    print(length_16)\n    length_16 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000392",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "width_17 = 5\nwhile width_17 > 0:\n    print(width_17)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `width_17 > 0` is always true because `width_17` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `width_17` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "width_17 = 5\nwhile width_17 > 0:\n    print(width_17)\n    width_17 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000393",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "height_18 = 5\nwhile height_18 > 0:\n    print(height_18)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `height_18 > 0` is always true because `height_18` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `height_18` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "height_18 = 5\nwhile height_18 > 0:\n    print(height_18)\n    height_18 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000394",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "depth_19 = 5\nwhile depth_19 > 0:\n    print(depth_19)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `depth_19 > 0` is always true because `depth_19` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `depth_19` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "depth_19 = 5\nwhile depth_19 > 0:\n    print(depth_19)\n    depth_19 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000395",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "count_20 = 5\nwhile count_20 > 0:\n    print(count_20)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `count_20 > 0` is always true because `count_20` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `count_20` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "count_20 = 5\nwhile count_20 > 0:\n    print(count_20)\n    count_20 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000396",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "total_21 = 5\nwhile total_21 > 0:\n    print(total_21)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `total_21 > 0` is always true because `total_21` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `total_21` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "total_21 = 5\nwhile total_21 > 0:\n    print(total_21)\n    total_21 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000397",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "index_22 = 5\nwhile index_22 > 0:\n    print(index_22)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `index_22 > 0` is always true because `index_22` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `index_22` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "index_22 = 5\nwhile index_22 > 0:\n    print(index_22)\n    index_22 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000398",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "sum_23 = 5\nwhile sum_23 > 0:\n    print(sum_23)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `sum_23 > 0` is always true because `sum_23` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `sum_23` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "sum_23 = 5\nwhile sum_23 > 0:\n    print(sum_23)\n    sum_23 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000399",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "average_24 = 5\nwhile average_24 > 0:\n    print(average_24)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `average_24 > 0` is always true because `average_24` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `average_24` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "average_24 = 5\nwhile average_24 > 0:\n    print(average_24)\n    average_24 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000400",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "result_25 = 5\nwhile result_25 > 0:\n    print(result_25)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `result_25 > 0` is always true because `result_25` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `result_25` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "result_25 = 5\nwhile result_25 > 0:\n    print(result_25)\n    result_25 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000401",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "value_26 = 5\nwhile value_26 > 0:\n    print(value_26)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `value_26 > 0` is always true because `value_26` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `value_26` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "value_26 = 5\nwhile value_26 > 0:\n    print(value_26)\n    value_26 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000402",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "temp_27 = 5\nwhile temp_27 > 0:\n    print(temp_27)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `temp_27 > 0` is always true because `temp_27` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `temp_27` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "temp_27 = 5\nwhile temp_27 > 0:\n    print(temp_27)\n    temp_27 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000403",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "max_val_28 = 5\nwhile max_val_28 > 0:\n    print(max_val_28)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `max_val_28 > 0` is always true because `max_val_28` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `max_val_28` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "max_val_28 = 5\nwhile max_val_28 > 0:\n    print(max_val_28)\n    max_val_28 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000404",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "min_val_29 = 5\nwhile min_val_29 > 0:\n    print(min_val_29)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `min_val_29 > 0` is always true because `min_val_29` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `min_val_29` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "min_val_29 = 5\nwhile min_val_29 > 0:\n    print(min_val_29)\n    min_val_29 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000405",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "counter_30 = 5\nwhile counter_30 > 0:\n    print(counter_30)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `counter_30 > 0` is always true because `counter_30` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `counter_30` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "counter_30 = 5\nwhile counter_30 > 0:\n    print(counter_30)\n    counter_30 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000406",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "limit_31 = 5\nwhile limit_31 > 0:\n    print(limit_31)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `limit_31 > 0` is always true because `limit_31` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `limit_31` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "limit_31 = 5\nwhile limit_31 > 0:\n    print(limit_31)\n    limit_31 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000407",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "threshold_32 = 5\nwhile threshold_32 > 0:\n    print(threshold_32)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `threshold_32 > 0` is always true because `threshold_32` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `threshold_32` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "threshold_32 = 5\nwhile threshold_32 > 0:\n    print(threshold_32)\n    threshold_32 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000408",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "score_33 = 5\nwhile score_33 > 0:\n    print(score_33)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `score_33 > 0` is always true because `score_33` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `score_33` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "score_33 = 5\nwhile score_33 > 0:\n    print(score_33)\n    score_33 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000409",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "age_34 = 5\nwhile age_34 > 0:\n    print(age_34)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `age_34 > 0` is always true because `age_34` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `age_34` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "age_34 = 5\nwhile age_34 > 0:\n    print(age_34)\n    age_34 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000410",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "size_35 = 5\nwhile size_35 > 0:\n    print(size_35)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `size_35 > 0` is always true because `size_35` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `size_35` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "size_35 = 5\nwhile size_35 > 0:\n    print(size_35)\n    size_35 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000411",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "length_36 = 5\nwhile length_36 > 0:\n    print(length_36)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `length_36 > 0` is always true because `length_36` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `length_36` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "length_36 = 5\nwhile length_36 > 0:\n    print(length_36)\n    length_36 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000412",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "width_37 = 5\nwhile width_37 > 0:\n    print(width_37)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `width_37 > 0` is always true because `width_37` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `width_37` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "width_37 = 5\nwhile width_37 > 0:\n    print(width_37)\n    width_37 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000413",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "height_38 = 5\nwhile height_38 > 0:\n    print(height_38)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `height_38 > 0` is always true because `height_38` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `height_38` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "height_38 = 5\nwhile height_38 > 0:\n    print(height_38)\n    height_38 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000414",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "depth_39 = 5\nwhile depth_39 > 0:\n    print(depth_39)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `depth_39 > 0` is always true because `depth_39` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `depth_39` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "depth_39 = 5\nwhile depth_39 > 0:\n    print(depth_39)\n    depth_39 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000415",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "count_40 = 5\nwhile count_40 > 0:\n    print(count_40)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `count_40 > 0` is always true because `count_40` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `count_40` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "count_40 = 5\nwhile count_40 > 0:\n    print(count_40)\n    count_40 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000416",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "total_41 = 5\nwhile total_41 > 0:\n    print(total_41)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `total_41 > 0` is always true because `total_41` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `total_41` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "total_41 = 5\nwhile total_41 > 0:\n    print(total_41)\n    total_41 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000417",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "index_42 = 5\nwhile index_42 > 0:\n    print(index_42)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `index_42 > 0` is always true because `index_42` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `index_42` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "index_42 = 5\nwhile index_42 > 0:\n    print(index_42)\n    index_42 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000418",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "sum_43 = 5\nwhile sum_43 > 0:\n    print(sum_43)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `sum_43 > 0` is always true because `sum_43` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `sum_43` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "sum_43 = 5\nwhile sum_43 > 0:\n    print(sum_43)\n    sum_43 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000419",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "average_44 = 5\nwhile average_44 > 0:\n    print(average_44)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `average_44 > 0` is always true because `average_44` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `average_44` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "average_44 = 5\nwhile average_44 > 0:\n    print(average_44)\n    average_44 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000420",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "result_45 = 5\nwhile result_45 > 0:\n    print(result_45)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `result_45 > 0` is always true because `result_45` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `result_45` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "result_45 = 5\nwhile result_45 > 0:\n    print(result_45)\n    result_45 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000421",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "value_46 = 5\nwhile value_46 > 0:\n    print(value_46)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `value_46 > 0` is always true because `value_46` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `value_46` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "value_46 = 5\nwhile value_46 > 0:\n    print(value_46)\n    value_46 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000422",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "temp_47 = 5\nwhile temp_47 > 0:\n    print(temp_47)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `temp_47 > 0` is always true because `temp_47` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `temp_47` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "temp_47 = 5\nwhile temp_47 > 0:\n    print(temp_47)\n    temp_47 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000423",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "max_val_48 = 5\nwhile max_val_48 > 0:\n    print(max_val_48)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `max_val_48 > 0` is always true because `max_val_48` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `max_val_48` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "max_val_48 = 5\nwhile max_val_48 > 0:\n    print(max_val_48)\n    max_val_48 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000424",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "min_val_49 = 5\nwhile min_val_49 > 0:\n    print(min_val_49)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `min_val_49 > 0` is always true because `min_val_49` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `min_val_49` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "min_val_49 = 5\nwhile min_val_49 > 0:\n    print(min_val_49)\n    min_val_49 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000425",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "counter_50 = 5\nwhile counter_50 > 0:\n    print(counter_50)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `counter_50 > 0` is always true because `counter_50` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `counter_50` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "counter_50 = 5\nwhile counter_50 > 0:\n    print(counter_50)\n    counter_50 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000426",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "limit_51 = 5\nwhile limit_51 > 0:\n    print(limit_51)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `limit_51 > 0` is always true because `limit_51` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `limit_51` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "limit_51 = 5\nwhile limit_51 > 0:\n    print(limit_51)\n    limit_51 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000427",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "threshold_52 = 5\nwhile threshold_52 > 0:\n    print(threshold_52)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `threshold_52 > 0` is always true because `threshold_52` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `threshold_52` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "threshold_52 = 5\nwhile threshold_52 > 0:\n    print(threshold_52)\n    threshold_52 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000428",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "score_53 = 5\nwhile score_53 > 0:\n    print(score_53)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `score_53 > 0` is always true because `score_53` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `score_53` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "score_53 = 5\nwhile score_53 > 0:\n    print(score_53)\n    score_53 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000429",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "age_54 = 5\nwhile age_54 > 0:\n    print(age_54)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `age_54 > 0` is always true because `age_54` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `age_54` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "age_54 = 5\nwhile age_54 > 0:\n    print(age_54)\n    age_54 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000430",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "size_55 = 5\nwhile size_55 > 0:\n    print(size_55)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `size_55 > 0` is always true because `size_55` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `size_55` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "size_55 = 5\nwhile size_55 > 0:\n    print(size_55)\n    size_55 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000431",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "length_56 = 5\nwhile length_56 > 0:\n    print(length_56)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `length_56 > 0` is always true because `length_56` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `length_56` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "length_56 = 5\nwhile length_56 > 0:\n    print(length_56)\n    length_56 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000432",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "width_57 = 5\nwhile width_57 > 0:\n    print(width_57)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `width_57 > 0` is always true because `width_57` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `width_57` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "width_57 = 5\nwhile width_57 > 0:\n    print(width_57)\n    width_57 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000433",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "height_58 = 5\nwhile height_58 > 0:\n    print(height_58)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `height_58 > 0` is always true because `height_58` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `height_58` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "height_58 = 5\nwhile height_58 > 0:\n    print(height_58)\n    height_58 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000434",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "depth_59 = 5\nwhile depth_59 > 0:\n    print(depth_59)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `depth_59 > 0` is always true because `depth_59` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `depth_59` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "depth_59 = 5\nwhile depth_59 > 0:\n    print(depth_59)\n    depth_59 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000435",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "count_60 = 5\nwhile count_60 > 0:\n    print(count_60)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `count_60 > 0` is always true because `count_60` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `count_60` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "count_60 = 5\nwhile count_60 > 0:\n    print(count_60)\n    count_60 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000436",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "total_61 = 5\nwhile total_61 > 0:\n    print(total_61)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `total_61 > 0` is always true because `total_61` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `total_61` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "total_61 = 5\nwhile total_61 > 0:\n    print(total_61)\n    total_61 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000437",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the infinite loop.",
+    "input": {
+      "title": "Missing Iterator Update",
+      "code": "index_62 = 5\nwhile index_62 > 0:\n    print(index_62)\n",
+      "error_message": "No error. Program hangs, printing 5 infinitely."
+    },
+    "output": {
+      "technical": "The condition `index_62 > 0` is always true because `index_62` is never decremented inside the loop.",
+      "beginner": "The loop keeps checking if the number is greater than zero, but the number never changes.",
+      "analogy": "It's like waiting for water to boil, but you forgot to turn on the stove.",
+      "solution": "Decrease the value of `index_62` inside the loop.",
+      "prevention": "Verify that all while loops contain a mechanism to eventually alter their condition to False.",
+      "optimized_code": "index_62 = 5\nwhile index_62 > 0:\n    print(index_62)\n    index_62 -= 1\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "infinite"
+      ]
+    }
+  }
+]

@@ -1,0 +1,2048 @@
+[
+  {
+    "id": "PY_OPTIM_000125",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "count_0_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in count_0_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `count_0_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "count_0_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in count_0_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000126",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "total_1_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in total_1_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `total_1_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "total_1_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in total_1_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000127",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "index_2_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in index_2_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `index_2_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "index_2_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in index_2_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000128",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "sum_3_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in sum_3_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `sum_3_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "sum_3_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in sum_3_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000129",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "average_4_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in average_4_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `average_4_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "average_4_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in average_4_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000130",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "result_5_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in result_5_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `result_5_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "result_5_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in result_5_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000131",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "value_6_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in value_6_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `value_6_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "value_6_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in value_6_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000132",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "temp_7_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in temp_7_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `temp_7_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "temp_7_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in temp_7_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000133",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "max_val_8_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in max_val_8_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `max_val_8_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "max_val_8_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in max_val_8_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000134",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "min_val_9_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in min_val_9_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `min_val_9_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "min_val_9_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in min_val_9_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000135",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "counter_10_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in counter_10_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `counter_10_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "counter_10_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in counter_10_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000136",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "limit_11_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in limit_11_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `limit_11_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "limit_11_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in limit_11_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000137",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "threshold_12_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in threshold_12_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `threshold_12_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "threshold_12_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in threshold_12_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000138",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "score_13_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in score_13_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `score_13_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "score_13_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in score_13_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000139",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "age_14_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in age_14_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `age_14_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "age_14_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in age_14_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000140",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "size_15_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in size_15_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `size_15_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "size_15_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in size_15_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000141",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "length_16_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in length_16_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `length_16_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "length_16_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in length_16_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000142",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "width_17_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in width_17_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `width_17_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "width_17_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in width_17_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000143",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "height_18_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in height_18_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `height_18_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "height_18_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in height_18_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000144",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "depth_19_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in depth_19_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `depth_19_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "depth_19_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in depth_19_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000145",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "count_20_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in count_20_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `count_20_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "count_20_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in count_20_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000146",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "total_21_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in total_21_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `total_21_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "total_21_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in total_21_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000147",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "index_22_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in index_22_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `index_22_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "index_22_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in index_22_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000148",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "sum_23_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in sum_23_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `sum_23_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "sum_23_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in sum_23_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000149",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "average_24_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in average_24_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `average_24_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "average_24_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in average_24_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000150",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "result_25_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in result_25_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `result_25_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "result_25_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in result_25_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000151",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "value_26_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in value_26_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `value_26_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "value_26_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in value_26_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000152",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "temp_27_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in temp_27_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `temp_27_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "temp_27_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in temp_27_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000153",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "max_val_28_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in max_val_28_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `max_val_28_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "max_val_28_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in max_val_28_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000154",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "min_val_29_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in min_val_29_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `min_val_29_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "min_val_29_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in min_val_29_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000155",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "counter_30_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in counter_30_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `counter_30_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "counter_30_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in counter_30_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000156",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "limit_31_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in limit_31_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `limit_31_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "limit_31_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in limit_31_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000157",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "threshold_32_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in threshold_32_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `threshold_32_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "threshold_32_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in threshold_32_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000158",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "score_33_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in score_33_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `score_33_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "score_33_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in score_33_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000159",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "age_34_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in age_34_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `age_34_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "age_34_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in age_34_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000160",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "size_35_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in size_35_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `size_35_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "size_35_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in size_35_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000161",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "length_36_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in length_36_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `length_36_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "length_36_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in length_36_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000162",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "width_37_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in width_37_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `width_37_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "width_37_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in width_37_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000163",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "height_38_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in height_38_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `height_38_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "height_38_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in height_38_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000164",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "depth_39_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in depth_39_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `depth_39_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "depth_39_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in depth_39_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000165",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "count_40_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in count_40_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `count_40_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "count_40_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in count_40_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000166",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "total_41_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in total_41_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `total_41_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "total_41_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in total_41_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000167",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "index_42_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in index_42_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `index_42_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "index_42_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in index_42_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000168",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "sum_43_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in sum_43_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `sum_43_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "sum_43_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in sum_43_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000169",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "average_44_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in average_44_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `average_44_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "average_44_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in average_44_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000170",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "result_45_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in result_45_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `result_45_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "result_45_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in result_45_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000171",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "value_46_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in value_46_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `value_46_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "value_46_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in value_46_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000172",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "temp_47_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in temp_47_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `temp_47_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "temp_47_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in temp_47_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000173",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "max_val_48_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in max_val_48_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `max_val_48_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "max_val_48_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in max_val_48_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000174",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "min_val_49_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in min_val_49_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `min_val_49_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "min_val_49_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in min_val_49_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000175",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "counter_50_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in counter_50_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `counter_50_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "counter_50_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in counter_50_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000176",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "limit_51_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in limit_51_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `limit_51_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "limit_51_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in limit_51_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000177",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "threshold_52_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in threshold_52_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `threshold_52_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "threshold_52_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in threshold_52_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000178",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "score_53_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in score_53_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `score_53_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "score_53_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in score_53_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000179",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "age_54_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in age_54_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `age_54_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "age_54_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in age_54_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000180",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "size_55_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in size_55_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `size_55_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "size_55_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in size_55_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000181",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "length_56_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in length_56_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `length_56_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "length_56_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in length_56_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000182",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "width_57_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in width_57_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `width_57_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "width_57_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in width_57_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000183",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "height_58_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in height_58_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `height_58_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "height_58_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in height_58_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000184",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "depth_59_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in depth_59_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `depth_59_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "depth_59_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in depth_59_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000185",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "count_60_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in count_60_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `count_60_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "count_60_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in count_60_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  },
+  {
+    "id": "PY_OPTIM_000186",
+    "language": "python",
+    "category": "optimization",
+    "instruction": "Optimize the membership lookup.",
+    "input": {
+      "title": "Lookup in List",
+      "code": "total_61_list = list(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in total_61_list:\n        count += 1\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Checking `if x in list` performs a linear O(N) search. Doing this inside a loop creates an O(N*M) time complexity. Using a `set` drops the lookup to O(1).",
+      "beginner": "Checking if an item is in a list requires scanning the whole list. Checking if it's in a 'set' is instant.",
+      "analogy": "List lookup is like searching for a name in an unorganized pile of papers. Set lookup is like looking it up in an alphabetical phone book.",
+      "solution": "Convert `total_61_list` to a `set` before the loop.",
+      "prevention": "Use `set` whenever you need to perform fast, repeated membership tests (`in`).",
+      "optimized_code": "total_61_set = set(range(10000))\ncount = 0\nfor i in range(5000):\n    if i in total_61_set:\n        count += 1\n",
+      "complexity": {
+        "before": "O(N*M)",
+        "after": "O(N+M)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "set",
+        "list",
+        "lookup"
+      ]
+    }
+  }
+]

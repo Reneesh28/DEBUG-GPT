@@ -1,0 +1,2048 @@
+[
+  {
+    "id": "CP_OPTIM_000001",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid calculate_0(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    calculate_0(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid calculate_0(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    calculate_0(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000002",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid process_1(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    process_1(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid process_1(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    process_1(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000003",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid compute_2(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    compute_2(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid compute_2(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    compute_2(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000004",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid execute_3(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    execute_3(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid execute_3(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    execute_3(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000005",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid run_4(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    run_4(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid run_4(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    run_4(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000006",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid start_5(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    start_5(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid start_5(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    start_5(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000007",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid initialize_6(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    initialize_6(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid initialize_6(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    initialize_6(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000008",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid update_7(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    update_7(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid update_7(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    update_7(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000009",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid render_8(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    render_8(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid render_8(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    render_8(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000010",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid display_9(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    display_9(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid display_9(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    display_9(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000011",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid fetch_10(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    fetch_10(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid fetch_10(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    fetch_10(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000012",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid load_11(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    load_11(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid load_11(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    load_11(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000013",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid save_12(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    save_12(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid save_12(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    save_12(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000014",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid delete_13(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    delete_13(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid delete_13(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    delete_13(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000015",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid create_14(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    create_14(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid create_14(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    create_14(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000016",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid read_15(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    read_15(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid read_15(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    read_15(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000017",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid write_16(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    write_16(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid write_16(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    write_16(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000018",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid parse_17(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    parse_17(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid parse_17(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    parse_17(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000019",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid validate_18(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    validate_18(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid validate_18(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    validate_18(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000020",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid verify_19(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    verify_19(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid verify_19(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    verify_19(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000021",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid calculate_20(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    calculate_20(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid calculate_20(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    calculate_20(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000022",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid process_21(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    process_21(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid process_21(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    process_21(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000023",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid compute_22(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    compute_22(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid compute_22(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    compute_22(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000024",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid execute_23(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    execute_23(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid execute_23(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    execute_23(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000025",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid run_24(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    run_24(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid run_24(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    run_24(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000026",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid start_25(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    start_25(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid start_25(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    start_25(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000027",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid initialize_26(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    initialize_26(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid initialize_26(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    initialize_26(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000028",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid update_27(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    update_27(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid update_27(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    update_27(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000029",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid render_28(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    render_28(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid render_28(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    render_28(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000030",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid display_29(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    display_29(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid display_29(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    display_29(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000031",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid fetch_30(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    fetch_30(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid fetch_30(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    fetch_30(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000032",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid load_31(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    load_31(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid load_31(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    load_31(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000033",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid save_32(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    save_32(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid save_32(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    save_32(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000034",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid delete_33(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    delete_33(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid delete_33(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    delete_33(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000035",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid create_34(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    create_34(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid create_34(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    create_34(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000036",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid read_35(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    read_35(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid read_35(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    read_35(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000037",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid write_36(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    write_36(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid write_36(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    write_36(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000038",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid parse_37(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    parse_37(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid parse_37(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    parse_37(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000039",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid validate_38(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    validate_38(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid validate_38(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    validate_38(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000040",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid verify_39(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    verify_39(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid verify_39(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    verify_39(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000041",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid calculate_40(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    calculate_40(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid calculate_40(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    calculate_40(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000042",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid process_41(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    process_41(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid process_41(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    process_41(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000043",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid compute_42(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    compute_42(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid compute_42(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    compute_42(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000044",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid execute_43(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    execute_43(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid execute_43(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    execute_43(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000045",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid run_44(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    run_44(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid run_44(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    run_44(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000046",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid start_45(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    start_45(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid start_45(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    start_45(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000047",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid initialize_46(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    initialize_46(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid initialize_46(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    initialize_46(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000048",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid update_47(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    update_47(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid update_47(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    update_47(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000049",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid render_48(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    render_48(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid render_48(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    render_48(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000050",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid display_49(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    display_49(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid display_49(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    display_49(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000051",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid fetch_50(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    fetch_50(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid fetch_50(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    fetch_50(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000052",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid load_51(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    load_51(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid load_51(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    load_51(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000053",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid save_52(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    save_52(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid save_52(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    save_52(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000054",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid delete_53(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    delete_53(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid delete_53(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    delete_53(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000055",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid create_54(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    create_54(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid create_54(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    create_54(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000056",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid read_55(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    read_55(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid read_55(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    read_55(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000057",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid write_56(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    write_56(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid write_56(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    write_56(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000058",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid parse_57(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    parse_57(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid parse_57(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    parse_57(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000059",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid validate_58(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    validate_58(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid validate_58(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    validate_58(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000060",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid verify_59(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    verify_59(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid verify_59(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    verify_59(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000061",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid calculate_60(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    calculate_60(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid calculate_60(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    calculate_60(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000062",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the function parameter passing.",
+    "input": {
+      "title": "Pass by Value for Large Objects",
+      "code": "#include <iostream>\n#include <vector>\n\nvoid process_61(std::vector<int> data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    process_61(large_vec);\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Passing a `std::vector` by value creates a full copy of all its elements, which takes O(N) time and memory. Passing by `const std::vector<int>&` avoids the copy.",
+      "beginner": "You are giving the function a brand new copy of a massive list, which takes a lot of time and memory. You should just let it look at the original list.",
+      "analogy": "It's like printing a new 1,000-page book every time someone wants to read it, instead of just lending them the book.",
+      "solution": "Change the parameter type to `const std::vector<int>&`.",
+      "prevention": "Pass all complex objects (like strings, vectors, and classes) by const reference unless you specifically need a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nvoid process_61(const std::vector<int>& data) {\n    std::cout << \"Processing \" << data.size() << \" elements.\" << std::endl;\n}\n\nint main() {\n    std::vector<int> large_vec(1000000, 1);\n    process_61(large_vec);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "parameters",
+        "copy",
+        "performance"
+      ]
+    }
+  }
+]

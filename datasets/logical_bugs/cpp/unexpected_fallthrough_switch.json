@@ -1,0 +1,2081 @@
+[
+  {
+    "id": "CP_LOGIC_000375",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int count_0 = 1;\n    switch (count_0) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int count_0 = 1;\n    switch (count_0) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000376",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int total_1 = 1;\n    switch (total_1) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total_1 = 1;\n    switch (total_1) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000377",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int index_2 = 1;\n    switch (index_2) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int index_2 = 1;\n    switch (index_2) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000378",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int sum_3 = 1;\n    switch (sum_3) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int sum_3 = 1;\n    switch (sum_3) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000379",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int average_4 = 1;\n    switch (average_4) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int average_4 = 1;\n    switch (average_4) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000380",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int result_5 = 1;\n    switch (result_5) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int result_5 = 1;\n    switch (result_5) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000381",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int value_6 = 1;\n    switch (value_6) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int value_6 = 1;\n    switch (value_6) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000382",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int temp_7 = 1;\n    switch (temp_7) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int temp_7 = 1;\n    switch (temp_7) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000383",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int max_val_8 = 1;\n    switch (max_val_8) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int max_val_8 = 1;\n    switch (max_val_8) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000384",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int min_val_9 = 1;\n    switch (min_val_9) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int min_val_9 = 1;\n    switch (min_val_9) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000385",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int counter_10 = 1;\n    switch (counter_10) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int counter_10 = 1;\n    switch (counter_10) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000386",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int limit_11 = 1;\n    switch (limit_11) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int limit_11 = 1;\n    switch (limit_11) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000387",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int threshold_12 = 1;\n    switch (threshold_12) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int threshold_12 = 1;\n    switch (threshold_12) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000388",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int score_13 = 1;\n    switch (score_13) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int score_13 = 1;\n    switch (score_13) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000389",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int age_14 = 1;\n    switch (age_14) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int age_14 = 1;\n    switch (age_14) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000390",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int size_15 = 1;\n    switch (size_15) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int size_15 = 1;\n    switch (size_15) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000391",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int length_16 = 1;\n    switch (length_16) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int length_16 = 1;\n    switch (length_16) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000392",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int width_17 = 1;\n    switch (width_17) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int width_17 = 1;\n    switch (width_17) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000393",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int height_18 = 1;\n    switch (height_18) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int height_18 = 1;\n    switch (height_18) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000394",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int depth_19 = 1;\n    switch (depth_19) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int depth_19 = 1;\n    switch (depth_19) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000395",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int count_20 = 1;\n    switch (count_20) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int count_20 = 1;\n    switch (count_20) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000396",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int total_21 = 1;\n    switch (total_21) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total_21 = 1;\n    switch (total_21) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000397",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int index_22 = 1;\n    switch (index_22) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int index_22 = 1;\n    switch (index_22) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000398",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int sum_23 = 1;\n    switch (sum_23) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int sum_23 = 1;\n    switch (sum_23) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000399",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int average_24 = 1;\n    switch (average_24) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int average_24 = 1;\n    switch (average_24) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000400",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int result_25 = 1;\n    switch (result_25) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int result_25 = 1;\n    switch (result_25) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000401",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int value_26 = 1;\n    switch (value_26) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int value_26 = 1;\n    switch (value_26) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000402",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int temp_27 = 1;\n    switch (temp_27) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int temp_27 = 1;\n    switch (temp_27) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000403",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int max_val_28 = 1;\n    switch (max_val_28) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int max_val_28 = 1;\n    switch (max_val_28) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000404",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int min_val_29 = 1;\n    switch (min_val_29) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int min_val_29 = 1;\n    switch (min_val_29) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000405",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int counter_30 = 1;\n    switch (counter_30) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int counter_30 = 1;\n    switch (counter_30) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000406",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int limit_31 = 1;\n    switch (limit_31) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int limit_31 = 1;\n    switch (limit_31) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000407",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int threshold_32 = 1;\n    switch (threshold_32) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int threshold_32 = 1;\n    switch (threshold_32) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000408",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int score_33 = 1;\n    switch (score_33) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int score_33 = 1;\n    switch (score_33) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000409",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int age_34 = 1;\n    switch (age_34) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int age_34 = 1;\n    switch (age_34) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000410",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int size_35 = 1;\n    switch (size_35) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int size_35 = 1;\n    switch (size_35) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000411",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int length_36 = 1;\n    switch (length_36) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int length_36 = 1;\n    switch (length_36) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000412",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int width_37 = 1;\n    switch (width_37) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int width_37 = 1;\n    switch (width_37) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000413",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int height_38 = 1;\n    switch (height_38) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int height_38 = 1;\n    switch (height_38) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000414",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int depth_39 = 1;\n    switch (depth_39) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int depth_39 = 1;\n    switch (depth_39) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000415",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int count_40 = 1;\n    switch (count_40) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int count_40 = 1;\n    switch (count_40) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000416",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int total_41 = 1;\n    switch (total_41) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total_41 = 1;\n    switch (total_41) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000417",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int index_42 = 1;\n    switch (index_42) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int index_42 = 1;\n    switch (index_42) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000418",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int sum_43 = 1;\n    switch (sum_43) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int sum_43 = 1;\n    switch (sum_43) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000419",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int average_44 = 1;\n    switch (average_44) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int average_44 = 1;\n    switch (average_44) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000420",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int result_45 = 1;\n    switch (result_45) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int result_45 = 1;\n    switch (result_45) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000421",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int value_46 = 1;\n    switch (value_46) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int value_46 = 1;\n    switch (value_46) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000422",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int temp_47 = 1;\n    switch (temp_47) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int temp_47 = 1;\n    switch (temp_47) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000423",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int max_val_48 = 1;\n    switch (max_val_48) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int max_val_48 = 1;\n    switch (max_val_48) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000424",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int min_val_49 = 1;\n    switch (min_val_49) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int min_val_49 = 1;\n    switch (min_val_49) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000425",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int counter_50 = 1;\n    switch (counter_50) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int counter_50 = 1;\n    switch (counter_50) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000426",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int limit_51 = 1;\n    switch (limit_51) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int limit_51 = 1;\n    switch (limit_51) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000427",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int threshold_52 = 1;\n    switch (threshold_52) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int threshold_52 = 1;\n    switch (threshold_52) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000428",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int score_53 = 1;\n    switch (score_53) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int score_53 = 1;\n    switch (score_53) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000429",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int age_54 = 1;\n    switch (age_54) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int age_54 = 1;\n    switch (age_54) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000430",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int size_55 = 1;\n    switch (size_55) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int size_55 = 1;\n    switch (size_55) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000431",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int length_56 = 1;\n    switch (length_56) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int length_56 = 1;\n    switch (length_56) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000432",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int width_57 = 1;\n    switch (width_57) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int width_57 = 1;\n    switch (width_57) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000433",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int height_58 = 1;\n    switch (height_58) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int height_58 = 1;\n    switch (height_58) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000434",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int depth_59 = 1;\n    switch (depth_59) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int depth_59 = 1;\n    switch (depth_59) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000435",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int count_60 = 1;\n    switch (count_60) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int count_60 = 1;\n    switch (count_60) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000436",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int total_61 = 1;\n    switch (total_61) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total_61 = 1;\n    switch (total_61) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000437",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the switch statement fallthrough.",
+    "input": {
+      "title": "Switch Statement Fallthrough",
+      "code": "#include <iostream>\n\nint main() {\n    int index_62 = 1;\n    switch (index_62) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. Prints both 'One' and 'Two'."
+    },
+    "output": {
+      "technical": "The `case 1` block lacks a `break` statement. Execution 'falls through' to `case 2`, executing its statements as well.",
+      "beginner": "Because you didn't tell the code to stop after case 1, it just kept going and ran case 2 as well.",
+      "analogy": "It's like rolling down a hill; unless you hit the brakes (`break`), you'll keep rolling through the next stop sign.",
+      "solution": "Add `break;` at the end of `case 1`.",
+      "prevention": "Always end switch cases with `break`, `return`, or the `[[fallthrough]]` attribute if intentional.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int index_62 = 1;\n    switch (index_62) {\n        case 1:\n            std::cout << \"One\" << std::endl;\n            break;\n        case 2:\n            std::cout << \"Two\" << std::endl;\n            break;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "switch",
+        "fallthrough",
+        "control-flow"
+      ]
+    }
+  }
+]

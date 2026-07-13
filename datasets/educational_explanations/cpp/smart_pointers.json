@@ -1,0 +1,2081 @@
+[
+  {
+    "id": "CP_EDU_000375",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> data_0 = std::make_unique<int>(100);\n    std::cout << *data_0 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto data_0 = std::make_unique<int>(100);\n    std::cout << *data_0 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000376",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> value_1 = std::make_unique<int>(100);\n    std::cout << *value_1 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto value_1 = std::make_unique<int>(100);\n    std::cout << *value_1 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000377",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> item_2 = std::make_unique<int>(100);\n    std::cout << *item_2 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto item_2 = std::make_unique<int>(100);\n    std::cout << *item_2 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000378",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> element_3 = std::make_unique<int>(100);\n    std::cout << *element_3 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto element_3 = std::make_unique<int>(100);\n    std::cout << *element_3 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000379",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> count_4 = std::make_unique<int>(100);\n    std::cout << *count_4 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto count_4 = std::make_unique<int>(100);\n    std::cout << *count_4 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000380",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> size_5 = std::make_unique<int>(100);\n    std::cout << *size_5 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto size_5 = std::make_unique<int>(100);\n    std::cout << *size_5 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000381",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> index_6 = std::make_unique<int>(100);\n    std::cout << *index_6 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto index_6 = std::make_unique<int>(100);\n    std::cout << *index_6 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000382",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> result_7 = std::make_unique<int>(100);\n    std::cout << *result_7 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto result_7 = std::make_unique<int>(100);\n    std::cout << *result_7 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000383",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> temp_8 = std::make_unique<int>(100);\n    std::cout << *temp_8 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto temp_8 = std::make_unique<int>(100);\n    std::cout << *temp_8 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000384",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> cache_9 = std::make_unique<int>(100);\n    std::cout << *cache_9 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto cache_9 = std::make_unique<int>(100);\n    std::cout << *cache_9 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000385",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> buffer_10 = std::make_unique<int>(100);\n    std::cout << *buffer_10 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto buffer_10 = std::make_unique<int>(100);\n    std::cout << *buffer_10 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000386",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> node_11 = std::make_unique<int>(100);\n    std::cout << *node_11 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto node_11 = std::make_unique<int>(100);\n    std::cout << *node_11 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000387",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> record_12 = std::make_unique<int>(100);\n    std::cout << *record_12 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto record_12 = std::make_unique<int>(100);\n    std::cout << *record_12 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000388",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> entry_13 = std::make_unique<int>(100);\n    std::cout << *entry_13 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto entry_13 = std::make_unique<int>(100);\n    std::cout << *entry_13 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000389",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> key_14 = std::make_unique<int>(100);\n    std::cout << *key_14 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto key_14 = std::make_unique<int>(100);\n    std::cout << *key_14 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000390",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> param_15 = std::make_unique<int>(100);\n    std::cout << *param_15 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto param_15 = std::make_unique<int>(100);\n    std::cout << *param_15 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000391",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> arg_16 = std::make_unique<int>(100);\n    std::cout << *arg_16 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto arg_16 = std::make_unique<int>(100);\n    std::cout << *arg_16 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000392",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> obj_17 = std::make_unique<int>(100);\n    std::cout << *obj_17 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto obj_17 = std::make_unique<int>(100);\n    std::cout << *obj_17 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000393",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> entity_18 = std::make_unique<int>(100);\n    std::cout << *entity_18 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto entity_18 = std::make_unique<int>(100);\n    std::cout << *entity_18 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000394",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> model_19 = std::make_unique<int>(100);\n    std::cout << *model_19 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto model_19 = std::make_unique<int>(100);\n    std::cout << *model_19 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000395",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> data_20 = std::make_unique<int>(100);\n    std::cout << *data_20 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto data_20 = std::make_unique<int>(100);\n    std::cout << *data_20 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000396",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> value_21 = std::make_unique<int>(100);\n    std::cout << *value_21 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto value_21 = std::make_unique<int>(100);\n    std::cout << *value_21 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000397",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> item_22 = std::make_unique<int>(100);\n    std::cout << *item_22 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto item_22 = std::make_unique<int>(100);\n    std::cout << *item_22 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000398",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> element_23 = std::make_unique<int>(100);\n    std::cout << *element_23 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto element_23 = std::make_unique<int>(100);\n    std::cout << *element_23 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000399",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> count_24 = std::make_unique<int>(100);\n    std::cout << *count_24 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto count_24 = std::make_unique<int>(100);\n    std::cout << *count_24 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000400",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> size_25 = std::make_unique<int>(100);\n    std::cout << *size_25 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto size_25 = std::make_unique<int>(100);\n    std::cout << *size_25 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000401",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> index_26 = std::make_unique<int>(100);\n    std::cout << *index_26 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto index_26 = std::make_unique<int>(100);\n    std::cout << *index_26 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000402",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> result_27 = std::make_unique<int>(100);\n    std::cout << *result_27 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto result_27 = std::make_unique<int>(100);\n    std::cout << *result_27 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000403",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> temp_28 = std::make_unique<int>(100);\n    std::cout << *temp_28 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto temp_28 = std::make_unique<int>(100);\n    std::cout << *temp_28 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000404",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> cache_29 = std::make_unique<int>(100);\n    std::cout << *cache_29 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto cache_29 = std::make_unique<int>(100);\n    std::cout << *cache_29 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000405",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> buffer_30 = std::make_unique<int>(100);\n    std::cout << *buffer_30 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto buffer_30 = std::make_unique<int>(100);\n    std::cout << *buffer_30 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000406",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> node_31 = std::make_unique<int>(100);\n    std::cout << *node_31 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto node_31 = std::make_unique<int>(100);\n    std::cout << *node_31 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000407",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> record_32 = std::make_unique<int>(100);\n    std::cout << *record_32 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto record_32 = std::make_unique<int>(100);\n    std::cout << *record_32 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000408",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> entry_33 = std::make_unique<int>(100);\n    std::cout << *entry_33 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto entry_33 = std::make_unique<int>(100);\n    std::cout << *entry_33 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000409",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> key_34 = std::make_unique<int>(100);\n    std::cout << *key_34 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto key_34 = std::make_unique<int>(100);\n    std::cout << *key_34 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000410",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> param_35 = std::make_unique<int>(100);\n    std::cout << *param_35 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto param_35 = std::make_unique<int>(100);\n    std::cout << *param_35 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000411",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> arg_36 = std::make_unique<int>(100);\n    std::cout << *arg_36 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto arg_36 = std::make_unique<int>(100);\n    std::cout << *arg_36 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000412",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> obj_37 = std::make_unique<int>(100);\n    std::cout << *obj_37 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto obj_37 = std::make_unique<int>(100);\n    std::cout << *obj_37 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000413",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> entity_38 = std::make_unique<int>(100);\n    std::cout << *entity_38 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto entity_38 = std::make_unique<int>(100);\n    std::cout << *entity_38 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000414",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> model_39 = std::make_unique<int>(100);\n    std::cout << *model_39 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto model_39 = std::make_unique<int>(100);\n    std::cout << *model_39 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000415",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> data_40 = std::make_unique<int>(100);\n    std::cout << *data_40 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto data_40 = std::make_unique<int>(100);\n    std::cout << *data_40 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000416",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> value_41 = std::make_unique<int>(100);\n    std::cout << *value_41 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto value_41 = std::make_unique<int>(100);\n    std::cout << *value_41 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000417",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> item_42 = std::make_unique<int>(100);\n    std::cout << *item_42 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto item_42 = std::make_unique<int>(100);\n    std::cout << *item_42 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000418",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> element_43 = std::make_unique<int>(100);\n    std::cout << *element_43 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto element_43 = std::make_unique<int>(100);\n    std::cout << *element_43 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000419",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> count_44 = std::make_unique<int>(100);\n    std::cout << *count_44 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto count_44 = std::make_unique<int>(100);\n    std::cout << *count_44 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000420",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> size_45 = std::make_unique<int>(100);\n    std::cout << *size_45 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto size_45 = std::make_unique<int>(100);\n    std::cout << *size_45 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000421",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> index_46 = std::make_unique<int>(100);\n    std::cout << *index_46 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto index_46 = std::make_unique<int>(100);\n    std::cout << *index_46 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000422",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> result_47 = std::make_unique<int>(100);\n    std::cout << *result_47 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto result_47 = std::make_unique<int>(100);\n    std::cout << *result_47 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000423",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> temp_48 = std::make_unique<int>(100);\n    std::cout << *temp_48 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto temp_48 = std::make_unique<int>(100);\n    std::cout << *temp_48 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000424",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> cache_49 = std::make_unique<int>(100);\n    std::cout << *cache_49 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto cache_49 = std::make_unique<int>(100);\n    std::cout << *cache_49 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000425",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> buffer_50 = std::make_unique<int>(100);\n    std::cout << *buffer_50 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto buffer_50 = std::make_unique<int>(100);\n    std::cout << *buffer_50 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000426",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> node_51 = std::make_unique<int>(100);\n    std::cout << *node_51 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto node_51 = std::make_unique<int>(100);\n    std::cout << *node_51 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000427",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> record_52 = std::make_unique<int>(100);\n    std::cout << *record_52 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto record_52 = std::make_unique<int>(100);\n    std::cout << *record_52 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000428",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> entry_53 = std::make_unique<int>(100);\n    std::cout << *entry_53 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto entry_53 = std::make_unique<int>(100);\n    std::cout << *entry_53 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000429",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> key_54 = std::make_unique<int>(100);\n    std::cout << *key_54 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto key_54 = std::make_unique<int>(100);\n    std::cout << *key_54 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000430",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> param_55 = std::make_unique<int>(100);\n    std::cout << *param_55 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto param_55 = std::make_unique<int>(100);\n    std::cout << *param_55 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000431",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> arg_56 = std::make_unique<int>(100);\n    std::cout << *arg_56 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto arg_56 = std::make_unique<int>(100);\n    std::cout << *arg_56 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000432",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> obj_57 = std::make_unique<int>(100);\n    std::cout << *obj_57 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto obj_57 = std::make_unique<int>(100);\n    std::cout << *obj_57 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000433",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> entity_58 = std::make_unique<int>(100);\n    std::cout << *entity_58 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto entity_58 = std::make_unique<int>(100);\n    std::cout << *entity_58 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000434",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> model_59 = std::make_unique<int>(100);\n    std::cout << *model_59 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto model_59 = std::make_unique<int>(100);\n    std::cout << *model_59 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000435",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> data_60 = std::make_unique<int>(100);\n    std::cout << *data_60 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto data_60 = std::make_unique<int>(100);\n    std::cout << *data_60 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000436",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> value_61 = std::make_unique<int>(100);\n    std::cout << *value_61 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto value_61 = std::make_unique<int>(100);\n    std::cout << *value_61 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000437",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain smart pointers and RAII.",
+    "input": {
+      "title": "Unique Pointers",
+      "code": "#include <iostream>\n#include <memory>\n\nint main() {\n    std::unique_ptr<int> item_62 = std::make_unique<int>(100);\n    std::cout << *item_62 << std::endl;\n    // No delete needed!\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Smart pointers (`std::unique_ptr`, `std::shared_ptr`) use the RAII (Resource Acquisition Is Initialization) idiom. The pointer is a stack object that wraps heap memory, automatically calling `delete` in its destructor.",
+      "beginner": "Smart pointers are robots that clean up memory for you. You use them just like regular pointers, but when they are done, they automatically delete the data so you don't get memory leaks.",
+      "analogy": "A raw pointer is like taking out a library book and having to remember to return it. A smart pointer is an ebook that automatically deletes itself when the loan period expires.",
+      "solution": "Use `std::make_unique` by default. Use `std::make_shared` only if multiple owners need to share the exact same data.",
+      "prevention": "Never use raw `new` and `delete` in modern C++.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nint main() {\n    auto item_62 = std::make_unique<int>(100);\n    std::cout << *item_62 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "smart-pointers",
+        "raii",
+        "memory"
+      ]
+    }
+  }
+]

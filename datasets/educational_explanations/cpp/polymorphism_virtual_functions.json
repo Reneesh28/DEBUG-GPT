@@ -1,0 +1,2048 @@
+[
+  {
+    "id": "CP_EDU_000187",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void demo_0() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void demo_0() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->demo_0();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void demo_0() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void demo_0() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->demo_0();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000188",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void explain_1() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void explain_1() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->explain_1();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void explain_1() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void explain_1() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->explain_1();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000189",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void show_2() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void show_2() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->show_2();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void show_2() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void show_2() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->show_2();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000190",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void illustrate_3() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void illustrate_3() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->illustrate_3();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void illustrate_3() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void illustrate_3() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->illustrate_3();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000191",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void concept_4() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void concept_4() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->concept_4();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void concept_4() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void concept_4() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->concept_4();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000192",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void example_5() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void example_5() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->example_5();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void example_5() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void example_5() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->example_5();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000193",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void learn_6() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void learn_6() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->learn_6();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void learn_6() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void learn_6() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->learn_6();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000194",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void teach_7() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void teach_7() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->teach_7();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void teach_7() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void teach_7() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->teach_7();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000195",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void guide_8() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void guide_8() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->guide_8();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void guide_8() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void guide_8() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->guide_8();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000196",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void tutorial_9() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void tutorial_9() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->tutorial_9();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void tutorial_9() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void tutorial_9() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->tutorial_9();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000197",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void run_10() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void run_10() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->run_10();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void run_10() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void run_10() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->run_10();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000198",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void execute_11() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void execute_11() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->execute_11();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void execute_11() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void execute_11() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->execute_11();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000199",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void process_12() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void process_12() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->process_12();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void process_12() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void process_12() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->process_12();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000200",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void handle_13() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void handle_13() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->handle_13();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void handle_13() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void handle_13() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->handle_13();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000201",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void manage_14() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void manage_14() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->manage_14();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void manage_14() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void manage_14() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->manage_14();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000202",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void setup_15() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void setup_15() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->setup_15();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void setup_15() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void setup_15() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->setup_15();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000203",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void configure_16() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void configure_16() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->configure_16();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void configure_16() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void configure_16() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->configure_16();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000204",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void build_17() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void build_17() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->build_17();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void build_17() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void build_17() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->build_17();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000205",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void create_18() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void create_18() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->create_18();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void create_18() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void create_18() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->create_18();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000206",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void test_19() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void test_19() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->test_19();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void test_19() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void test_19() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->test_19();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000207",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void demo_20() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void demo_20() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->demo_20();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void demo_20() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void demo_20() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->demo_20();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000208",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void explain_21() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void explain_21() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->explain_21();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void explain_21() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void explain_21() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->explain_21();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000209",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void show_22() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void show_22() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->show_22();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void show_22() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void show_22() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->show_22();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000210",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void illustrate_23() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void illustrate_23() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->illustrate_23();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void illustrate_23() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void illustrate_23() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->illustrate_23();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000211",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void concept_24() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void concept_24() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->concept_24();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void concept_24() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void concept_24() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->concept_24();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000212",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void example_25() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void example_25() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->example_25();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void example_25() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void example_25() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->example_25();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000213",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void learn_26() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void learn_26() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->learn_26();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void learn_26() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void learn_26() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->learn_26();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000214",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void teach_27() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void teach_27() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->teach_27();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void teach_27() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void teach_27() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->teach_27();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000215",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void guide_28() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void guide_28() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->guide_28();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void guide_28() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void guide_28() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->guide_28();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000216",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void tutorial_29() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void tutorial_29() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->tutorial_29();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void tutorial_29() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void tutorial_29() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->tutorial_29();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000217",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void run_30() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void run_30() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->run_30();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void run_30() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void run_30() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->run_30();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000218",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void execute_31() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void execute_31() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->execute_31();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void execute_31() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void execute_31() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->execute_31();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000219",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void process_32() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void process_32() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->process_32();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void process_32() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void process_32() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->process_32();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000220",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void handle_33() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void handle_33() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->handle_33();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void handle_33() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void handle_33() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->handle_33();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000221",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void manage_34() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void manage_34() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->manage_34();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void manage_34() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void manage_34() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->manage_34();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000222",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void setup_35() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void setup_35() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->setup_35();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void setup_35() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void setup_35() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->setup_35();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000223",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void configure_36() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void configure_36() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->configure_36();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void configure_36() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void configure_36() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->configure_36();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000224",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void build_37() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void build_37() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->build_37();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void build_37() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void build_37() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->build_37();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000225",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void create_38() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void create_38() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->create_38();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void create_38() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void create_38() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->create_38();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000226",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void test_39() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void test_39() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->test_39();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void test_39() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void test_39() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->test_39();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000227",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void demo_40() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void demo_40() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->demo_40();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void demo_40() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void demo_40() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->demo_40();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000228",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void explain_41() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void explain_41() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->explain_41();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void explain_41() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void explain_41() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->explain_41();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000229",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void show_42() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void show_42() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->show_42();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void show_42() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void show_42() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->show_42();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000230",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void illustrate_43() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void illustrate_43() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->illustrate_43();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void illustrate_43() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void illustrate_43() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->illustrate_43();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000231",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void concept_44() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void concept_44() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->concept_44();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void concept_44() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void concept_44() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->concept_44();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000232",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void example_45() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void example_45() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->example_45();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void example_45() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void example_45() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->example_45();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000233",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void learn_46() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void learn_46() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->learn_46();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void learn_46() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void learn_46() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->learn_46();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000234",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void teach_47() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void teach_47() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->teach_47();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void teach_47() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void teach_47() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->teach_47();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000235",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void guide_48() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void guide_48() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->guide_48();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void guide_48() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void guide_48() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->guide_48();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000236",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void tutorial_49() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void tutorial_49() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->tutorial_49();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void tutorial_49() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void tutorial_49() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->tutorial_49();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000237",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void run_50() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void run_50() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->run_50();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void run_50() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void run_50() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->run_50();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000238",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void execute_51() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void execute_51() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->execute_51();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void execute_51() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void execute_51() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->execute_51();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000239",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void process_52() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void process_52() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->process_52();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void process_52() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void process_52() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->process_52();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000240",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void handle_53() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void handle_53() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->handle_53();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void handle_53() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void handle_53() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->handle_53();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000241",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void manage_54() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void manage_54() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->manage_54();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void manage_54() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void manage_54() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->manage_54();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000242",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void setup_55() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void setup_55() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->setup_55();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void setup_55() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void setup_55() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->setup_55();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000243",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void configure_56() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void configure_56() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->configure_56();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void configure_56() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void configure_56() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->configure_56();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000244",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void build_57() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void build_57() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->build_57();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void build_57() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void build_57() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->build_57();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000245",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void create_58() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void create_58() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->create_58();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void create_58() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void create_58() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->create_58();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000246",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void test_59() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void test_59() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->test_59();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void test_59() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void test_59() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->test_59();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000247",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void demo_60() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void demo_60() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->demo_60();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void demo_60() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void demo_60() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->demo_60();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  },
+  {
+    "id": "CP_EDU_000248",
+    "language": "cpp",
+    "category": "educational",
+    "instruction": "Explain virtual functions and polymorphism.",
+    "input": {
+      "title": "Runtime Polymorphism",
+      "code": "#include <iostream>\n\nclass Base {\npublic:\n    virtual void explain_61() { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void explain_61() override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    Base* obj = new Derived();\n    obj->explain_61();\n    delete obj;\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `virtual` keyword enables dynamic dispatch via a vtable. When a method is called on a base pointer pointing to a derived object, the derived class's overridden method is executed at runtime.",
+      "beginner": "Virtual functions let a parent object magically behave like its child object. Even though the computer thinks it's holding a Base object, it runs the Derived version of the function.",
+      "analogy": "Imagine a TV remote with a 'Play' button (Base). Whether you point it at a DVD player or a PlayStation (Derived), the correct machine figures out how to 'Play'.",
+      "solution": "Always declare base class destructors as `virtual` to ensure proper cleanup of derived objects.",
+      "prevention": "Use the `override` keyword in derived classes so the compiler catches typos in function signatures.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nclass Base {\npublic:\n    virtual void explain_61() const { std::cout << \"Base\" << std::endl; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void explain_61() const override { std::cout << \"Derived\" << std::endl; }\n};\n\nint main() {\n    std::unique_ptr<Base> obj = std::make_unique<Derived>();\n    obj->explain_61();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "polymorphism",
+        "virtual",
+        "oop"
+      ]
+    }
+  }
+]

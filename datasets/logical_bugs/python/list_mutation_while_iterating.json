@@ -1,0 +1,2048 @@
+[
+  {
+    "id": "PY_LOGIC_000063",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "count_0 = [1, 2, 3, 4]\nfor item in count_0:\n    if item % 2 == 0:\n        count_0.remove(item)\nprint(count_0)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "count_0 = [1, 2, 3, 4]\ncount_0 = [item for item in count_0 if item % 2 != 0]\nprint(count_0)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000064",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "total_1 = [1, 2, 3, 4]\nfor item in total_1:\n    if item % 2 == 0:\n        total_1.remove(item)\nprint(total_1)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "total_1 = [1, 2, 3, 4]\ntotal_1 = [item for item in total_1 if item % 2 != 0]\nprint(total_1)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000065",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "index_2 = [1, 2, 3, 4]\nfor item in index_2:\n    if item % 2 == 0:\n        index_2.remove(item)\nprint(index_2)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "index_2 = [1, 2, 3, 4]\nindex_2 = [item for item in index_2 if item % 2 != 0]\nprint(index_2)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000066",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "sum_3 = [1, 2, 3, 4]\nfor item in sum_3:\n    if item % 2 == 0:\n        sum_3.remove(item)\nprint(sum_3)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "sum_3 = [1, 2, 3, 4]\nsum_3 = [item for item in sum_3 if item % 2 != 0]\nprint(sum_3)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000067",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "average_4 = [1, 2, 3, 4]\nfor item in average_4:\n    if item % 2 == 0:\n        average_4.remove(item)\nprint(average_4)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "average_4 = [1, 2, 3, 4]\naverage_4 = [item for item in average_4 if item % 2 != 0]\nprint(average_4)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000068",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "result_5 = [1, 2, 3, 4]\nfor item in result_5:\n    if item % 2 == 0:\n        result_5.remove(item)\nprint(result_5)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "result_5 = [1, 2, 3, 4]\nresult_5 = [item for item in result_5 if item % 2 != 0]\nprint(result_5)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000069",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "value_6 = [1, 2, 3, 4]\nfor item in value_6:\n    if item % 2 == 0:\n        value_6.remove(item)\nprint(value_6)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "value_6 = [1, 2, 3, 4]\nvalue_6 = [item for item in value_6 if item % 2 != 0]\nprint(value_6)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000070",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "temp_7 = [1, 2, 3, 4]\nfor item in temp_7:\n    if item % 2 == 0:\n        temp_7.remove(item)\nprint(temp_7)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "temp_7 = [1, 2, 3, 4]\ntemp_7 = [item for item in temp_7 if item % 2 != 0]\nprint(temp_7)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000071",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "max_val_8 = [1, 2, 3, 4]\nfor item in max_val_8:\n    if item % 2 == 0:\n        max_val_8.remove(item)\nprint(max_val_8)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "max_val_8 = [1, 2, 3, 4]\nmax_val_8 = [item for item in max_val_8 if item % 2 != 0]\nprint(max_val_8)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000072",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "min_val_9 = [1, 2, 3, 4]\nfor item in min_val_9:\n    if item % 2 == 0:\n        min_val_9.remove(item)\nprint(min_val_9)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "min_val_9 = [1, 2, 3, 4]\nmin_val_9 = [item for item in min_val_9 if item % 2 != 0]\nprint(min_val_9)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000073",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "counter_10 = [1, 2, 3, 4]\nfor item in counter_10:\n    if item % 2 == 0:\n        counter_10.remove(item)\nprint(counter_10)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "counter_10 = [1, 2, 3, 4]\ncounter_10 = [item for item in counter_10 if item % 2 != 0]\nprint(counter_10)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000074",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "limit_11 = [1, 2, 3, 4]\nfor item in limit_11:\n    if item % 2 == 0:\n        limit_11.remove(item)\nprint(limit_11)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "limit_11 = [1, 2, 3, 4]\nlimit_11 = [item for item in limit_11 if item % 2 != 0]\nprint(limit_11)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000075",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "threshold_12 = [1, 2, 3, 4]\nfor item in threshold_12:\n    if item % 2 == 0:\n        threshold_12.remove(item)\nprint(threshold_12)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "threshold_12 = [1, 2, 3, 4]\nthreshold_12 = [item for item in threshold_12 if item % 2 != 0]\nprint(threshold_12)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000076",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "score_13 = [1, 2, 3, 4]\nfor item in score_13:\n    if item % 2 == 0:\n        score_13.remove(item)\nprint(score_13)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "score_13 = [1, 2, 3, 4]\nscore_13 = [item for item in score_13 if item % 2 != 0]\nprint(score_13)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000077",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "age_14 = [1, 2, 3, 4]\nfor item in age_14:\n    if item % 2 == 0:\n        age_14.remove(item)\nprint(age_14)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "age_14 = [1, 2, 3, 4]\nage_14 = [item for item in age_14 if item % 2 != 0]\nprint(age_14)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000078",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "size_15 = [1, 2, 3, 4]\nfor item in size_15:\n    if item % 2 == 0:\n        size_15.remove(item)\nprint(size_15)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "size_15 = [1, 2, 3, 4]\nsize_15 = [item for item in size_15 if item % 2 != 0]\nprint(size_15)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000079",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "length_16 = [1, 2, 3, 4]\nfor item in length_16:\n    if item % 2 == 0:\n        length_16.remove(item)\nprint(length_16)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "length_16 = [1, 2, 3, 4]\nlength_16 = [item for item in length_16 if item % 2 != 0]\nprint(length_16)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000080",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "width_17 = [1, 2, 3, 4]\nfor item in width_17:\n    if item % 2 == 0:\n        width_17.remove(item)\nprint(width_17)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "width_17 = [1, 2, 3, 4]\nwidth_17 = [item for item in width_17 if item % 2 != 0]\nprint(width_17)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000081",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "height_18 = [1, 2, 3, 4]\nfor item in height_18:\n    if item % 2 == 0:\n        height_18.remove(item)\nprint(height_18)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "height_18 = [1, 2, 3, 4]\nheight_18 = [item for item in height_18 if item % 2 != 0]\nprint(height_18)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000082",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "depth_19 = [1, 2, 3, 4]\nfor item in depth_19:\n    if item % 2 == 0:\n        depth_19.remove(item)\nprint(depth_19)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "depth_19 = [1, 2, 3, 4]\ndepth_19 = [item for item in depth_19 if item % 2 != 0]\nprint(depth_19)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000083",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "count_20 = [1, 2, 3, 4]\nfor item in count_20:\n    if item % 2 == 0:\n        count_20.remove(item)\nprint(count_20)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "count_20 = [1, 2, 3, 4]\ncount_20 = [item for item in count_20 if item % 2 != 0]\nprint(count_20)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000084",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "total_21 = [1, 2, 3, 4]\nfor item in total_21:\n    if item % 2 == 0:\n        total_21.remove(item)\nprint(total_21)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "total_21 = [1, 2, 3, 4]\ntotal_21 = [item for item in total_21 if item % 2 != 0]\nprint(total_21)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000085",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "index_22 = [1, 2, 3, 4]\nfor item in index_22:\n    if item % 2 == 0:\n        index_22.remove(item)\nprint(index_22)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "index_22 = [1, 2, 3, 4]\nindex_22 = [item for item in index_22 if item % 2 != 0]\nprint(index_22)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000086",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "sum_23 = [1, 2, 3, 4]\nfor item in sum_23:\n    if item % 2 == 0:\n        sum_23.remove(item)\nprint(sum_23)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "sum_23 = [1, 2, 3, 4]\nsum_23 = [item for item in sum_23 if item % 2 != 0]\nprint(sum_23)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000087",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "average_24 = [1, 2, 3, 4]\nfor item in average_24:\n    if item % 2 == 0:\n        average_24.remove(item)\nprint(average_24)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "average_24 = [1, 2, 3, 4]\naverage_24 = [item for item in average_24 if item % 2 != 0]\nprint(average_24)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000088",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "result_25 = [1, 2, 3, 4]\nfor item in result_25:\n    if item % 2 == 0:\n        result_25.remove(item)\nprint(result_25)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "result_25 = [1, 2, 3, 4]\nresult_25 = [item for item in result_25 if item % 2 != 0]\nprint(result_25)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000089",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "value_26 = [1, 2, 3, 4]\nfor item in value_26:\n    if item % 2 == 0:\n        value_26.remove(item)\nprint(value_26)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "value_26 = [1, 2, 3, 4]\nvalue_26 = [item for item in value_26 if item % 2 != 0]\nprint(value_26)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000090",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "temp_27 = [1, 2, 3, 4]\nfor item in temp_27:\n    if item % 2 == 0:\n        temp_27.remove(item)\nprint(temp_27)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "temp_27 = [1, 2, 3, 4]\ntemp_27 = [item for item in temp_27 if item % 2 != 0]\nprint(temp_27)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000091",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "max_val_28 = [1, 2, 3, 4]\nfor item in max_val_28:\n    if item % 2 == 0:\n        max_val_28.remove(item)\nprint(max_val_28)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "max_val_28 = [1, 2, 3, 4]\nmax_val_28 = [item for item in max_val_28 if item % 2 != 0]\nprint(max_val_28)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000092",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "min_val_29 = [1, 2, 3, 4]\nfor item in min_val_29:\n    if item % 2 == 0:\n        min_val_29.remove(item)\nprint(min_val_29)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "min_val_29 = [1, 2, 3, 4]\nmin_val_29 = [item for item in min_val_29 if item % 2 != 0]\nprint(min_val_29)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000093",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "counter_30 = [1, 2, 3, 4]\nfor item in counter_30:\n    if item % 2 == 0:\n        counter_30.remove(item)\nprint(counter_30)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "counter_30 = [1, 2, 3, 4]\ncounter_30 = [item for item in counter_30 if item % 2 != 0]\nprint(counter_30)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000094",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "limit_31 = [1, 2, 3, 4]\nfor item in limit_31:\n    if item % 2 == 0:\n        limit_31.remove(item)\nprint(limit_31)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "limit_31 = [1, 2, 3, 4]\nlimit_31 = [item for item in limit_31 if item % 2 != 0]\nprint(limit_31)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000095",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "threshold_32 = [1, 2, 3, 4]\nfor item in threshold_32:\n    if item % 2 == 0:\n        threshold_32.remove(item)\nprint(threshold_32)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "threshold_32 = [1, 2, 3, 4]\nthreshold_32 = [item for item in threshold_32 if item % 2 != 0]\nprint(threshold_32)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000096",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "score_33 = [1, 2, 3, 4]\nfor item in score_33:\n    if item % 2 == 0:\n        score_33.remove(item)\nprint(score_33)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "score_33 = [1, 2, 3, 4]\nscore_33 = [item for item in score_33 if item % 2 != 0]\nprint(score_33)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000097",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "age_34 = [1, 2, 3, 4]\nfor item in age_34:\n    if item % 2 == 0:\n        age_34.remove(item)\nprint(age_34)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "age_34 = [1, 2, 3, 4]\nage_34 = [item for item in age_34 if item % 2 != 0]\nprint(age_34)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000098",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "size_35 = [1, 2, 3, 4]\nfor item in size_35:\n    if item % 2 == 0:\n        size_35.remove(item)\nprint(size_35)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "size_35 = [1, 2, 3, 4]\nsize_35 = [item for item in size_35 if item % 2 != 0]\nprint(size_35)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000099",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "length_36 = [1, 2, 3, 4]\nfor item in length_36:\n    if item % 2 == 0:\n        length_36.remove(item)\nprint(length_36)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "length_36 = [1, 2, 3, 4]\nlength_36 = [item for item in length_36 if item % 2 != 0]\nprint(length_36)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000100",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "width_37 = [1, 2, 3, 4]\nfor item in width_37:\n    if item % 2 == 0:\n        width_37.remove(item)\nprint(width_37)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "width_37 = [1, 2, 3, 4]\nwidth_37 = [item for item in width_37 if item % 2 != 0]\nprint(width_37)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000101",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "height_38 = [1, 2, 3, 4]\nfor item in height_38:\n    if item % 2 == 0:\n        height_38.remove(item)\nprint(height_38)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "height_38 = [1, 2, 3, 4]\nheight_38 = [item for item in height_38 if item % 2 != 0]\nprint(height_38)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000102",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "depth_39 = [1, 2, 3, 4]\nfor item in depth_39:\n    if item % 2 == 0:\n        depth_39.remove(item)\nprint(depth_39)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "depth_39 = [1, 2, 3, 4]\ndepth_39 = [item for item in depth_39 if item % 2 != 0]\nprint(depth_39)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000103",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "count_40 = [1, 2, 3, 4]\nfor item in count_40:\n    if item % 2 == 0:\n        count_40.remove(item)\nprint(count_40)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "count_40 = [1, 2, 3, 4]\ncount_40 = [item for item in count_40 if item % 2 != 0]\nprint(count_40)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000104",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "total_41 = [1, 2, 3, 4]\nfor item in total_41:\n    if item % 2 == 0:\n        total_41.remove(item)\nprint(total_41)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "total_41 = [1, 2, 3, 4]\ntotal_41 = [item for item in total_41 if item % 2 != 0]\nprint(total_41)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000105",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "index_42 = [1, 2, 3, 4]\nfor item in index_42:\n    if item % 2 == 0:\n        index_42.remove(item)\nprint(index_42)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "index_42 = [1, 2, 3, 4]\nindex_42 = [item for item in index_42 if item % 2 != 0]\nprint(index_42)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000106",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "sum_43 = [1, 2, 3, 4]\nfor item in sum_43:\n    if item % 2 == 0:\n        sum_43.remove(item)\nprint(sum_43)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "sum_43 = [1, 2, 3, 4]\nsum_43 = [item for item in sum_43 if item % 2 != 0]\nprint(sum_43)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000107",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "average_44 = [1, 2, 3, 4]\nfor item in average_44:\n    if item % 2 == 0:\n        average_44.remove(item)\nprint(average_44)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "average_44 = [1, 2, 3, 4]\naverage_44 = [item for item in average_44 if item % 2 != 0]\nprint(average_44)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000108",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "result_45 = [1, 2, 3, 4]\nfor item in result_45:\n    if item % 2 == 0:\n        result_45.remove(item)\nprint(result_45)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "result_45 = [1, 2, 3, 4]\nresult_45 = [item for item in result_45 if item % 2 != 0]\nprint(result_45)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000109",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "value_46 = [1, 2, 3, 4]\nfor item in value_46:\n    if item % 2 == 0:\n        value_46.remove(item)\nprint(value_46)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "value_46 = [1, 2, 3, 4]\nvalue_46 = [item for item in value_46 if item % 2 != 0]\nprint(value_46)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000110",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "temp_47 = [1, 2, 3, 4]\nfor item in temp_47:\n    if item % 2 == 0:\n        temp_47.remove(item)\nprint(temp_47)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "temp_47 = [1, 2, 3, 4]\ntemp_47 = [item for item in temp_47 if item % 2 != 0]\nprint(temp_47)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000111",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "max_val_48 = [1, 2, 3, 4]\nfor item in max_val_48:\n    if item % 2 == 0:\n        max_val_48.remove(item)\nprint(max_val_48)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "max_val_48 = [1, 2, 3, 4]\nmax_val_48 = [item for item in max_val_48 if item % 2 != 0]\nprint(max_val_48)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000112",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "min_val_49 = [1, 2, 3, 4]\nfor item in min_val_49:\n    if item % 2 == 0:\n        min_val_49.remove(item)\nprint(min_val_49)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "min_val_49 = [1, 2, 3, 4]\nmin_val_49 = [item for item in min_val_49 if item % 2 != 0]\nprint(min_val_49)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000113",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "counter_50 = [1, 2, 3, 4]\nfor item in counter_50:\n    if item % 2 == 0:\n        counter_50.remove(item)\nprint(counter_50)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "counter_50 = [1, 2, 3, 4]\ncounter_50 = [item for item in counter_50 if item % 2 != 0]\nprint(counter_50)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000114",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "limit_51 = [1, 2, 3, 4]\nfor item in limit_51:\n    if item % 2 == 0:\n        limit_51.remove(item)\nprint(limit_51)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "limit_51 = [1, 2, 3, 4]\nlimit_51 = [item for item in limit_51 if item % 2 != 0]\nprint(limit_51)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000115",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "threshold_52 = [1, 2, 3, 4]\nfor item in threshold_52:\n    if item % 2 == 0:\n        threshold_52.remove(item)\nprint(threshold_52)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "threshold_52 = [1, 2, 3, 4]\nthreshold_52 = [item for item in threshold_52 if item % 2 != 0]\nprint(threshold_52)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000116",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "score_53 = [1, 2, 3, 4]\nfor item in score_53:\n    if item % 2 == 0:\n        score_53.remove(item)\nprint(score_53)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "score_53 = [1, 2, 3, 4]\nscore_53 = [item for item in score_53 if item % 2 != 0]\nprint(score_53)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000117",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "age_54 = [1, 2, 3, 4]\nfor item in age_54:\n    if item % 2 == 0:\n        age_54.remove(item)\nprint(age_54)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "age_54 = [1, 2, 3, 4]\nage_54 = [item for item in age_54 if item % 2 != 0]\nprint(age_54)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000118",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "size_55 = [1, 2, 3, 4]\nfor item in size_55:\n    if item % 2 == 0:\n        size_55.remove(item)\nprint(size_55)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "size_55 = [1, 2, 3, 4]\nsize_55 = [item for item in size_55 if item % 2 != 0]\nprint(size_55)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000119",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "length_56 = [1, 2, 3, 4]\nfor item in length_56:\n    if item % 2 == 0:\n        length_56.remove(item)\nprint(length_56)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "length_56 = [1, 2, 3, 4]\nlength_56 = [item for item in length_56 if item % 2 != 0]\nprint(length_56)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000120",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "width_57 = [1, 2, 3, 4]\nfor item in width_57:\n    if item % 2 == 0:\n        width_57.remove(item)\nprint(width_57)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "width_57 = [1, 2, 3, 4]\nwidth_57 = [item for item in width_57 if item % 2 != 0]\nprint(width_57)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000121",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "height_58 = [1, 2, 3, 4]\nfor item in height_58:\n    if item % 2 == 0:\n        height_58.remove(item)\nprint(height_58)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "height_58 = [1, 2, 3, 4]\nheight_58 = [item for item in height_58 if item % 2 != 0]\nprint(height_58)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000122",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "depth_59 = [1, 2, 3, 4]\nfor item in depth_59:\n    if item % 2 == 0:\n        depth_59.remove(item)\nprint(depth_59)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "depth_59 = [1, 2, 3, 4]\ndepth_59 = [item for item in depth_59 if item % 2 != 0]\nprint(depth_59)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000123",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "count_60 = [1, 2, 3, 4]\nfor item in count_60:\n    if item % 2 == 0:\n        count_60.remove(item)\nprint(count_60)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "count_60 = [1, 2, 3, 4]\ncount_60 = [item for item in count_60 if item % 2 != 0]\nprint(count_60)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000124",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the bug where iterating and removing from the same list skips items.",
+    "input": {
+      "title": "Mutating List During Iteration",
+      "code": "total_61 = [1, 2, 3, 4]\nfor item in total_61:\n    if item % 2 == 0:\n        total_61.remove(item)\nprint(total_61)\n",
+      "error_message": "No error, but skips items (e.g. consecutive elements matching condition might not be removed)."
+    },
+    "output": {
+      "technical": "Modifying a list (like using `.remove()`) while iterating over it with a `for` loop disrupts the internal index tracker, causing elements to be skipped.",
+      "beginner": "You are pulling items out of a list while looping through it. The loop loses its place and accidentally skips over items.",
+      "analogy": "It's like reading a book while someone rips out the page you just finished. You'll accidentally skip the next page.",
+      "solution": "Iterate over a copy of the list, or use list comprehension.",
+      "prevention": "Never mutate the length of an array while iterating over it directly. Use a copy `for item in list[:]`.",
+      "optimized_code": "total_61 = [1, 2, 3, 4]\ntotal_61 = [item for item in total_61 if item % 2 != 0]\nprint(total_61)\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "list",
+        "iteration",
+        "mutation"
+      ]
+    }
+  }
+]

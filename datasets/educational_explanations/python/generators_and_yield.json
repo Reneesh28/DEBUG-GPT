@@ -1,0 +1,2048 @@
+[
+  {
+    "id": "PY_EDU_000125",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def demo_0(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in demo_0(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def demo_0(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000126",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def explain_1(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in explain_1(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def explain_1(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000127",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def show_2(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in show_2(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def show_2(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000128",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def illustrate_3(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in illustrate_3(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def illustrate_3(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000129",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def concept_4(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in concept_4(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def concept_4(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000130",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def example_5(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in example_5(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def example_5(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000131",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def learn_6(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in learn_6(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def learn_6(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000132",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def teach_7(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in teach_7(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def teach_7(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000133",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def guide_8(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in guide_8(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def guide_8(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000134",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def tutorial_9(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in tutorial_9(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def tutorial_9(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000135",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def run_10(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in run_10(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def run_10(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000136",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def execute_11(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in execute_11(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def execute_11(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000137",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def process_12(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in process_12(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def process_12(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000138",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def handle_13(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in handle_13(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def handle_13(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000139",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def manage_14(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in manage_14(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def manage_14(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000140",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def setup_15(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in setup_15(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def setup_15(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000141",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def configure_16(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in configure_16(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def configure_16(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000142",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def build_17(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in build_17(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def build_17(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000143",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def create_18(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in create_18(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def create_18(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000144",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def test_19(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in test_19(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def test_19(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000145",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def demo_20(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in demo_20(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def demo_20(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000146",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def explain_21(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in explain_21(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def explain_21(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000147",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def show_22(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in show_22(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def show_22(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000148",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def illustrate_23(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in illustrate_23(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def illustrate_23(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000149",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def concept_24(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in concept_24(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def concept_24(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000150",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def example_25(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in example_25(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def example_25(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000151",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def learn_26(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in learn_26(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def learn_26(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000152",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def teach_27(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in teach_27(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def teach_27(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000153",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def guide_28(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in guide_28(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def guide_28(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000154",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def tutorial_29(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in tutorial_29(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def tutorial_29(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000155",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def run_30(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in run_30(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def run_30(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000156",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def execute_31(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in execute_31(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def execute_31(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000157",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def process_32(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in process_32(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def process_32(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000158",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def handle_33(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in handle_33(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def handle_33(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000159",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def manage_34(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in manage_34(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def manage_34(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000160",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def setup_35(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in setup_35(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def setup_35(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000161",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def configure_36(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in configure_36(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def configure_36(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000162",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def build_37(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in build_37(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def build_37(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000163",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def create_38(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in create_38(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def create_38(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000164",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def test_39(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in test_39(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def test_39(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000165",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def demo_40(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in demo_40(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def demo_40(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000166",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def explain_41(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in explain_41(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def explain_41(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000167",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def show_42(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in show_42(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def show_42(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000168",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def illustrate_43(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in illustrate_43(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def illustrate_43(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000169",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def concept_44(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in concept_44(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def concept_44(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000170",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def example_45(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in example_45(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def example_45(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000171",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def learn_46(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in learn_46(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def learn_46(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000172",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def teach_47(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in teach_47(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def teach_47(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000173",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def guide_48(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in guide_48(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def guide_48(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000174",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def tutorial_49(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in tutorial_49(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def tutorial_49(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000175",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def run_50(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in run_50(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def run_50(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000176",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def execute_51(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in execute_51(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def execute_51(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000177",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def process_52(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in process_52(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def process_52(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000178",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def handle_53(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in handle_53(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def handle_53(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000179",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def manage_54(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in manage_54(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def manage_54(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000180",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def setup_55(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in setup_55(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def setup_55(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000181",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def configure_56(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in configure_56(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def configure_56(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000182",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def build_57(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in build_57(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def build_57(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000183",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def create_58(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in create_58(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def create_58(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000184",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def test_59(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in test_59(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def test_59(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000185",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def demo_60(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in demo_60(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def demo_60(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "PY_EDU_000186",
+    "language": "python",
+    "category": "educational",
+    "instruction": "Explain generators and the yield keyword.",
+    "input": {
+      "title": "Generators",
+      "code": "def explain_61(max_num):\n    for i in range(max_num):\n        yield i * 2\n\nfor val in explain_61(3):\n    print(val)\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "The `yield` keyword turns a function into a generator. Instead of returning a list in memory all at once, the function pauses its state and 'yields' one value at a time lazily. This results in O(1) memory usage regardless of iterations.",
+      "beginner": "Instead of computing a million numbers and holding them all in memory, `yield` computes one number, hands it to you, and pauses until you ask for the next one.",
+      "analogy": "A normal function is like receiving an entire pizza at once. A generator (`yield`) is like a chef who hands you one slice, and waits for you to eat it before baking the next slice.",
+      "solution": "Use generators when processing large datasets, reading large files, or dealing with infinite sequences.",
+      "prevention": "Remember that generators are exhausted after one iteration; you cannot loop over them twice.",
+      "optimized_code": "def explain_61(max_num):\n    for i in range(max_num):\n        yield i * 2\n\n# Or generator expression:\n# gen = (i * 2 for i in range(3))\n",
+      "complexity": {
+        "before": "O(1) Memory",
+        "after": "O(1) Memory"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "generators",
+        "yield",
+        "memory"
+      ]
+    }
+  }
+]

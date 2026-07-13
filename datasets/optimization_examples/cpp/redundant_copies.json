@@ -1,0 +1,2081 @@
+[
+  {
+    "id": "CP_OPTIM_000376",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> count_0 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : count_0) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> count_0 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : count_0) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000377",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> total_1 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : total_1) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> total_1 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : total_1) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000378",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> index_2 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : index_2) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> index_2 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : index_2) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000379",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> sum_3 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : sum_3) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> sum_3 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : sum_3) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000380",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> average_4 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : average_4) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> average_4 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : average_4) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000381",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> result_5 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : result_5) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> result_5 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : result_5) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000382",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> value_6 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : value_6) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> value_6 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : value_6) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000383",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> temp_7 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : temp_7) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> temp_7 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : temp_7) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000384",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> max_val_8 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : max_val_8) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> max_val_8 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : max_val_8) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000385",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> min_val_9 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : min_val_9) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> min_val_9 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : min_val_9) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000386",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> counter_10 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : counter_10) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> counter_10 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : counter_10) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000387",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> limit_11 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : limit_11) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> limit_11 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : limit_11) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000388",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> threshold_12 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : threshold_12) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> threshold_12 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : threshold_12) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000389",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> score_13 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : score_13) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> score_13 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : score_13) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000390",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> age_14 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : age_14) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> age_14 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : age_14) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000391",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> size_15 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : size_15) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> size_15 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : size_15) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000392",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> length_16 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : length_16) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> length_16 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : length_16) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000393",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> width_17 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : width_17) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> width_17 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : width_17) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000394",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> height_18 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : height_18) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> height_18 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : height_18) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000395",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> depth_19 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : depth_19) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> depth_19 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : depth_19) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000396",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> count_20 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : count_20) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> count_20 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : count_20) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000397",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> total_21 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : total_21) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> total_21 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : total_21) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000398",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> index_22 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : index_22) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> index_22 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : index_22) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000399",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> sum_23 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : sum_23) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> sum_23 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : sum_23) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000400",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> average_24 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : average_24) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> average_24 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : average_24) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000401",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> result_25 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : result_25) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> result_25 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : result_25) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000402",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> value_26 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : value_26) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> value_26 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : value_26) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000403",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> temp_27 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : temp_27) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> temp_27 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : temp_27) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000404",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> max_val_28 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : max_val_28) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> max_val_28 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : max_val_28) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000405",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> min_val_29 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : min_val_29) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> min_val_29 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : min_val_29) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000406",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> counter_30 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : counter_30) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> counter_30 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : counter_30) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000407",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> limit_31 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : limit_31) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> limit_31 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : limit_31) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000408",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> threshold_32 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : threshold_32) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> threshold_32 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : threshold_32) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000409",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> score_33 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : score_33) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> score_33 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : score_33) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000410",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> age_34 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : age_34) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> age_34 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : age_34) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000411",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> size_35 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : size_35) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> size_35 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : size_35) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000412",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> length_36 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : length_36) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> length_36 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : length_36) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000413",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> width_37 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : width_37) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> width_37 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : width_37) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000414",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> height_38 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : height_38) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> height_38 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : height_38) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000415",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> depth_39 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : depth_39) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> depth_39 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : depth_39) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000416",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> count_40 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : count_40) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> count_40 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : count_40) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000417",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> total_41 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : total_41) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> total_41 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : total_41) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000418",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> index_42 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : index_42) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> index_42 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : index_42) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000419",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> sum_43 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : sum_43) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> sum_43 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : sum_43) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000420",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> average_44 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : average_44) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> average_44 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : average_44) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000421",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> result_45 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : result_45) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> result_45 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : result_45) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000422",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> value_46 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : value_46) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> value_46 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : value_46) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000423",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> temp_47 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : temp_47) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> temp_47 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : temp_47) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000424",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> max_val_48 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : max_val_48) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> max_val_48 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : max_val_48) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000425",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> min_val_49 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : min_val_49) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> min_val_49 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : min_val_49) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000426",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> counter_50 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : counter_50) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> counter_50 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : counter_50) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000427",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> limit_51 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : limit_51) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> limit_51 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : limit_51) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000428",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> threshold_52 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : threshold_52) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> threshold_52 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : threshold_52) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000429",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> score_53 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : score_53) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> score_53 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : score_53) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000430",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> age_54 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : age_54) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> age_54 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : age_54) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000431",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> size_55 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : size_55) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> size_55 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : size_55) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000432",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> length_56 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : length_56) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> length_56 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : length_56) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000433",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> width_57 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : width_57) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> width_57 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : width_57) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000434",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> height_58 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : height_58) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> height_58 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : height_58) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000435",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> depth_59 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : depth_59) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> depth_59 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : depth_59) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000436",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> count_60 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : count_60) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> count_60 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : count_60) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000437",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> total_61 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : total_61) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> total_61 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : total_61) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000438",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the range-based for loop.",
+    "input": {
+      "title": "Copying in Range-Based For Loop",
+      "code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> index_62 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (auto item : index_62) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `auto item` creates a deep copy of the string for each iteration of the loop. Using `const auto& item` binds a reference to the element, preventing the copy.",
+      "beginner": "You are making a brand new copy of every word before printing it. It's much faster to just look at the original word.",
+      "analogy": "It's like photocopying a document just so you can read it, then throwing the copy away.",
+      "solution": "Change `auto item` to `const auto& item`.",
+      "prevention": "Always use `const auto&` in range-based for loops unless you need to mutate a copy.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n#include <string>\n\nint main() {\n    std::vector<std::string> index_62 = {\"a_long_string_1\", \"a_long_string_2\"};\n    for (const auto& item : index_62) {\n        std::cout << item << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(L) copy per element",
+        "after": "O(1) reference per element"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "loop",
+        "copy",
+        "reference"
+      ]
+    }
+  }
+]

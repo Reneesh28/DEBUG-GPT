@@ -1,0 +1,2081 @@
+[
+  {
+    "id": "CP_LOGIC_000249",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short count_0 = 32767;\n    count_0 = count_0 + 1;\n    std::cout << count_0 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `count_0`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int count_0 = 32767;\n    count_0 = count_0 + 1;\n    std::cout << count_0 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000250",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short total_1 = 32767;\n    total_1 = total_1 + 1;\n    std::cout << total_1 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `total_1`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total_1 = 32767;\n    total_1 = total_1 + 1;\n    std::cout << total_1 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000251",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short index_2 = 32767;\n    index_2 = index_2 + 1;\n    std::cout << index_2 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `index_2`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int index_2 = 32767;\n    index_2 = index_2 + 1;\n    std::cout << index_2 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000252",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short sum_3 = 32767;\n    sum_3 = sum_3 + 1;\n    std::cout << sum_3 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `sum_3`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int sum_3 = 32767;\n    sum_3 = sum_3 + 1;\n    std::cout << sum_3 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000253",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short average_4 = 32767;\n    average_4 = average_4 + 1;\n    std::cout << average_4 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `average_4`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int average_4 = 32767;\n    average_4 = average_4 + 1;\n    std::cout << average_4 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000254",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short result_5 = 32767;\n    result_5 = result_5 + 1;\n    std::cout << result_5 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `result_5`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int result_5 = 32767;\n    result_5 = result_5 + 1;\n    std::cout << result_5 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000255",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short value_6 = 32767;\n    value_6 = value_6 + 1;\n    std::cout << value_6 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `value_6`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int value_6 = 32767;\n    value_6 = value_6 + 1;\n    std::cout << value_6 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000256",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short temp_7 = 32767;\n    temp_7 = temp_7 + 1;\n    std::cout << temp_7 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `temp_7`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int temp_7 = 32767;\n    temp_7 = temp_7 + 1;\n    std::cout << temp_7 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000257",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short max_val_8 = 32767;\n    max_val_8 = max_val_8 + 1;\n    std::cout << max_val_8 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `max_val_8`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int max_val_8 = 32767;\n    max_val_8 = max_val_8 + 1;\n    std::cout << max_val_8 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000258",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short min_val_9 = 32767;\n    min_val_9 = min_val_9 + 1;\n    std::cout << min_val_9 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `min_val_9`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int min_val_9 = 32767;\n    min_val_9 = min_val_9 + 1;\n    std::cout << min_val_9 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000259",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short counter_10 = 32767;\n    counter_10 = counter_10 + 1;\n    std::cout << counter_10 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `counter_10`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int counter_10 = 32767;\n    counter_10 = counter_10 + 1;\n    std::cout << counter_10 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000260",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short limit_11 = 32767;\n    limit_11 = limit_11 + 1;\n    std::cout << limit_11 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `limit_11`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int limit_11 = 32767;\n    limit_11 = limit_11 + 1;\n    std::cout << limit_11 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000261",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short threshold_12 = 32767;\n    threshold_12 = threshold_12 + 1;\n    std::cout << threshold_12 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `threshold_12`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int threshold_12 = 32767;\n    threshold_12 = threshold_12 + 1;\n    std::cout << threshold_12 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000262",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short score_13 = 32767;\n    score_13 = score_13 + 1;\n    std::cout << score_13 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `score_13`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int score_13 = 32767;\n    score_13 = score_13 + 1;\n    std::cout << score_13 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000263",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short age_14 = 32767;\n    age_14 = age_14 + 1;\n    std::cout << age_14 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `age_14`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int age_14 = 32767;\n    age_14 = age_14 + 1;\n    std::cout << age_14 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000264",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short size_15 = 32767;\n    size_15 = size_15 + 1;\n    std::cout << size_15 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `size_15`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int size_15 = 32767;\n    size_15 = size_15 + 1;\n    std::cout << size_15 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000265",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short length_16 = 32767;\n    length_16 = length_16 + 1;\n    std::cout << length_16 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `length_16`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int length_16 = 32767;\n    length_16 = length_16 + 1;\n    std::cout << length_16 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000266",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short width_17 = 32767;\n    width_17 = width_17 + 1;\n    std::cout << width_17 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `width_17`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int width_17 = 32767;\n    width_17 = width_17 + 1;\n    std::cout << width_17 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000267",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short height_18 = 32767;\n    height_18 = height_18 + 1;\n    std::cout << height_18 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `height_18`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int height_18 = 32767;\n    height_18 = height_18 + 1;\n    std::cout << height_18 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000268",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short depth_19 = 32767;\n    depth_19 = depth_19 + 1;\n    std::cout << depth_19 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `depth_19`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int depth_19 = 32767;\n    depth_19 = depth_19 + 1;\n    std::cout << depth_19 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000269",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short count_20 = 32767;\n    count_20 = count_20 + 1;\n    std::cout << count_20 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `count_20`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int count_20 = 32767;\n    count_20 = count_20 + 1;\n    std::cout << count_20 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000270",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short total_21 = 32767;\n    total_21 = total_21 + 1;\n    std::cout << total_21 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `total_21`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total_21 = 32767;\n    total_21 = total_21 + 1;\n    std::cout << total_21 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000271",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short index_22 = 32767;\n    index_22 = index_22 + 1;\n    std::cout << index_22 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `index_22`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int index_22 = 32767;\n    index_22 = index_22 + 1;\n    std::cout << index_22 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000272",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short sum_23 = 32767;\n    sum_23 = sum_23 + 1;\n    std::cout << sum_23 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `sum_23`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int sum_23 = 32767;\n    sum_23 = sum_23 + 1;\n    std::cout << sum_23 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000273",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short average_24 = 32767;\n    average_24 = average_24 + 1;\n    std::cout << average_24 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `average_24`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int average_24 = 32767;\n    average_24 = average_24 + 1;\n    std::cout << average_24 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000274",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short result_25 = 32767;\n    result_25 = result_25 + 1;\n    std::cout << result_25 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `result_25`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int result_25 = 32767;\n    result_25 = result_25 + 1;\n    std::cout << result_25 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000275",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short value_26 = 32767;\n    value_26 = value_26 + 1;\n    std::cout << value_26 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `value_26`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int value_26 = 32767;\n    value_26 = value_26 + 1;\n    std::cout << value_26 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000276",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short temp_27 = 32767;\n    temp_27 = temp_27 + 1;\n    std::cout << temp_27 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `temp_27`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int temp_27 = 32767;\n    temp_27 = temp_27 + 1;\n    std::cout << temp_27 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000277",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short max_val_28 = 32767;\n    max_val_28 = max_val_28 + 1;\n    std::cout << max_val_28 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `max_val_28`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int max_val_28 = 32767;\n    max_val_28 = max_val_28 + 1;\n    std::cout << max_val_28 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000278",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short min_val_29 = 32767;\n    min_val_29 = min_val_29 + 1;\n    std::cout << min_val_29 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `min_val_29`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int min_val_29 = 32767;\n    min_val_29 = min_val_29 + 1;\n    std::cout << min_val_29 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000279",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short counter_30 = 32767;\n    counter_30 = counter_30 + 1;\n    std::cout << counter_30 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `counter_30`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int counter_30 = 32767;\n    counter_30 = counter_30 + 1;\n    std::cout << counter_30 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000280",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short limit_31 = 32767;\n    limit_31 = limit_31 + 1;\n    std::cout << limit_31 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `limit_31`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int limit_31 = 32767;\n    limit_31 = limit_31 + 1;\n    std::cout << limit_31 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000281",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short threshold_32 = 32767;\n    threshold_32 = threshold_32 + 1;\n    std::cout << threshold_32 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `threshold_32`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int threshold_32 = 32767;\n    threshold_32 = threshold_32 + 1;\n    std::cout << threshold_32 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000282",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short score_33 = 32767;\n    score_33 = score_33 + 1;\n    std::cout << score_33 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `score_33`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int score_33 = 32767;\n    score_33 = score_33 + 1;\n    std::cout << score_33 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000283",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short age_34 = 32767;\n    age_34 = age_34 + 1;\n    std::cout << age_34 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `age_34`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int age_34 = 32767;\n    age_34 = age_34 + 1;\n    std::cout << age_34 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000284",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short size_35 = 32767;\n    size_35 = size_35 + 1;\n    std::cout << size_35 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `size_35`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int size_35 = 32767;\n    size_35 = size_35 + 1;\n    std::cout << size_35 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000285",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short length_36 = 32767;\n    length_36 = length_36 + 1;\n    std::cout << length_36 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `length_36`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int length_36 = 32767;\n    length_36 = length_36 + 1;\n    std::cout << length_36 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000286",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short width_37 = 32767;\n    width_37 = width_37 + 1;\n    std::cout << width_37 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `width_37`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int width_37 = 32767;\n    width_37 = width_37 + 1;\n    std::cout << width_37 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000287",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short height_38 = 32767;\n    height_38 = height_38 + 1;\n    std::cout << height_38 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `height_38`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int height_38 = 32767;\n    height_38 = height_38 + 1;\n    std::cout << height_38 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000288",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short depth_39 = 32767;\n    depth_39 = depth_39 + 1;\n    std::cout << depth_39 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `depth_39`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int depth_39 = 32767;\n    depth_39 = depth_39 + 1;\n    std::cout << depth_39 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000289",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short count_40 = 32767;\n    count_40 = count_40 + 1;\n    std::cout << count_40 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `count_40`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int count_40 = 32767;\n    count_40 = count_40 + 1;\n    std::cout << count_40 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000290",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short total_41 = 32767;\n    total_41 = total_41 + 1;\n    std::cout << total_41 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `total_41`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total_41 = 32767;\n    total_41 = total_41 + 1;\n    std::cout << total_41 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000291",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short index_42 = 32767;\n    index_42 = index_42 + 1;\n    std::cout << index_42 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `index_42`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int index_42 = 32767;\n    index_42 = index_42 + 1;\n    std::cout << index_42 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000292",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short sum_43 = 32767;\n    sum_43 = sum_43 + 1;\n    std::cout << sum_43 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `sum_43`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int sum_43 = 32767;\n    sum_43 = sum_43 + 1;\n    std::cout << sum_43 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000293",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short average_44 = 32767;\n    average_44 = average_44 + 1;\n    std::cout << average_44 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `average_44`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int average_44 = 32767;\n    average_44 = average_44 + 1;\n    std::cout << average_44 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000294",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short result_45 = 32767;\n    result_45 = result_45 + 1;\n    std::cout << result_45 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `result_45`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int result_45 = 32767;\n    result_45 = result_45 + 1;\n    std::cout << result_45 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000295",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short value_46 = 32767;\n    value_46 = value_46 + 1;\n    std::cout << value_46 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `value_46`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int value_46 = 32767;\n    value_46 = value_46 + 1;\n    std::cout << value_46 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000296",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short temp_47 = 32767;\n    temp_47 = temp_47 + 1;\n    std::cout << temp_47 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `temp_47`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int temp_47 = 32767;\n    temp_47 = temp_47 + 1;\n    std::cout << temp_47 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000297",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short max_val_48 = 32767;\n    max_val_48 = max_val_48 + 1;\n    std::cout << max_val_48 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `max_val_48`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int max_val_48 = 32767;\n    max_val_48 = max_val_48 + 1;\n    std::cout << max_val_48 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000298",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short min_val_49 = 32767;\n    min_val_49 = min_val_49 + 1;\n    std::cout << min_val_49 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `min_val_49`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int min_val_49 = 32767;\n    min_val_49 = min_val_49 + 1;\n    std::cout << min_val_49 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000299",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short counter_50 = 32767;\n    counter_50 = counter_50 + 1;\n    std::cout << counter_50 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `counter_50`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int counter_50 = 32767;\n    counter_50 = counter_50 + 1;\n    std::cout << counter_50 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000300",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short limit_51 = 32767;\n    limit_51 = limit_51 + 1;\n    std::cout << limit_51 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `limit_51`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int limit_51 = 32767;\n    limit_51 = limit_51 + 1;\n    std::cout << limit_51 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000301",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short threshold_52 = 32767;\n    threshold_52 = threshold_52 + 1;\n    std::cout << threshold_52 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `threshold_52`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int threshold_52 = 32767;\n    threshold_52 = threshold_52 + 1;\n    std::cout << threshold_52 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000302",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short score_53 = 32767;\n    score_53 = score_53 + 1;\n    std::cout << score_53 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `score_53`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int score_53 = 32767;\n    score_53 = score_53 + 1;\n    std::cout << score_53 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000303",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short age_54 = 32767;\n    age_54 = age_54 + 1;\n    std::cout << age_54 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `age_54`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int age_54 = 32767;\n    age_54 = age_54 + 1;\n    std::cout << age_54 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000304",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short size_55 = 32767;\n    size_55 = size_55 + 1;\n    std::cout << size_55 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `size_55`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int size_55 = 32767;\n    size_55 = size_55 + 1;\n    std::cout << size_55 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000305",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short length_56 = 32767;\n    length_56 = length_56 + 1;\n    std::cout << length_56 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `length_56`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int length_56 = 32767;\n    length_56 = length_56 + 1;\n    std::cout << length_56 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000306",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short width_57 = 32767;\n    width_57 = width_57 + 1;\n    std::cout << width_57 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `width_57`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int width_57 = 32767;\n    width_57 = width_57 + 1;\n    std::cout << width_57 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000307",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short height_58 = 32767;\n    height_58 = height_58 + 1;\n    std::cout << height_58 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `height_58`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int height_58 = 32767;\n    height_58 = height_58 + 1;\n    std::cout << height_58 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000308",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short depth_59 = 32767;\n    depth_59 = depth_59 + 1;\n    std::cout << depth_59 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `depth_59`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int depth_59 = 32767;\n    depth_59 = depth_59 + 1;\n    std::cout << depth_59 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000309",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short count_60 = 32767;\n    count_60 = count_60 + 1;\n    std::cout << count_60 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `count_60`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int count_60 = 32767;\n    count_60 = count_60 + 1;\n    std::cout << count_60 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000310",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short total_61 = 32767;\n    total_61 = total_61 + 1;\n    std::cout << total_61 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `total_61`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total_61 = 32767;\n    total_61 = total_61 + 1;\n    std::cout << total_61 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000311",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the integer overflow bug.",
+    "input": {
+      "title": "Integer Overflow",
+      "code": "#include <iostream>\n\nint main() {\n    short index_62 = 32767;\n    index_62 = index_62 + 1;\n    std::cout << index_62 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No compiler error. Prints -32768."
+    },
+    "output": {
+      "technical": "The `short` integer type typically holds up to 32,767. Adding 1 causes a signed integer overflow, resulting in a wrap-around to -32,768.",
+      "beginner": "You tried to put a number bigger than the container can hold, so it looped back around to a negative number.",
+      "analogy": "It's like an old car's odometer hitting 999,999 miles and rolling back to 000,000.",
+      "solution": "Use a larger data type, such as `int` or `long long`, for `index_62`.",
+      "prevention": "Choose appropriate data types based on the expected maximum values of variables.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int index_62 = 32767;\n    index_62 = index_62 + 1;\n    std::cout << index_62 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "overflow",
+        "types",
+        "math"
+      ]
+    }
+  }
+]

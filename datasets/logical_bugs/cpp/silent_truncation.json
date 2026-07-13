@@ -1,0 +1,2081 @@
+[
+  {
+    "id": "CP_LOGIC_000312",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float count_0 = a / b;\n    std::cout << count_0 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float count_0 = static_cast<float>(a) / b;\n    std::cout << count_0 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000313",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float total_1 = a / b;\n    std::cout << total_1 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float total_1 = static_cast<float>(a) / b;\n    std::cout << total_1 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000314",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float index_2 = a / b;\n    std::cout << index_2 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float index_2 = static_cast<float>(a) / b;\n    std::cout << index_2 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000315",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float sum_3 = a / b;\n    std::cout << sum_3 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float sum_3 = static_cast<float>(a) / b;\n    std::cout << sum_3 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000316",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float average_4 = a / b;\n    std::cout << average_4 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float average_4 = static_cast<float>(a) / b;\n    std::cout << average_4 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000317",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float result_5 = a / b;\n    std::cout << result_5 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float result_5 = static_cast<float>(a) / b;\n    std::cout << result_5 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000318",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float value_6 = a / b;\n    std::cout << value_6 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float value_6 = static_cast<float>(a) / b;\n    std::cout << value_6 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000319",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float temp_7 = a / b;\n    std::cout << temp_7 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float temp_7 = static_cast<float>(a) / b;\n    std::cout << temp_7 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000320",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float max_val_8 = a / b;\n    std::cout << max_val_8 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float max_val_8 = static_cast<float>(a) / b;\n    std::cout << max_val_8 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000321",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float min_val_9 = a / b;\n    std::cout << min_val_9 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float min_val_9 = static_cast<float>(a) / b;\n    std::cout << min_val_9 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000322",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float counter_10 = a / b;\n    std::cout << counter_10 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float counter_10 = static_cast<float>(a) / b;\n    std::cout << counter_10 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000323",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float limit_11 = a / b;\n    std::cout << limit_11 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float limit_11 = static_cast<float>(a) / b;\n    std::cout << limit_11 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000324",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float threshold_12 = a / b;\n    std::cout << threshold_12 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float threshold_12 = static_cast<float>(a) / b;\n    std::cout << threshold_12 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000325",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float score_13 = a / b;\n    std::cout << score_13 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float score_13 = static_cast<float>(a) / b;\n    std::cout << score_13 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000326",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float age_14 = a / b;\n    std::cout << age_14 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float age_14 = static_cast<float>(a) / b;\n    std::cout << age_14 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000327",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float size_15 = a / b;\n    std::cout << size_15 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float size_15 = static_cast<float>(a) / b;\n    std::cout << size_15 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000328",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float length_16 = a / b;\n    std::cout << length_16 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float length_16 = static_cast<float>(a) / b;\n    std::cout << length_16 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000329",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float width_17 = a / b;\n    std::cout << width_17 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float width_17 = static_cast<float>(a) / b;\n    std::cout << width_17 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000330",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float height_18 = a / b;\n    std::cout << height_18 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float height_18 = static_cast<float>(a) / b;\n    std::cout << height_18 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000331",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float depth_19 = a / b;\n    std::cout << depth_19 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float depth_19 = static_cast<float>(a) / b;\n    std::cout << depth_19 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000332",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float count_20 = a / b;\n    std::cout << count_20 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float count_20 = static_cast<float>(a) / b;\n    std::cout << count_20 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000333",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float total_21 = a / b;\n    std::cout << total_21 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float total_21 = static_cast<float>(a) / b;\n    std::cout << total_21 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000334",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float index_22 = a / b;\n    std::cout << index_22 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float index_22 = static_cast<float>(a) / b;\n    std::cout << index_22 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000335",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float sum_23 = a / b;\n    std::cout << sum_23 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float sum_23 = static_cast<float>(a) / b;\n    std::cout << sum_23 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000336",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float average_24 = a / b;\n    std::cout << average_24 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float average_24 = static_cast<float>(a) / b;\n    std::cout << average_24 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000337",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float result_25 = a / b;\n    std::cout << result_25 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float result_25 = static_cast<float>(a) / b;\n    std::cout << result_25 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000338",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float value_26 = a / b;\n    std::cout << value_26 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float value_26 = static_cast<float>(a) / b;\n    std::cout << value_26 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000339",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float temp_27 = a / b;\n    std::cout << temp_27 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float temp_27 = static_cast<float>(a) / b;\n    std::cout << temp_27 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000340",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float max_val_28 = a / b;\n    std::cout << max_val_28 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float max_val_28 = static_cast<float>(a) / b;\n    std::cout << max_val_28 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000341",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float min_val_29 = a / b;\n    std::cout << min_val_29 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float min_val_29 = static_cast<float>(a) / b;\n    std::cout << min_val_29 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000342",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float counter_30 = a / b;\n    std::cout << counter_30 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float counter_30 = static_cast<float>(a) / b;\n    std::cout << counter_30 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000343",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float limit_31 = a / b;\n    std::cout << limit_31 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float limit_31 = static_cast<float>(a) / b;\n    std::cout << limit_31 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000344",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float threshold_32 = a / b;\n    std::cout << threshold_32 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float threshold_32 = static_cast<float>(a) / b;\n    std::cout << threshold_32 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000345",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float score_33 = a / b;\n    std::cout << score_33 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float score_33 = static_cast<float>(a) / b;\n    std::cout << score_33 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000346",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float age_34 = a / b;\n    std::cout << age_34 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float age_34 = static_cast<float>(a) / b;\n    std::cout << age_34 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000347",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float size_35 = a / b;\n    std::cout << size_35 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float size_35 = static_cast<float>(a) / b;\n    std::cout << size_35 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000348",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float length_36 = a / b;\n    std::cout << length_36 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float length_36 = static_cast<float>(a) / b;\n    std::cout << length_36 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000349",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float width_37 = a / b;\n    std::cout << width_37 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float width_37 = static_cast<float>(a) / b;\n    std::cout << width_37 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000350",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float height_38 = a / b;\n    std::cout << height_38 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float height_38 = static_cast<float>(a) / b;\n    std::cout << height_38 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000351",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float depth_39 = a / b;\n    std::cout << depth_39 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float depth_39 = static_cast<float>(a) / b;\n    std::cout << depth_39 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000352",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float count_40 = a / b;\n    std::cout << count_40 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float count_40 = static_cast<float>(a) / b;\n    std::cout << count_40 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000353",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float total_41 = a / b;\n    std::cout << total_41 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float total_41 = static_cast<float>(a) / b;\n    std::cout << total_41 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000354",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float index_42 = a / b;\n    std::cout << index_42 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float index_42 = static_cast<float>(a) / b;\n    std::cout << index_42 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000355",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float sum_43 = a / b;\n    std::cout << sum_43 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float sum_43 = static_cast<float>(a) / b;\n    std::cout << sum_43 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000356",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float average_44 = a / b;\n    std::cout << average_44 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float average_44 = static_cast<float>(a) / b;\n    std::cout << average_44 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000357",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float result_45 = a / b;\n    std::cout << result_45 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float result_45 = static_cast<float>(a) / b;\n    std::cout << result_45 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000358",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float value_46 = a / b;\n    std::cout << value_46 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float value_46 = static_cast<float>(a) / b;\n    std::cout << value_46 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000359",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float temp_47 = a / b;\n    std::cout << temp_47 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float temp_47 = static_cast<float>(a) / b;\n    std::cout << temp_47 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000360",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float max_val_48 = a / b;\n    std::cout << max_val_48 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float max_val_48 = static_cast<float>(a) / b;\n    std::cout << max_val_48 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000361",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float min_val_49 = a / b;\n    std::cout << min_val_49 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float min_val_49 = static_cast<float>(a) / b;\n    std::cout << min_val_49 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000362",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float counter_50 = a / b;\n    std::cout << counter_50 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float counter_50 = static_cast<float>(a) / b;\n    std::cout << counter_50 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000363",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float limit_51 = a / b;\n    std::cout << limit_51 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float limit_51 = static_cast<float>(a) / b;\n    std::cout << limit_51 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000364",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float threshold_52 = a / b;\n    std::cout << threshold_52 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float threshold_52 = static_cast<float>(a) / b;\n    std::cout << threshold_52 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000365",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float score_53 = a / b;\n    std::cout << score_53 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float score_53 = static_cast<float>(a) / b;\n    std::cout << score_53 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000366",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float age_54 = a / b;\n    std::cout << age_54 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float age_54 = static_cast<float>(a) / b;\n    std::cout << age_54 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000367",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float size_55 = a / b;\n    std::cout << size_55 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float size_55 = static_cast<float>(a) / b;\n    std::cout << size_55 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000368",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float length_56 = a / b;\n    std::cout << length_56 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float length_56 = static_cast<float>(a) / b;\n    std::cout << length_56 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000369",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float width_57 = a / b;\n    std::cout << width_57 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float width_57 = static_cast<float>(a) / b;\n    std::cout << width_57 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000370",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float height_58 = a / b;\n    std::cout << height_58 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float height_58 = static_cast<float>(a) / b;\n    std::cout << height_58 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000371",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float depth_59 = a / b;\n    std::cout << depth_59 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float depth_59 = static_cast<float>(a) / b;\n    std::cout << depth_59 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000372",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float count_60 = a / b;\n    std::cout << count_60 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float count_60 = static_cast<float>(a) / b;\n    std::cout << count_60 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000373",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float total_61 = a / b;\n    std::cout << total_61 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float total_61 = static_cast<float>(a) / b;\n    std::cout << total_61 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000374",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the loss of precision during division.",
+    "input": {
+      "title": "Silent Truncation in Float Division",
+      "code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float index_62 = a / b;\n    std::cout << index_62 << std::endl;\n    return 0;\n}\n",
+      "error_message": "No error. Output is 2.0 instead of 2.5."
+    },
+    "output": {
+      "technical": "Integer division (`a / b`) is performed first, truncating the fractional part (5/2 = 2). The result is then implicitly cast to a float (2.0).",
+      "beginner": "The computer divides the integers completely before turning it into a decimal. So 5 divided by 2 becomes 2, not 2.5.",
+      "analogy": "It's like cutting a pie into halves, but deciding to throw away the crumbs before putting it on a scale.",
+      "solution": "Cast one of the operands to a float before dividing, e.g., `(float)a / b`.",
+      "prevention": "Be cautious when dividing integers and expecting a fractional result.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int a = 5;\n    int b = 2;\n    float index_62 = static_cast<float>(a) / b;\n    std::cout << index_62 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "division",
+        "truncation"
+      ]
+    }
+  }
+]

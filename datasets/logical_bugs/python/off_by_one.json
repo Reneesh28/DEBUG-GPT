@@ -1,0 +1,2048 @@
+[
+  {
+    "id": "PY_LOGIC_000001",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def calculate_0():\n    for i in range(1, 5):\n        print(i)\n\ncalculate_0()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def calculate_0():\n    for i in range(1, 6):\n        print(i)\n\ncalculate_0()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000002",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def process_1():\n    for i in range(1, 5):\n        print(i)\n\nprocess_1()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def process_1():\n    for i in range(1, 6):\n        print(i)\n\nprocess_1()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000003",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def compute_2():\n    for i in range(1, 5):\n        print(i)\n\ncompute_2()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def compute_2():\n    for i in range(1, 6):\n        print(i)\n\ncompute_2()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000004",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def execute_3():\n    for i in range(1, 5):\n        print(i)\n\nexecute_3()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def execute_3():\n    for i in range(1, 6):\n        print(i)\n\nexecute_3()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000005",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def run_4():\n    for i in range(1, 5):\n        print(i)\n\nrun_4()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def run_4():\n    for i in range(1, 6):\n        print(i)\n\nrun_4()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000006",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def start_5():\n    for i in range(1, 5):\n        print(i)\n\nstart_5()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def start_5():\n    for i in range(1, 6):\n        print(i)\n\nstart_5()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000007",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def initialize_6():\n    for i in range(1, 5):\n        print(i)\n\ninitialize_6()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def initialize_6():\n    for i in range(1, 6):\n        print(i)\n\ninitialize_6()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000008",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def update_7():\n    for i in range(1, 5):\n        print(i)\n\nupdate_7()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def update_7():\n    for i in range(1, 6):\n        print(i)\n\nupdate_7()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000009",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def render_8():\n    for i in range(1, 5):\n        print(i)\n\nrender_8()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def render_8():\n    for i in range(1, 6):\n        print(i)\n\nrender_8()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000010",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def display_9():\n    for i in range(1, 5):\n        print(i)\n\ndisplay_9()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def display_9():\n    for i in range(1, 6):\n        print(i)\n\ndisplay_9()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000011",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def fetch_10():\n    for i in range(1, 5):\n        print(i)\n\nfetch_10()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def fetch_10():\n    for i in range(1, 6):\n        print(i)\n\nfetch_10()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000012",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def load_11():\n    for i in range(1, 5):\n        print(i)\n\nload_11()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def load_11():\n    for i in range(1, 6):\n        print(i)\n\nload_11()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000013",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def save_12():\n    for i in range(1, 5):\n        print(i)\n\nsave_12()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def save_12():\n    for i in range(1, 6):\n        print(i)\n\nsave_12()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000014",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def delete_13():\n    for i in range(1, 5):\n        print(i)\n\ndelete_13()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def delete_13():\n    for i in range(1, 6):\n        print(i)\n\ndelete_13()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000015",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def create_14():\n    for i in range(1, 5):\n        print(i)\n\ncreate_14()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def create_14():\n    for i in range(1, 6):\n        print(i)\n\ncreate_14()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000016",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def read_15():\n    for i in range(1, 5):\n        print(i)\n\nread_15()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def read_15():\n    for i in range(1, 6):\n        print(i)\n\nread_15()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000017",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def write_16():\n    for i in range(1, 5):\n        print(i)\n\nwrite_16()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def write_16():\n    for i in range(1, 6):\n        print(i)\n\nwrite_16()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000018",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def parse_17():\n    for i in range(1, 5):\n        print(i)\n\nparse_17()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def parse_17():\n    for i in range(1, 6):\n        print(i)\n\nparse_17()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000019",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def validate_18():\n    for i in range(1, 5):\n        print(i)\n\nvalidate_18()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def validate_18():\n    for i in range(1, 6):\n        print(i)\n\nvalidate_18()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000020",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def verify_19():\n    for i in range(1, 5):\n        print(i)\n\nverify_19()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def verify_19():\n    for i in range(1, 6):\n        print(i)\n\nverify_19()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000021",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def calculate_20():\n    for i in range(1, 5):\n        print(i)\n\ncalculate_20()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def calculate_20():\n    for i in range(1, 6):\n        print(i)\n\ncalculate_20()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000022",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def process_21():\n    for i in range(1, 5):\n        print(i)\n\nprocess_21()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def process_21():\n    for i in range(1, 6):\n        print(i)\n\nprocess_21()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000023",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def compute_22():\n    for i in range(1, 5):\n        print(i)\n\ncompute_22()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def compute_22():\n    for i in range(1, 6):\n        print(i)\n\ncompute_22()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000024",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def execute_23():\n    for i in range(1, 5):\n        print(i)\n\nexecute_23()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def execute_23():\n    for i in range(1, 6):\n        print(i)\n\nexecute_23()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000025",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def run_24():\n    for i in range(1, 5):\n        print(i)\n\nrun_24()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def run_24():\n    for i in range(1, 6):\n        print(i)\n\nrun_24()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000026",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def start_25():\n    for i in range(1, 5):\n        print(i)\n\nstart_25()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def start_25():\n    for i in range(1, 6):\n        print(i)\n\nstart_25()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000027",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def initialize_26():\n    for i in range(1, 5):\n        print(i)\n\ninitialize_26()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def initialize_26():\n    for i in range(1, 6):\n        print(i)\n\ninitialize_26()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000028",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def update_27():\n    for i in range(1, 5):\n        print(i)\n\nupdate_27()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def update_27():\n    for i in range(1, 6):\n        print(i)\n\nupdate_27()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000029",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def render_28():\n    for i in range(1, 5):\n        print(i)\n\nrender_28()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def render_28():\n    for i in range(1, 6):\n        print(i)\n\nrender_28()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000030",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def display_29():\n    for i in range(1, 5):\n        print(i)\n\ndisplay_29()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def display_29():\n    for i in range(1, 6):\n        print(i)\n\ndisplay_29()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000031",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def fetch_30():\n    for i in range(1, 5):\n        print(i)\n\nfetch_30()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def fetch_30():\n    for i in range(1, 6):\n        print(i)\n\nfetch_30()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000032",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def load_31():\n    for i in range(1, 5):\n        print(i)\n\nload_31()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def load_31():\n    for i in range(1, 6):\n        print(i)\n\nload_31()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000033",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def save_32():\n    for i in range(1, 5):\n        print(i)\n\nsave_32()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def save_32():\n    for i in range(1, 6):\n        print(i)\n\nsave_32()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000034",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def delete_33():\n    for i in range(1, 5):\n        print(i)\n\ndelete_33()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def delete_33():\n    for i in range(1, 6):\n        print(i)\n\ndelete_33()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000035",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def create_34():\n    for i in range(1, 5):\n        print(i)\n\ncreate_34()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def create_34():\n    for i in range(1, 6):\n        print(i)\n\ncreate_34()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000036",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def read_35():\n    for i in range(1, 5):\n        print(i)\n\nread_35()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def read_35():\n    for i in range(1, 6):\n        print(i)\n\nread_35()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000037",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def write_36():\n    for i in range(1, 5):\n        print(i)\n\nwrite_36()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def write_36():\n    for i in range(1, 6):\n        print(i)\n\nwrite_36()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000038",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def parse_37():\n    for i in range(1, 5):\n        print(i)\n\nparse_37()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def parse_37():\n    for i in range(1, 6):\n        print(i)\n\nparse_37()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000039",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def validate_38():\n    for i in range(1, 5):\n        print(i)\n\nvalidate_38()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def validate_38():\n    for i in range(1, 6):\n        print(i)\n\nvalidate_38()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000040",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def verify_39():\n    for i in range(1, 5):\n        print(i)\n\nverify_39()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def verify_39():\n    for i in range(1, 6):\n        print(i)\n\nverify_39()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000041",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def calculate_40():\n    for i in range(1, 5):\n        print(i)\n\ncalculate_40()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def calculate_40():\n    for i in range(1, 6):\n        print(i)\n\ncalculate_40()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000042",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def process_41():\n    for i in range(1, 5):\n        print(i)\n\nprocess_41()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def process_41():\n    for i in range(1, 6):\n        print(i)\n\nprocess_41()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000043",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def compute_42():\n    for i in range(1, 5):\n        print(i)\n\ncompute_42()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def compute_42():\n    for i in range(1, 6):\n        print(i)\n\ncompute_42()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000044",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def execute_43():\n    for i in range(1, 5):\n        print(i)\n\nexecute_43()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def execute_43():\n    for i in range(1, 6):\n        print(i)\n\nexecute_43()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000045",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def run_44():\n    for i in range(1, 5):\n        print(i)\n\nrun_44()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def run_44():\n    for i in range(1, 6):\n        print(i)\n\nrun_44()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000046",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def start_45():\n    for i in range(1, 5):\n        print(i)\n\nstart_45()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def start_45():\n    for i in range(1, 6):\n        print(i)\n\nstart_45()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000047",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def initialize_46():\n    for i in range(1, 5):\n        print(i)\n\ninitialize_46()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def initialize_46():\n    for i in range(1, 6):\n        print(i)\n\ninitialize_46()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000048",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def update_47():\n    for i in range(1, 5):\n        print(i)\n\nupdate_47()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def update_47():\n    for i in range(1, 6):\n        print(i)\n\nupdate_47()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000049",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def render_48():\n    for i in range(1, 5):\n        print(i)\n\nrender_48()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def render_48():\n    for i in range(1, 6):\n        print(i)\n\nrender_48()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000050",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def display_49():\n    for i in range(1, 5):\n        print(i)\n\ndisplay_49()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def display_49():\n    for i in range(1, 6):\n        print(i)\n\ndisplay_49()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000051",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def fetch_50():\n    for i in range(1, 5):\n        print(i)\n\nfetch_50()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def fetch_50():\n    for i in range(1, 6):\n        print(i)\n\nfetch_50()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000052",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def load_51():\n    for i in range(1, 5):\n        print(i)\n\nload_51()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def load_51():\n    for i in range(1, 6):\n        print(i)\n\nload_51()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000053",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def save_52():\n    for i in range(1, 5):\n        print(i)\n\nsave_52()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def save_52():\n    for i in range(1, 6):\n        print(i)\n\nsave_52()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000054",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def delete_53():\n    for i in range(1, 5):\n        print(i)\n\ndelete_53()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def delete_53():\n    for i in range(1, 6):\n        print(i)\n\ndelete_53()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000055",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def create_54():\n    for i in range(1, 5):\n        print(i)\n\ncreate_54()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def create_54():\n    for i in range(1, 6):\n        print(i)\n\ncreate_54()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000056",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def read_55():\n    for i in range(1, 5):\n        print(i)\n\nread_55()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def read_55():\n    for i in range(1, 6):\n        print(i)\n\nread_55()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000057",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def write_56():\n    for i in range(1, 5):\n        print(i)\n\nwrite_56()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def write_56():\n    for i in range(1, 6):\n        print(i)\n\nwrite_56()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000058",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def parse_57():\n    for i in range(1, 5):\n        print(i)\n\nparse_57()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def parse_57():\n    for i in range(1, 6):\n        print(i)\n\nparse_57()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000059",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def validate_58():\n    for i in range(1, 5):\n        print(i)\n\nvalidate_58()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def validate_58():\n    for i in range(1, 6):\n        print(i)\n\nvalidate_58()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000060",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def verify_59():\n    for i in range(1, 5):\n        print(i)\n\nverify_59()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def verify_59():\n    for i in range(1, 6):\n        print(i)\n\nverify_59()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000061",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def calculate_60():\n    for i in range(1, 5):\n        print(i)\n\ncalculate_60()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def calculate_60():\n    for i in range(1, 6):\n        print(i)\n\ncalculate_60()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  },
+  {
+    "id": "PY_LOGIC_000062",
+    "language": "python",
+    "category": "logical_bug",
+    "instruction": "Fix the range() off-by-one error.",
+    "input": {
+      "title": "Range Off-By-One",
+      "code": "def process_61():\n    for i in range(1, 5):\n        print(i)\n\nprocess_61()\n",
+      "error_message": "No error, but prints 1 to 4 instead of 1 to 5."
+    },
+    "output": {
+      "technical": "The `range(start, stop)` function generates numbers up to, but not including, the `stop` value.",
+      "beginner": "The `range` tool stops right *before* the second number you give it. So `range(1, 5)` gives 1, 2, 3, 4.",
+      "analogy": "If a store is open from 1 PM to 5 PM, it closes exactly AT 5 PM, so you can't shop at 5:00.",
+      "solution": "Change the end value to 6: `range(1, 6)`.",
+      "prevention": "Remember that Python ranges are exclusive at the upper bound.",
+      "optimized_code": "def process_61():\n    for i in range(1, 6):\n        print(i)\n\nprocess_61()\n",
+      "complexity": {
+        "before": "O(N)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "loop",
+        "range",
+        "off-by-one"
+      ]
+    }
+  }
+]

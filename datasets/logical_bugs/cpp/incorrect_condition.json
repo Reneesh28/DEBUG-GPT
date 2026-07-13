@@ -1,0 +1,2048 @@
+[
+  {
+    "id": "CP_LOGIC_000063",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int count_0 = 10;\n    if (count_0 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int count_0 = 10;\n    if (count_0 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000064",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int total_1 = 10;\n    if (total_1 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total_1 = 10;\n    if (total_1 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000065",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int index_2 = 10;\n    if (index_2 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int index_2 = 10;\n    if (index_2 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000066",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int sum_3 = 10;\n    if (sum_3 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int sum_3 = 10;\n    if (sum_3 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000067",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int average_4 = 10;\n    if (average_4 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int average_4 = 10;\n    if (average_4 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000068",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int result_5 = 10;\n    if (result_5 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int result_5 = 10;\n    if (result_5 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000069",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int value_6 = 10;\n    if (value_6 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int value_6 = 10;\n    if (value_6 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000070",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int temp_7 = 10;\n    if (temp_7 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int temp_7 = 10;\n    if (temp_7 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000071",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int max_val_8 = 10;\n    if (max_val_8 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int max_val_8 = 10;\n    if (max_val_8 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000072",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int min_val_9 = 10;\n    if (min_val_9 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int min_val_9 = 10;\n    if (min_val_9 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000073",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int counter_10 = 10;\n    if (counter_10 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int counter_10 = 10;\n    if (counter_10 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000074",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int limit_11 = 10;\n    if (limit_11 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int limit_11 = 10;\n    if (limit_11 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000075",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int threshold_12 = 10;\n    if (threshold_12 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int threshold_12 = 10;\n    if (threshold_12 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000076",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int score_13 = 10;\n    if (score_13 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int score_13 = 10;\n    if (score_13 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000077",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int age_14 = 10;\n    if (age_14 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int age_14 = 10;\n    if (age_14 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000078",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int size_15 = 10;\n    if (size_15 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int size_15 = 10;\n    if (size_15 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000079",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int length_16 = 10;\n    if (length_16 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int length_16 = 10;\n    if (length_16 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000080",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int width_17 = 10;\n    if (width_17 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int width_17 = 10;\n    if (width_17 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000081",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int height_18 = 10;\n    if (height_18 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int height_18 = 10;\n    if (height_18 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000082",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int depth_19 = 10;\n    if (depth_19 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int depth_19 = 10;\n    if (depth_19 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000083",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int count_20 = 10;\n    if (count_20 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int count_20 = 10;\n    if (count_20 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000084",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int total_21 = 10;\n    if (total_21 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total_21 = 10;\n    if (total_21 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000085",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int index_22 = 10;\n    if (index_22 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int index_22 = 10;\n    if (index_22 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000086",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int sum_23 = 10;\n    if (sum_23 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int sum_23 = 10;\n    if (sum_23 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000087",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int average_24 = 10;\n    if (average_24 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int average_24 = 10;\n    if (average_24 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000088",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int result_25 = 10;\n    if (result_25 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int result_25 = 10;\n    if (result_25 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000089",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int value_26 = 10;\n    if (value_26 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int value_26 = 10;\n    if (value_26 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000090",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int temp_27 = 10;\n    if (temp_27 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int temp_27 = 10;\n    if (temp_27 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000091",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int max_val_28 = 10;\n    if (max_val_28 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int max_val_28 = 10;\n    if (max_val_28 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000092",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int min_val_29 = 10;\n    if (min_val_29 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int min_val_29 = 10;\n    if (min_val_29 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000093",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int counter_30 = 10;\n    if (counter_30 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int counter_30 = 10;\n    if (counter_30 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000094",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int limit_31 = 10;\n    if (limit_31 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int limit_31 = 10;\n    if (limit_31 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000095",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int threshold_32 = 10;\n    if (threshold_32 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int threshold_32 = 10;\n    if (threshold_32 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000096",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int score_33 = 10;\n    if (score_33 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int score_33 = 10;\n    if (score_33 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000097",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int age_34 = 10;\n    if (age_34 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int age_34 = 10;\n    if (age_34 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000098",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int size_35 = 10;\n    if (size_35 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int size_35 = 10;\n    if (size_35 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000099",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int length_36 = 10;\n    if (length_36 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int length_36 = 10;\n    if (length_36 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000100",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int width_37 = 10;\n    if (width_37 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int width_37 = 10;\n    if (width_37 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000101",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int height_38 = 10;\n    if (height_38 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int height_38 = 10;\n    if (height_38 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000102",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int depth_39 = 10;\n    if (depth_39 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int depth_39 = 10;\n    if (depth_39 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000103",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int count_40 = 10;\n    if (count_40 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int count_40 = 10;\n    if (count_40 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000104",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int total_41 = 10;\n    if (total_41 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total_41 = 10;\n    if (total_41 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000105",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int index_42 = 10;\n    if (index_42 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int index_42 = 10;\n    if (index_42 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000106",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int sum_43 = 10;\n    if (sum_43 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int sum_43 = 10;\n    if (sum_43 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000107",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int average_44 = 10;\n    if (average_44 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int average_44 = 10;\n    if (average_44 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000108",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int result_45 = 10;\n    if (result_45 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int result_45 = 10;\n    if (result_45 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000109",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int value_46 = 10;\n    if (value_46 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int value_46 = 10;\n    if (value_46 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000110",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int temp_47 = 10;\n    if (temp_47 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int temp_47 = 10;\n    if (temp_47 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000111",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int max_val_48 = 10;\n    if (max_val_48 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int max_val_48 = 10;\n    if (max_val_48 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000112",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int min_val_49 = 10;\n    if (min_val_49 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int min_val_49 = 10;\n    if (min_val_49 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000113",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int counter_50 = 10;\n    if (counter_50 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int counter_50 = 10;\n    if (counter_50 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000114",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int limit_51 = 10;\n    if (limit_51 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int limit_51 = 10;\n    if (limit_51 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000115",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int threshold_52 = 10;\n    if (threshold_52 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int threshold_52 = 10;\n    if (threshold_52 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000116",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int score_53 = 10;\n    if (score_53 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int score_53 = 10;\n    if (score_53 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000117",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int age_54 = 10;\n    if (age_54 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int age_54 = 10;\n    if (age_54 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000118",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int size_55 = 10;\n    if (size_55 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int size_55 = 10;\n    if (size_55 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000119",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int length_56 = 10;\n    if (length_56 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int length_56 = 10;\n    if (length_56 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000120",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int width_57 = 10;\n    if (width_57 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int width_57 = 10;\n    if (width_57 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000121",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int height_58 = 10;\n    if (height_58 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int height_58 = 10;\n    if (height_58 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000122",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int depth_59 = 10;\n    if (depth_59 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int depth_59 = 10;\n    if (depth_59 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000123",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int count_60 = 10;\n    if (count_60 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int count_60 = 10;\n    if (count_60 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  },
+  {
+    "id": "CP_LOGIC_000124",
+    "language": "cpp",
+    "category": "logical_bug",
+    "instruction": "Fix the assignment inside the if condition.",
+    "input": {
+      "title": "Assignment Instead of Comparison",
+      "code": "#include <iostream>\n\nint main() {\n    int total_61 = 10;\n    if (total_61 = 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "No error. The code prints 'Value is 5!' incorrectly."
+    },
+    "output": {
+      "technical": "The condition `{val} = 5` performs an assignment, which evaluates to 5 (true in C++). It should use the equality operator `==`.",
+      "beginner": "You used a single equals sign (`=`), which means 'make this equal to', instead of double equals (`==`), which means 'check if this is equal to'.",
+      "analogy": "It's the difference between asking 'Is the sky blue?' (`==`) and commanding 'Make the sky blue!' (`=`).",
+      "solution": "Replace the single `=` with `==` in the `if` statement.",
+      "prevention": "Enable compiler warnings (like `-Wparentheses`) which warn when an assignment is used as a truth value.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total_61 = 10;\n    if (total_61 == 5) {\n        std::cout << \"Value is 5!\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "if",
+        "assignment",
+        "equality"
+      ]
+    }
+  }
+]

@@ -1,0 +1,2081 @@
+[
+  {
+    "id": "CP_OPTIM_000439",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string count_0 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        count_0 = count_0 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `count_0 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string count_0;\n    count_0.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        count_0 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000440",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string total_1 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        total_1 = total_1 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `total_1 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string total_1;\n    total_1.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        total_1 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000441",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string index_2 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        index_2 = index_2 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `index_2 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string index_2;\n    index_2.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        index_2 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000442",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string sum_3 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        sum_3 = sum_3 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `sum_3 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string sum_3;\n    sum_3.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        sum_3 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000443",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string average_4 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        average_4 = average_4 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `average_4 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string average_4;\n    average_4.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        average_4 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000444",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string result_5 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        result_5 = result_5 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `result_5 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string result_5;\n    result_5.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        result_5 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000445",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string value_6 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        value_6 = value_6 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `value_6 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string value_6;\n    value_6.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        value_6 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000446",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string temp_7 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        temp_7 = temp_7 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `temp_7 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string temp_7;\n    temp_7.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        temp_7 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000447",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string max_val_8 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        max_val_8 = max_val_8 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `max_val_8 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string max_val_8;\n    max_val_8.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        max_val_8 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000448",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string min_val_9 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        min_val_9 = min_val_9 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `min_val_9 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string min_val_9;\n    min_val_9.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        min_val_9 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000449",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string counter_10 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        counter_10 = counter_10 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `counter_10 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string counter_10;\n    counter_10.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        counter_10 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000450",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string limit_11 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        limit_11 = limit_11 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `limit_11 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string limit_11;\n    limit_11.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        limit_11 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000451",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string threshold_12 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        threshold_12 = threshold_12 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `threshold_12 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string threshold_12;\n    threshold_12.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        threshold_12 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000452",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string score_13 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        score_13 = score_13 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `score_13 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string score_13;\n    score_13.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        score_13 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000453",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string age_14 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        age_14 = age_14 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `age_14 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string age_14;\n    age_14.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        age_14 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000454",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string size_15 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        size_15 = size_15 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `size_15 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string size_15;\n    size_15.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        size_15 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000455",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string length_16 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        length_16 = length_16 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `length_16 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string length_16;\n    length_16.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        length_16 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000456",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string width_17 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        width_17 = width_17 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `width_17 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string width_17;\n    width_17.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        width_17 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000457",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string height_18 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        height_18 = height_18 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `height_18 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string height_18;\n    height_18.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        height_18 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000458",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string depth_19 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        depth_19 = depth_19 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `depth_19 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string depth_19;\n    depth_19.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        depth_19 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000459",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string count_20 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        count_20 = count_20 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `count_20 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string count_20;\n    count_20.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        count_20 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000460",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string total_21 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        total_21 = total_21 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `total_21 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string total_21;\n    total_21.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        total_21 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000461",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string index_22 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        index_22 = index_22 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `index_22 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string index_22;\n    index_22.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        index_22 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000462",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string sum_23 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        sum_23 = sum_23 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `sum_23 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string sum_23;\n    sum_23.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        sum_23 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000463",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string average_24 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        average_24 = average_24 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `average_24 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string average_24;\n    average_24.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        average_24 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000464",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string result_25 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        result_25 = result_25 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `result_25 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string result_25;\n    result_25.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        result_25 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000465",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string value_26 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        value_26 = value_26 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `value_26 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string value_26;\n    value_26.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        value_26 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000466",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string temp_27 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        temp_27 = temp_27 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `temp_27 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string temp_27;\n    temp_27.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        temp_27 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000467",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string max_val_28 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        max_val_28 = max_val_28 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `max_val_28 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string max_val_28;\n    max_val_28.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        max_val_28 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000468",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string min_val_29 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        min_val_29 = min_val_29 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `min_val_29 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string min_val_29;\n    min_val_29.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        min_val_29 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000469",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string counter_30 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        counter_30 = counter_30 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `counter_30 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string counter_30;\n    counter_30.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        counter_30 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000470",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string limit_31 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        limit_31 = limit_31 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `limit_31 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string limit_31;\n    limit_31.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        limit_31 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000471",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string threshold_32 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        threshold_32 = threshold_32 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `threshold_32 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string threshold_32;\n    threshold_32.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        threshold_32 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000472",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string score_33 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        score_33 = score_33 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `score_33 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string score_33;\n    score_33.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        score_33 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000473",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string age_34 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        age_34 = age_34 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `age_34 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string age_34;\n    age_34.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        age_34 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000474",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string size_35 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        size_35 = size_35 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `size_35 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string size_35;\n    size_35.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        size_35 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000475",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string length_36 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        length_36 = length_36 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `length_36 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string length_36;\n    length_36.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        length_36 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000476",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string width_37 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        width_37 = width_37 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `width_37 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string width_37;\n    width_37.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        width_37 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000477",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string height_38 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        height_38 = height_38 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `height_38 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string height_38;\n    height_38.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        height_38 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000478",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string depth_39 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        depth_39 = depth_39 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `depth_39 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string depth_39;\n    depth_39.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        depth_39 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000479",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string count_40 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        count_40 = count_40 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `count_40 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string count_40;\n    count_40.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        count_40 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000480",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string total_41 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        total_41 = total_41 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `total_41 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string total_41;\n    total_41.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        total_41 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000481",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string index_42 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        index_42 = index_42 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `index_42 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string index_42;\n    index_42.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        index_42 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000482",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string sum_43 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        sum_43 = sum_43 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `sum_43 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string sum_43;\n    sum_43.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        sum_43 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000483",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string average_44 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        average_44 = average_44 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `average_44 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string average_44;\n    average_44.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        average_44 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000484",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string result_45 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        result_45 = result_45 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `result_45 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string result_45;\n    result_45.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        result_45 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000485",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string value_46 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        value_46 = value_46 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `value_46 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string value_46;\n    value_46.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        value_46 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000486",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string temp_47 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        temp_47 = temp_47 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `temp_47 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string temp_47;\n    temp_47.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        temp_47 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000487",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string max_val_48 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        max_val_48 = max_val_48 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `max_val_48 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string max_val_48;\n    max_val_48.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        max_val_48 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000488",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string min_val_49 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        min_val_49 = min_val_49 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `min_val_49 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string min_val_49;\n    min_val_49.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        min_val_49 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000489",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string counter_50 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        counter_50 = counter_50 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `counter_50 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string counter_50;\n    counter_50.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        counter_50 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000490",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string limit_51 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        limit_51 = limit_51 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `limit_51 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string limit_51;\n    limit_51.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        limit_51 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000491",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string threshold_52 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        threshold_52 = threshold_52 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `threshold_52 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string threshold_52;\n    threshold_52.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        threshold_52 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000492",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string score_53 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        score_53 = score_53 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `score_53 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string score_53;\n    score_53.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        score_53 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000493",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string age_54 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        age_54 = age_54 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `age_54 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string age_54;\n    age_54.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        age_54 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000494",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string size_55 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        size_55 = size_55 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `size_55 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string size_55;\n    size_55.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        size_55 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000495",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string length_56 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        length_56 = length_56 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `length_56 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string length_56;\n    length_56.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        length_56 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000496",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string width_57 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        width_57 = width_57 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `width_57 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string width_57;\n    width_57.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        width_57 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000497",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string height_58 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        height_58 = height_58 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `height_58 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string height_58;\n    height_58.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        height_58 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000498",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string depth_59 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        depth_59 = depth_59 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `depth_59 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string depth_59;\n    depth_59.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        depth_59 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000499",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string count_60 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        count_60 = count_60 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `count_60 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string count_60;\n    count_60.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        count_60 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000500",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string total_61 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        total_61 = total_61 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `total_61 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string total_61;\n    total_61.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        total_61 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  },
+  {
+    "id": "CP_OPTIM_000501",
+    "language": "cpp",
+    "category": "optimization",
+    "instruction": "Optimize the string building loop.",
+    "input": {
+      "title": "Inefficient String Appending",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string index_62 = \"\";\n    for (int i = 0; i < 10000; ++i) {\n        index_62 = index_62 + \"a\";\n    }\n    return 0;\n}\n",
+      "error_message": ""
+    },
+    "output": {
+      "technical": "Using `s = s + \"a\"` creates a new temporary string, copies the old string, adds the character, and then assigns it back. This results in O(N^2) complexity.",
+      "beginner": "You are copying the entire string every time you add a single letter. As the string gets bigger, copying it takes longer and longer.",
+      "analogy": "It's like rewriting a whole novel from page 1 every time you want to add a single period at the end.",
+      "solution": "Use `index_62 += \"a\";` which modifies the string in place, or use `.reserve()`.",
+      "prevention": "Use `+=` or `.append()` instead of `+` when building strings in loops.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string index_62;\n    index_62.reserve(10000);\n    for (int i = 0; i < 10000; ++i) {\n        index_62 += \"a\";\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(N^2)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "string",
+        "concatenation",
+        "allocation"
+      ]
+    }
+  }
+]
