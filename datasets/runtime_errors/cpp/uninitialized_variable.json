@@ -1,0 +1,2018 @@
+[
+  {
+    "id": "CP_RUNTIME_000375",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int count_0;\n    std::cout << count_0 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `count_0` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int count_0 = 0;\n    std::cout << count_0 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000376",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int total_1;\n    std::cout << total_1 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `total_1` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total_1 = 0;\n    std::cout << total_1 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000377",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int index_2;\n    std::cout << index_2 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `index_2` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int index_2 = 0;\n    std::cout << index_2 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000378",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int sum_3;\n    std::cout << sum_3 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `sum_3` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int sum_3 = 0;\n    std::cout << sum_3 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000379",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int average_4;\n    std::cout << average_4 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `average_4` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int average_4 = 0;\n    std::cout << average_4 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000380",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int result_5;\n    std::cout << result_5 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `result_5` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int result_5 = 0;\n    std::cout << result_5 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000381",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int value_6;\n    std::cout << value_6 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `value_6` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int value_6 = 0;\n    std::cout << value_6 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000382",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int temp_7;\n    std::cout << temp_7 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `temp_7` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int temp_7 = 0;\n    std::cout << temp_7 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000383",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int max_val_8;\n    std::cout << max_val_8 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `max_val_8` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int max_val_8 = 0;\n    std::cout << max_val_8 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000384",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int min_val_9;\n    std::cout << min_val_9 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `min_val_9` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int min_val_9 = 0;\n    std::cout << min_val_9 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000385",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int counter_10;\n    std::cout << counter_10 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `counter_10` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int counter_10 = 0;\n    std::cout << counter_10 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000386",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int limit_11;\n    std::cout << limit_11 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `limit_11` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int limit_11 = 0;\n    std::cout << limit_11 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000387",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int threshold_12;\n    std::cout << threshold_12 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `threshold_12` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int threshold_12 = 0;\n    std::cout << threshold_12 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000388",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int score_13;\n    std::cout << score_13 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `score_13` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int score_13 = 0;\n    std::cout << score_13 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000389",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int age_14;\n    std::cout << age_14 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `age_14` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int age_14 = 0;\n    std::cout << age_14 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000390",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int size_15;\n    std::cout << size_15 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `size_15` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int size_15 = 0;\n    std::cout << size_15 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000391",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int length_16;\n    std::cout << length_16 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `length_16` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int length_16 = 0;\n    std::cout << length_16 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000392",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int width_17;\n    std::cout << width_17 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `width_17` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int width_17 = 0;\n    std::cout << width_17 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000393",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int height_18;\n    std::cout << height_18 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `height_18` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int height_18 = 0;\n    std::cout << height_18 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000394",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int depth_19;\n    std::cout << depth_19 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `depth_19` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int depth_19 = 0;\n    std::cout << depth_19 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000395",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int count_20;\n    std::cout << count_20 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `count_20` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int count_20 = 0;\n    std::cout << count_20 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000396",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int total_21;\n    std::cout << total_21 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `total_21` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total_21 = 0;\n    std::cout << total_21 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000397",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int index_22;\n    std::cout << index_22 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `index_22` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int index_22 = 0;\n    std::cout << index_22 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000398",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int sum_23;\n    std::cout << sum_23 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `sum_23` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int sum_23 = 0;\n    std::cout << sum_23 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000399",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int average_24;\n    std::cout << average_24 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `average_24` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int average_24 = 0;\n    std::cout << average_24 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000400",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int result_25;\n    std::cout << result_25 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `result_25` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int result_25 = 0;\n    std::cout << result_25 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000401",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int value_26;\n    std::cout << value_26 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `value_26` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int value_26 = 0;\n    std::cout << value_26 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000402",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int temp_27;\n    std::cout << temp_27 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `temp_27` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int temp_27 = 0;\n    std::cout << temp_27 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000403",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int max_val_28;\n    std::cout << max_val_28 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `max_val_28` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int max_val_28 = 0;\n    std::cout << max_val_28 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000404",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int min_val_29;\n    std::cout << min_val_29 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `min_val_29` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int min_val_29 = 0;\n    std::cout << min_val_29 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000405",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int counter_30;\n    std::cout << counter_30 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `counter_30` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int counter_30 = 0;\n    std::cout << counter_30 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000406",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int limit_31;\n    std::cout << limit_31 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `limit_31` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int limit_31 = 0;\n    std::cout << limit_31 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000407",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int threshold_32;\n    std::cout << threshold_32 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `threshold_32` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int threshold_32 = 0;\n    std::cout << threshold_32 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000408",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int score_33;\n    std::cout << score_33 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `score_33` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int score_33 = 0;\n    std::cout << score_33 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000409",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int age_34;\n    std::cout << age_34 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `age_34` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int age_34 = 0;\n    std::cout << age_34 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000410",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int size_35;\n    std::cout << size_35 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `size_35` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int size_35 = 0;\n    std::cout << size_35 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000411",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int length_36;\n    std::cout << length_36 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `length_36` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int length_36 = 0;\n    std::cout << length_36 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000412",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int width_37;\n    std::cout << width_37 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `width_37` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int width_37 = 0;\n    std::cout << width_37 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000413",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int height_38;\n    std::cout << height_38 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `height_38` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int height_38 = 0;\n    std::cout << height_38 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000414",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int depth_39;\n    std::cout << depth_39 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `depth_39` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int depth_39 = 0;\n    std::cout << depth_39 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000415",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int count_40;\n    std::cout << count_40 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `count_40` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int count_40 = 0;\n    std::cout << count_40 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000416",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int total_41;\n    std::cout << total_41 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `total_41` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total_41 = 0;\n    std::cout << total_41 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000417",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int index_42;\n    std::cout << index_42 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `index_42` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int index_42 = 0;\n    std::cout << index_42 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000418",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int sum_43;\n    std::cout << sum_43 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `sum_43` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int sum_43 = 0;\n    std::cout << sum_43 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000419",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int average_44;\n    std::cout << average_44 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `average_44` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int average_44 = 0;\n    std::cout << average_44 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000420",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int result_45;\n    std::cout << result_45 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `result_45` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int result_45 = 0;\n    std::cout << result_45 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000421",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int value_46;\n    std::cout << value_46 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `value_46` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int value_46 = 0;\n    std::cout << value_46 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000422",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int temp_47;\n    std::cout << temp_47 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `temp_47` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int temp_47 = 0;\n    std::cout << temp_47 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000423",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int max_val_48;\n    std::cout << max_val_48 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `max_val_48` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int max_val_48 = 0;\n    std::cout << max_val_48 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000424",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int min_val_49;\n    std::cout << min_val_49 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `min_val_49` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int min_val_49 = 0;\n    std::cout << min_val_49 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000425",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int counter_50;\n    std::cout << counter_50 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `counter_50` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int counter_50 = 0;\n    std::cout << counter_50 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000426",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int limit_51;\n    std::cout << limit_51 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `limit_51` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int limit_51 = 0;\n    std::cout << limit_51 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000427",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int threshold_52;\n    std::cout << threshold_52 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `threshold_52` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int threshold_52 = 0;\n    std::cout << threshold_52 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000428",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int score_53;\n    std::cout << score_53 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `score_53` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int score_53 = 0;\n    std::cout << score_53 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000429",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int age_54;\n    std::cout << age_54 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `age_54` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int age_54 = 0;\n    std::cout << age_54 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000430",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int size_55;\n    std::cout << size_55 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `size_55` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int size_55 = 0;\n    std::cout << size_55 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000431",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int length_56;\n    std::cout << length_56 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `length_56` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int length_56 = 0;\n    std::cout << length_56 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000432",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int width_57;\n    std::cout << width_57 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `width_57` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int width_57 = 0;\n    std::cout << width_57 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000433",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int height_58;\n    std::cout << height_58 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `height_58` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int height_58 = 0;\n    std::cout << height_58 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000434",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int depth_59;\n    std::cout << depth_59 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `depth_59` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int depth_59 = 0;\n    std::cout << depth_59 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000435",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int count_60;\n    std::cout << count_60 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `count_60` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int count_60 = 0;\n    std::cout << count_60 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000436",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int total_61;\n    std::cout << total_61 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `total_61` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total_61 = 0;\n    std::cout << total_61 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000437",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the uninitialized variable usage.",
+    "input": {
+      "title": "Uninitialized Local Variable",
+      "code": "#include <iostream>\n\nint main() {\n    int index_62;\n    std::cout << index_62 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Garbage value printed / Undefined behavior"
+    },
+    "output": {
+      "technical": "The local variable `index_62` is declared but not initialized. Reading from an uninitialized local variable is undefined behavior in C++ and usually results in a garbage value.",
+      "beginner": "You created a variable but didn't give it a starting value, so it just holds whatever random data was left over in memory.",
+      "analogy": "It's like picking up a random piece of scratch paper and assuming it's blank, but someone else wrote a random number on it earlier.",
+      "solution": "Initialize the variable when you declare it.",
+      "prevention": "Always initialize variables upon declaration.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int index_62 = 0;\n    std::cout << index_62 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "uninitialized",
+        "undefined-behavior"
+      ]
+    }
+  }
+]

@@ -1,0 +1,2018 @@
+[
+  {
+    "id": "CP_RUNTIME_000312",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* count_0 = new int(42);\n    delete count_0;\n    std::cout << *count_0 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `count_0` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `count_0` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* count_0 = new int(42);\n    std::cout << *count_0 << std::endl;\n    delete count_0;\n    count_0 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000313",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* total_1 = new int(42);\n    delete total_1;\n    std::cout << *total_1 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `total_1` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `total_1` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* total_1 = new int(42);\n    std::cout << *total_1 << std::endl;\n    delete total_1;\n    total_1 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000314",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* index_2 = new int(42);\n    delete index_2;\n    std::cout << *index_2 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `index_2` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `index_2` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* index_2 = new int(42);\n    std::cout << *index_2 << std::endl;\n    delete index_2;\n    index_2 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000315",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* sum_3 = new int(42);\n    delete sum_3;\n    std::cout << *sum_3 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `sum_3` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `sum_3` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* sum_3 = new int(42);\n    std::cout << *sum_3 << std::endl;\n    delete sum_3;\n    sum_3 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000316",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* average_4 = new int(42);\n    delete average_4;\n    std::cout << *average_4 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `average_4` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `average_4` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* average_4 = new int(42);\n    std::cout << *average_4 << std::endl;\n    delete average_4;\n    average_4 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000317",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* result_5 = new int(42);\n    delete result_5;\n    std::cout << *result_5 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `result_5` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `result_5` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* result_5 = new int(42);\n    std::cout << *result_5 << std::endl;\n    delete result_5;\n    result_5 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000318",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* value_6 = new int(42);\n    delete value_6;\n    std::cout << *value_6 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `value_6` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `value_6` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* value_6 = new int(42);\n    std::cout << *value_6 << std::endl;\n    delete value_6;\n    value_6 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000319",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* temp_7 = new int(42);\n    delete temp_7;\n    std::cout << *temp_7 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `temp_7` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `temp_7` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* temp_7 = new int(42);\n    std::cout << *temp_7 << std::endl;\n    delete temp_7;\n    temp_7 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000320",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* max_val_8 = new int(42);\n    delete max_val_8;\n    std::cout << *max_val_8 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `max_val_8` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `max_val_8` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* max_val_8 = new int(42);\n    std::cout << *max_val_8 << std::endl;\n    delete max_val_8;\n    max_val_8 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000321",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* min_val_9 = new int(42);\n    delete min_val_9;\n    std::cout << *min_val_9 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `min_val_9` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `min_val_9` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* min_val_9 = new int(42);\n    std::cout << *min_val_9 << std::endl;\n    delete min_val_9;\n    min_val_9 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000322",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* counter_10 = new int(42);\n    delete counter_10;\n    std::cout << *counter_10 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `counter_10` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `counter_10` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* counter_10 = new int(42);\n    std::cout << *counter_10 << std::endl;\n    delete counter_10;\n    counter_10 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000323",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* limit_11 = new int(42);\n    delete limit_11;\n    std::cout << *limit_11 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `limit_11` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `limit_11` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* limit_11 = new int(42);\n    std::cout << *limit_11 << std::endl;\n    delete limit_11;\n    limit_11 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000324",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* threshold_12 = new int(42);\n    delete threshold_12;\n    std::cout << *threshold_12 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `threshold_12` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `threshold_12` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* threshold_12 = new int(42);\n    std::cout << *threshold_12 << std::endl;\n    delete threshold_12;\n    threshold_12 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000325",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* score_13 = new int(42);\n    delete score_13;\n    std::cout << *score_13 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `score_13` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `score_13` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* score_13 = new int(42);\n    std::cout << *score_13 << std::endl;\n    delete score_13;\n    score_13 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000326",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* age_14 = new int(42);\n    delete age_14;\n    std::cout << *age_14 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `age_14` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `age_14` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* age_14 = new int(42);\n    std::cout << *age_14 << std::endl;\n    delete age_14;\n    age_14 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000327",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* size_15 = new int(42);\n    delete size_15;\n    std::cout << *size_15 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `size_15` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `size_15` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* size_15 = new int(42);\n    std::cout << *size_15 << std::endl;\n    delete size_15;\n    size_15 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000328",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* length_16 = new int(42);\n    delete length_16;\n    std::cout << *length_16 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `length_16` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `length_16` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* length_16 = new int(42);\n    std::cout << *length_16 << std::endl;\n    delete length_16;\n    length_16 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000329",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* width_17 = new int(42);\n    delete width_17;\n    std::cout << *width_17 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `width_17` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `width_17` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* width_17 = new int(42);\n    std::cout << *width_17 << std::endl;\n    delete width_17;\n    width_17 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000330",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* height_18 = new int(42);\n    delete height_18;\n    std::cout << *height_18 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `height_18` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `height_18` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* height_18 = new int(42);\n    std::cout << *height_18 << std::endl;\n    delete height_18;\n    height_18 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000331",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* depth_19 = new int(42);\n    delete depth_19;\n    std::cout << *depth_19 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `depth_19` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `depth_19` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* depth_19 = new int(42);\n    std::cout << *depth_19 << std::endl;\n    delete depth_19;\n    depth_19 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000332",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* count_20 = new int(42);\n    delete count_20;\n    std::cout << *count_20 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `count_20` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `count_20` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* count_20 = new int(42);\n    std::cout << *count_20 << std::endl;\n    delete count_20;\n    count_20 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000333",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* total_21 = new int(42);\n    delete total_21;\n    std::cout << *total_21 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `total_21` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `total_21` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* total_21 = new int(42);\n    std::cout << *total_21 << std::endl;\n    delete total_21;\n    total_21 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000334",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* index_22 = new int(42);\n    delete index_22;\n    std::cout << *index_22 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `index_22` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `index_22` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* index_22 = new int(42);\n    std::cout << *index_22 << std::endl;\n    delete index_22;\n    index_22 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000335",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* sum_23 = new int(42);\n    delete sum_23;\n    std::cout << *sum_23 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `sum_23` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `sum_23` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* sum_23 = new int(42);\n    std::cout << *sum_23 << std::endl;\n    delete sum_23;\n    sum_23 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000336",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* average_24 = new int(42);\n    delete average_24;\n    std::cout << *average_24 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `average_24` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `average_24` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* average_24 = new int(42);\n    std::cout << *average_24 << std::endl;\n    delete average_24;\n    average_24 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000337",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* result_25 = new int(42);\n    delete result_25;\n    std::cout << *result_25 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `result_25` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `result_25` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* result_25 = new int(42);\n    std::cout << *result_25 << std::endl;\n    delete result_25;\n    result_25 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000338",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* value_26 = new int(42);\n    delete value_26;\n    std::cout << *value_26 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `value_26` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `value_26` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* value_26 = new int(42);\n    std::cout << *value_26 << std::endl;\n    delete value_26;\n    value_26 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000339",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* temp_27 = new int(42);\n    delete temp_27;\n    std::cout << *temp_27 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `temp_27` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `temp_27` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* temp_27 = new int(42);\n    std::cout << *temp_27 << std::endl;\n    delete temp_27;\n    temp_27 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000340",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* max_val_28 = new int(42);\n    delete max_val_28;\n    std::cout << *max_val_28 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `max_val_28` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `max_val_28` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* max_val_28 = new int(42);\n    std::cout << *max_val_28 << std::endl;\n    delete max_val_28;\n    max_val_28 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000341",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* min_val_29 = new int(42);\n    delete min_val_29;\n    std::cout << *min_val_29 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `min_val_29` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `min_val_29` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* min_val_29 = new int(42);\n    std::cout << *min_val_29 << std::endl;\n    delete min_val_29;\n    min_val_29 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000342",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* counter_30 = new int(42);\n    delete counter_30;\n    std::cout << *counter_30 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `counter_30` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `counter_30` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* counter_30 = new int(42);\n    std::cout << *counter_30 << std::endl;\n    delete counter_30;\n    counter_30 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000343",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* limit_31 = new int(42);\n    delete limit_31;\n    std::cout << *limit_31 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `limit_31` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `limit_31` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* limit_31 = new int(42);\n    std::cout << *limit_31 << std::endl;\n    delete limit_31;\n    limit_31 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000344",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* threshold_32 = new int(42);\n    delete threshold_32;\n    std::cout << *threshold_32 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `threshold_32` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `threshold_32` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* threshold_32 = new int(42);\n    std::cout << *threshold_32 << std::endl;\n    delete threshold_32;\n    threshold_32 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000345",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* score_33 = new int(42);\n    delete score_33;\n    std::cout << *score_33 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `score_33` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `score_33` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* score_33 = new int(42);\n    std::cout << *score_33 << std::endl;\n    delete score_33;\n    score_33 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000346",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* age_34 = new int(42);\n    delete age_34;\n    std::cout << *age_34 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `age_34` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `age_34` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* age_34 = new int(42);\n    std::cout << *age_34 << std::endl;\n    delete age_34;\n    age_34 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000347",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* size_35 = new int(42);\n    delete size_35;\n    std::cout << *size_35 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `size_35` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `size_35` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* size_35 = new int(42);\n    std::cout << *size_35 << std::endl;\n    delete size_35;\n    size_35 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000348",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* length_36 = new int(42);\n    delete length_36;\n    std::cout << *length_36 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `length_36` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `length_36` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* length_36 = new int(42);\n    std::cout << *length_36 << std::endl;\n    delete length_36;\n    length_36 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000349",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* width_37 = new int(42);\n    delete width_37;\n    std::cout << *width_37 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `width_37` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `width_37` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* width_37 = new int(42);\n    std::cout << *width_37 << std::endl;\n    delete width_37;\n    width_37 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000350",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* height_38 = new int(42);\n    delete height_38;\n    std::cout << *height_38 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `height_38` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `height_38` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* height_38 = new int(42);\n    std::cout << *height_38 << std::endl;\n    delete height_38;\n    height_38 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000351",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* depth_39 = new int(42);\n    delete depth_39;\n    std::cout << *depth_39 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `depth_39` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `depth_39` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* depth_39 = new int(42);\n    std::cout << *depth_39 << std::endl;\n    delete depth_39;\n    depth_39 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000352",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* count_40 = new int(42);\n    delete count_40;\n    std::cout << *count_40 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `count_40` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `count_40` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* count_40 = new int(42);\n    std::cout << *count_40 << std::endl;\n    delete count_40;\n    count_40 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000353",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* total_41 = new int(42);\n    delete total_41;\n    std::cout << *total_41 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `total_41` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `total_41` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* total_41 = new int(42);\n    std::cout << *total_41 << std::endl;\n    delete total_41;\n    total_41 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000354",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* index_42 = new int(42);\n    delete index_42;\n    std::cout << *index_42 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `index_42` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `index_42` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* index_42 = new int(42);\n    std::cout << *index_42 << std::endl;\n    delete index_42;\n    index_42 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000355",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* sum_43 = new int(42);\n    delete sum_43;\n    std::cout << *sum_43 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `sum_43` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `sum_43` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* sum_43 = new int(42);\n    std::cout << *sum_43 << std::endl;\n    delete sum_43;\n    sum_43 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000356",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* average_44 = new int(42);\n    delete average_44;\n    std::cout << *average_44 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `average_44` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `average_44` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* average_44 = new int(42);\n    std::cout << *average_44 << std::endl;\n    delete average_44;\n    average_44 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000357",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* result_45 = new int(42);\n    delete result_45;\n    std::cout << *result_45 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `result_45` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `result_45` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* result_45 = new int(42);\n    std::cout << *result_45 << std::endl;\n    delete result_45;\n    result_45 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000358",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* value_46 = new int(42);\n    delete value_46;\n    std::cout << *value_46 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `value_46` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `value_46` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* value_46 = new int(42);\n    std::cout << *value_46 << std::endl;\n    delete value_46;\n    value_46 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000359",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* temp_47 = new int(42);\n    delete temp_47;\n    std::cout << *temp_47 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `temp_47` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `temp_47` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* temp_47 = new int(42);\n    std::cout << *temp_47 << std::endl;\n    delete temp_47;\n    temp_47 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000360",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* max_val_48 = new int(42);\n    delete max_val_48;\n    std::cout << *max_val_48 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `max_val_48` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `max_val_48` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* max_val_48 = new int(42);\n    std::cout << *max_val_48 << std::endl;\n    delete max_val_48;\n    max_val_48 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000361",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* min_val_49 = new int(42);\n    delete min_val_49;\n    std::cout << *min_val_49 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `min_val_49` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `min_val_49` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* min_val_49 = new int(42);\n    std::cout << *min_val_49 << std::endl;\n    delete min_val_49;\n    min_val_49 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000362",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* counter_50 = new int(42);\n    delete counter_50;\n    std::cout << *counter_50 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `counter_50` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `counter_50` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* counter_50 = new int(42);\n    std::cout << *counter_50 << std::endl;\n    delete counter_50;\n    counter_50 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000363",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* limit_51 = new int(42);\n    delete limit_51;\n    std::cout << *limit_51 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `limit_51` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `limit_51` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* limit_51 = new int(42);\n    std::cout << *limit_51 << std::endl;\n    delete limit_51;\n    limit_51 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000364",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* threshold_52 = new int(42);\n    delete threshold_52;\n    std::cout << *threshold_52 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `threshold_52` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `threshold_52` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* threshold_52 = new int(42);\n    std::cout << *threshold_52 << std::endl;\n    delete threshold_52;\n    threshold_52 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000365",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* score_53 = new int(42);\n    delete score_53;\n    std::cout << *score_53 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `score_53` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `score_53` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* score_53 = new int(42);\n    std::cout << *score_53 << std::endl;\n    delete score_53;\n    score_53 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000366",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* age_54 = new int(42);\n    delete age_54;\n    std::cout << *age_54 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `age_54` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `age_54` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* age_54 = new int(42);\n    std::cout << *age_54 << std::endl;\n    delete age_54;\n    age_54 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000367",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* size_55 = new int(42);\n    delete size_55;\n    std::cout << *size_55 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `size_55` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `size_55` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* size_55 = new int(42);\n    std::cout << *size_55 << std::endl;\n    delete size_55;\n    size_55 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000368",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* length_56 = new int(42);\n    delete length_56;\n    std::cout << *length_56 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `length_56` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `length_56` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* length_56 = new int(42);\n    std::cout << *length_56 << std::endl;\n    delete length_56;\n    length_56 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000369",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* width_57 = new int(42);\n    delete width_57;\n    std::cout << *width_57 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `width_57` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `width_57` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* width_57 = new int(42);\n    std::cout << *width_57 << std::endl;\n    delete width_57;\n    width_57 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000370",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* height_58 = new int(42);\n    delete height_58;\n    std::cout << *height_58 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `height_58` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `height_58` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* height_58 = new int(42);\n    std::cout << *height_58 << std::endl;\n    delete height_58;\n    height_58 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000371",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* depth_59 = new int(42);\n    delete depth_59;\n    std::cout << *depth_59 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `depth_59` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `depth_59` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* depth_59 = new int(42);\n    std::cout << *depth_59 << std::endl;\n    delete depth_59;\n    depth_59 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000372",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* count_60 = new int(42);\n    delete count_60;\n    std::cout << *count_60 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `count_60` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `count_60` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* count_60 = new int(42);\n    std::cout << *count_60 << std::endl;\n    delete count_60;\n    count_60 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000373",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* total_61 = new int(42);\n    delete total_61;\n    std::cout << *total_61 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `total_61` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `total_61` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* total_61 = new int(42);\n    std::cout << *total_61 << std::endl;\n    delete total_61;\n    total_61 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000374",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the use-after-free vulnerability.",
+    "input": {
+      "title": "Use After Free",
+      "code": "#include <iostream>\n\nint main() {\n    int* index_62 = new int(42);\n    delete index_62;\n    std::cout << *index_62 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Undefined behavior / Heap-use-after-free (Detected by AddressSanitizer)"
+    },
+    "output": {
+      "technical": "The pointer `index_62` is dereferenced after the memory it points to has been deallocated with `delete`. This is undefined behavior and often leads to crashes or security vulnerabilities.",
+      "beginner": "You are trying to read a value from memory that you already told the computer it could recycle.",
+      "analogy": "It's like returning the keys to a rental car, but then trying to get back into the car later.",
+      "solution": "Do not access `index_62` after deleting it. Setting it to `nullptr` can help prevent accidental use.",
+      "prevention": "Set pointers to `nullptr` immediately after deletion, or use smart pointers.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int* index_62 = new int(42);\n    std::cout << *index_62 << std::endl;\n    delete index_62;\n    index_62 = nullptr;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "hard",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory",
+        "use-after-free"
+      ]
+    }
+  }
+]

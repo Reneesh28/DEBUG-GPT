@@ -1,0 +1,1986 @@
+[
+  {
+    "id": "PY_RUNTIME_000063",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "count_0 = {'a': 1, 'b': 2}\nprint(count_0['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(count_0['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "count_0 = {'a': 1, 'b': 2}\nprint(count_0.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000064",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "total_1 = {'a': 1, 'b': 2}\nprint(total_1['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(total_1['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "total_1 = {'a': 1, 'b': 2}\nprint(total_1.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000065",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "index_2 = {'a': 1, 'b': 2}\nprint(index_2['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(index_2['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "index_2 = {'a': 1, 'b': 2}\nprint(index_2.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000066",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "sum_3 = {'a': 1, 'b': 2}\nprint(sum_3['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(sum_3['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "sum_3 = {'a': 1, 'b': 2}\nprint(sum_3.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000067",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "average_4 = {'a': 1, 'b': 2}\nprint(average_4['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(average_4['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "average_4 = {'a': 1, 'b': 2}\nprint(average_4.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000068",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "result_5 = {'a': 1, 'b': 2}\nprint(result_5['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(result_5['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "result_5 = {'a': 1, 'b': 2}\nprint(result_5.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000069",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "value_6 = {'a': 1, 'b': 2}\nprint(value_6['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(value_6['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "value_6 = {'a': 1, 'b': 2}\nprint(value_6.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000070",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "temp_7 = {'a': 1, 'b': 2}\nprint(temp_7['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(temp_7['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "temp_7 = {'a': 1, 'b': 2}\nprint(temp_7.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000071",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "max_val_8 = {'a': 1, 'b': 2}\nprint(max_val_8['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(max_val_8['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "max_val_8 = {'a': 1, 'b': 2}\nprint(max_val_8.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000072",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "min_val_9 = {'a': 1, 'b': 2}\nprint(min_val_9['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(min_val_9['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "min_val_9 = {'a': 1, 'b': 2}\nprint(min_val_9.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000073",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "counter_10 = {'a': 1, 'b': 2}\nprint(counter_10['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(counter_10['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "counter_10 = {'a': 1, 'b': 2}\nprint(counter_10.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000074",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "limit_11 = {'a': 1, 'b': 2}\nprint(limit_11['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(limit_11['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "limit_11 = {'a': 1, 'b': 2}\nprint(limit_11.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000075",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "threshold_12 = {'a': 1, 'b': 2}\nprint(threshold_12['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(threshold_12['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "threshold_12 = {'a': 1, 'b': 2}\nprint(threshold_12.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000076",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "score_13 = {'a': 1, 'b': 2}\nprint(score_13['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(score_13['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "score_13 = {'a': 1, 'b': 2}\nprint(score_13.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000077",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "age_14 = {'a': 1, 'b': 2}\nprint(age_14['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(age_14['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "age_14 = {'a': 1, 'b': 2}\nprint(age_14.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000078",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "size_15 = {'a': 1, 'b': 2}\nprint(size_15['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(size_15['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "size_15 = {'a': 1, 'b': 2}\nprint(size_15.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000079",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "length_16 = {'a': 1, 'b': 2}\nprint(length_16['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(length_16['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "length_16 = {'a': 1, 'b': 2}\nprint(length_16.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000080",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "width_17 = {'a': 1, 'b': 2}\nprint(width_17['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(width_17['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "width_17 = {'a': 1, 'b': 2}\nprint(width_17.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000081",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "height_18 = {'a': 1, 'b': 2}\nprint(height_18['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(height_18['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "height_18 = {'a': 1, 'b': 2}\nprint(height_18.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000082",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "depth_19 = {'a': 1, 'b': 2}\nprint(depth_19['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(depth_19['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "depth_19 = {'a': 1, 'b': 2}\nprint(depth_19.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000083",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "count_20 = {'a': 1, 'b': 2}\nprint(count_20['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(count_20['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "count_20 = {'a': 1, 'b': 2}\nprint(count_20.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000084",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "total_21 = {'a': 1, 'b': 2}\nprint(total_21['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(total_21['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "total_21 = {'a': 1, 'b': 2}\nprint(total_21.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000085",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "index_22 = {'a': 1, 'b': 2}\nprint(index_22['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(index_22['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "index_22 = {'a': 1, 'b': 2}\nprint(index_22.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000086",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "sum_23 = {'a': 1, 'b': 2}\nprint(sum_23['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(sum_23['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "sum_23 = {'a': 1, 'b': 2}\nprint(sum_23.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000087",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "average_24 = {'a': 1, 'b': 2}\nprint(average_24['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(average_24['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "average_24 = {'a': 1, 'b': 2}\nprint(average_24.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000088",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "result_25 = {'a': 1, 'b': 2}\nprint(result_25['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(result_25['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "result_25 = {'a': 1, 'b': 2}\nprint(result_25.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000089",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "value_26 = {'a': 1, 'b': 2}\nprint(value_26['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(value_26['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "value_26 = {'a': 1, 'b': 2}\nprint(value_26.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000090",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "temp_27 = {'a': 1, 'b': 2}\nprint(temp_27['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(temp_27['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "temp_27 = {'a': 1, 'b': 2}\nprint(temp_27.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000091",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "max_val_28 = {'a': 1, 'b': 2}\nprint(max_val_28['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(max_val_28['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "max_val_28 = {'a': 1, 'b': 2}\nprint(max_val_28.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000092",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "min_val_29 = {'a': 1, 'b': 2}\nprint(min_val_29['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(min_val_29['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "min_val_29 = {'a': 1, 'b': 2}\nprint(min_val_29.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000093",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "counter_30 = {'a': 1, 'b': 2}\nprint(counter_30['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(counter_30['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "counter_30 = {'a': 1, 'b': 2}\nprint(counter_30.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000094",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "limit_31 = {'a': 1, 'b': 2}\nprint(limit_31['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(limit_31['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "limit_31 = {'a': 1, 'b': 2}\nprint(limit_31.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000095",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "threshold_32 = {'a': 1, 'b': 2}\nprint(threshold_32['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(threshold_32['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "threshold_32 = {'a': 1, 'b': 2}\nprint(threshold_32.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000096",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "score_33 = {'a': 1, 'b': 2}\nprint(score_33['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(score_33['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "score_33 = {'a': 1, 'b': 2}\nprint(score_33.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000097",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "age_34 = {'a': 1, 'b': 2}\nprint(age_34['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(age_34['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "age_34 = {'a': 1, 'b': 2}\nprint(age_34.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000098",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "size_35 = {'a': 1, 'b': 2}\nprint(size_35['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(size_35['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "size_35 = {'a': 1, 'b': 2}\nprint(size_35.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000099",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "length_36 = {'a': 1, 'b': 2}\nprint(length_36['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(length_36['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "length_36 = {'a': 1, 'b': 2}\nprint(length_36.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000100",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "width_37 = {'a': 1, 'b': 2}\nprint(width_37['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(width_37['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "width_37 = {'a': 1, 'b': 2}\nprint(width_37.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000101",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "height_38 = {'a': 1, 'b': 2}\nprint(height_38['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(height_38['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "height_38 = {'a': 1, 'b': 2}\nprint(height_38.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000102",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "depth_39 = {'a': 1, 'b': 2}\nprint(depth_39['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(depth_39['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "depth_39 = {'a': 1, 'b': 2}\nprint(depth_39.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000103",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "count_40 = {'a': 1, 'b': 2}\nprint(count_40['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(count_40['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "count_40 = {'a': 1, 'b': 2}\nprint(count_40.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000104",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "total_41 = {'a': 1, 'b': 2}\nprint(total_41['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(total_41['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "total_41 = {'a': 1, 'b': 2}\nprint(total_41.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000105",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "index_42 = {'a': 1, 'b': 2}\nprint(index_42['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(index_42['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "index_42 = {'a': 1, 'b': 2}\nprint(index_42.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000106",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "sum_43 = {'a': 1, 'b': 2}\nprint(sum_43['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(sum_43['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "sum_43 = {'a': 1, 'b': 2}\nprint(sum_43.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000107",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "average_44 = {'a': 1, 'b': 2}\nprint(average_44['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(average_44['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "average_44 = {'a': 1, 'b': 2}\nprint(average_44.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000108",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "result_45 = {'a': 1, 'b': 2}\nprint(result_45['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(result_45['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "result_45 = {'a': 1, 'b': 2}\nprint(result_45.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000109",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "value_46 = {'a': 1, 'b': 2}\nprint(value_46['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(value_46['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "value_46 = {'a': 1, 'b': 2}\nprint(value_46.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000110",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "temp_47 = {'a': 1, 'b': 2}\nprint(temp_47['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(temp_47['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "temp_47 = {'a': 1, 'b': 2}\nprint(temp_47.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000111",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "max_val_48 = {'a': 1, 'b': 2}\nprint(max_val_48['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(max_val_48['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "max_val_48 = {'a': 1, 'b': 2}\nprint(max_val_48.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000112",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "min_val_49 = {'a': 1, 'b': 2}\nprint(min_val_49['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(min_val_49['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "min_val_49 = {'a': 1, 'b': 2}\nprint(min_val_49.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000113",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "counter_50 = {'a': 1, 'b': 2}\nprint(counter_50['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(counter_50['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "counter_50 = {'a': 1, 'b': 2}\nprint(counter_50.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000114",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "limit_51 = {'a': 1, 'b': 2}\nprint(limit_51['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(limit_51['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "limit_51 = {'a': 1, 'b': 2}\nprint(limit_51.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000115",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "threshold_52 = {'a': 1, 'b': 2}\nprint(threshold_52['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(threshold_52['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "threshold_52 = {'a': 1, 'b': 2}\nprint(threshold_52.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000116",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "score_53 = {'a': 1, 'b': 2}\nprint(score_53['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(score_53['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "score_53 = {'a': 1, 'b': 2}\nprint(score_53.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000117",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "age_54 = {'a': 1, 'b': 2}\nprint(age_54['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(age_54['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "age_54 = {'a': 1, 'b': 2}\nprint(age_54.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000118",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "size_55 = {'a': 1, 'b': 2}\nprint(size_55['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(size_55['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "size_55 = {'a': 1, 'b': 2}\nprint(size_55.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000119",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "length_56 = {'a': 1, 'b': 2}\nprint(length_56['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(length_56['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "length_56 = {'a': 1, 'b': 2}\nprint(length_56.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000120",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "width_57 = {'a': 1, 'b': 2}\nprint(width_57['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(width_57['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "width_57 = {'a': 1, 'b': 2}\nprint(width_57.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000121",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "height_58 = {'a': 1, 'b': 2}\nprint(height_58['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(height_58['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "height_58 = {'a': 1, 'b': 2}\nprint(height_58.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000122",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "depth_59 = {'a': 1, 'b': 2}\nprint(depth_59['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(depth_59['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "depth_59 = {'a': 1, 'b': 2}\nprint(depth_59.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000123",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "count_60 = {'a': 1, 'b': 2}\nprint(count_60['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(count_60['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "count_60 = {'a': 1, 'b': 2}\nprint(count_60.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000124",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the KeyError from accessing a missing dictionary key.",
+    "input": {
+      "title": "KeyError",
+      "code": "total_61 = {'a': 1, 'b': 2}\nprint(total_61['c'])\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(total_61['c'])\nKeyError: 'c'"
+    },
+    "output": {
+      "technical": "A `KeyError` is raised when trying to access a dictionary key ('c') that does not exist in the dictionary.",
+      "beginner": "You looked for a label ('c') in the dictionary, but it hasn't been added yet.",
+      "analogy": "It's like trying to call a friend named 'Alice' using your phone contacts, but she isn't saved in your phone.",
+      "solution": "Use the `.get()` method which returns `None` (or a default value) instead of crashing, or check if the key exists using `in`.",
+      "prevention": "Use `.get()` when you aren't absolutely sure a key exists.",
+      "optimized_code": "total_61 = {'a': 1, 'b': 2}\nprint(total_61.get('c', 'Not found'))\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "dict",
+        "key-error"
+      ]
+    }
+  }
+]

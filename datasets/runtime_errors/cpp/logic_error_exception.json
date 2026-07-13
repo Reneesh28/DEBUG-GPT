@@ -1,0 +1,2018 @@
+[
+  {
+    "id": "CP_RUNTIME_000438",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int count_0 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int count_0 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000439",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int total_1 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int total_1 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000440",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int index_2 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int index_2 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000441",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int sum_3 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int sum_3 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000442",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int average_4 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int average_4 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000443",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int result_5 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int result_5 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000444",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int value_6 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int value_6 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000445",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int temp_7 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int temp_7 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000446",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int max_val_8 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int max_val_8 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000447",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int min_val_9 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int min_val_9 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000448",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int counter_10 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int counter_10 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000449",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int limit_11 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int limit_11 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000450",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int threshold_12 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int threshold_12 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000451",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int score_13 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int score_13 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000452",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int age_14 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int age_14 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000453",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int size_15 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int size_15 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000454",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int length_16 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int length_16 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000455",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int width_17 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int width_17 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000456",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int height_18 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int height_18 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000457",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int depth_19 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int depth_19 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000458",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int count_20 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int count_20 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000459",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int total_21 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int total_21 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000460",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int index_22 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int index_22 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000461",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int sum_23 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int sum_23 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000462",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int average_24 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int average_24 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000463",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int result_25 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int result_25 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000464",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int value_26 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int value_26 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000465",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int temp_27 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int temp_27 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000466",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int max_val_28 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int max_val_28 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000467",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int min_val_29 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int min_val_29 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000468",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int counter_30 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int counter_30 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000469",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int limit_31 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int limit_31 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000470",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int threshold_32 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int threshold_32 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000471",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int score_33 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int score_33 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000472",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int age_34 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int age_34 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000473",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int size_35 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int size_35 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000474",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int length_36 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int length_36 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000475",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int width_37 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int width_37 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000476",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int height_38 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int height_38 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000477",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int depth_39 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int depth_39 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000478",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int count_40 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int count_40 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000479",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int total_41 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int total_41 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000480",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int index_42 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int index_42 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000481",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int sum_43 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int sum_43 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000482",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int average_44 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int average_44 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000483",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int result_45 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int result_45 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000484",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int value_46 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int value_46 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000485",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int temp_47 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int temp_47 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000486",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int max_val_48 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int max_val_48 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000487",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int min_val_49 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int min_val_49 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000488",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int counter_50 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int counter_50 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000489",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int limit_51 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int limit_51 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000490",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int threshold_52 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int threshold_52 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000491",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int score_53 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int score_53 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000492",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int age_54 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int age_54 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000493",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int size_55 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int size_55 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000494",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int length_56 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int length_56 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000495",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int width_57 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int width_57 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000496",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int height_58 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int height_58 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000497",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int depth_59 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int depth_59 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000498",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int count_60 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int count_60 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000499",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int total_61 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int total_61 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000500",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Handle the exception thrown by std::stoi.",
+    "input": {
+      "title": "Uncaught Exception",
+      "code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string text = \"abc\";\n    int index_62 = std::stoi(text);\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::invalid_argument'\n  what():  stoi\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `std::stoi` function throws a `std::invalid_argument` exception because the string 'abc' cannot be converted to an integer. The exception is uncaught, causing the program to terminate.",
+      "beginner": "You tried to convert the word 'abc' into a number, which doesn't make sense, so the program panicked and crashed.",
+      "analogy": "It's like asking someone to translate 'apple' into a number. They don't know how, so they just stop working.",
+      "solution": "Use a `try-catch` block to handle the exception gracefully.",
+      "prevention": "Wrap functions that can throw exceptions in `try-catch` blocks.",
+      "optimized_code": "#include <iostream>\n#include <string>\n#include <stdexcept>\n\nint main() {\n    std::string text = \"abc\";\n    try {\n        int index_62 = std::stoi(text);\n    } catch (const std::invalid_argument& e) {\n        std::cout << \"Invalid argument: \" << e.what() << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "exception",
+        "conversion"
+      ]
+    }
+  }
+]

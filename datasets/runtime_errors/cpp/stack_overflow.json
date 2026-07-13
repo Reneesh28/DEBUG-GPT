@@ -1,0 +1,1986 @@
+[
+  {
+    "id": "CP_RUNTIME_000187",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid calculate_0() {\n    calculate_0();\n}\n\nint main() {\n    calculate_0();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `calculate_0` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid calculate_0(int limit) {\n    if (limit <= 0) return;\n    calculate_0(limit - 1);\n}\n\nint main() {\n    calculate_0(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000188",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid process_1() {\n    process_1();\n}\n\nint main() {\n    process_1();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `process_1` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid process_1(int limit) {\n    if (limit <= 0) return;\n    process_1(limit - 1);\n}\n\nint main() {\n    process_1(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000189",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid compute_2() {\n    compute_2();\n}\n\nint main() {\n    compute_2();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `compute_2` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid compute_2(int limit) {\n    if (limit <= 0) return;\n    compute_2(limit - 1);\n}\n\nint main() {\n    compute_2(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000190",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid execute_3() {\n    execute_3();\n}\n\nint main() {\n    execute_3();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `execute_3` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid execute_3(int limit) {\n    if (limit <= 0) return;\n    execute_3(limit - 1);\n}\n\nint main() {\n    execute_3(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000191",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid run_4() {\n    run_4();\n}\n\nint main() {\n    run_4();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `run_4` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid run_4(int limit) {\n    if (limit <= 0) return;\n    run_4(limit - 1);\n}\n\nint main() {\n    run_4(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000192",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid start_5() {\n    start_5();\n}\n\nint main() {\n    start_5();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `start_5` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid start_5(int limit) {\n    if (limit <= 0) return;\n    start_5(limit - 1);\n}\n\nint main() {\n    start_5(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000193",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid initialize_6() {\n    initialize_6();\n}\n\nint main() {\n    initialize_6();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `initialize_6` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid initialize_6(int limit) {\n    if (limit <= 0) return;\n    initialize_6(limit - 1);\n}\n\nint main() {\n    initialize_6(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000194",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid update_7() {\n    update_7();\n}\n\nint main() {\n    update_7();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `update_7` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid update_7(int limit) {\n    if (limit <= 0) return;\n    update_7(limit - 1);\n}\n\nint main() {\n    update_7(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000195",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid render_8() {\n    render_8();\n}\n\nint main() {\n    render_8();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `render_8` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid render_8(int limit) {\n    if (limit <= 0) return;\n    render_8(limit - 1);\n}\n\nint main() {\n    render_8(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000196",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid display_9() {\n    display_9();\n}\n\nint main() {\n    display_9();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `display_9` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid display_9(int limit) {\n    if (limit <= 0) return;\n    display_9(limit - 1);\n}\n\nint main() {\n    display_9(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000197",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid fetch_10() {\n    fetch_10();\n}\n\nint main() {\n    fetch_10();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `fetch_10` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid fetch_10(int limit) {\n    if (limit <= 0) return;\n    fetch_10(limit - 1);\n}\n\nint main() {\n    fetch_10(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000198",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid load_11() {\n    load_11();\n}\n\nint main() {\n    load_11();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `load_11` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid load_11(int limit) {\n    if (limit <= 0) return;\n    load_11(limit - 1);\n}\n\nint main() {\n    load_11(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000199",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid save_12() {\n    save_12();\n}\n\nint main() {\n    save_12();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `save_12` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid save_12(int limit) {\n    if (limit <= 0) return;\n    save_12(limit - 1);\n}\n\nint main() {\n    save_12(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000200",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid delete_13() {\n    delete_13();\n}\n\nint main() {\n    delete_13();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `delete_13` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid delete_13(int limit) {\n    if (limit <= 0) return;\n    delete_13(limit - 1);\n}\n\nint main() {\n    delete_13(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000201",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid create_14() {\n    create_14();\n}\n\nint main() {\n    create_14();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `create_14` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid create_14(int limit) {\n    if (limit <= 0) return;\n    create_14(limit - 1);\n}\n\nint main() {\n    create_14(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000202",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid read_15() {\n    read_15();\n}\n\nint main() {\n    read_15();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `read_15` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid read_15(int limit) {\n    if (limit <= 0) return;\n    read_15(limit - 1);\n}\n\nint main() {\n    read_15(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000203",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid write_16() {\n    write_16();\n}\n\nint main() {\n    write_16();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `write_16` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid write_16(int limit) {\n    if (limit <= 0) return;\n    write_16(limit - 1);\n}\n\nint main() {\n    write_16(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000204",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid parse_17() {\n    parse_17();\n}\n\nint main() {\n    parse_17();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `parse_17` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid parse_17(int limit) {\n    if (limit <= 0) return;\n    parse_17(limit - 1);\n}\n\nint main() {\n    parse_17(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000205",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid validate_18() {\n    validate_18();\n}\n\nint main() {\n    validate_18();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `validate_18` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid validate_18(int limit) {\n    if (limit <= 0) return;\n    validate_18(limit - 1);\n}\n\nint main() {\n    validate_18(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000206",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid verify_19() {\n    verify_19();\n}\n\nint main() {\n    verify_19();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `verify_19` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid verify_19(int limit) {\n    if (limit <= 0) return;\n    verify_19(limit - 1);\n}\n\nint main() {\n    verify_19(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000207",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid calculate_20() {\n    calculate_20();\n}\n\nint main() {\n    calculate_20();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `calculate_20` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid calculate_20(int limit) {\n    if (limit <= 0) return;\n    calculate_20(limit - 1);\n}\n\nint main() {\n    calculate_20(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000208",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid process_21() {\n    process_21();\n}\n\nint main() {\n    process_21();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `process_21` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid process_21(int limit) {\n    if (limit <= 0) return;\n    process_21(limit - 1);\n}\n\nint main() {\n    process_21(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000209",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid compute_22() {\n    compute_22();\n}\n\nint main() {\n    compute_22();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `compute_22` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid compute_22(int limit) {\n    if (limit <= 0) return;\n    compute_22(limit - 1);\n}\n\nint main() {\n    compute_22(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000210",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid execute_23() {\n    execute_23();\n}\n\nint main() {\n    execute_23();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `execute_23` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid execute_23(int limit) {\n    if (limit <= 0) return;\n    execute_23(limit - 1);\n}\n\nint main() {\n    execute_23(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000211",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid run_24() {\n    run_24();\n}\n\nint main() {\n    run_24();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `run_24` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid run_24(int limit) {\n    if (limit <= 0) return;\n    run_24(limit - 1);\n}\n\nint main() {\n    run_24(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000212",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid start_25() {\n    start_25();\n}\n\nint main() {\n    start_25();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `start_25` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid start_25(int limit) {\n    if (limit <= 0) return;\n    start_25(limit - 1);\n}\n\nint main() {\n    start_25(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000213",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid initialize_26() {\n    initialize_26();\n}\n\nint main() {\n    initialize_26();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `initialize_26` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid initialize_26(int limit) {\n    if (limit <= 0) return;\n    initialize_26(limit - 1);\n}\n\nint main() {\n    initialize_26(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000214",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid update_27() {\n    update_27();\n}\n\nint main() {\n    update_27();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `update_27` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid update_27(int limit) {\n    if (limit <= 0) return;\n    update_27(limit - 1);\n}\n\nint main() {\n    update_27(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000215",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid render_28() {\n    render_28();\n}\n\nint main() {\n    render_28();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `render_28` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid render_28(int limit) {\n    if (limit <= 0) return;\n    render_28(limit - 1);\n}\n\nint main() {\n    render_28(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000216",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid display_29() {\n    display_29();\n}\n\nint main() {\n    display_29();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `display_29` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid display_29(int limit) {\n    if (limit <= 0) return;\n    display_29(limit - 1);\n}\n\nint main() {\n    display_29(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000217",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid fetch_30() {\n    fetch_30();\n}\n\nint main() {\n    fetch_30();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `fetch_30` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid fetch_30(int limit) {\n    if (limit <= 0) return;\n    fetch_30(limit - 1);\n}\n\nint main() {\n    fetch_30(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000218",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid load_31() {\n    load_31();\n}\n\nint main() {\n    load_31();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `load_31` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid load_31(int limit) {\n    if (limit <= 0) return;\n    load_31(limit - 1);\n}\n\nint main() {\n    load_31(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000219",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid save_32() {\n    save_32();\n}\n\nint main() {\n    save_32();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `save_32` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid save_32(int limit) {\n    if (limit <= 0) return;\n    save_32(limit - 1);\n}\n\nint main() {\n    save_32(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000220",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid delete_33() {\n    delete_33();\n}\n\nint main() {\n    delete_33();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `delete_33` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid delete_33(int limit) {\n    if (limit <= 0) return;\n    delete_33(limit - 1);\n}\n\nint main() {\n    delete_33(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000221",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid create_34() {\n    create_34();\n}\n\nint main() {\n    create_34();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `create_34` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid create_34(int limit) {\n    if (limit <= 0) return;\n    create_34(limit - 1);\n}\n\nint main() {\n    create_34(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000222",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid read_35() {\n    read_35();\n}\n\nint main() {\n    read_35();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `read_35` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid read_35(int limit) {\n    if (limit <= 0) return;\n    read_35(limit - 1);\n}\n\nint main() {\n    read_35(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000223",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid write_36() {\n    write_36();\n}\n\nint main() {\n    write_36();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `write_36` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid write_36(int limit) {\n    if (limit <= 0) return;\n    write_36(limit - 1);\n}\n\nint main() {\n    write_36(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000224",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid parse_37() {\n    parse_37();\n}\n\nint main() {\n    parse_37();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `parse_37` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid parse_37(int limit) {\n    if (limit <= 0) return;\n    parse_37(limit - 1);\n}\n\nint main() {\n    parse_37(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000225",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid validate_38() {\n    validate_38();\n}\n\nint main() {\n    validate_38();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `validate_38` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid validate_38(int limit) {\n    if (limit <= 0) return;\n    validate_38(limit - 1);\n}\n\nint main() {\n    validate_38(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000226",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid verify_39() {\n    verify_39();\n}\n\nint main() {\n    verify_39();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `verify_39` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid verify_39(int limit) {\n    if (limit <= 0) return;\n    verify_39(limit - 1);\n}\n\nint main() {\n    verify_39(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000227",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid calculate_40() {\n    calculate_40();\n}\n\nint main() {\n    calculate_40();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `calculate_40` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid calculate_40(int limit) {\n    if (limit <= 0) return;\n    calculate_40(limit - 1);\n}\n\nint main() {\n    calculate_40(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000228",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid process_41() {\n    process_41();\n}\n\nint main() {\n    process_41();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `process_41` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid process_41(int limit) {\n    if (limit <= 0) return;\n    process_41(limit - 1);\n}\n\nint main() {\n    process_41(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000229",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid compute_42() {\n    compute_42();\n}\n\nint main() {\n    compute_42();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `compute_42` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid compute_42(int limit) {\n    if (limit <= 0) return;\n    compute_42(limit - 1);\n}\n\nint main() {\n    compute_42(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000230",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid execute_43() {\n    execute_43();\n}\n\nint main() {\n    execute_43();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `execute_43` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid execute_43(int limit) {\n    if (limit <= 0) return;\n    execute_43(limit - 1);\n}\n\nint main() {\n    execute_43(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000231",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid run_44() {\n    run_44();\n}\n\nint main() {\n    run_44();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `run_44` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid run_44(int limit) {\n    if (limit <= 0) return;\n    run_44(limit - 1);\n}\n\nint main() {\n    run_44(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000232",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid start_45() {\n    start_45();\n}\n\nint main() {\n    start_45();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `start_45` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid start_45(int limit) {\n    if (limit <= 0) return;\n    start_45(limit - 1);\n}\n\nint main() {\n    start_45(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000233",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid initialize_46() {\n    initialize_46();\n}\n\nint main() {\n    initialize_46();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `initialize_46` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid initialize_46(int limit) {\n    if (limit <= 0) return;\n    initialize_46(limit - 1);\n}\n\nint main() {\n    initialize_46(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000234",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid update_47() {\n    update_47();\n}\n\nint main() {\n    update_47();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `update_47` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid update_47(int limit) {\n    if (limit <= 0) return;\n    update_47(limit - 1);\n}\n\nint main() {\n    update_47(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000235",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid render_48() {\n    render_48();\n}\n\nint main() {\n    render_48();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `render_48` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid render_48(int limit) {\n    if (limit <= 0) return;\n    render_48(limit - 1);\n}\n\nint main() {\n    render_48(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000236",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid display_49() {\n    display_49();\n}\n\nint main() {\n    display_49();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `display_49` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid display_49(int limit) {\n    if (limit <= 0) return;\n    display_49(limit - 1);\n}\n\nint main() {\n    display_49(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000237",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid fetch_50() {\n    fetch_50();\n}\n\nint main() {\n    fetch_50();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `fetch_50` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid fetch_50(int limit) {\n    if (limit <= 0) return;\n    fetch_50(limit - 1);\n}\n\nint main() {\n    fetch_50(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000238",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid load_51() {\n    load_51();\n}\n\nint main() {\n    load_51();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `load_51` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid load_51(int limit) {\n    if (limit <= 0) return;\n    load_51(limit - 1);\n}\n\nint main() {\n    load_51(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000239",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid save_52() {\n    save_52();\n}\n\nint main() {\n    save_52();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `save_52` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid save_52(int limit) {\n    if (limit <= 0) return;\n    save_52(limit - 1);\n}\n\nint main() {\n    save_52(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000240",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid delete_53() {\n    delete_53();\n}\n\nint main() {\n    delete_53();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `delete_53` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid delete_53(int limit) {\n    if (limit <= 0) return;\n    delete_53(limit - 1);\n}\n\nint main() {\n    delete_53(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000241",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid create_54() {\n    create_54();\n}\n\nint main() {\n    create_54();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `create_54` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid create_54(int limit) {\n    if (limit <= 0) return;\n    create_54(limit - 1);\n}\n\nint main() {\n    create_54(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000242",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid read_55() {\n    read_55();\n}\n\nint main() {\n    read_55();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `read_55` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid read_55(int limit) {\n    if (limit <= 0) return;\n    read_55(limit - 1);\n}\n\nint main() {\n    read_55(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000243",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid write_56() {\n    write_56();\n}\n\nint main() {\n    write_56();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `write_56` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid write_56(int limit) {\n    if (limit <= 0) return;\n    write_56(limit - 1);\n}\n\nint main() {\n    write_56(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000244",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid parse_57() {\n    parse_57();\n}\n\nint main() {\n    parse_57();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `parse_57` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid parse_57(int limit) {\n    if (limit <= 0) return;\n    parse_57(limit - 1);\n}\n\nint main() {\n    parse_57(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000245",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid validate_58() {\n    validate_58();\n}\n\nint main() {\n    validate_58();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `validate_58` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid validate_58(int limit) {\n    if (limit <= 0) return;\n    validate_58(limit - 1);\n}\n\nint main() {\n    validate_58(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000246",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid verify_59() {\n    verify_59();\n}\n\nint main() {\n    verify_59();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `verify_59` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid verify_59(int limit) {\n    if (limit <= 0) return;\n    verify_59(limit - 1);\n}\n\nint main() {\n    verify_59(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000247",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid calculate_60() {\n    calculate_60();\n}\n\nint main() {\n    calculate_60();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `calculate_60` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid calculate_60(int limit) {\n    if (limit <= 0) return;\n    calculate_60(limit - 1);\n}\n\nint main() {\n    calculate_60(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000248",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion causing a stack overflow.",
+    "input": {
+      "title": "Infinite Recursion",
+      "code": "#include <iostream>\n\nvoid process_61() {\n    process_61();\n}\n\nint main() {\n    process_61();\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped) // Due to stack exhaustion"
+    },
+    "output": {
+      "technical": "The function `process_61` calls itself infinitely without a base case. This exhausts the call stack, resulting in a stack overflow and a segmentation fault.",
+      "beginner": "Your function keeps calling itself forever, and the computer runs out of memory to keep track of it.",
+      "analogy": "It's like two mirrors facing each other, creating an endless tunnel of reflections. Eventually, it has to stop.",
+      "solution": "Add a base case to stop the recursion.",
+      "prevention": "Always define a termination condition (base case) for recursive functions.",
+      "optimized_code": "#include <iostream>\n\nvoid process_61(int limit) {\n    if (limit <= 0) return;\n    process_61(limit - 1);\n}\n\nint main() {\n    process_61(5);\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "recursion",
+        "stack-overflow"
+      ]
+    }
+  }
+]

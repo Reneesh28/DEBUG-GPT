@@ -1,0 +1,2048 @@
+[
+  {
+    "id": "CP_RUNTIME_000001",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* count_0 = nullptr;\n    std::cout << *count_0 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `count_0` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`count_0`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `count_0` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* count_0 = &val;\n    std::cout << *count_0 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000002",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* total_1 = nullptr;\n    std::cout << *total_1 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `total_1` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`total_1`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `total_1` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* total_1 = &val;\n    std::cout << *total_1 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000003",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* index_2 = nullptr;\n    std::cout << *index_2 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `index_2` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`index_2`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `index_2` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* index_2 = &val;\n    std::cout << *index_2 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000004",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* sum_3 = nullptr;\n    std::cout << *sum_3 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `sum_3` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`sum_3`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `sum_3` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* sum_3 = &val;\n    std::cout << *sum_3 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000005",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* average_4 = nullptr;\n    std::cout << *average_4 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `average_4` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`average_4`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `average_4` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* average_4 = &val;\n    std::cout << *average_4 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000006",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* result_5 = nullptr;\n    std::cout << *result_5 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `result_5` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`result_5`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `result_5` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* result_5 = &val;\n    std::cout << *result_5 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000007",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* value_6 = nullptr;\n    std::cout << *value_6 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `value_6` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`value_6`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `value_6` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* value_6 = &val;\n    std::cout << *value_6 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000008",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* temp_7 = nullptr;\n    std::cout << *temp_7 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `temp_7` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`temp_7`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `temp_7` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* temp_7 = &val;\n    std::cout << *temp_7 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000009",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* max_val_8 = nullptr;\n    std::cout << *max_val_8 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `max_val_8` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`max_val_8`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `max_val_8` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* max_val_8 = &val;\n    std::cout << *max_val_8 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000010",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* min_val_9 = nullptr;\n    std::cout << *min_val_9 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `min_val_9` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`min_val_9`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `min_val_9` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* min_val_9 = &val;\n    std::cout << *min_val_9 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000011",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* counter_10 = nullptr;\n    std::cout << *counter_10 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `counter_10` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`counter_10`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `counter_10` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* counter_10 = &val;\n    std::cout << *counter_10 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000012",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* limit_11 = nullptr;\n    std::cout << *limit_11 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `limit_11` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`limit_11`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `limit_11` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* limit_11 = &val;\n    std::cout << *limit_11 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000013",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* threshold_12 = nullptr;\n    std::cout << *threshold_12 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `threshold_12` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`threshold_12`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `threshold_12` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* threshold_12 = &val;\n    std::cout << *threshold_12 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000014",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* score_13 = nullptr;\n    std::cout << *score_13 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `score_13` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`score_13`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `score_13` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* score_13 = &val;\n    std::cout << *score_13 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000015",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* age_14 = nullptr;\n    std::cout << *age_14 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `age_14` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`age_14`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `age_14` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* age_14 = &val;\n    std::cout << *age_14 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000016",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* size_15 = nullptr;\n    std::cout << *size_15 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `size_15` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`size_15`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `size_15` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* size_15 = &val;\n    std::cout << *size_15 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000017",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* length_16 = nullptr;\n    std::cout << *length_16 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `length_16` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`length_16`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `length_16` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* length_16 = &val;\n    std::cout << *length_16 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000018",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* width_17 = nullptr;\n    std::cout << *width_17 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `width_17` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`width_17`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `width_17` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* width_17 = &val;\n    std::cout << *width_17 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000019",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* height_18 = nullptr;\n    std::cout << *height_18 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `height_18` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`height_18`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `height_18` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* height_18 = &val;\n    std::cout << *height_18 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000020",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* depth_19 = nullptr;\n    std::cout << *depth_19 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `depth_19` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`depth_19`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `depth_19` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* depth_19 = &val;\n    std::cout << *depth_19 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000021",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* count_20 = nullptr;\n    std::cout << *count_20 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `count_20` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`count_20`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `count_20` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* count_20 = &val;\n    std::cout << *count_20 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000022",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* total_21 = nullptr;\n    std::cout << *total_21 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `total_21` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`total_21`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `total_21` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* total_21 = &val;\n    std::cout << *total_21 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000023",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* index_22 = nullptr;\n    std::cout << *index_22 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `index_22` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`index_22`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `index_22` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* index_22 = &val;\n    std::cout << *index_22 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000024",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* sum_23 = nullptr;\n    std::cout << *sum_23 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `sum_23` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`sum_23`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `sum_23` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* sum_23 = &val;\n    std::cout << *sum_23 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000025",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* average_24 = nullptr;\n    std::cout << *average_24 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `average_24` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`average_24`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `average_24` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* average_24 = &val;\n    std::cout << *average_24 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000026",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* result_25 = nullptr;\n    std::cout << *result_25 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `result_25` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`result_25`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `result_25` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* result_25 = &val;\n    std::cout << *result_25 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000027",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* value_26 = nullptr;\n    std::cout << *value_26 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `value_26` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`value_26`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `value_26` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* value_26 = &val;\n    std::cout << *value_26 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000028",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* temp_27 = nullptr;\n    std::cout << *temp_27 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `temp_27` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`temp_27`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `temp_27` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* temp_27 = &val;\n    std::cout << *temp_27 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000029",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* max_val_28 = nullptr;\n    std::cout << *max_val_28 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `max_val_28` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`max_val_28`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `max_val_28` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* max_val_28 = &val;\n    std::cout << *max_val_28 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000030",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* min_val_29 = nullptr;\n    std::cout << *min_val_29 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `min_val_29` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`min_val_29`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `min_val_29` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* min_val_29 = &val;\n    std::cout << *min_val_29 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000031",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* counter_30 = nullptr;\n    std::cout << *counter_30 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `counter_30` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`counter_30`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `counter_30` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* counter_30 = &val;\n    std::cout << *counter_30 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000032",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* limit_31 = nullptr;\n    std::cout << *limit_31 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `limit_31` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`limit_31`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `limit_31` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* limit_31 = &val;\n    std::cout << *limit_31 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000033",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* threshold_32 = nullptr;\n    std::cout << *threshold_32 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `threshold_32` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`threshold_32`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `threshold_32` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* threshold_32 = &val;\n    std::cout << *threshold_32 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000034",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* score_33 = nullptr;\n    std::cout << *score_33 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `score_33` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`score_33`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `score_33` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* score_33 = &val;\n    std::cout << *score_33 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000035",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* age_34 = nullptr;\n    std::cout << *age_34 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `age_34` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`age_34`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `age_34` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* age_34 = &val;\n    std::cout << *age_34 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000036",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* size_35 = nullptr;\n    std::cout << *size_35 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `size_35` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`size_35`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `size_35` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* size_35 = &val;\n    std::cout << *size_35 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000037",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* length_36 = nullptr;\n    std::cout << *length_36 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `length_36` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`length_36`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `length_36` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* length_36 = &val;\n    std::cout << *length_36 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000038",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* width_37 = nullptr;\n    std::cout << *width_37 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `width_37` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`width_37`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `width_37` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* width_37 = &val;\n    std::cout << *width_37 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000039",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* height_38 = nullptr;\n    std::cout << *height_38 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `height_38` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`height_38`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `height_38` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* height_38 = &val;\n    std::cout << *height_38 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000040",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* depth_39 = nullptr;\n    std::cout << *depth_39 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `depth_39` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`depth_39`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `depth_39` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* depth_39 = &val;\n    std::cout << *depth_39 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000041",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* count_40 = nullptr;\n    std::cout << *count_40 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `count_40` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`count_40`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `count_40` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* count_40 = &val;\n    std::cout << *count_40 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000042",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* total_41 = nullptr;\n    std::cout << *total_41 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `total_41` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`total_41`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `total_41` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* total_41 = &val;\n    std::cout << *total_41 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000043",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* index_42 = nullptr;\n    std::cout << *index_42 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `index_42` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`index_42`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `index_42` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* index_42 = &val;\n    std::cout << *index_42 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000044",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* sum_43 = nullptr;\n    std::cout << *sum_43 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `sum_43` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`sum_43`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `sum_43` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* sum_43 = &val;\n    std::cout << *sum_43 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000045",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* average_44 = nullptr;\n    std::cout << *average_44 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `average_44` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`average_44`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `average_44` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* average_44 = &val;\n    std::cout << *average_44 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000046",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* result_45 = nullptr;\n    std::cout << *result_45 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `result_45` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`result_45`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `result_45` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* result_45 = &val;\n    std::cout << *result_45 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000047",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* value_46 = nullptr;\n    std::cout << *value_46 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `value_46` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`value_46`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `value_46` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* value_46 = &val;\n    std::cout << *value_46 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000048",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* temp_47 = nullptr;\n    std::cout << *temp_47 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `temp_47` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`temp_47`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `temp_47` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* temp_47 = &val;\n    std::cout << *temp_47 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000049",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* max_val_48 = nullptr;\n    std::cout << *max_val_48 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `max_val_48` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`max_val_48`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `max_val_48` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* max_val_48 = &val;\n    std::cout << *max_val_48 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000050",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* min_val_49 = nullptr;\n    std::cout << *min_val_49 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `min_val_49` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`min_val_49`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `min_val_49` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* min_val_49 = &val;\n    std::cout << *min_val_49 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000051",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* counter_50 = nullptr;\n    std::cout << *counter_50 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `counter_50` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`counter_50`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `counter_50` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* counter_50 = &val;\n    std::cout << *counter_50 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000052",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* limit_51 = nullptr;\n    std::cout << *limit_51 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `limit_51` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`limit_51`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `limit_51` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* limit_51 = &val;\n    std::cout << *limit_51 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000053",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* threshold_52 = nullptr;\n    std::cout << *threshold_52 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `threshold_52` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`threshold_52`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `threshold_52` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* threshold_52 = &val;\n    std::cout << *threshold_52 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000054",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* score_53 = nullptr;\n    std::cout << *score_53 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `score_53` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`score_53`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `score_53` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* score_53 = &val;\n    std::cout << *score_53 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000055",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* age_54 = nullptr;\n    std::cout << *age_54 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `age_54` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`age_54`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `age_54` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* age_54 = &val;\n    std::cout << *age_54 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000056",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* size_55 = nullptr;\n    std::cout << *size_55 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `size_55` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`size_55`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `size_55` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* size_55 = &val;\n    std::cout << *size_55 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000057",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* length_56 = nullptr;\n    std::cout << *length_56 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `length_56` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`length_56`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `length_56` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* length_56 = &val;\n    std::cout << *length_56 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000058",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* width_57 = nullptr;\n    std::cout << *width_57 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `width_57` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`width_57`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `width_57` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* width_57 = &val;\n    std::cout << *width_57 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000059",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* height_58 = nullptr;\n    std::cout << *height_58 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `height_58` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`height_58`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `height_58` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* height_58 = &val;\n    std::cout << *height_58 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000060",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* depth_59 = nullptr;\n    std::cout << *depth_59 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `depth_59` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`depth_59`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `depth_59` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* depth_59 = &val;\n    std::cout << *depth_59 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000061",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* count_60 = nullptr;\n    std::cout << *count_60 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `count_60` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`count_60`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `count_60` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* count_60 = &val;\n    std::cout << *count_60 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000062",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the segmentation fault caused by dereferencing a null pointer.",
+    "input": {
+      "title": "Null Pointer Dereference",
+      "code": "#include <iostream>\n\nint main() {\n    int* total_61 = nullptr;\n    std::cout << *total_61 << std::endl;\n    return 0;\n}\n",
+      "error_message": "Segmentation fault (core dumped)"
+    },
+    "output": {
+      "technical": "A segmentation fault occurs because the pointer `total_61` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.",
+      "beginner": "You are trying to read a value from a pointer (`total_61`) that doesn't point to anything (it's null).",
+      "analogy": "It's like trying to open a door that doesn't exist. You end up walking into a wall.",
+      "solution": "Ensure `total_61` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.",
+      "prevention": "Always initialize pointers and check if they are null before dereferencing them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int val = 10;\n    int* total_61 = &val;\n    std::cout << *total_61 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "pointers",
+        "segmentation-fault",
+        "memory"
+      ]
+    }
+  }
+]

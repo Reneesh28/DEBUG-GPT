@@ -1,0 +1,2048 @@
+[
+  {
+    "id": "CP_RUNTIME_000125",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_0 = {1, 2, 3};\n    std::cout << count_0.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_0 = {1, 2, 3};\n    if (count_0.size() > 5) {\n        std::cout << count_0.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000126",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> total_1 = {1, 2, 3};\n    std::cout << total_1.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> total_1 = {1, 2, 3};\n    if (total_1.size() > 5) {\n        std::cout << total_1.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000127",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> index_2 = {1, 2, 3};\n    std::cout << index_2.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> index_2 = {1, 2, 3};\n    if (index_2.size() > 5) {\n        std::cout << index_2.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000128",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> sum_3 = {1, 2, 3};\n    std::cout << sum_3.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> sum_3 = {1, 2, 3};\n    if (sum_3.size() > 5) {\n        std::cout << sum_3.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000129",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> average_4 = {1, 2, 3};\n    std::cout << average_4.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> average_4 = {1, 2, 3};\n    if (average_4.size() > 5) {\n        std::cout << average_4.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000130",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> result_5 = {1, 2, 3};\n    std::cout << result_5.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> result_5 = {1, 2, 3};\n    if (result_5.size() > 5) {\n        std::cout << result_5.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000131",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> value_6 = {1, 2, 3};\n    std::cout << value_6.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> value_6 = {1, 2, 3};\n    if (value_6.size() > 5) {\n        std::cout << value_6.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000132",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> temp_7 = {1, 2, 3};\n    std::cout << temp_7.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> temp_7 = {1, 2, 3};\n    if (temp_7.size() > 5) {\n        std::cout << temp_7.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000133",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> max_val_8 = {1, 2, 3};\n    std::cout << max_val_8.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> max_val_8 = {1, 2, 3};\n    if (max_val_8.size() > 5) {\n        std::cout << max_val_8.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000134",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> min_val_9 = {1, 2, 3};\n    std::cout << min_val_9.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> min_val_9 = {1, 2, 3};\n    if (min_val_9.size() > 5) {\n        std::cout << min_val_9.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000135",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> counter_10 = {1, 2, 3};\n    std::cout << counter_10.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> counter_10 = {1, 2, 3};\n    if (counter_10.size() > 5) {\n        std::cout << counter_10.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000136",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> limit_11 = {1, 2, 3};\n    std::cout << limit_11.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> limit_11 = {1, 2, 3};\n    if (limit_11.size() > 5) {\n        std::cout << limit_11.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000137",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> threshold_12 = {1, 2, 3};\n    std::cout << threshold_12.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> threshold_12 = {1, 2, 3};\n    if (threshold_12.size() > 5) {\n        std::cout << threshold_12.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000138",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> score_13 = {1, 2, 3};\n    std::cout << score_13.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> score_13 = {1, 2, 3};\n    if (score_13.size() > 5) {\n        std::cout << score_13.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000139",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> age_14 = {1, 2, 3};\n    std::cout << age_14.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> age_14 = {1, 2, 3};\n    if (age_14.size() > 5) {\n        std::cout << age_14.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000140",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> size_15 = {1, 2, 3};\n    std::cout << size_15.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> size_15 = {1, 2, 3};\n    if (size_15.size() > 5) {\n        std::cout << size_15.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000141",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> length_16 = {1, 2, 3};\n    std::cout << length_16.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> length_16 = {1, 2, 3};\n    if (length_16.size() > 5) {\n        std::cout << length_16.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000142",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> width_17 = {1, 2, 3};\n    std::cout << width_17.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> width_17 = {1, 2, 3};\n    if (width_17.size() > 5) {\n        std::cout << width_17.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000143",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> height_18 = {1, 2, 3};\n    std::cout << height_18.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> height_18 = {1, 2, 3};\n    if (height_18.size() > 5) {\n        std::cout << height_18.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000144",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> depth_19 = {1, 2, 3};\n    std::cout << depth_19.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> depth_19 = {1, 2, 3};\n    if (depth_19.size() > 5) {\n        std::cout << depth_19.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000145",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_20 = {1, 2, 3};\n    std::cout << count_20.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_20 = {1, 2, 3};\n    if (count_20.size() > 5) {\n        std::cout << count_20.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000146",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> total_21 = {1, 2, 3};\n    std::cout << total_21.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> total_21 = {1, 2, 3};\n    if (total_21.size() > 5) {\n        std::cout << total_21.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000147",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> index_22 = {1, 2, 3};\n    std::cout << index_22.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> index_22 = {1, 2, 3};\n    if (index_22.size() > 5) {\n        std::cout << index_22.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000148",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> sum_23 = {1, 2, 3};\n    std::cout << sum_23.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> sum_23 = {1, 2, 3};\n    if (sum_23.size() > 5) {\n        std::cout << sum_23.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000149",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> average_24 = {1, 2, 3};\n    std::cout << average_24.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> average_24 = {1, 2, 3};\n    if (average_24.size() > 5) {\n        std::cout << average_24.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000150",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> result_25 = {1, 2, 3};\n    std::cout << result_25.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> result_25 = {1, 2, 3};\n    if (result_25.size() > 5) {\n        std::cout << result_25.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000151",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> value_26 = {1, 2, 3};\n    std::cout << value_26.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> value_26 = {1, 2, 3};\n    if (value_26.size() > 5) {\n        std::cout << value_26.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000152",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> temp_27 = {1, 2, 3};\n    std::cout << temp_27.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> temp_27 = {1, 2, 3};\n    if (temp_27.size() > 5) {\n        std::cout << temp_27.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000153",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> max_val_28 = {1, 2, 3};\n    std::cout << max_val_28.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> max_val_28 = {1, 2, 3};\n    if (max_val_28.size() > 5) {\n        std::cout << max_val_28.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000154",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> min_val_29 = {1, 2, 3};\n    std::cout << min_val_29.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> min_val_29 = {1, 2, 3};\n    if (min_val_29.size() > 5) {\n        std::cout << min_val_29.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000155",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> counter_30 = {1, 2, 3};\n    std::cout << counter_30.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> counter_30 = {1, 2, 3};\n    if (counter_30.size() > 5) {\n        std::cout << counter_30.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000156",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> limit_31 = {1, 2, 3};\n    std::cout << limit_31.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> limit_31 = {1, 2, 3};\n    if (limit_31.size() > 5) {\n        std::cout << limit_31.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000157",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> threshold_32 = {1, 2, 3};\n    std::cout << threshold_32.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> threshold_32 = {1, 2, 3};\n    if (threshold_32.size() > 5) {\n        std::cout << threshold_32.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000158",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> score_33 = {1, 2, 3};\n    std::cout << score_33.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> score_33 = {1, 2, 3};\n    if (score_33.size() > 5) {\n        std::cout << score_33.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000159",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> age_34 = {1, 2, 3};\n    std::cout << age_34.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> age_34 = {1, 2, 3};\n    if (age_34.size() > 5) {\n        std::cout << age_34.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000160",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> size_35 = {1, 2, 3};\n    std::cout << size_35.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> size_35 = {1, 2, 3};\n    if (size_35.size() > 5) {\n        std::cout << size_35.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000161",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> length_36 = {1, 2, 3};\n    std::cout << length_36.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> length_36 = {1, 2, 3};\n    if (length_36.size() > 5) {\n        std::cout << length_36.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000162",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> width_37 = {1, 2, 3};\n    std::cout << width_37.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> width_37 = {1, 2, 3};\n    if (width_37.size() > 5) {\n        std::cout << width_37.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000163",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> height_38 = {1, 2, 3};\n    std::cout << height_38.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> height_38 = {1, 2, 3};\n    if (height_38.size() > 5) {\n        std::cout << height_38.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000164",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> depth_39 = {1, 2, 3};\n    std::cout << depth_39.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> depth_39 = {1, 2, 3};\n    if (depth_39.size() > 5) {\n        std::cout << depth_39.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000165",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_40 = {1, 2, 3};\n    std::cout << count_40.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_40 = {1, 2, 3};\n    if (count_40.size() > 5) {\n        std::cout << count_40.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000166",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> total_41 = {1, 2, 3};\n    std::cout << total_41.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> total_41 = {1, 2, 3};\n    if (total_41.size() > 5) {\n        std::cout << total_41.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000167",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> index_42 = {1, 2, 3};\n    std::cout << index_42.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> index_42 = {1, 2, 3};\n    if (index_42.size() > 5) {\n        std::cout << index_42.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000168",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> sum_43 = {1, 2, 3};\n    std::cout << sum_43.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> sum_43 = {1, 2, 3};\n    if (sum_43.size() > 5) {\n        std::cout << sum_43.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000169",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> average_44 = {1, 2, 3};\n    std::cout << average_44.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> average_44 = {1, 2, 3};\n    if (average_44.size() > 5) {\n        std::cout << average_44.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000170",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> result_45 = {1, 2, 3};\n    std::cout << result_45.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> result_45 = {1, 2, 3};\n    if (result_45.size() > 5) {\n        std::cout << result_45.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000171",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> value_46 = {1, 2, 3};\n    std::cout << value_46.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> value_46 = {1, 2, 3};\n    if (value_46.size() > 5) {\n        std::cout << value_46.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000172",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> temp_47 = {1, 2, 3};\n    std::cout << temp_47.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> temp_47 = {1, 2, 3};\n    if (temp_47.size() > 5) {\n        std::cout << temp_47.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000173",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> max_val_48 = {1, 2, 3};\n    std::cout << max_val_48.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> max_val_48 = {1, 2, 3};\n    if (max_val_48.size() > 5) {\n        std::cout << max_val_48.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000174",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> min_val_49 = {1, 2, 3};\n    std::cout << min_val_49.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> min_val_49 = {1, 2, 3};\n    if (min_val_49.size() > 5) {\n        std::cout << min_val_49.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000175",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> counter_50 = {1, 2, 3};\n    std::cout << counter_50.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> counter_50 = {1, 2, 3};\n    if (counter_50.size() > 5) {\n        std::cout << counter_50.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000176",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> limit_51 = {1, 2, 3};\n    std::cout << limit_51.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> limit_51 = {1, 2, 3};\n    if (limit_51.size() > 5) {\n        std::cout << limit_51.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000177",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> threshold_52 = {1, 2, 3};\n    std::cout << threshold_52.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> threshold_52 = {1, 2, 3};\n    if (threshold_52.size() > 5) {\n        std::cout << threshold_52.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000178",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> score_53 = {1, 2, 3};\n    std::cout << score_53.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> score_53 = {1, 2, 3};\n    if (score_53.size() > 5) {\n        std::cout << score_53.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000179",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> age_54 = {1, 2, 3};\n    std::cout << age_54.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> age_54 = {1, 2, 3};\n    if (age_54.size() > 5) {\n        std::cout << age_54.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000180",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> size_55 = {1, 2, 3};\n    std::cout << size_55.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> size_55 = {1, 2, 3};\n    if (size_55.size() > 5) {\n        std::cout << size_55.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000181",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> length_56 = {1, 2, 3};\n    std::cout << length_56.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> length_56 = {1, 2, 3};\n    if (length_56.size() > 5) {\n        std::cout << length_56.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000182",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> width_57 = {1, 2, 3};\n    std::cout << width_57.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> width_57 = {1, 2, 3};\n    if (width_57.size() > 5) {\n        std::cout << width_57.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000183",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> height_58 = {1, 2, 3};\n    std::cout << height_58.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> height_58 = {1, 2, 3};\n    if (height_58.size() > 5) {\n        std::cout << height_58.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000184",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> depth_59 = {1, 2, 3};\n    std::cout << depth_59.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> depth_59 = {1, 2, 3};\n    if (depth_59.size() > 5) {\n        std::cout << depth_59.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000185",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_60 = {1, 2, 3};\n    std::cout << count_60.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> count_60 = {1, 2, 3};\n    if (count_60.size() > 5) {\n        std::cout << count_60.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000186",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the array index out of bounds error.",
+    "input": {
+      "title": "Vector Out of Bounds",
+      "code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> total_61 = {1, 2, 3};\n    std::cout << total_61.at(5) << std::endl;\n    return 0;\n}\n",
+      "error_message": "terminate called after throwing an instance of 'std::out_of_range'\n  what():  vector::_M_range_check: __n (which is 5) >= this->size() (which is 3)\nAborted (core dumped)"
+    },
+    "output": {
+      "technical": "The `at()` method performs bounds checking and throws `std::out_of_range` because the index 5 is greater than or equal to the vector's size (3).",
+      "beginner": "You are trying to access the 6th item in a list that only has 3 items.",
+      "analogy": "It's like trying to open the 5th drawer in a cabinet that only has 3 drawers.",
+      "solution": "Ensure the index used to access the vector is less than its size.",
+      "prevention": "Use bounds-checking methods like `at()` or ensure your loop bounds are strictly less than `size()`.",
+      "optimized_code": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> total_61 = {1, 2, 3};\n    if (total_61.size() > 5) {\n        std::cout << total_61.at(5) << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "vector",
+        "out-of-bounds",
+        "exception"
+      ]
+    }
+  }
+]

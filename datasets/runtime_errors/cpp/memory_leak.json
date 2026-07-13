@@ -1,0 +1,2018 @@
+[
+  {
+    "id": "CP_RUNTIME_000249",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* count_0 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `count_0`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] count_0;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> count_0(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000250",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* total_1 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `total_1`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] total_1;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> total_1(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000251",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* index_2 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `index_2`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] index_2;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> index_2(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000252",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* sum_3 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `sum_3`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] sum_3;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> sum_3(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000253",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* average_4 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `average_4`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] average_4;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> average_4(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000254",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* result_5 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `result_5`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] result_5;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> result_5(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000255",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* value_6 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `value_6`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] value_6;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> value_6(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000256",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* temp_7 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `temp_7`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] temp_7;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> temp_7(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000257",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* max_val_8 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `max_val_8`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] max_val_8;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> max_val_8(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000258",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* min_val_9 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `min_val_9`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] min_val_9;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> min_val_9(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000259",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* counter_10 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `counter_10`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] counter_10;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> counter_10(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000260",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* limit_11 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `limit_11`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] limit_11;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> limit_11(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000261",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* threshold_12 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `threshold_12`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] threshold_12;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> threshold_12(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000262",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* score_13 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `score_13`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] score_13;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> score_13(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000263",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* age_14 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `age_14`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] age_14;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> age_14(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000264",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* size_15 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `size_15`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] size_15;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> size_15(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000265",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* length_16 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `length_16`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] length_16;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> length_16(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000266",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* width_17 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `width_17`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] width_17;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> width_17(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000267",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* height_18 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `height_18`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] height_18;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> height_18(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000268",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* depth_19 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `depth_19`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] depth_19;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> depth_19(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000269",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* count_20 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `count_20`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] count_20;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> count_20(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000270",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* total_21 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `total_21`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] total_21;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> total_21(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000271",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* index_22 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `index_22`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] index_22;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> index_22(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000272",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* sum_23 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `sum_23`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] sum_23;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> sum_23(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000273",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* average_24 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `average_24`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] average_24;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> average_24(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000274",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* result_25 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `result_25`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] result_25;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> result_25(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000275",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* value_26 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `value_26`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] value_26;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> value_26(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000276",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* temp_27 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `temp_27`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] temp_27;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> temp_27(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000277",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* max_val_28 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `max_val_28`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] max_val_28;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> max_val_28(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000278",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* min_val_29 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `min_val_29`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] min_val_29;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> min_val_29(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000279",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* counter_30 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `counter_30`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] counter_30;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> counter_30(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000280",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* limit_31 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `limit_31`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] limit_31;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> limit_31(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000281",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* threshold_32 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `threshold_32`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] threshold_32;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> threshold_32(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000282",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* score_33 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `score_33`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] score_33;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> score_33(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000283",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* age_34 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `age_34`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] age_34;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> age_34(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000284",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* size_35 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `size_35`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] size_35;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> size_35(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000285",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* length_36 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `length_36`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] length_36;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> length_36(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000286",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* width_37 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `width_37`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] width_37;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> width_37(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000287",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* height_38 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `height_38`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] height_38;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> height_38(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000288",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* depth_39 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `depth_39`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] depth_39;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> depth_39(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000289",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* count_40 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `count_40`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] count_40;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> count_40(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000290",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* total_41 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `total_41`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] total_41;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> total_41(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000291",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* index_42 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `index_42`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] index_42;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> index_42(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000292",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* sum_43 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `sum_43`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] sum_43;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> sum_43(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000293",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* average_44 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `average_44`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] average_44;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> average_44(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000294",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* result_45 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `result_45`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] result_45;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> result_45(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000295",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* value_46 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `value_46`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] value_46;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> value_46(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000296",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* temp_47 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `temp_47`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] temp_47;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> temp_47(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000297",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* max_val_48 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `max_val_48`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] max_val_48;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> max_val_48(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000298",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* min_val_49 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `min_val_49`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] min_val_49;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> min_val_49(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000299",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* counter_50 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `counter_50`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] counter_50;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> counter_50(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000300",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* limit_51 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `limit_51`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] limit_51;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> limit_51(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000301",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* threshold_52 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `threshold_52`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] threshold_52;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> threshold_52(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000302",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* score_53 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `score_53`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] score_53;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> score_53(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000303",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* age_54 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `age_54`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] age_54;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> age_54(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000304",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* size_55 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `size_55`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] size_55;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> size_55(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000305",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* length_56 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `length_56`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] length_56;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> length_56(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000306",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* width_57 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `width_57`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] width_57;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> width_57(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000307",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* height_58 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `height_58`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] height_58;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> height_58(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000308",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* depth_59 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `depth_59`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] depth_59;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> depth_59(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000309",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* count_60 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `count_60`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] count_60;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> count_60(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000310",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* total_61 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `total_61`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] total_61;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> total_61(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000311",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the memory leak by deallocating memory.",
+    "input": {
+      "title": "Memory Leak",
+      "code": "#include <iostream>\n\nvoid run() {\n    int* index_62 = new int[100];\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "error_message": "Memory Leak (Detected by tools like Valgrind or AddressSanitizer, no immediate crash)"
+    },
+    "output": {
+      "technical": "Memory is allocated on the heap using `new int[100]` for `index_62`, but it is never freed using `delete[]`. This causes a memory leak.",
+      "beginner": "You borrowed memory from the computer but never gave it back. If you do this enough, the computer runs out of memory.",
+      "analogy": "It's like borrowing books from a library and never returning them. Eventually, the library runs out of books.",
+      "solution": "Use `delete[] index_62;` before the function ends, or better, use smart pointers.",
+      "prevention": "Prefer using `std::vector` or `std::unique_ptr` over raw pointers to automate memory management.",
+      "optimized_code": "#include <iostream>\n#include <memory>\n\nvoid run() {\n    std::unique_ptr<int[]> index_62(new int[100]);\n}\n\nint main() {\n    run();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "memory-leak",
+        "pointers"
+      ]
+    }
+  }
+]

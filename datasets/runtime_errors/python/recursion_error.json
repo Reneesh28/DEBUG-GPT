@@ -1,0 +1,2018 @@
+[
+  {
+    "id": "PY_RUNTIME_000438",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def calculate_0():\n    return calculate_0()\n\ncalculate_0()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    calculate_0()\n  File \"main.py\", line 2, in calculate_0\n    return calculate_0()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def calculate_0(limit):\n    if limit <= 0:\n        return\n    return calculate_0(limit - 1)\n\ncalculate_0(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000439",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def process_1():\n    return process_1()\n\nprocess_1()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    process_1()\n  File \"main.py\", line 2, in process_1\n    return process_1()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def process_1(limit):\n    if limit <= 0:\n        return\n    return process_1(limit - 1)\n\nprocess_1(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000440",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def compute_2():\n    return compute_2()\n\ncompute_2()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    compute_2()\n  File \"main.py\", line 2, in compute_2\n    return compute_2()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def compute_2(limit):\n    if limit <= 0:\n        return\n    return compute_2(limit - 1)\n\ncompute_2(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000441",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def execute_3():\n    return execute_3()\n\nexecute_3()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    execute_3()\n  File \"main.py\", line 2, in execute_3\n    return execute_3()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def execute_3(limit):\n    if limit <= 0:\n        return\n    return execute_3(limit - 1)\n\nexecute_3(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000442",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def run_4():\n    return run_4()\n\nrun_4()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    run_4()\n  File \"main.py\", line 2, in run_4\n    return run_4()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def run_4(limit):\n    if limit <= 0:\n        return\n    return run_4(limit - 1)\n\nrun_4(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000443",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def start_5():\n    return start_5()\n\nstart_5()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    start_5()\n  File \"main.py\", line 2, in start_5\n    return start_5()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def start_5(limit):\n    if limit <= 0:\n        return\n    return start_5(limit - 1)\n\nstart_5(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000444",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def initialize_6():\n    return initialize_6()\n\ninitialize_6()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    initialize_6()\n  File \"main.py\", line 2, in initialize_6\n    return initialize_6()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def initialize_6(limit):\n    if limit <= 0:\n        return\n    return initialize_6(limit - 1)\n\ninitialize_6(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000445",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def update_7():\n    return update_7()\n\nupdate_7()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    update_7()\n  File \"main.py\", line 2, in update_7\n    return update_7()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def update_7(limit):\n    if limit <= 0:\n        return\n    return update_7(limit - 1)\n\nupdate_7(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000446",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def render_8():\n    return render_8()\n\nrender_8()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    render_8()\n  File \"main.py\", line 2, in render_8\n    return render_8()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def render_8(limit):\n    if limit <= 0:\n        return\n    return render_8(limit - 1)\n\nrender_8(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000447",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def display_9():\n    return display_9()\n\ndisplay_9()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    display_9()\n  File \"main.py\", line 2, in display_9\n    return display_9()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def display_9(limit):\n    if limit <= 0:\n        return\n    return display_9(limit - 1)\n\ndisplay_9(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000448",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def fetch_10():\n    return fetch_10()\n\nfetch_10()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    fetch_10()\n  File \"main.py\", line 2, in fetch_10\n    return fetch_10()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def fetch_10(limit):\n    if limit <= 0:\n        return\n    return fetch_10(limit - 1)\n\nfetch_10(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000449",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def load_11():\n    return load_11()\n\nload_11()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    load_11()\n  File \"main.py\", line 2, in load_11\n    return load_11()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def load_11(limit):\n    if limit <= 0:\n        return\n    return load_11(limit - 1)\n\nload_11(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000450",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def save_12():\n    return save_12()\n\nsave_12()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    save_12()\n  File \"main.py\", line 2, in save_12\n    return save_12()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def save_12(limit):\n    if limit <= 0:\n        return\n    return save_12(limit - 1)\n\nsave_12(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000451",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def delete_13():\n    return delete_13()\n\ndelete_13()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    delete_13()\n  File \"main.py\", line 2, in delete_13\n    return delete_13()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def delete_13(limit):\n    if limit <= 0:\n        return\n    return delete_13(limit - 1)\n\ndelete_13(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000452",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def create_14():\n    return create_14()\n\ncreate_14()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    create_14()\n  File \"main.py\", line 2, in create_14\n    return create_14()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def create_14(limit):\n    if limit <= 0:\n        return\n    return create_14(limit - 1)\n\ncreate_14(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000453",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def read_15():\n    return read_15()\n\nread_15()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    read_15()\n  File \"main.py\", line 2, in read_15\n    return read_15()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def read_15(limit):\n    if limit <= 0:\n        return\n    return read_15(limit - 1)\n\nread_15(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000454",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def write_16():\n    return write_16()\n\nwrite_16()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    write_16()\n  File \"main.py\", line 2, in write_16\n    return write_16()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def write_16(limit):\n    if limit <= 0:\n        return\n    return write_16(limit - 1)\n\nwrite_16(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000455",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def parse_17():\n    return parse_17()\n\nparse_17()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    parse_17()\n  File \"main.py\", line 2, in parse_17\n    return parse_17()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def parse_17(limit):\n    if limit <= 0:\n        return\n    return parse_17(limit - 1)\n\nparse_17(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000456",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def validate_18():\n    return validate_18()\n\nvalidate_18()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    validate_18()\n  File \"main.py\", line 2, in validate_18\n    return validate_18()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def validate_18(limit):\n    if limit <= 0:\n        return\n    return validate_18(limit - 1)\n\nvalidate_18(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000457",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def verify_19():\n    return verify_19()\n\nverify_19()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    verify_19()\n  File \"main.py\", line 2, in verify_19\n    return verify_19()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def verify_19(limit):\n    if limit <= 0:\n        return\n    return verify_19(limit - 1)\n\nverify_19(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000458",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def calculate_20():\n    return calculate_20()\n\ncalculate_20()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    calculate_20()\n  File \"main.py\", line 2, in calculate_20\n    return calculate_20()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def calculate_20(limit):\n    if limit <= 0:\n        return\n    return calculate_20(limit - 1)\n\ncalculate_20(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000459",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def process_21():\n    return process_21()\n\nprocess_21()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    process_21()\n  File \"main.py\", line 2, in process_21\n    return process_21()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def process_21(limit):\n    if limit <= 0:\n        return\n    return process_21(limit - 1)\n\nprocess_21(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000460",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def compute_22():\n    return compute_22()\n\ncompute_22()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    compute_22()\n  File \"main.py\", line 2, in compute_22\n    return compute_22()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def compute_22(limit):\n    if limit <= 0:\n        return\n    return compute_22(limit - 1)\n\ncompute_22(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000461",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def execute_23():\n    return execute_23()\n\nexecute_23()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    execute_23()\n  File \"main.py\", line 2, in execute_23\n    return execute_23()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def execute_23(limit):\n    if limit <= 0:\n        return\n    return execute_23(limit - 1)\n\nexecute_23(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000462",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def run_24():\n    return run_24()\n\nrun_24()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    run_24()\n  File \"main.py\", line 2, in run_24\n    return run_24()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def run_24(limit):\n    if limit <= 0:\n        return\n    return run_24(limit - 1)\n\nrun_24(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000463",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def start_25():\n    return start_25()\n\nstart_25()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    start_25()\n  File \"main.py\", line 2, in start_25\n    return start_25()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def start_25(limit):\n    if limit <= 0:\n        return\n    return start_25(limit - 1)\n\nstart_25(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000464",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def initialize_26():\n    return initialize_26()\n\ninitialize_26()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    initialize_26()\n  File \"main.py\", line 2, in initialize_26\n    return initialize_26()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def initialize_26(limit):\n    if limit <= 0:\n        return\n    return initialize_26(limit - 1)\n\ninitialize_26(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000465",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def update_27():\n    return update_27()\n\nupdate_27()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    update_27()\n  File \"main.py\", line 2, in update_27\n    return update_27()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def update_27(limit):\n    if limit <= 0:\n        return\n    return update_27(limit - 1)\n\nupdate_27(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000466",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def render_28():\n    return render_28()\n\nrender_28()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    render_28()\n  File \"main.py\", line 2, in render_28\n    return render_28()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def render_28(limit):\n    if limit <= 0:\n        return\n    return render_28(limit - 1)\n\nrender_28(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000467",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def display_29():\n    return display_29()\n\ndisplay_29()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    display_29()\n  File \"main.py\", line 2, in display_29\n    return display_29()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def display_29(limit):\n    if limit <= 0:\n        return\n    return display_29(limit - 1)\n\ndisplay_29(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000468",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def fetch_30():\n    return fetch_30()\n\nfetch_30()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    fetch_30()\n  File \"main.py\", line 2, in fetch_30\n    return fetch_30()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def fetch_30(limit):\n    if limit <= 0:\n        return\n    return fetch_30(limit - 1)\n\nfetch_30(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000469",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def load_31():\n    return load_31()\n\nload_31()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    load_31()\n  File \"main.py\", line 2, in load_31\n    return load_31()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def load_31(limit):\n    if limit <= 0:\n        return\n    return load_31(limit - 1)\n\nload_31(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000470",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def save_32():\n    return save_32()\n\nsave_32()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    save_32()\n  File \"main.py\", line 2, in save_32\n    return save_32()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def save_32(limit):\n    if limit <= 0:\n        return\n    return save_32(limit - 1)\n\nsave_32(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000471",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def delete_33():\n    return delete_33()\n\ndelete_33()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    delete_33()\n  File \"main.py\", line 2, in delete_33\n    return delete_33()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def delete_33(limit):\n    if limit <= 0:\n        return\n    return delete_33(limit - 1)\n\ndelete_33(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000472",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def create_34():\n    return create_34()\n\ncreate_34()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    create_34()\n  File \"main.py\", line 2, in create_34\n    return create_34()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def create_34(limit):\n    if limit <= 0:\n        return\n    return create_34(limit - 1)\n\ncreate_34(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000473",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def read_35():\n    return read_35()\n\nread_35()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    read_35()\n  File \"main.py\", line 2, in read_35\n    return read_35()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def read_35(limit):\n    if limit <= 0:\n        return\n    return read_35(limit - 1)\n\nread_35(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000474",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def write_36():\n    return write_36()\n\nwrite_36()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    write_36()\n  File \"main.py\", line 2, in write_36\n    return write_36()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def write_36(limit):\n    if limit <= 0:\n        return\n    return write_36(limit - 1)\n\nwrite_36(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000475",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def parse_37():\n    return parse_37()\n\nparse_37()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    parse_37()\n  File \"main.py\", line 2, in parse_37\n    return parse_37()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def parse_37(limit):\n    if limit <= 0:\n        return\n    return parse_37(limit - 1)\n\nparse_37(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000476",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def validate_38():\n    return validate_38()\n\nvalidate_38()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    validate_38()\n  File \"main.py\", line 2, in validate_38\n    return validate_38()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def validate_38(limit):\n    if limit <= 0:\n        return\n    return validate_38(limit - 1)\n\nvalidate_38(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000477",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def verify_39():\n    return verify_39()\n\nverify_39()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    verify_39()\n  File \"main.py\", line 2, in verify_39\n    return verify_39()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def verify_39(limit):\n    if limit <= 0:\n        return\n    return verify_39(limit - 1)\n\nverify_39(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000478",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def calculate_40():\n    return calculate_40()\n\ncalculate_40()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    calculate_40()\n  File \"main.py\", line 2, in calculate_40\n    return calculate_40()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def calculate_40(limit):\n    if limit <= 0:\n        return\n    return calculate_40(limit - 1)\n\ncalculate_40(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000479",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def process_41():\n    return process_41()\n\nprocess_41()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    process_41()\n  File \"main.py\", line 2, in process_41\n    return process_41()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def process_41(limit):\n    if limit <= 0:\n        return\n    return process_41(limit - 1)\n\nprocess_41(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000480",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def compute_42():\n    return compute_42()\n\ncompute_42()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    compute_42()\n  File \"main.py\", line 2, in compute_42\n    return compute_42()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def compute_42(limit):\n    if limit <= 0:\n        return\n    return compute_42(limit - 1)\n\ncompute_42(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000481",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def execute_43():\n    return execute_43()\n\nexecute_43()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    execute_43()\n  File \"main.py\", line 2, in execute_43\n    return execute_43()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def execute_43(limit):\n    if limit <= 0:\n        return\n    return execute_43(limit - 1)\n\nexecute_43(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000482",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def run_44():\n    return run_44()\n\nrun_44()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    run_44()\n  File \"main.py\", line 2, in run_44\n    return run_44()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def run_44(limit):\n    if limit <= 0:\n        return\n    return run_44(limit - 1)\n\nrun_44(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000483",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def start_45():\n    return start_45()\n\nstart_45()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    start_45()\n  File \"main.py\", line 2, in start_45\n    return start_45()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def start_45(limit):\n    if limit <= 0:\n        return\n    return start_45(limit - 1)\n\nstart_45(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000484",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def initialize_46():\n    return initialize_46()\n\ninitialize_46()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    initialize_46()\n  File \"main.py\", line 2, in initialize_46\n    return initialize_46()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def initialize_46(limit):\n    if limit <= 0:\n        return\n    return initialize_46(limit - 1)\n\ninitialize_46(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000485",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def update_47():\n    return update_47()\n\nupdate_47()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    update_47()\n  File \"main.py\", line 2, in update_47\n    return update_47()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def update_47(limit):\n    if limit <= 0:\n        return\n    return update_47(limit - 1)\n\nupdate_47(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000486",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def render_48():\n    return render_48()\n\nrender_48()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    render_48()\n  File \"main.py\", line 2, in render_48\n    return render_48()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def render_48(limit):\n    if limit <= 0:\n        return\n    return render_48(limit - 1)\n\nrender_48(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000487",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def display_49():\n    return display_49()\n\ndisplay_49()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    display_49()\n  File \"main.py\", line 2, in display_49\n    return display_49()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def display_49(limit):\n    if limit <= 0:\n        return\n    return display_49(limit - 1)\n\ndisplay_49(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000488",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def fetch_50():\n    return fetch_50()\n\nfetch_50()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    fetch_50()\n  File \"main.py\", line 2, in fetch_50\n    return fetch_50()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def fetch_50(limit):\n    if limit <= 0:\n        return\n    return fetch_50(limit - 1)\n\nfetch_50(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000489",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def load_51():\n    return load_51()\n\nload_51()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    load_51()\n  File \"main.py\", line 2, in load_51\n    return load_51()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def load_51(limit):\n    if limit <= 0:\n        return\n    return load_51(limit - 1)\n\nload_51(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000490",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def save_52():\n    return save_52()\n\nsave_52()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    save_52()\n  File \"main.py\", line 2, in save_52\n    return save_52()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def save_52(limit):\n    if limit <= 0:\n        return\n    return save_52(limit - 1)\n\nsave_52(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000491",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def delete_53():\n    return delete_53()\n\ndelete_53()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    delete_53()\n  File \"main.py\", line 2, in delete_53\n    return delete_53()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def delete_53(limit):\n    if limit <= 0:\n        return\n    return delete_53(limit - 1)\n\ndelete_53(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000492",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def create_54():\n    return create_54()\n\ncreate_54()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    create_54()\n  File \"main.py\", line 2, in create_54\n    return create_54()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def create_54(limit):\n    if limit <= 0:\n        return\n    return create_54(limit - 1)\n\ncreate_54(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000493",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def read_55():\n    return read_55()\n\nread_55()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    read_55()\n  File \"main.py\", line 2, in read_55\n    return read_55()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def read_55(limit):\n    if limit <= 0:\n        return\n    return read_55(limit - 1)\n\nread_55(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000494",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def write_56():\n    return write_56()\n\nwrite_56()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    write_56()\n  File \"main.py\", line 2, in write_56\n    return write_56()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def write_56(limit):\n    if limit <= 0:\n        return\n    return write_56(limit - 1)\n\nwrite_56(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000495",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def parse_57():\n    return parse_57()\n\nparse_57()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    parse_57()\n  File \"main.py\", line 2, in parse_57\n    return parse_57()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def parse_57(limit):\n    if limit <= 0:\n        return\n    return parse_57(limit - 1)\n\nparse_57(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000496",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def validate_58():\n    return validate_58()\n\nvalidate_58()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    validate_58()\n  File \"main.py\", line 2, in validate_58\n    return validate_58()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def validate_58(limit):\n    if limit <= 0:\n        return\n    return validate_58(limit - 1)\n\nvalidate_58(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000497",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def verify_59():\n    return verify_59()\n\nverify_59()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    verify_59()\n  File \"main.py\", line 2, in verify_59\n    return verify_59()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def verify_59(limit):\n    if limit <= 0:\n        return\n    return verify_59(limit - 1)\n\nverify_59(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000498",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def calculate_60():\n    return calculate_60()\n\ncalculate_60()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    calculate_60()\n  File \"main.py\", line 2, in calculate_60\n    return calculate_60()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def calculate_60(limit):\n    if limit <= 0:\n        return\n    return calculate_60(limit - 1)\n\ncalculate_60(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000499",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def process_61():\n    return process_61()\n\nprocess_61()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    process_61()\n  File \"main.py\", line 2, in process_61\n    return process_61()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def process_61(limit):\n    if limit <= 0:\n        return\n    return process_61(limit - 1)\n\nprocess_61(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  },
+  {
+    "id": "PY_RUNTIME_000500",
+    "language": "python",
+    "category": "runtime_error",
+    "instruction": "Fix the infinite recursion.",
+    "input": {
+      "title": "RecursionError",
+      "code": "def compute_62():\n    return compute_62()\n\ncompute_62()\n",
+      "error_message": "Traceback (most recent call last):\n  File \"main.py\", line 4, in <module>\n    compute_62()\n  File \"main.py\", line 2, in compute_62\n    return compute_62()\nRecursionError: maximum recursion depth exceeded"
+    },
+    "output": {
+      "technical": "A `RecursionError` is raised because the function calls itself infinitely without a base case, hitting Python's maximum recursion depth.",
+      "beginner": "Your function is stuck in an endless loop calling itself.",
+      "analogy": "Like looking into two mirrors facing each other, it never ends.",
+      "solution": "Add a base case to your recursive function to tell it when to stop.",
+      "prevention": "Ensure all recursive functions have a condition that will eventually be met to stop the recursion.",
+      "optimized_code": "def compute_62(limit):\n    if limit <= 0:\n        return\n    return compute_62(limit - 1)\n\ncompute_62(5)\n",
+      "complexity": {
+        "before": "O(infinity)",
+        "after": "O(N)"
+      }
+    },
+    "metadata": {
+      "difficulty": "medium",
+      "source": "synthetic",
+      "language_version": "Python 3.10",
+      "tags": [
+        "recursion",
+        "recursion-error"
+      ]
+    }
+  }
+]

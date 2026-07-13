@@ -1,0 +1,2048 @@
+[
+  {
+    "id": "CP_RUNTIME_000063",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int count_0 = 0;\n    int result = total / count_0;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `count_0` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `count_0` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int count_0 = 0;\n    if (count_0 != 0) {\n        int result = total / count_0;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000064",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int total_1 = 0;\n    int result = total / total_1;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `total_1` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `total_1` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int total_1 = 0;\n    if (total_1 != 0) {\n        int result = total / total_1;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000065",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int index_2 = 0;\n    int result = total / index_2;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `index_2` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `index_2` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int index_2 = 0;\n    if (index_2 != 0) {\n        int result = total / index_2;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000066",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int sum_3 = 0;\n    int result = total / sum_3;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `sum_3` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `sum_3` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int sum_3 = 0;\n    if (sum_3 != 0) {\n        int result = total / sum_3;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000067",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int average_4 = 0;\n    int result = total / average_4;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `average_4` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `average_4` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int average_4 = 0;\n    if (average_4 != 0) {\n        int result = total / average_4;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000068",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int result_5 = 0;\n    int result = total / result_5;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `result_5` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `result_5` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int result_5 = 0;\n    if (result_5 != 0) {\n        int result = total / result_5;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000069",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int value_6 = 0;\n    int result = total / value_6;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `value_6` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `value_6` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int value_6 = 0;\n    if (value_6 != 0) {\n        int result = total / value_6;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000070",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int temp_7 = 0;\n    int result = total / temp_7;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `temp_7` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `temp_7` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int temp_7 = 0;\n    if (temp_7 != 0) {\n        int result = total / temp_7;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000071",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int max_val_8 = 0;\n    int result = total / max_val_8;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `max_val_8` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `max_val_8` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int max_val_8 = 0;\n    if (max_val_8 != 0) {\n        int result = total / max_val_8;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000072",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int min_val_9 = 0;\n    int result = total / min_val_9;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `min_val_9` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `min_val_9` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int min_val_9 = 0;\n    if (min_val_9 != 0) {\n        int result = total / min_val_9;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000073",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int counter_10 = 0;\n    int result = total / counter_10;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `counter_10` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `counter_10` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int counter_10 = 0;\n    if (counter_10 != 0) {\n        int result = total / counter_10;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000074",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int limit_11 = 0;\n    int result = total / limit_11;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `limit_11` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `limit_11` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int limit_11 = 0;\n    if (limit_11 != 0) {\n        int result = total / limit_11;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000075",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int threshold_12 = 0;\n    int result = total / threshold_12;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `threshold_12` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `threshold_12` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int threshold_12 = 0;\n    if (threshold_12 != 0) {\n        int result = total / threshold_12;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000076",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int score_13 = 0;\n    int result = total / score_13;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `score_13` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `score_13` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int score_13 = 0;\n    if (score_13 != 0) {\n        int result = total / score_13;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000077",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int age_14 = 0;\n    int result = total / age_14;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `age_14` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `age_14` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int age_14 = 0;\n    if (age_14 != 0) {\n        int result = total / age_14;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000078",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int size_15 = 0;\n    int result = total / size_15;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `size_15` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `size_15` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int size_15 = 0;\n    if (size_15 != 0) {\n        int result = total / size_15;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000079",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int length_16 = 0;\n    int result = total / length_16;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `length_16` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `length_16` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int length_16 = 0;\n    if (length_16 != 0) {\n        int result = total / length_16;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000080",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int width_17 = 0;\n    int result = total / width_17;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `width_17` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `width_17` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int width_17 = 0;\n    if (width_17 != 0) {\n        int result = total / width_17;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000081",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int height_18 = 0;\n    int result = total / height_18;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `height_18` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `height_18` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int height_18 = 0;\n    if (height_18 != 0) {\n        int result = total / height_18;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000082",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int depth_19 = 0;\n    int result = total / depth_19;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `depth_19` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `depth_19` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int depth_19 = 0;\n    if (depth_19 != 0) {\n        int result = total / depth_19;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000083",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int count_20 = 0;\n    int result = total / count_20;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `count_20` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `count_20` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int count_20 = 0;\n    if (count_20 != 0) {\n        int result = total / count_20;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000084",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int total_21 = 0;\n    int result = total / total_21;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `total_21` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `total_21` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int total_21 = 0;\n    if (total_21 != 0) {\n        int result = total / total_21;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000085",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int index_22 = 0;\n    int result = total / index_22;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `index_22` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `index_22` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int index_22 = 0;\n    if (index_22 != 0) {\n        int result = total / index_22;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000086",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int sum_23 = 0;\n    int result = total / sum_23;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `sum_23` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `sum_23` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int sum_23 = 0;\n    if (sum_23 != 0) {\n        int result = total / sum_23;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000087",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int average_24 = 0;\n    int result = total / average_24;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `average_24` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `average_24` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int average_24 = 0;\n    if (average_24 != 0) {\n        int result = total / average_24;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000088",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int result_25 = 0;\n    int result = total / result_25;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `result_25` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `result_25` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int result_25 = 0;\n    if (result_25 != 0) {\n        int result = total / result_25;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000089",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int value_26 = 0;\n    int result = total / value_26;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `value_26` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `value_26` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int value_26 = 0;\n    if (value_26 != 0) {\n        int result = total / value_26;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000090",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int temp_27 = 0;\n    int result = total / temp_27;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `temp_27` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `temp_27` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int temp_27 = 0;\n    if (temp_27 != 0) {\n        int result = total / temp_27;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000091",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int max_val_28 = 0;\n    int result = total / max_val_28;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `max_val_28` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `max_val_28` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int max_val_28 = 0;\n    if (max_val_28 != 0) {\n        int result = total / max_val_28;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000092",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int min_val_29 = 0;\n    int result = total / min_val_29;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `min_val_29` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `min_val_29` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int min_val_29 = 0;\n    if (min_val_29 != 0) {\n        int result = total / min_val_29;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000093",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int counter_30 = 0;\n    int result = total / counter_30;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `counter_30` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `counter_30` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int counter_30 = 0;\n    if (counter_30 != 0) {\n        int result = total / counter_30;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000094",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int limit_31 = 0;\n    int result = total / limit_31;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `limit_31` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `limit_31` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int limit_31 = 0;\n    if (limit_31 != 0) {\n        int result = total / limit_31;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000095",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int threshold_32 = 0;\n    int result = total / threshold_32;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `threshold_32` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `threshold_32` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int threshold_32 = 0;\n    if (threshold_32 != 0) {\n        int result = total / threshold_32;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000096",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int score_33 = 0;\n    int result = total / score_33;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `score_33` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `score_33` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int score_33 = 0;\n    if (score_33 != 0) {\n        int result = total / score_33;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000097",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int age_34 = 0;\n    int result = total / age_34;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `age_34` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `age_34` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int age_34 = 0;\n    if (age_34 != 0) {\n        int result = total / age_34;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000098",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int size_35 = 0;\n    int result = total / size_35;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `size_35` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `size_35` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int size_35 = 0;\n    if (size_35 != 0) {\n        int result = total / size_35;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000099",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int length_36 = 0;\n    int result = total / length_36;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `length_36` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `length_36` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int length_36 = 0;\n    if (length_36 != 0) {\n        int result = total / length_36;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000100",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int width_37 = 0;\n    int result = total / width_37;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `width_37` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `width_37` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int width_37 = 0;\n    if (width_37 != 0) {\n        int result = total / width_37;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000101",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int height_38 = 0;\n    int result = total / height_38;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `height_38` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `height_38` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int height_38 = 0;\n    if (height_38 != 0) {\n        int result = total / height_38;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000102",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int depth_39 = 0;\n    int result = total / depth_39;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `depth_39` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `depth_39` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int depth_39 = 0;\n    if (depth_39 != 0) {\n        int result = total / depth_39;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000103",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int count_40 = 0;\n    int result = total / count_40;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `count_40` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `count_40` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int count_40 = 0;\n    if (count_40 != 0) {\n        int result = total / count_40;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000104",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int total_41 = 0;\n    int result = total / total_41;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `total_41` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `total_41` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int total_41 = 0;\n    if (total_41 != 0) {\n        int result = total / total_41;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000105",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int index_42 = 0;\n    int result = total / index_42;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `index_42` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `index_42` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int index_42 = 0;\n    if (index_42 != 0) {\n        int result = total / index_42;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000106",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int sum_43 = 0;\n    int result = total / sum_43;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `sum_43` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `sum_43` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int sum_43 = 0;\n    if (sum_43 != 0) {\n        int result = total / sum_43;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000107",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int average_44 = 0;\n    int result = total / average_44;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `average_44` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `average_44` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int average_44 = 0;\n    if (average_44 != 0) {\n        int result = total / average_44;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000108",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int result_45 = 0;\n    int result = total / result_45;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `result_45` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `result_45` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int result_45 = 0;\n    if (result_45 != 0) {\n        int result = total / result_45;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000109",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int value_46 = 0;\n    int result = total / value_46;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `value_46` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `value_46` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int value_46 = 0;\n    if (value_46 != 0) {\n        int result = total / value_46;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000110",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int temp_47 = 0;\n    int result = total / temp_47;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `temp_47` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `temp_47` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int temp_47 = 0;\n    if (temp_47 != 0) {\n        int result = total / temp_47;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000111",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int max_val_48 = 0;\n    int result = total / max_val_48;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `max_val_48` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `max_val_48` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int max_val_48 = 0;\n    if (max_val_48 != 0) {\n        int result = total / max_val_48;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000112",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int min_val_49 = 0;\n    int result = total / min_val_49;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `min_val_49` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `min_val_49` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int min_val_49 = 0;\n    if (min_val_49 != 0) {\n        int result = total / min_val_49;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000113",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int counter_50 = 0;\n    int result = total / counter_50;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `counter_50` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `counter_50` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int counter_50 = 0;\n    if (counter_50 != 0) {\n        int result = total / counter_50;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000114",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int limit_51 = 0;\n    int result = total / limit_51;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `limit_51` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `limit_51` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int limit_51 = 0;\n    if (limit_51 != 0) {\n        int result = total / limit_51;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000115",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int threshold_52 = 0;\n    int result = total / threshold_52;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `threshold_52` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `threshold_52` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int threshold_52 = 0;\n    if (threshold_52 != 0) {\n        int result = total / threshold_52;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000116",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int score_53 = 0;\n    int result = total / score_53;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `score_53` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `score_53` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int score_53 = 0;\n    if (score_53 != 0) {\n        int result = total / score_53;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000117",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int age_54 = 0;\n    int result = total / age_54;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `age_54` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `age_54` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int age_54 = 0;\n    if (age_54 != 0) {\n        int result = total / age_54;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000118",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int size_55 = 0;\n    int result = total / size_55;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `size_55` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `size_55` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int size_55 = 0;\n    if (size_55 != 0) {\n        int result = total / size_55;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000119",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int length_56 = 0;\n    int result = total / length_56;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `length_56` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `length_56` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int length_56 = 0;\n    if (length_56 != 0) {\n        int result = total / length_56;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000120",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int width_57 = 0;\n    int result = total / width_57;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `width_57` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `width_57` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int width_57 = 0;\n    if (width_57 != 0) {\n        int result = total / width_57;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000121",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int height_58 = 0;\n    int result = total / height_58;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `height_58` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `height_58` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int height_58 = 0;\n    if (height_58 != 0) {\n        int result = total / height_58;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000122",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int depth_59 = 0;\n    int result = total / depth_59;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `depth_59` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `depth_59` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int depth_59 = 0;\n    if (depth_59 != 0) {\n        int result = total / depth_59;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000123",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int count_60 = 0;\n    int result = total / count_60;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `count_60` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `count_60` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int count_60 = 0;\n    if (count_60 != 0) {\n        int result = total / count_60;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  },
+  {
+    "id": "CP_RUNTIME_000124",
+    "language": "cpp",
+    "category": "runtime_error",
+    "instruction": "Fix the division by zero error.",
+    "input": {
+      "title": "Integer Division by Zero",
+      "code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int total_61 = 0;\n    int result = total / total_61;\n    std::cout << result << std::endl;\n    return 0;\n}\n",
+      "error_message": "Floating point exception (core dumped)"
+    },
+    "output": {
+      "technical": "The program performs integer division where the denominator `total_61` is zero. This causes a hardware exception (SIGFPE) on most platforms.",
+      "beginner": "You are trying to divide a number by zero, which is mathematically undefined and crashes the program.",
+      "analogy": "It's like trying to share a pizza among zero people. It doesn't make sense and breaks reality.",
+      "solution": "Check if `total_61` is zero before performing the division.",
+      "prevention": "Always validate user input or logic that dictates the denominator before dividing.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total = 100;\n    int total_61 = 0;\n    if (total_61 != 0) {\n        int result = total / total_61;\n        std::cout << result << std::endl;\n    } else {\n        std::cout << \"Cannot divide by zero.\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "math",
+        "division-by-zero",
+        "exception"
+      ]
+    }
+  }
+]
