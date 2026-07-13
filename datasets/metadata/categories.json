@@ -1,0 +1,49 @@
+{
+    "categories": [
+        {
+            "id": "runtime_error",
+            "name": "Runtime Errors",
+            "description": "Errors that occur during the execution of a program, leading to unexpected termination or crashes. Examples include NameError, TypeError, IndexError in Python, and Segmentation Faults, Division by Zero in C++.",
+            "directories": [
+                "datasets/runtime_errors/python",
+                "datasets/runtime_errors/cpp"
+            ]
+        },
+        {
+            "id": "compiler_error",
+            "name": "Compiler & Syntax Errors",
+            "description": "Errors detected by the parser or compiler before the program can run. Includes missing colons/semicolons, undefined references, and type mismatch errors during compilation.",
+            "directories": [
+                "datasets/compiler_errors/python",
+                "datasets/compiler_errors/cpp"
+            ]
+        },
+        {
+            "id": "logical_bug",
+            "name": "Logical Bugs",
+            "description": "Code that executes without crashing but produces incorrect or unintended results. Includes off-by-one errors, incorrect boolean logic, variable shadowing, and unintended state mutations.",
+            "directories": [
+                "datasets/logical_bugs/python",
+                "datasets/logical_bugs/cpp"
+            ]
+        },
+        {
+            "id": "optimization",
+            "name": "Optimization & Performance",
+            "description": "Functionally correct code that suffers from sub-optimal time or space complexity. Examples include O(N) popping from lists, deep copying large objects, and recomputing loop invariants.",
+            "directories": [
+                "datasets/optimization_examples/python",
+                "datasets/optimization_examples/cpp"
+            ]
+        },
+        {
+            "id": "educational",
+            "name": "Educational Explanations",
+            "description": "Conceptual explanations of core programming paradigms and language-specific features rather than explicit bug fixes. Covers generators, smart pointers, RAII, decorators, and object instantiation.",
+            "directories": [
+                "datasets/educational_explanations/python",
+                "datasets/educational_explanations/cpp"
+            ]
+        }
+    ]
+}
