@@ -1,0 +1,2018 @@
+[
+  {
+    "id": "CP_COMPILER_000438",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid calculate_0() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid calculate_0() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    calculate_0();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void calculate_0()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void calculate_0()\u2019\n    7 | void calculate_0() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void calculate_0()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `calculate_0()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `calculate_0`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid calculate_0() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    calculate_0();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000439",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid process_1() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid process_1() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    process_1();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void process_1()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void process_1()\u2019\n    7 | void process_1() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void process_1()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `process_1()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `process_1`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid process_1() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    process_1();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000440",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid compute_2() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid compute_2() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    compute_2();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void compute_2()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void compute_2()\u2019\n    7 | void compute_2() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void compute_2()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `compute_2()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `compute_2`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid compute_2() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    compute_2();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000441",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid execute_3() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid execute_3() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    execute_3();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void execute_3()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void execute_3()\u2019\n    7 | void execute_3() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void execute_3()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `execute_3()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `execute_3`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid execute_3() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    execute_3();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000442",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid run_4() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid run_4() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    run_4();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void run_4()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void run_4()\u2019\n    7 | void run_4() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void run_4()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `run_4()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `run_4`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid run_4() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    run_4();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000443",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid start_5() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid start_5() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    start_5();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void start_5()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void start_5()\u2019\n    7 | void start_5() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void start_5()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `start_5()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `start_5`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid start_5() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    start_5();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000444",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid initialize_6() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid initialize_6() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    initialize_6();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void initialize_6()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void initialize_6()\u2019\n    7 | void initialize_6() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void initialize_6()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `initialize_6()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `initialize_6`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid initialize_6() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    initialize_6();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000445",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid update_7() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid update_7() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    update_7();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void update_7()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void update_7()\u2019\n    7 | void update_7() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void update_7()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `update_7()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `update_7`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid update_7() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    update_7();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000446",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid render_8() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid render_8() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    render_8();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void render_8()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void render_8()\u2019\n    7 | void render_8() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void render_8()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `render_8()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `render_8`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid render_8() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    render_8();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000447",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid display_9() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid display_9() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    display_9();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void display_9()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void display_9()\u2019\n    7 | void display_9() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void display_9()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `display_9()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `display_9`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid display_9() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    display_9();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000448",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid fetch_10() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid fetch_10() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    fetch_10();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void fetch_10()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void fetch_10()\u2019\n    7 | void fetch_10() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void fetch_10()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `fetch_10()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `fetch_10`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid fetch_10() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    fetch_10();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000449",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid load_11() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid load_11() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    load_11();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void load_11()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void load_11()\u2019\n    7 | void load_11() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void load_11()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `load_11()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `load_11`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid load_11() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    load_11();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000450",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid save_12() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid save_12() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    save_12();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void save_12()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void save_12()\u2019\n    7 | void save_12() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void save_12()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `save_12()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `save_12`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid save_12() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    save_12();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000451",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid delete_13() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid delete_13() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    delete_13();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void delete_13()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void delete_13()\u2019\n    7 | void delete_13() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void delete_13()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `delete_13()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `delete_13`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid delete_13() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    delete_13();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000452",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid create_14() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid create_14() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    create_14();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void create_14()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void create_14()\u2019\n    7 | void create_14() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void create_14()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `create_14()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `create_14`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid create_14() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    create_14();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000453",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid read_15() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid read_15() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    read_15();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void read_15()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void read_15()\u2019\n    7 | void read_15() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void read_15()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `read_15()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `read_15`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid read_15() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    read_15();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000454",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid write_16() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid write_16() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    write_16();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void write_16()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void write_16()\u2019\n    7 | void write_16() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void write_16()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `write_16()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `write_16`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid write_16() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    write_16();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000455",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid parse_17() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid parse_17() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    parse_17();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void parse_17()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void parse_17()\u2019\n    7 | void parse_17() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void parse_17()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `parse_17()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `parse_17`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid parse_17() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    parse_17();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000456",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid validate_18() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid validate_18() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    validate_18();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void validate_18()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void validate_18()\u2019\n    7 | void validate_18() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void validate_18()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `validate_18()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `validate_18`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid validate_18() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    validate_18();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000457",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid verify_19() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid verify_19() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    verify_19();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void verify_19()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void verify_19()\u2019\n    7 | void verify_19() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void verify_19()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `verify_19()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `verify_19`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid verify_19() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    verify_19();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000458",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid calculate_20() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid calculate_20() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    calculate_20();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void calculate_20()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void calculate_20()\u2019\n    7 | void calculate_20() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void calculate_20()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `calculate_20()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `calculate_20`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid calculate_20() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    calculate_20();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000459",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid process_21() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid process_21() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    process_21();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void process_21()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void process_21()\u2019\n    7 | void process_21() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void process_21()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `process_21()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `process_21`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid process_21() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    process_21();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000460",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid compute_22() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid compute_22() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    compute_22();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void compute_22()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void compute_22()\u2019\n    7 | void compute_22() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void compute_22()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `compute_22()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `compute_22`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid compute_22() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    compute_22();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000461",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid execute_23() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid execute_23() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    execute_23();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void execute_23()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void execute_23()\u2019\n    7 | void execute_23() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void execute_23()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `execute_23()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `execute_23`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid execute_23() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    execute_23();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000462",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid run_24() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid run_24() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    run_24();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void run_24()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void run_24()\u2019\n    7 | void run_24() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void run_24()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `run_24()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `run_24`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid run_24() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    run_24();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000463",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid start_25() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid start_25() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    start_25();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void start_25()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void start_25()\u2019\n    7 | void start_25() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void start_25()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `start_25()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `start_25`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid start_25() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    start_25();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000464",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid initialize_26() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid initialize_26() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    initialize_26();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void initialize_26()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void initialize_26()\u2019\n    7 | void initialize_26() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void initialize_26()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `initialize_26()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `initialize_26`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid initialize_26() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    initialize_26();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000465",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid update_27() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid update_27() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    update_27();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void update_27()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void update_27()\u2019\n    7 | void update_27() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void update_27()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `update_27()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `update_27`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid update_27() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    update_27();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000466",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid render_28() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid render_28() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    render_28();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void render_28()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void render_28()\u2019\n    7 | void render_28() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void render_28()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `render_28()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `render_28`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid render_28() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    render_28();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000467",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid display_29() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid display_29() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    display_29();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void display_29()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void display_29()\u2019\n    7 | void display_29() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void display_29()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `display_29()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `display_29`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid display_29() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    display_29();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000468",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid fetch_30() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid fetch_30() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    fetch_30();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void fetch_30()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void fetch_30()\u2019\n    7 | void fetch_30() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void fetch_30()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `fetch_30()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `fetch_30`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid fetch_30() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    fetch_30();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000469",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid load_31() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid load_31() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    load_31();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void load_31()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void load_31()\u2019\n    7 | void load_31() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void load_31()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `load_31()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `load_31`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid load_31() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    load_31();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000470",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid save_32() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid save_32() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    save_32();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void save_32()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void save_32()\u2019\n    7 | void save_32() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void save_32()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `save_32()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `save_32`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid save_32() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    save_32();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000471",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid delete_33() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid delete_33() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    delete_33();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void delete_33()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void delete_33()\u2019\n    7 | void delete_33() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void delete_33()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `delete_33()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `delete_33`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid delete_33() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    delete_33();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000472",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid create_34() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid create_34() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    create_34();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void create_34()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void create_34()\u2019\n    7 | void create_34() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void create_34()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `create_34()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `create_34`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid create_34() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    create_34();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000473",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid read_35() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid read_35() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    read_35();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void read_35()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void read_35()\u2019\n    7 | void read_35() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void read_35()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `read_35()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `read_35`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid read_35() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    read_35();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000474",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid write_36() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid write_36() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    write_36();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void write_36()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void write_36()\u2019\n    7 | void write_36() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void write_36()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `write_36()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `write_36`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid write_36() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    write_36();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000475",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid parse_37() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid parse_37() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    parse_37();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void parse_37()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void parse_37()\u2019\n    7 | void parse_37() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void parse_37()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `parse_37()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `parse_37`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid parse_37() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    parse_37();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000476",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid validate_38() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid validate_38() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    validate_38();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void validate_38()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void validate_38()\u2019\n    7 | void validate_38() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void validate_38()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `validate_38()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `validate_38`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid validate_38() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    validate_38();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000477",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid verify_39() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid verify_39() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    verify_39();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void verify_39()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void verify_39()\u2019\n    7 | void verify_39() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void verify_39()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `verify_39()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `verify_39`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid verify_39() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    verify_39();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000478",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid calculate_40() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid calculate_40() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    calculate_40();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void calculate_40()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void calculate_40()\u2019\n    7 | void calculate_40() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void calculate_40()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `calculate_40()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `calculate_40`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid calculate_40() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    calculate_40();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000479",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid process_41() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid process_41() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    process_41();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void process_41()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void process_41()\u2019\n    7 | void process_41() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void process_41()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `process_41()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `process_41`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid process_41() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    process_41();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000480",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid compute_42() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid compute_42() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    compute_42();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void compute_42()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void compute_42()\u2019\n    7 | void compute_42() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void compute_42()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `compute_42()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `compute_42`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid compute_42() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    compute_42();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000481",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid execute_43() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid execute_43() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    execute_43();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void execute_43()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void execute_43()\u2019\n    7 | void execute_43() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void execute_43()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `execute_43()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `execute_43`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid execute_43() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    execute_43();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000482",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid run_44() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid run_44() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    run_44();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void run_44()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void run_44()\u2019\n    7 | void run_44() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void run_44()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `run_44()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `run_44`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid run_44() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    run_44();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000483",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid start_45() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid start_45() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    start_45();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void start_45()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void start_45()\u2019\n    7 | void start_45() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void start_45()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `start_45()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `start_45`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid start_45() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    start_45();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000484",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid initialize_46() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid initialize_46() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    initialize_46();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void initialize_46()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void initialize_46()\u2019\n    7 | void initialize_46() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void initialize_46()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `initialize_46()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `initialize_46`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid initialize_46() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    initialize_46();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000485",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid update_47() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid update_47() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    update_47();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void update_47()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void update_47()\u2019\n    7 | void update_47() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void update_47()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `update_47()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `update_47`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid update_47() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    update_47();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000486",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid render_48() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid render_48() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    render_48();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void render_48()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void render_48()\u2019\n    7 | void render_48() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void render_48()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `render_48()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `render_48`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid render_48() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    render_48();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000487",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid display_49() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid display_49() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    display_49();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void display_49()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void display_49()\u2019\n    7 | void display_49() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void display_49()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `display_49()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `display_49`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid display_49() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    display_49();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000488",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid fetch_50() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid fetch_50() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    fetch_50();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void fetch_50()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void fetch_50()\u2019\n    7 | void fetch_50() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void fetch_50()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `fetch_50()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `fetch_50`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid fetch_50() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    fetch_50();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000489",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid load_51() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid load_51() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    load_51();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void load_51()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void load_51()\u2019\n    7 | void load_51() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void load_51()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `load_51()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `load_51`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid load_51() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    load_51();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000490",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid save_52() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid save_52() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    save_52();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void save_52()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void save_52()\u2019\n    7 | void save_52() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void save_52()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `save_52()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `save_52`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid save_52() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    save_52();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000491",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid delete_53() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid delete_53() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    delete_53();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void delete_53()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void delete_53()\u2019\n    7 | void delete_53() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void delete_53()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `delete_53()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `delete_53`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid delete_53() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    delete_53();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000492",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid create_54() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid create_54() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    create_54();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void create_54()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void create_54()\u2019\n    7 | void create_54() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void create_54()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `create_54()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `create_54`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid create_54() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    create_54();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000493",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid read_55() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid read_55() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    read_55();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void read_55()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void read_55()\u2019\n    7 | void read_55() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void read_55()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `read_55()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `read_55`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid read_55() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    read_55();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000494",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid write_56() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid write_56() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    write_56();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void write_56()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void write_56()\u2019\n    7 | void write_56() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void write_56()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `write_56()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `write_56`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid write_56() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    write_56();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000495",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid parse_57() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid parse_57() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    parse_57();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void parse_57()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void parse_57()\u2019\n    7 | void parse_57() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void parse_57()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `parse_57()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `parse_57`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid parse_57() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    parse_57();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000496",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid validate_58() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid validate_58() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    validate_58();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void validate_58()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void validate_58()\u2019\n    7 | void validate_58() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void validate_58()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `validate_58()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `validate_58`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid validate_58() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    validate_58();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000497",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid verify_59() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid verify_59() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    verify_59();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void verify_59()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void verify_59()\u2019\n    7 | void verify_59() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void verify_59()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `verify_59()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `verify_59`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid verify_59() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    verify_59();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000498",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid calculate_60() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid calculate_60() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    calculate_60();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void calculate_60()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void calculate_60()\u2019\n    7 | void calculate_60() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void calculate_60()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `calculate_60()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `calculate_60`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid calculate_60() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    calculate_60();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000499",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid process_61() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid process_61() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    process_61();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void process_61()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void process_61()\u2019\n    7 | void process_61() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void process_61()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `process_61()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `process_61`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid process_61() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    process_61();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000500",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the function redefinition error.",
+    "input": {
+      "title": "Function Redefinition",
+      "code": "#include <iostream>\n\nvoid compute_62() {\n    std::cout << \"A\" << std::endl;\n}\n\nvoid compute_62() {\n    std::cout << \"B\" << std::endl;\n}\n\nint main() {\n    compute_62();\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018void compute_62()\u2019:\nmain.cpp:7:6: error: redefinition of \u2018void compute_62()\u2019\n    7 | void compute_62() {\n      |      ^~~~~\nmain.cpp:3:6: note: \u2018void compute_62()\u2019 previously defined here"
+    },
+    "output": {
+      "technical": "The function `compute_62()` is defined multiple times, violating the One Definition Rule (ODR).",
+      "beginner": "You wrote two functions with the exact same name `compute_62`. The compiler doesn't know which one to use.",
+      "analogy": "It's like having two houses with the exact same address on the same street. The mail carrier is confused.",
+      "solution": "Remove the duplicate function definition or rename one of them.",
+      "prevention": "Keep function names unique within the same namespace.",
+      "optimized_code": "#include <iostream>\n\nvoid compute_62() {\n    std::cout << \"A\" << std::endl;\n}\n\nint main() {\n    compute_62();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "redefinition",
+        "odr"
+      ]
+    }
+  }
+]

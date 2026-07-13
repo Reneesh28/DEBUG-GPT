@@ -1,0 +1,2018 @@
+[
+  {
+    "id": "CP_COMPILER_000312",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int count_0 = \"hello\";\n    std::cout << count_0 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int count_0 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string count_0 = \"hello\";\n    std::cout << count_0 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000313",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int total_1 = \"hello\";\n    std::cout << total_1 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int total_1 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string total_1 = \"hello\";\n    std::cout << total_1 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000314",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int index_2 = \"hello\";\n    std::cout << index_2 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int index_2 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string index_2 = \"hello\";\n    std::cout << index_2 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000315",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int sum_3 = \"hello\";\n    std::cout << sum_3 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int sum_3 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string sum_3 = \"hello\";\n    std::cout << sum_3 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000316",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int average_4 = \"hello\";\n    std::cout << average_4 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int average_4 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string average_4 = \"hello\";\n    std::cout << average_4 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000317",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int result_5 = \"hello\";\n    std::cout << result_5 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int result_5 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string result_5 = \"hello\";\n    std::cout << result_5 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000318",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int value_6 = \"hello\";\n    std::cout << value_6 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int value_6 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string value_6 = \"hello\";\n    std::cout << value_6 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000319",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int temp_7 = \"hello\";\n    std::cout << temp_7 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int temp_7 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string temp_7 = \"hello\";\n    std::cout << temp_7 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000320",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int max_val_8 = \"hello\";\n    std::cout << max_val_8 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int max_val_8 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string max_val_8 = \"hello\";\n    std::cout << max_val_8 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000321",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int min_val_9 = \"hello\";\n    std::cout << min_val_9 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int min_val_9 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string min_val_9 = \"hello\";\n    std::cout << min_val_9 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000322",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int counter_10 = \"hello\";\n    std::cout << counter_10 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int counter_10 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string counter_10 = \"hello\";\n    std::cout << counter_10 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000323",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int limit_11 = \"hello\";\n    std::cout << limit_11 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int limit_11 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string limit_11 = \"hello\";\n    std::cout << limit_11 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000324",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int threshold_12 = \"hello\";\n    std::cout << threshold_12 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int threshold_12 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string threshold_12 = \"hello\";\n    std::cout << threshold_12 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000325",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int score_13 = \"hello\";\n    std::cout << score_13 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int score_13 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string score_13 = \"hello\";\n    std::cout << score_13 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000326",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int age_14 = \"hello\";\n    std::cout << age_14 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int age_14 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string age_14 = \"hello\";\n    std::cout << age_14 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000327",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int size_15 = \"hello\";\n    std::cout << size_15 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int size_15 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string size_15 = \"hello\";\n    std::cout << size_15 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000328",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int length_16 = \"hello\";\n    std::cout << length_16 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int length_16 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string length_16 = \"hello\";\n    std::cout << length_16 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000329",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int width_17 = \"hello\";\n    std::cout << width_17 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int width_17 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string width_17 = \"hello\";\n    std::cout << width_17 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000330",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int height_18 = \"hello\";\n    std::cout << height_18 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int height_18 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string height_18 = \"hello\";\n    std::cout << height_18 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000331",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int depth_19 = \"hello\";\n    std::cout << depth_19 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int depth_19 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string depth_19 = \"hello\";\n    std::cout << depth_19 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000332",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int count_20 = \"hello\";\n    std::cout << count_20 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int count_20 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string count_20 = \"hello\";\n    std::cout << count_20 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000333",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int total_21 = \"hello\";\n    std::cout << total_21 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int total_21 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string total_21 = \"hello\";\n    std::cout << total_21 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000334",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int index_22 = \"hello\";\n    std::cout << index_22 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int index_22 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string index_22 = \"hello\";\n    std::cout << index_22 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000335",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int sum_23 = \"hello\";\n    std::cout << sum_23 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int sum_23 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string sum_23 = \"hello\";\n    std::cout << sum_23 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000336",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int average_24 = \"hello\";\n    std::cout << average_24 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int average_24 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string average_24 = \"hello\";\n    std::cout << average_24 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000337",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int result_25 = \"hello\";\n    std::cout << result_25 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int result_25 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string result_25 = \"hello\";\n    std::cout << result_25 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000338",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int value_26 = \"hello\";\n    std::cout << value_26 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int value_26 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string value_26 = \"hello\";\n    std::cout << value_26 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000339",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int temp_27 = \"hello\";\n    std::cout << temp_27 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int temp_27 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string temp_27 = \"hello\";\n    std::cout << temp_27 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000340",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int max_val_28 = \"hello\";\n    std::cout << max_val_28 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int max_val_28 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string max_val_28 = \"hello\";\n    std::cout << max_val_28 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000341",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int min_val_29 = \"hello\";\n    std::cout << min_val_29 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int min_val_29 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string min_val_29 = \"hello\";\n    std::cout << min_val_29 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000342",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int counter_30 = \"hello\";\n    std::cout << counter_30 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int counter_30 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string counter_30 = \"hello\";\n    std::cout << counter_30 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000343",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int limit_31 = \"hello\";\n    std::cout << limit_31 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int limit_31 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string limit_31 = \"hello\";\n    std::cout << limit_31 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000344",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int threshold_32 = \"hello\";\n    std::cout << threshold_32 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int threshold_32 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string threshold_32 = \"hello\";\n    std::cout << threshold_32 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000345",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int score_33 = \"hello\";\n    std::cout << score_33 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int score_33 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string score_33 = \"hello\";\n    std::cout << score_33 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000346",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int age_34 = \"hello\";\n    std::cout << age_34 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int age_34 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string age_34 = \"hello\";\n    std::cout << age_34 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000347",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int size_35 = \"hello\";\n    std::cout << size_35 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int size_35 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string size_35 = \"hello\";\n    std::cout << size_35 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000348",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int length_36 = \"hello\";\n    std::cout << length_36 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int length_36 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string length_36 = \"hello\";\n    std::cout << length_36 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000349",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int width_37 = \"hello\";\n    std::cout << width_37 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int width_37 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string width_37 = \"hello\";\n    std::cout << width_37 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000350",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int height_38 = \"hello\";\n    std::cout << height_38 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int height_38 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string height_38 = \"hello\";\n    std::cout << height_38 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000351",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int depth_39 = \"hello\";\n    std::cout << depth_39 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int depth_39 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string depth_39 = \"hello\";\n    std::cout << depth_39 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000352",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int count_40 = \"hello\";\n    std::cout << count_40 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int count_40 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string count_40 = \"hello\";\n    std::cout << count_40 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000353",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int total_41 = \"hello\";\n    std::cout << total_41 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int total_41 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string total_41 = \"hello\";\n    std::cout << total_41 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000354",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int index_42 = \"hello\";\n    std::cout << index_42 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int index_42 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string index_42 = \"hello\";\n    std::cout << index_42 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000355",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int sum_43 = \"hello\";\n    std::cout << sum_43 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int sum_43 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string sum_43 = \"hello\";\n    std::cout << sum_43 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000356",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int average_44 = \"hello\";\n    std::cout << average_44 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int average_44 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string average_44 = \"hello\";\n    std::cout << average_44 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000357",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int result_45 = \"hello\";\n    std::cout << result_45 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int result_45 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string result_45 = \"hello\";\n    std::cout << result_45 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000358",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int value_46 = \"hello\";\n    std::cout << value_46 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int value_46 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string value_46 = \"hello\";\n    std::cout << value_46 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000359",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int temp_47 = \"hello\";\n    std::cout << temp_47 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int temp_47 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string temp_47 = \"hello\";\n    std::cout << temp_47 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000360",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int max_val_48 = \"hello\";\n    std::cout << max_val_48 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int max_val_48 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string max_val_48 = \"hello\";\n    std::cout << max_val_48 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000361",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int min_val_49 = \"hello\";\n    std::cout << min_val_49 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int min_val_49 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string min_val_49 = \"hello\";\n    std::cout << min_val_49 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000362",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int counter_50 = \"hello\";\n    std::cout << counter_50 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int counter_50 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string counter_50 = \"hello\";\n    std::cout << counter_50 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000363",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int limit_51 = \"hello\";\n    std::cout << limit_51 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int limit_51 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string limit_51 = \"hello\";\n    std::cout << limit_51 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000364",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int threshold_52 = \"hello\";\n    std::cout << threshold_52 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int threshold_52 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string threshold_52 = \"hello\";\n    std::cout << threshold_52 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000365",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int score_53 = \"hello\";\n    std::cout << score_53 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int score_53 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string score_53 = \"hello\";\n    std::cout << score_53 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000366",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int age_54 = \"hello\";\n    std::cout << age_54 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int age_54 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string age_54 = \"hello\";\n    std::cout << age_54 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000367",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int size_55 = \"hello\";\n    std::cout << size_55 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int size_55 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string size_55 = \"hello\";\n    std::cout << size_55 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000368",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int length_56 = \"hello\";\n    std::cout << length_56 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int length_56 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string length_56 = \"hello\";\n    std::cout << length_56 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000369",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int width_57 = \"hello\";\n    std::cout << width_57 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int width_57 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string width_57 = \"hello\";\n    std::cout << width_57 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000370",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int height_58 = \"hello\";\n    std::cout << height_58 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int height_58 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string height_58 = \"hello\";\n    std::cout << height_58 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000371",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int depth_59 = \"hello\";\n    std::cout << depth_59 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int depth_59 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string depth_59 = \"hello\";\n    std::cout << depth_59 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000372",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int count_60 = \"hello\";\n    std::cout << count_60 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int count_60 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string count_60 = \"hello\";\n    std::cout << count_60 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000373",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int total_61 = \"hello\";\n    std::cout << total_61 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int total_61 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string total_61 = \"hello\";\n    std::cout << total_61 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000374",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the invalid type conversion.",
+    "input": {
+      "title": "Invalid Conversion",
+      "code": "#include <iostream>\n\nint main() {\n    int index_62 = \"hello\";\n    std::cout << index_62 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:16: error: invalid conversion from \u2018const char*\u2019 to \u2018int\u2019\n    4 |     int index_62 = \"hello\";\n      |                ^~~~~~~"
+    },
+    "output": {
+      "technical": "A string literal (`const char*`) cannot be implicitly converted to an integer (`int`).",
+      "beginner": "You are trying to store text in a variable designed only for numbers.",
+      "analogy": "It's like trying to pour water into a paper bag. The container isn't made for that type of content.",
+      "solution": "Change the assigned value to a number, or change the variable type to `std::string`.",
+      "prevention": "Ensure variable types match the data being assigned to them.",
+      "optimized_code": "#include <iostream>\n#include <string>\n\nint main() {\n    std::string index_62 = \"hello\";\n    std::cout << index_62 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "types",
+        "conversion"
+      ]
+    }
+  }
+]

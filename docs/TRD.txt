@@ -1,0 +1,441 @@
+Perfect. Your technical decisions are now frozen. Based on these choices, here's the Technical Requirements Document (TRD) v1.0.
+
+Technical Requirements Document (TRD)
+Project Title
+
+DebugGPT: AI-Powered Code Error Explanation & Debugging Assistant
+
+1. Technical Overview
+
+DebugGPT is an AI-powered debugging platform that combines:
+
+Fine-Tuned Mistral 7B Instruct
+Retrieval-Augmented Generation (RAG)
+ChromaDB Vector Store
+FastAPI Backend
+Streamlit Frontend
+Docker-based Deployment
+
+The system analyzes source code, detects bugs, retrieves similar debugging cases, and generates detailed explanations and fixes.
+
+2. System Architecture
+┌──────────────────────────┐
+│      Streamlit UI        │
+└────────────┬─────────────┘
+             │
+             ▼
+┌──────────────────────────┐
+│      FastAPI Server      │
+└───────┬────────┬─────────┘
+        │        │
+        ▼        ▼
+┌────────────┐ ┌─────────────┐
+│ Rule-Based │ │  ChromaDB   │
+│ Analyzer   │ │ Retrieval   │
+└─────┬──────┘ └──────┬──────┘
+      │               │
+      ▼               ▼
+    Context + Retrieved Examples
+              │
+              ▼
+┌──────────────────────────┐
+│ Fine-Tuned Mistral 7B    │
+└────────────┬─────────────┘
+             │
+             ▼
+      AI Generated Result
+3. High-Level Components
+Component	Technology
+Frontend	Streamlit
+Backend	FastAPI
+AI Model	Mistral 7B Instruct
+Fine-Tuning	LoRA (PEFT)
+Embeddings	BAAI/bge-small-en-v1.5
+Vector DB	ChromaDB
+Data Processing	Pandas, NumPy
+Training	Transformers, TRL
+Containerization	Docker
+Version Control	Git + GitHub
+4. Module Design
+Module 1: Frontend
+Responsibilities
+Accept code input
+Upload source files
+Upload log files
+Display explanations
+Display fixes
+Show optimization suggestions
+Supported Files
+.cpp
+.py
+.log
+.ipynb
+Module 2: API Layer
+Technology
+
+FastAPI
+
+Responsibilities
+Receive requests
+Validate inputs
+Communicate with analysis engine
+Invoke RAG retrieval
+Run LLM inference
+Return structured response
+Module 3: Rule-Based Analyzer
+Purpose
+
+Detect common bugs before invoking LLM.
+
+Checks
+C++
+Missing main()
+Array Out of Bounds
+Null Pointer Risk
+Infinite Loop
+Off-by-One Error
+Python
+IndexError Risk
+Division by Zero
+Missing Imports
+Infinite Loop
+Variable Scope Issues
+Implementation
+Regex
+AST Parsing
+Static Analysis Rules
+Module 4: RAG Engine
+Technology
+
+ChromaDB
+
+Embedding Model
+BAAI/bge-small-en-v1.5
+Responsibilities
+
+Retrieve:
+
+Similar errors
+Related fixes
+Compiler examples
+Runtime examples
+Optimization examples
+Module 5: LLM Inference Engine
+Base Model
+Mistral 7B Instruct
+Fine-Tuning
+LoRA + PEFT
+Responsibilities
+
+Generate:
+
+Error Explanation
+Bug Analysis
+Code Fix
+Learning Mode Response
+Optimization Suggestions
+5. API Specifications
+Endpoint 1
+POST /analyze
+Purpose
+
+Analyze source code.
+
+Request
+{
+  "language": "cpp",
+  "code": "source code here"
+}
+Response
+{
+  "issues":[...],
+  "complexity":"O(n)",
+  "recommendations":[...]
+}
+Endpoint 2
+POST /debug
+Purpose
+
+Debug source code.
+
+Request
+{
+  "language":"cpp",
+  "code":"..."
+}
+Response
+{
+  "error":"Detected issue",
+  "explanation":"...",
+  "fix":"..."
+}
+Endpoint 3
+POST /explain
+Purpose
+
+Explain pasted error.
+
+Request
+{
+  "error":"Segmentation Fault"
+}
+Response
+{
+  "technical":"...",
+  "beginner":"...",
+  "analogy":"..."
+}
+Endpoint 4
+POST /optimize
+Purpose
+
+Optimize code.
+
+Request
+{
+  "code":"..."
+}
+Response
+{
+  "current_complexity":"O(n²)",
+  "optimized_complexity":"O(n)",
+  "optimized_code":"..."
+}
+6. Dataset Design
+Dataset Format
+{
+  "instruction":"Explain this error",
+  "input":"Segmentation Fault",
+  "output":"Detailed explanation..."
+}
+Sources
+Stack Overflow
+
+Collect:
+
+Common debugging questions
+Accepted answers
+GitHub Issues
+
+Collect:
+
+Bug reports
+Fix discussions
+Compiler Error Dataset
+
+Collect:
+
+GCC errors
+Clang errors
+Python Exceptions
+LeetCode Discussions
+
+Collect:
+
+Optimization discussions
+Bug explanations
+7. ChromaDB Schema
+Collection
+compiler_errors
+{
+  "error":"Undefined Reference",
+  "solution":"...",
+  "language":"cpp"
+}
+runtime_errors
+{
+  "error":"Segmentation Fault",
+  "solution":"..."
+}
+optimization_examples
+{
+  "problem":"Two Sum",
+  "naive":"O(n²)",
+  "optimized":"O(n)"
+}
+logical_bugs
+{
+  "bug":"Off-by-One Error",
+  "example":"..."
+}
+stackoverflow_examples
+{
+  "question":"...",
+  "answer":"..."
+}
+github_issue_solutions
+{
+  "issue":"...",
+  "resolution":"..."
+}
+8. LoRA Fine-Tuning Pipeline
+Step 1
+
+Load Dataset
+
+errors.json
+
+↓
+
+Step 2
+
+Tokenization
+
+Mistral Tokenizer
+
+↓
+
+Step 3
+
+Quantization
+
+4-bit QLoRA
+
+↓
+
+Step 4
+
+Training
+
+PEFT + TRL
+
+↓
+
+Step 5
+
+Save Adapter
+
+debuggpt-lora/
+
+↓
+
+Step 6
+
+Inference
+
+Base Model + Adapter
+9. Recommended LoRA Configuration
+r = 16
+lora_alpha = 32
+lora_dropout = 0.05
+
+target_modules = [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj"
+]
+10. Docker Architecture
+┌─────────────────────┐
+│ Streamlit Container │
+└─────────┬───────────┘
+          │
+          ▼
+┌─────────────────────┐
+│ FastAPI Container   │
+└─────────┬───────────┘
+          │
+   ┌──────┴──────┐
+   ▼             ▼
+ChromaDB     Mistral
+Container    Model
+11. Project Folder Structure
+DebugGPT/
+
+├── frontend/
+│   ├── streamlit_app.py
+│   └── components/
+│
+├── backend/
+│   ├── main.py
+│   ├── routes/
+│   │   ├── debug.py
+│   │   ├── analyze.py
+│   │   ├── explain.py
+│   │   └── optimize.py
+│   │
+│   ├── services/
+│   │   ├── rag_service.py
+│   │   ├── llm_service.py
+│   │   └── analyzer.py
+│   │
+│   └── schemas/
+│
+├── training/
+│   ├── train.py
+│   ├── dataset_builder.py
+│   ├── lora_config.py
+│   └── inference.py
+│
+├── datasets/
+│   ├── compiler_errors.json
+│   ├── runtime_errors.json
+│   └── optimization_examples.json
+│
+├── chromadb/
+│
+├── models/
+│   └── debuggpt-lora/
+│
+├── docker/
+│   ├── Dockerfile.api
+│   ├── Dockerfile.ui
+│   └── docker-compose.yml
+│
+├── requirements.txt
+└── README.md
+12. Development Roadmap
+Phase 1
+
+Project Setup
+
+Folder Structure
+GitHub Repository
+Environment Setup
+Phase 2
+
+Dataset Collection
+
+Stack Overflow
+GitHub Issues
+Compiler Errors
+Phase 3
+
+RAG Development
+
+Embeddings
+ChromaDB Collections
+Phase 4
+
+LoRA Fine-Tuning
+
+Dataset Preparation
+Training
+Adapter Generation
+Phase 5
+
+Backend Development
+
+FastAPI
+Endpoints
+Services
+Phase 6
+
+Frontend Development
+
+Streamlit UI
+Upload Components
+Result Panels
+Phase 7
+
+Dockerization
+
+Multi-container Setup
+Phase 8
+
+Testing & Documentation
+
+Screenshots
+Report
+PPT
+Viva Preparation

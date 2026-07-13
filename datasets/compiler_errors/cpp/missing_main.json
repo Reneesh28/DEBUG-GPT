@@ -1,0 +1,2048 @@
+[
+  {
+    "id": "CP_COMPILER_000001",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid calculate_0() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid calculate_0() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    calculate_0();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000002",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid process_1() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid process_1() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    process_1();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000003",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid compute_2() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid compute_2() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    compute_2();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000004",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid execute_3() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid execute_3() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    execute_3();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000005",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid run_4() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid run_4() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    run_4();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000006",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid start_5() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid start_5() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    start_5();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000007",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid initialize_6() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid initialize_6() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    initialize_6();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000008",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid update_7() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid update_7() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    update_7();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000009",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid render_8() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid render_8() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    render_8();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000010",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid display_9() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid display_9() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    display_9();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000011",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid fetch_10() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid fetch_10() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    fetch_10();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000012",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid load_11() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid load_11() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    load_11();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000013",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid save_12() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid save_12() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    save_12();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000014",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid delete_13() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid delete_13() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    delete_13();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000015",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid create_14() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid create_14() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    create_14();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000016",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid read_15() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid read_15() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    read_15();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000017",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid write_16() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid write_16() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    write_16();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000018",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid parse_17() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid parse_17() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    parse_17();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000019",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid validate_18() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid validate_18() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    validate_18();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000020",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid verify_19() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid verify_19() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    verify_19();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000021",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid calculate_20() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid calculate_20() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    calculate_20();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000022",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid process_21() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid process_21() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    process_21();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000023",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid compute_22() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid compute_22() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    compute_22();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000024",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid execute_23() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid execute_23() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    execute_23();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000025",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid run_24() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid run_24() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    run_24();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000026",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid start_25() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid start_25() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    start_25();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000027",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid initialize_26() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid initialize_26() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    initialize_26();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000028",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid update_27() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid update_27() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    update_27();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000029",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid render_28() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid render_28() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    render_28();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000030",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid display_29() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid display_29() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    display_29();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000031",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid fetch_30() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid fetch_30() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    fetch_30();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000032",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid load_31() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid load_31() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    load_31();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000033",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid save_32() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid save_32() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    save_32();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000034",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid delete_33() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid delete_33() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    delete_33();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000035",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid create_34() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid create_34() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    create_34();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000036",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid read_35() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid read_35() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    read_35();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000037",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid write_36() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid write_36() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    write_36();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000038",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid parse_37() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid parse_37() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    parse_37();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000039",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid validate_38() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid validate_38() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    validate_38();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000040",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid verify_39() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid verify_39() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    verify_39();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000041",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid calculate_40() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid calculate_40() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    calculate_40();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000042",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid process_41() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid process_41() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    process_41();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000043",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid compute_42() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid compute_42() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    compute_42();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000044",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid execute_43() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid execute_43() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    execute_43();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000045",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid run_44() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid run_44() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    run_44();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000046",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid start_45() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid start_45() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    start_45();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000047",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid initialize_46() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid initialize_46() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    initialize_46();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000048",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid update_47() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid update_47() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    update_47();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000049",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid render_48() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid render_48() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    render_48();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000050",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid display_49() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid display_49() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    display_49();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000051",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid fetch_50() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid fetch_50() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    fetch_50();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000052",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid load_51() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid load_51() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    load_51();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000053",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid save_52() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid save_52() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    save_52();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000054",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid delete_53() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid delete_53() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    delete_53();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000055",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid create_54() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid create_54() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    create_54();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000056",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid read_55() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid read_55() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    read_55();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000057",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid write_56() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid write_56() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    write_56();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000058",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid parse_57() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid parse_57() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    parse_57();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000059",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid validate_58() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid validate_58() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    validate_58();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000060",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid verify_59() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid verify_59() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    verify_59();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000061",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid calculate_60() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid calculate_60() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    calculate_60();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000062",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing entry point error.",
+    "input": {
+      "title": "Missing main function",
+      "code": "#include <iostream>\n\nvoid process_61() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n",
+      "error_message": "/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o: In function `_start':\n(.text+0x24): undefined reference to `main'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The linker failed to find the entry point of the program, which must be the `main` function in C++ executables.",
+      "beginner": "Your program is missing the `main` function. Without it, the computer doesn't know where to start running.",
+      "analogy": "Imagine a book with no first page. You open it, but don't know where the story begins.",
+      "solution": "Add an `int main()` function to your code.",
+      "prevention": "Ensure your executable C++ files always have a defined `main` function.",
+      "optimized_code": "#include <iostream>\n\nvoid process_61() {\n    std::cout << \"Hello World!\" << std::endl;\n}\n\nint main() {\n    process_61();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "entry-point",
+        "main"
+      ]
+    }
+  }
+]

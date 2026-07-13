@@ -1,0 +1,347 @@
+DebugGPT – Phase-by-Phase Implementation Plan
+
+Since your goal is to build a working MCA AI/ML project, the implementation should prioritize a functional MVP first, then add AI sophistication. This avoids getting stuck on fine-tuning before you have a usable product.
+
+Overall Development Flow
+Phase 1 → Project Setup
+Phase 2 → Dataset Collection
+Phase 3 → RAG Development
+Phase 4 → Rule-Based Analysis Engine
+Phase 5 → LoRA Fine-Tuning
+Phase 6 → FastAPI Backend
+Phase 7 → Streamlit Frontend
+Phase 8 → Dockerization
+Phase 9 → Testing & Evaluation
+Phase 10 → Documentation & PPT
+Phase 1: Project Setup
+Goal
+
+Create the project foundation and development environment.
+
+Tasks
+1. Create Repository
+git init
+2. Create Folder Structure
+DebugGPT/
+├── frontend/
+├── backend/
+├── training/
+├── datasets/
+├── chromadb/
+├── models/
+├── docker/
+└── docs/
+3. Create Virtual Environment
+python -m venv venv
+4. Install Core Libraries
+pip install fastapi
+pip install streamlit
+pip install chromadb
+pip install transformers
+pip install peft
+pip install trl
+pip install pandas
+pip install numpy
+Deliverables
+
+✅ Git repository
+✅ Folder structure
+✅ Python environment
+
+Estimated Time: 0.5 Day
+
+Phase 2: Dataset Collection
+Goal
+
+Build debugging dataset for training and retrieval.
+
+Sources
+Stack Overflow
+GitHub Issues
+Python Exceptions
+GCC/Clang Errors
+LeetCode Discussions
+Create Dataset Categories
+Compiler Errors
+{
+ "instruction":"Explain this error",
+ "input":"undefined reference to main",
+ "output":"..."
+}
+Runtime Errors
+{
+ "instruction":"Explain this error",
+ "input":"Segmentation Fault",
+ "output":"..."
+}
+Logical Bugs
+{
+ "instruction":"Find bug",
+ "input":"for(int i=0;i<=n;i++)",
+ "output":"Off-by-one error"
+}
+Target Dataset Size
+Category	Samples
+Compiler Errors	1000
+Runtime Errors	1000
+Logical Bugs	1000
+Optimization Cases	1000
+Explanations	1000
+
+Total: ~5000 Samples
+
+Deliverables
+
+✅ debug_dataset.json
+
+Estimated Time: 1 Day
+
+Phase 3: RAG Development
+Goal
+
+Build knowledge retrieval system.
+
+Install
+pip install chromadb
+pip install sentence-transformers
+Embedding Model
+BAAI/bge-small-en-v1.5
+Collections
+compiler_errors
+runtime_errors
+logical_bugs
+optimization_examples
+stackoverflow_examples
+github_issue_solutions
+Workflow
+Error
+ ↓
+Embedding
+ ↓
+ChromaDB Search
+ ↓
+Top 5 Matches
+ ↓
+Context Returned
+Deliverables
+
+✅ ChromaDB collections
+✅ Retrieval pipeline
+
+Estimated Time: 1 Day
+
+Phase 4: Rule-Based Analysis Engine
+Goal
+
+Detect common issues without using LLM.
+
+C++ Rules
+Missing main()
+Off-by-One Error
+Infinite Loop
+Array Out-of-Bounds
+Null Pointer Risk
+Python Rules
+Division by Zero
+Missing Imports
+Infinite Loop
+Index Errors
+Tools
+AST
+Regex
+Static Rules
+Output Example
+{
+ "issue":"Potential Off-by-One Error",
+ "confidence":0.92
+}
+Deliverables
+
+✅ analyzer.py
+
+Estimated Time: 1 Day
+
+Phase 5: LoRA Fine-Tuning
+Goal
+
+Create DebugGPT specialized model.
+
+Model
+Mistral 7B Instruct
+Fine-Tuning
+QLoRA
++
+PEFT
+Configuration
+r = 16
+lora_alpha = 32
+lora_dropout = 0.05
+Training Flow
+Dataset
+ ↓
+Tokenizer
+ ↓
+QLoRA
+ ↓
+Training
+ ↓
+Adapter Saved
+Output
+models/debuggpt-lora/
+Deliverables
+
+✅ Fine-tuned adapter
+
+Estimated Time: 1–2 Days
+
+Phase 6: FastAPI Backend
+Goal
+
+Create API layer.
+
+Endpoints
+POST /analyze
+
+Code analysis
+
+POST /debug
+
+Debugging suggestions
+
+POST /explain
+
+Error explanations
+
+POST /optimize
+
+Optimization recommendations
+
+Service Layer
+llm_service.py
+rag_service.py
+analyzer.py
+Deliverables
+
+✅ Functional API
+
+Estimated Time: 1 Day
+
+Phase 7: Streamlit Frontend
+Goal
+
+Build user interface.
+
+Components
+Sidebar
+Language Selection
+Upload File
+Main Area
+Code Input
+Error Input
+Output Tabs
+Error Analysis
+Suggested Fix
+Optimization
+Learning Mode
+Workflow
+User Input
+ ↓
+API Call
+ ↓
+Display Results
+Deliverables
+
+✅ Complete UI
+
+Estimated Time: 1 Day
+
+Phase 8: Dockerization
+Goal
+
+Containerize all services.
+
+Containers
+Container 1
+Streamlit
+Container 2
+FastAPI
+Container 3
+ChromaDB
+Docker Compose
+docker-compose up
+Deliverables
+
+✅ Multi-container environment
+
+Estimated Time: 0.5 Day
+
+Phase 9: Testing & Evaluation
+Functional Testing
+Feature	Test
+Error Detection	✓
+RAG Retrieval	✓
+Explanation Generation	✓
+Optimization	✓
+File Upload	✓
+Performance Testing
+
+Measure:
+
+Response Time
+Retrieval Accuracy
+LLM Latency
+Deliverables
+
+✅ Test Report
+
+Estimated Time: 0.5 Day
+
+Phase 10: Documentation & Academic Deliverables
+Project Report
+
+Sections:
+
+Abstract
+Introduction
+Literature Review
+Problem Statement
+Architecture
+Methodology
+Implementation
+Results
+Conclusion
+PPT
+
+Slides:
+
+Title
+Problem
+Objectives
+Architecture
+Tech Stack
+Workflow
+Demo Screenshots
+Results
+Future Scope
+Resume Description
+
+Built DebugGPT, an AI-powered debugging assistant using Mistral 7B, LoRA fine-tuning, ChromaDB RAG, FastAPI, and Streamlit. The system automatically analyzes code, explains compiler/runtime errors, suggests fixes, performs optimization analysis, and generates multi-level educational explanations for developers.
+
+Recommended Actual Build Order (Important)
+
+Don't start with fine-tuning.
+
+Follow this order:
+
+1. Project Setup
+2. Dataset Collection
+3. ChromaDB RAG
+4. Rule-Based Analyzer
+5. FastAPI Backend
+6. Streamlit Frontend
+7. End-to-End MVP Testing
+8. LoRA Fine-Tuning
+9. Dockerization
+10. Documentation
+
+This way, by Day 4–5 you already have a working DebugGPT. Fine-tuning becomes an enhancement rather than a blocker, which is much safer for a 1-week academic project.

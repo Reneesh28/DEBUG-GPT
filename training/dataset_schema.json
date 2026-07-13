@@ -1,0 +1,143 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://debuggpt.dev/schema/dataset.schema.json",
+    "title": "DebugGPT Dataset Schema",
+    "description": "Schema for validating DebugGPT dataset entries.",
+    "type": "object",
+    "required": [
+        "id",
+        "language",
+        "category",
+        "instruction",
+        "input",
+        "output",
+        "metadata"
+    ],
+    "properties": {
+        "id": {
+            "type": "string",
+            "pattern": "^[A-Z]{2}_[A-Z]+_[0-9]{6}$"
+        },
+        "language": {
+            "type": "string",
+            "enum": [
+                "cpp",
+                "python"
+            ]
+        },
+        "category": {
+            "type": "string",
+            "enum": [
+                "compiler_error",
+                "runtime_error",
+                "logical_bug",
+                "optimization",
+                "educational"
+            ]
+        },
+        "instruction": {
+            "type": "string",
+            "minLength": 5
+        },
+        "input": {
+            "type": "object",
+            "required": [
+                "title",
+                "code",
+                "error_message"
+            ],
+            "properties": {
+                "title": {
+                    "type": "string"
+                },
+                "code": {
+                    "type": "string"
+                },
+                "error_message": {
+                    "type": "string"
+                }
+            }
+        },
+        "output": {
+            "type": "object",
+            "required": [
+                "technical",
+                "beginner",
+                "analogy",
+                "solution",
+                "prevention",
+                "optimized_code",
+                "complexity"
+            ],
+            "properties": {
+                "technical": {
+                    "type": "string"
+                },
+                "beginner": {
+                    "type": "string"
+                },
+                "analogy": {
+                    "type": "string"
+                },
+                "solution": {
+                    "type": "string"
+                },
+                "prevention": {
+                    "type": "string"
+                },
+                "optimized_code": {
+                    "type": "string"
+                },
+                "complexity": {
+                    "type": "object",
+                    "required": [
+                        "before",
+                        "after"
+                    ],
+                    "properties": {
+                        "before": {
+                            "type": "string"
+                        },
+                        "after": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "metadata": {
+            "type": "object",
+            "required": [
+                "difficulty",
+                "source",
+                "language_version",
+                "tags"
+            ],
+            "properties": {
+                "difficulty": {
+                    "type": "string",
+                    "enum": [
+                        "easy",
+                        "medium",
+                        "hard"
+                    ]
+                },
+                "source": {
+                    "type": "string"
+                },
+                "language_version": {
+                    "type": "string"
+                },
+                "tags": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "minItems": 1,
+                    "uniqueItems": true
+                }
+            }
+        }
+    },
+    "additionalProperties": false
+}

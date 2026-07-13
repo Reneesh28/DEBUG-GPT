@@ -1,0 +1,1986 @@
+[
+  {
+    "id": "CP_COMPILER_000187",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int count_0 = 5;\n    if (count_0 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (count_0 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int count_0 = 5;\n    if (count_0 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000188",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int total_1 = 5;\n    if (total_1 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (total_1 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total_1 = 5;\n    if (total_1 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000189",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int index_2 = 5;\n    if (index_2 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (index_2 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int index_2 = 5;\n    if (index_2 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000190",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int sum_3 = 5;\n    if (sum_3 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (sum_3 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int sum_3 = 5;\n    if (sum_3 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000191",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int average_4 = 5;\n    if (average_4 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (average_4 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int average_4 = 5;\n    if (average_4 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000192",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int result_5 = 5;\n    if (result_5 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (result_5 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int result_5 = 5;\n    if (result_5 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000193",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int value_6 = 5;\n    if (value_6 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (value_6 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int value_6 = 5;\n    if (value_6 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000194",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int temp_7 = 5;\n    if (temp_7 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (temp_7 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int temp_7 = 5;\n    if (temp_7 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000195",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int max_val_8 = 5;\n    if (max_val_8 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (max_val_8 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int max_val_8 = 5;\n    if (max_val_8 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000196",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int min_val_9 = 5;\n    if (min_val_9 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (min_val_9 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int min_val_9 = 5;\n    if (min_val_9 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000197",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int counter_10 = 5;\n    if (counter_10 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (counter_10 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int counter_10 = 5;\n    if (counter_10 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000198",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int limit_11 = 5;\n    if (limit_11 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (limit_11 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int limit_11 = 5;\n    if (limit_11 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000199",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int threshold_12 = 5;\n    if (threshold_12 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (threshold_12 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int threshold_12 = 5;\n    if (threshold_12 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000200",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int score_13 = 5;\n    if (score_13 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (score_13 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int score_13 = 5;\n    if (score_13 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000201",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int age_14 = 5;\n    if (age_14 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (age_14 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int age_14 = 5;\n    if (age_14 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000202",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int size_15 = 5;\n    if (size_15 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (size_15 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int size_15 = 5;\n    if (size_15 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000203",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int length_16 = 5;\n    if (length_16 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (length_16 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int length_16 = 5;\n    if (length_16 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000204",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int width_17 = 5;\n    if (width_17 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (width_17 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int width_17 = 5;\n    if (width_17 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000205",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int height_18 = 5;\n    if (height_18 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (height_18 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int height_18 = 5;\n    if (height_18 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000206",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int depth_19 = 5;\n    if (depth_19 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (depth_19 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int depth_19 = 5;\n    if (depth_19 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000207",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int count_20 = 5;\n    if (count_20 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (count_20 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int count_20 = 5;\n    if (count_20 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000208",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int total_21 = 5;\n    if (total_21 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (total_21 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total_21 = 5;\n    if (total_21 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000209",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int index_22 = 5;\n    if (index_22 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (index_22 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int index_22 = 5;\n    if (index_22 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000210",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int sum_23 = 5;\n    if (sum_23 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (sum_23 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int sum_23 = 5;\n    if (sum_23 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000211",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int average_24 = 5;\n    if (average_24 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (average_24 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int average_24 = 5;\n    if (average_24 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000212",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int result_25 = 5;\n    if (result_25 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (result_25 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int result_25 = 5;\n    if (result_25 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000213",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int value_26 = 5;\n    if (value_26 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (value_26 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int value_26 = 5;\n    if (value_26 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000214",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int temp_27 = 5;\n    if (temp_27 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (temp_27 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int temp_27 = 5;\n    if (temp_27 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000215",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int max_val_28 = 5;\n    if (max_val_28 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (max_val_28 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int max_val_28 = 5;\n    if (max_val_28 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000216",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int min_val_29 = 5;\n    if (min_val_29 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (min_val_29 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int min_val_29 = 5;\n    if (min_val_29 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000217",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int counter_30 = 5;\n    if (counter_30 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (counter_30 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int counter_30 = 5;\n    if (counter_30 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000218",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int limit_31 = 5;\n    if (limit_31 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (limit_31 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int limit_31 = 5;\n    if (limit_31 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000219",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int threshold_32 = 5;\n    if (threshold_32 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (threshold_32 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int threshold_32 = 5;\n    if (threshold_32 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000220",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int score_33 = 5;\n    if (score_33 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (score_33 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int score_33 = 5;\n    if (score_33 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000221",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int age_34 = 5;\n    if (age_34 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (age_34 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int age_34 = 5;\n    if (age_34 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000222",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int size_35 = 5;\n    if (size_35 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (size_35 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int size_35 = 5;\n    if (size_35 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000223",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int length_36 = 5;\n    if (length_36 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (length_36 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int length_36 = 5;\n    if (length_36 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000224",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int width_37 = 5;\n    if (width_37 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (width_37 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int width_37 = 5;\n    if (width_37 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000225",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int height_38 = 5;\n    if (height_38 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (height_38 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int height_38 = 5;\n    if (height_38 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000226",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int depth_39 = 5;\n    if (depth_39 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (depth_39 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int depth_39 = 5;\n    if (depth_39 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000227",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int count_40 = 5;\n    if (count_40 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (count_40 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int count_40 = 5;\n    if (count_40 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000228",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int total_41 = 5;\n    if (total_41 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (total_41 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total_41 = 5;\n    if (total_41 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000229",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int index_42 = 5;\n    if (index_42 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (index_42 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int index_42 = 5;\n    if (index_42 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000230",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int sum_43 = 5;\n    if (sum_43 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (sum_43 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int sum_43 = 5;\n    if (sum_43 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000231",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int average_44 = 5;\n    if (average_44 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (average_44 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int average_44 = 5;\n    if (average_44 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000232",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int result_45 = 5;\n    if (result_45 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (result_45 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int result_45 = 5;\n    if (result_45 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000233",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int value_46 = 5;\n    if (value_46 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (value_46 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int value_46 = 5;\n    if (value_46 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000234",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int temp_47 = 5;\n    if (temp_47 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (temp_47 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int temp_47 = 5;\n    if (temp_47 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000235",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int max_val_48 = 5;\n    if (max_val_48 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (max_val_48 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int max_val_48 = 5;\n    if (max_val_48 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000236",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int min_val_49 = 5;\n    if (min_val_49 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (min_val_49 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int min_val_49 = 5;\n    if (min_val_49 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000237",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int counter_50 = 5;\n    if (counter_50 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (counter_50 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int counter_50 = 5;\n    if (counter_50 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000238",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int limit_51 = 5;\n    if (limit_51 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (limit_51 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int limit_51 = 5;\n    if (limit_51 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000239",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int threshold_52 = 5;\n    if (threshold_52 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (threshold_52 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int threshold_52 = 5;\n    if (threshold_52 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000240",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int score_53 = 5;\n    if (score_53 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (score_53 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int score_53 = 5;\n    if (score_53 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000241",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int age_54 = 5;\n    if (age_54 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (age_54 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int age_54 = 5;\n    if (age_54 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000242",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int size_55 = 5;\n    if (size_55 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (size_55 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int size_55 = 5;\n    if (size_55 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000243",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int length_56 = 5;\n    if (length_56 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (length_56 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int length_56 = 5;\n    if (length_56 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000244",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int width_57 = 5;\n    if (width_57 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (width_57 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int width_57 = 5;\n    if (width_57 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000245",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int height_58 = 5;\n    if (height_58 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (height_58 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int height_58 = 5;\n    if (height_58 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000246",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int depth_59 = 5;\n    if (depth_59 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (depth_59 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int depth_59 = 5;\n    if (depth_59 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000247",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int count_60 = 5;\n    if (count_60 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (count_60 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int count_60 = 5;\n    if (count_60 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000248",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the mismatched parenthesis syntax error.",
+    "input": {
+      "title": "Mismatched Parenthesis",
+      "code": "#include <iostream>\n\nint main() {\n    int total_61 = 5;\n    if (total_61 > 0 {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:5:17: error: expected \u2018)\u2019 before \u2018{\u2019 token\n    5 |     if (total_61 > 0 {\n      |        ~        ^\n      |                 )"
+    },
+    "output": {
+      "technical": "The `if` statement requires its boolean expression to be fully enclosed in parentheses.",
+      "beginner": "Your `if` condition is missing a closing parenthesis `)`. Every opening parenthesis needs a partner.",
+      "analogy": "It's like opening a quote in a sentence but forgetting to close it.",
+      "solution": "Add the missing closing parenthesis to the `if` condition.",
+      "prevention": "Use IDE features like bracket matching to avoid structural typos.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total_61 = 5;\n    if (total_61 > 0) {\n        std::cout << \"Positive\" << std::endl;\n    }\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "parenthesis"
+      ]
+    }
+  }
+]

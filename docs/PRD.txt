@@ -1,0 +1,290 @@
+Product Requirements Document (PRD)
+Project Title
+
+DebugGPT: AI-Powered Code Error Explanation & Debugging Assistant
+
+1. Executive Summary
+
+DebugGPT is an AI-powered debugging assistant designed to help software developers and freelancers understand, diagnose, and resolve programming errors efficiently.
+
+The system combines a fine-tuned Large Language Model (LLM), Retrieval-Augmented Generation (RAG), and a developer-friendly interface to automatically analyze source code, detect potential bugs, explain errors, suggest fixes, optimize code, and provide educational explanations tailored to different experience levels.
+
+Unlike traditional compilers that only report error messages, DebugGPT acts as an intelligent debugging mentor by explaining:
+
+What caused the error
+Why the error occurred
+How to fix it
+How to avoid it in the future
+Better coding alternatives
+
+The platform supports C++ and Python and is intended to improve developer productivity while serving as a learning tool for programmers.
+
+2. Problem Statement
+
+Developers often spend significant time understanding compiler errors, runtime exceptions, and logical bugs.
+
+Traditional IDEs and compilers provide error messages that are:
+
+Difficult for beginners to understand
+Insufficient for root-cause analysis
+Lacking educational explanations
+Unable to suggest optimized alternatives
+
+As software systems become more complex, developers require intelligent assistance that not only identifies issues but also explains and resolves them.
+
+3. Product Vision
+
+To create an AI-powered debugging companion that transforms cryptic error messages into understandable explanations and actionable solutions.
+
+4. Project Objectives
+Primary Objectives
+Automatically detect errors in source code
+Explain compiler and runtime errors
+Suggest bug fixes
+Provide optimized code recommendations
+Enable educational learning through AI explanations
+Secondary Objectives
+Reduce debugging time
+Improve code quality
+Support developer learning
+Demonstrate practical use of LLM fine-tuning and RAG systems
+5. Target Users
+Primary Users
+Software Developers
+Freelancers
+Secondary Users
+MCA Students
+BCA Students
+Competitive Programmers
+Coding Bootcamp Learners
+6. Supported Programming Languages
+Version 1.0
+C++
+Python
+Future Expansion
+Java
+JavaScript
+C#
+Go
+7. Core Features
+Feature 1: Code Analysis
+Description
+
+Users can paste code or upload source files.
+
+Input
+int main()
+{
+    int arr[5];
+    cout << arr[10];
+}
+Output
+Potential issue detected
+Array out-of-bounds access
+Feature 2: Automatic Error Detection
+Description
+
+The system analyzes code for:
+
+Syntax errors
+Runtime risks
+Logical bugs
+Example
+
+Input:
+
+for(int i=0;i<=n;i++)
+
+Output:
+
+Potential Off-by-One Error Detected
+Feature 3: Error Explanation
+Description
+
+Users can either:
+
+Allow automatic detection
+Paste compiler/runtime errors manually
+
+Example:
+
+Undefined Reference to Main
+
+System explains:
+
+Meaning
+Cause
+Solution
+Prevention
+Feature 4: AI Fix Suggestions
+Description
+
+Generate corrected code snippets.
+
+Example:
+
+Before:
+
+cout << arr[10];
+
+After:
+
+if(index < size)
+{
+    cout << arr[index];
+}
+Feature 5: Learning Mode
+Description
+
+Every error explanation is generated in three formats.
+
+Technical Explanation
+
+Detailed engineering explanation.
+
+Beginner Explanation
+
+Simple easy-to-understand explanation.
+
+Real-World Analogy
+
+Example:
+
+Trying to access arr[10] in an array of size 5
+is like trying to open Apartment #10 in a building
+that only has 5 apartments.
+Feature 6: Code Optimization Analysis
+Description
+
+Analyze:
+
+Time Complexity
+Space Complexity
+Alternative Approaches
+
+Example:
+
+Current Complexity:
+O(n²)
+
+Suggested:
+HashMap Approach
+
+Optimized Complexity:
+O(n)
+Feature 7: RAG-Based Knowledge Retrieval
+Description
+
+Use ChromaDB to retrieve:
+
+Similar debugging cases
+Compiler errors
+Runtime exceptions
+Stack Overflow style solutions
+
+Benefits:
+
+More accurate responses
+Context-aware explanations
+Reduced hallucinations
+Feature 8: Fine-Tuned AI Model
+Description
+
+LoRA fine-tuned Mistral 7B model specialized for:
+
+Error explanation
+Debugging assistance
+Code optimization
+Educational responses
+8. User Workflow
+User
+ │
+ ▼
+Paste Code / Upload File
+ │
+ ▼
+Streamlit Frontend
+ │
+ ▼
+FastAPI Backend
+ │
+ ▼
+Code Analysis Engine
+ │
+ ▼
+RAG Retrieval (ChromaDB)
+ │
+ ▼
+Fine-Tuned Mistral Model
+ │
+ ▼
+Generate Response
+ │
+ ▼
+Display Results
+9. Functional Requirements
+ID	Requirement
+FR-01	User can paste source code
+FR-02	User can upload code files
+FR-03	System can detect errors automatically
+FR-04	User can manually provide errors
+FR-05	System explains detected errors
+FR-06	System suggests fixes
+FR-07	System provides optimized code recommendations
+FR-08	System performs RAG retrieval
+FR-09	System generates learning-mode explanations
+FR-10	System supports C++ and Python
+10. Non-Functional Requirements
+Category	Requirement
+Performance	Response within 5–10 seconds
+Scalability	Modular architecture
+Maintainability	Clean code structure
+Availability	Localhost execution
+Security	Input validation
+Usability	Simple Streamlit UI
+Reliability	Stable API communication
+11. Success Metrics
+
+Project is considered successful if:
+
+Error explanations are generated correctly
+Bug detection works for common cases
+RAG retrieves relevant examples
+Optimization suggestions are meaningful
+Learning mode generates all 3 explanation levels
+End-to-end workflow operates successfully
+12. Risks and Challenges
+Risk	Mitigation
+Limited training data	Use RAG support
+Model hallucinations	Retrieval-based grounding
+Hardware limitations	LoRA fine-tuning
+Long inference time	Quantized model loading
+13. MVP Scope (1 Week Deliverable)
+
+Included:
+
+✅ Streamlit UI
+✅ FastAPI Backend
+✅ ChromaDB Integration
+✅ Error Explanation
+✅ Bug Detection
+✅ Learning Mode
+✅ Code Optimization
+✅ LoRA Fine-Tuning
+✅ Docker Setup
+
+Excluded:
+
+❌ User Authentication
+❌ Cloud Deployment
+❌ Multi-language Support beyond C++ and Python
+
+14. Future Scope
+Java Support
+JavaScript Support
+VS Code Extension
+Real Compiler Integration
+GitHub Repository Analysis
+Team Collaboration Features
+Cloud Deployment
+Multi-Agent Debugging System

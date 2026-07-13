@@ -1,0 +1,2081 @@
+[
+  {
+    "id": "CP_COMPILER_000249",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'count_0' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    count_0 = 10;\n    std::cout << count_0 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018count_0\u2019 was not declared in this scope\n    4 |     count_0 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `count_0` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `count_0`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int count_0 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int count_0 = 10;\n    std::cout << count_0 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000250",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'total_1' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    total_1 = 10;\n    std::cout << total_1 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018total_1\u2019 was not declared in this scope\n    4 |     total_1 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `total_1` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `total_1`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int total_1 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total_1 = 10;\n    std::cout << total_1 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000251",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'index_2' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    index_2 = 10;\n    std::cout << index_2 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018index_2\u2019 was not declared in this scope\n    4 |     index_2 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `index_2` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `index_2`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int index_2 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int index_2 = 10;\n    std::cout << index_2 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000252",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'sum_3' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    sum_3 = 10;\n    std::cout << sum_3 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018sum_3\u2019 was not declared in this scope\n    4 |     sum_3 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `sum_3` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `sum_3`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int sum_3 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int sum_3 = 10;\n    std::cout << sum_3 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000253",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'average_4' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    average_4 = 10;\n    std::cout << average_4 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018average_4\u2019 was not declared in this scope\n    4 |     average_4 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `average_4` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `average_4`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int average_4 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int average_4 = 10;\n    std::cout << average_4 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000254",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'result_5' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    result_5 = 10;\n    std::cout << result_5 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018result_5\u2019 was not declared in this scope\n    4 |     result_5 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `result_5` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `result_5`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int result_5 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int result_5 = 10;\n    std::cout << result_5 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000255",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'value_6' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    value_6 = 10;\n    std::cout << value_6 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018value_6\u2019 was not declared in this scope\n    4 |     value_6 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `value_6` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `value_6`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int value_6 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int value_6 = 10;\n    std::cout << value_6 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000256",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'temp_7' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    temp_7 = 10;\n    std::cout << temp_7 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018temp_7\u2019 was not declared in this scope\n    4 |     temp_7 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `temp_7` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `temp_7`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int temp_7 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int temp_7 = 10;\n    std::cout << temp_7 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000257",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'max_val_8' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    max_val_8 = 10;\n    std::cout << max_val_8 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018max_val_8\u2019 was not declared in this scope\n    4 |     max_val_8 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `max_val_8` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `max_val_8`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int max_val_8 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int max_val_8 = 10;\n    std::cout << max_val_8 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000258",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'min_val_9' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    min_val_9 = 10;\n    std::cout << min_val_9 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018min_val_9\u2019 was not declared in this scope\n    4 |     min_val_9 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `min_val_9` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `min_val_9`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int min_val_9 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int min_val_9 = 10;\n    std::cout << min_val_9 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000259",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'counter_10' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    counter_10 = 10;\n    std::cout << counter_10 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018counter_10\u2019 was not declared in this scope\n    4 |     counter_10 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `counter_10` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `counter_10`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int counter_10 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int counter_10 = 10;\n    std::cout << counter_10 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000260",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'limit_11' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    limit_11 = 10;\n    std::cout << limit_11 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018limit_11\u2019 was not declared in this scope\n    4 |     limit_11 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `limit_11` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `limit_11`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int limit_11 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int limit_11 = 10;\n    std::cout << limit_11 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000261",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'threshold_12' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    threshold_12 = 10;\n    std::cout << threshold_12 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018threshold_12\u2019 was not declared in this scope\n    4 |     threshold_12 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `threshold_12` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `threshold_12`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int threshold_12 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int threshold_12 = 10;\n    std::cout << threshold_12 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000262",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'score_13' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    score_13 = 10;\n    std::cout << score_13 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018score_13\u2019 was not declared in this scope\n    4 |     score_13 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `score_13` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `score_13`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int score_13 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int score_13 = 10;\n    std::cout << score_13 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000263",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'age_14' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    age_14 = 10;\n    std::cout << age_14 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018age_14\u2019 was not declared in this scope\n    4 |     age_14 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `age_14` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `age_14`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int age_14 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int age_14 = 10;\n    std::cout << age_14 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000264",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'size_15' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    size_15 = 10;\n    std::cout << size_15 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018size_15\u2019 was not declared in this scope\n    4 |     size_15 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `size_15` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `size_15`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int size_15 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int size_15 = 10;\n    std::cout << size_15 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000265",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'length_16' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    length_16 = 10;\n    std::cout << length_16 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018length_16\u2019 was not declared in this scope\n    4 |     length_16 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `length_16` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `length_16`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int length_16 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int length_16 = 10;\n    std::cout << length_16 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000266",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'width_17' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    width_17 = 10;\n    std::cout << width_17 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018width_17\u2019 was not declared in this scope\n    4 |     width_17 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `width_17` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `width_17`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int width_17 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int width_17 = 10;\n    std::cout << width_17 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000267",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'height_18' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    height_18 = 10;\n    std::cout << height_18 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018height_18\u2019 was not declared in this scope\n    4 |     height_18 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `height_18` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `height_18`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int height_18 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int height_18 = 10;\n    std::cout << height_18 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000268",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'depth_19' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    depth_19 = 10;\n    std::cout << depth_19 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018depth_19\u2019 was not declared in this scope\n    4 |     depth_19 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `depth_19` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `depth_19`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int depth_19 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int depth_19 = 10;\n    std::cout << depth_19 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000269",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'count_20' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    count_20 = 10;\n    std::cout << count_20 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018count_20\u2019 was not declared in this scope\n    4 |     count_20 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `count_20` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `count_20`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int count_20 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int count_20 = 10;\n    std::cout << count_20 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000270",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'total_21' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    total_21 = 10;\n    std::cout << total_21 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018total_21\u2019 was not declared in this scope\n    4 |     total_21 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `total_21` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `total_21`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int total_21 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total_21 = 10;\n    std::cout << total_21 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000271",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'index_22' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    index_22 = 10;\n    std::cout << index_22 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018index_22\u2019 was not declared in this scope\n    4 |     index_22 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `index_22` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `index_22`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int index_22 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int index_22 = 10;\n    std::cout << index_22 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000272",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'sum_23' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    sum_23 = 10;\n    std::cout << sum_23 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018sum_23\u2019 was not declared in this scope\n    4 |     sum_23 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `sum_23` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `sum_23`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int sum_23 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int sum_23 = 10;\n    std::cout << sum_23 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000273",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'average_24' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    average_24 = 10;\n    std::cout << average_24 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018average_24\u2019 was not declared in this scope\n    4 |     average_24 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `average_24` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `average_24`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int average_24 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int average_24 = 10;\n    std::cout << average_24 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000274",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'result_25' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    result_25 = 10;\n    std::cout << result_25 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018result_25\u2019 was not declared in this scope\n    4 |     result_25 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `result_25` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `result_25`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int result_25 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int result_25 = 10;\n    std::cout << result_25 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000275",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'value_26' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    value_26 = 10;\n    std::cout << value_26 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018value_26\u2019 was not declared in this scope\n    4 |     value_26 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `value_26` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `value_26`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int value_26 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int value_26 = 10;\n    std::cout << value_26 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000276",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'temp_27' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    temp_27 = 10;\n    std::cout << temp_27 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018temp_27\u2019 was not declared in this scope\n    4 |     temp_27 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `temp_27` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `temp_27`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int temp_27 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int temp_27 = 10;\n    std::cout << temp_27 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000277",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'max_val_28' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    max_val_28 = 10;\n    std::cout << max_val_28 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018max_val_28\u2019 was not declared in this scope\n    4 |     max_val_28 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `max_val_28` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `max_val_28`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int max_val_28 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int max_val_28 = 10;\n    std::cout << max_val_28 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000278",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'min_val_29' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    min_val_29 = 10;\n    std::cout << min_val_29 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018min_val_29\u2019 was not declared in this scope\n    4 |     min_val_29 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `min_val_29` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `min_val_29`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int min_val_29 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int min_val_29 = 10;\n    std::cout << min_val_29 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000279",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'counter_30' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    counter_30 = 10;\n    std::cout << counter_30 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018counter_30\u2019 was not declared in this scope\n    4 |     counter_30 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `counter_30` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `counter_30`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int counter_30 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int counter_30 = 10;\n    std::cout << counter_30 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000280",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'limit_31' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    limit_31 = 10;\n    std::cout << limit_31 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018limit_31\u2019 was not declared in this scope\n    4 |     limit_31 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `limit_31` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `limit_31`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int limit_31 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int limit_31 = 10;\n    std::cout << limit_31 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000281",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'threshold_32' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    threshold_32 = 10;\n    std::cout << threshold_32 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018threshold_32\u2019 was not declared in this scope\n    4 |     threshold_32 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `threshold_32` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `threshold_32`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int threshold_32 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int threshold_32 = 10;\n    std::cout << threshold_32 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000282",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'score_33' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    score_33 = 10;\n    std::cout << score_33 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018score_33\u2019 was not declared in this scope\n    4 |     score_33 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `score_33` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `score_33`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int score_33 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int score_33 = 10;\n    std::cout << score_33 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000283",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'age_34' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    age_34 = 10;\n    std::cout << age_34 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018age_34\u2019 was not declared in this scope\n    4 |     age_34 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `age_34` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `age_34`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int age_34 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int age_34 = 10;\n    std::cout << age_34 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000284",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'size_35' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    size_35 = 10;\n    std::cout << size_35 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018size_35\u2019 was not declared in this scope\n    4 |     size_35 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `size_35` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `size_35`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int size_35 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int size_35 = 10;\n    std::cout << size_35 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000285",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'length_36' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    length_36 = 10;\n    std::cout << length_36 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018length_36\u2019 was not declared in this scope\n    4 |     length_36 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `length_36` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `length_36`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int length_36 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int length_36 = 10;\n    std::cout << length_36 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000286",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'width_37' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    width_37 = 10;\n    std::cout << width_37 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018width_37\u2019 was not declared in this scope\n    4 |     width_37 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `width_37` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `width_37`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int width_37 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int width_37 = 10;\n    std::cout << width_37 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000287",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'height_38' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    height_38 = 10;\n    std::cout << height_38 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018height_38\u2019 was not declared in this scope\n    4 |     height_38 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `height_38` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `height_38`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int height_38 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int height_38 = 10;\n    std::cout << height_38 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000288",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'depth_39' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    depth_39 = 10;\n    std::cout << depth_39 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018depth_39\u2019 was not declared in this scope\n    4 |     depth_39 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `depth_39` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `depth_39`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int depth_39 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int depth_39 = 10;\n    std::cout << depth_39 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000289",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'count_40' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    count_40 = 10;\n    std::cout << count_40 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018count_40\u2019 was not declared in this scope\n    4 |     count_40 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `count_40` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `count_40`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int count_40 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int count_40 = 10;\n    std::cout << count_40 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000290",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'total_41' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    total_41 = 10;\n    std::cout << total_41 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018total_41\u2019 was not declared in this scope\n    4 |     total_41 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `total_41` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `total_41`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int total_41 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total_41 = 10;\n    std::cout << total_41 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000291",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'index_42' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    index_42 = 10;\n    std::cout << index_42 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018index_42\u2019 was not declared in this scope\n    4 |     index_42 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `index_42` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `index_42`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int index_42 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int index_42 = 10;\n    std::cout << index_42 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000292",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'sum_43' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    sum_43 = 10;\n    std::cout << sum_43 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018sum_43\u2019 was not declared in this scope\n    4 |     sum_43 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `sum_43` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `sum_43`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int sum_43 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int sum_43 = 10;\n    std::cout << sum_43 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000293",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'average_44' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    average_44 = 10;\n    std::cout << average_44 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018average_44\u2019 was not declared in this scope\n    4 |     average_44 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `average_44` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `average_44`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int average_44 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int average_44 = 10;\n    std::cout << average_44 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000294",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'result_45' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    result_45 = 10;\n    std::cout << result_45 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018result_45\u2019 was not declared in this scope\n    4 |     result_45 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `result_45` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `result_45`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int result_45 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int result_45 = 10;\n    std::cout << result_45 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000295",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'value_46' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    value_46 = 10;\n    std::cout << value_46 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018value_46\u2019 was not declared in this scope\n    4 |     value_46 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `value_46` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `value_46`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int value_46 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int value_46 = 10;\n    std::cout << value_46 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000296",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'temp_47' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    temp_47 = 10;\n    std::cout << temp_47 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018temp_47\u2019 was not declared in this scope\n    4 |     temp_47 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `temp_47` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `temp_47`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int temp_47 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int temp_47 = 10;\n    std::cout << temp_47 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000297",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'max_val_48' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    max_val_48 = 10;\n    std::cout << max_val_48 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018max_val_48\u2019 was not declared in this scope\n    4 |     max_val_48 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `max_val_48` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `max_val_48`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int max_val_48 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int max_val_48 = 10;\n    std::cout << max_val_48 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000298",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'min_val_49' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    min_val_49 = 10;\n    std::cout << min_val_49 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018min_val_49\u2019 was not declared in this scope\n    4 |     min_val_49 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `min_val_49` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `min_val_49`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int min_val_49 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int min_val_49 = 10;\n    std::cout << min_val_49 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000299",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'counter_50' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    counter_50 = 10;\n    std::cout << counter_50 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018counter_50\u2019 was not declared in this scope\n    4 |     counter_50 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `counter_50` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `counter_50`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int counter_50 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int counter_50 = 10;\n    std::cout << counter_50 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000300",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'limit_51' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    limit_51 = 10;\n    std::cout << limit_51 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018limit_51\u2019 was not declared in this scope\n    4 |     limit_51 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `limit_51` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `limit_51`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int limit_51 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int limit_51 = 10;\n    std::cout << limit_51 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000301",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'threshold_52' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    threshold_52 = 10;\n    std::cout << threshold_52 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018threshold_52\u2019 was not declared in this scope\n    4 |     threshold_52 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `threshold_52` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `threshold_52`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int threshold_52 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int threshold_52 = 10;\n    std::cout << threshold_52 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000302",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'score_53' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    score_53 = 10;\n    std::cout << score_53 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018score_53\u2019 was not declared in this scope\n    4 |     score_53 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `score_53` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `score_53`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int score_53 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int score_53 = 10;\n    std::cout << score_53 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000303",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'age_54' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    age_54 = 10;\n    std::cout << age_54 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018age_54\u2019 was not declared in this scope\n    4 |     age_54 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `age_54` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `age_54`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int age_54 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int age_54 = 10;\n    std::cout << age_54 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000304",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'size_55' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    size_55 = 10;\n    std::cout << size_55 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018size_55\u2019 was not declared in this scope\n    4 |     size_55 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `size_55` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `size_55`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int size_55 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int size_55 = 10;\n    std::cout << size_55 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000305",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'length_56' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    length_56 = 10;\n    std::cout << length_56 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018length_56\u2019 was not declared in this scope\n    4 |     length_56 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `length_56` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `length_56`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int length_56 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int length_56 = 10;\n    std::cout << length_56 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000306",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'width_57' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    width_57 = 10;\n    std::cout << width_57 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018width_57\u2019 was not declared in this scope\n    4 |     width_57 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `width_57` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `width_57`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int width_57 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int width_57 = 10;\n    std::cout << width_57 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000307",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'height_58' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    height_58 = 10;\n    std::cout << height_58 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018height_58\u2019 was not declared in this scope\n    4 |     height_58 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `height_58` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `height_58`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int height_58 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int height_58 = 10;\n    std::cout << height_58 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000308",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'depth_59' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    depth_59 = 10;\n    std::cout << depth_59 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018depth_59\u2019 was not declared in this scope\n    4 |     depth_59 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `depth_59` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `depth_59`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int depth_59 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int depth_59 = 10;\n    std::cout << depth_59 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000309",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'count_60' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    count_60 = 10;\n    std::cout << count_60 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018count_60\u2019 was not declared in this scope\n    4 |     count_60 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `count_60` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `count_60`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int count_60 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int count_60 = 10;\n    std::cout << count_60 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000310",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'total_61' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    total_61 = 10;\n    std::cout << total_61 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018total_61\u2019 was not declared in this scope\n    4 |     total_61 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `total_61` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `total_61`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int total_61 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total_61 = 10;\n    std::cout << total_61 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000311",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the undeclared identifier 'index_62' error.",
+    "input": {
+      "title": "Undeclared Identifier",
+      "code": "#include <iostream>\n\nint main() {\n    index_62 = 10;\n    std::cout << index_62 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: \u2018index_62\u2019 was not declared in this scope\n    4 |     index_62 = 10;\n      |     ^~~~"
+    },
+    "output": {
+      "technical": "The identifier `index_62` is used before it has been declared with a specific type. C++ requires all variables to be explicitly declared before use.",
+      "beginner": "You tried to use `index_62`, but you didn't tell the computer what type of data it holds (like `int` or `float`).",
+      "analogy": "It's like asking someone to fetch 'the thing' without explaining what 'the thing' is. The computer needs an introduction to every variable.",
+      "solution": "Declare the variable with its type before assigning a value, e.g., `int index_62 = 10;`.",
+      "prevention": "Always declare your variables at the beginning of their scope or exactly where you need them.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int index_62 = 10;\n    std::cout << index_62 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "identifier",
+        "scope",
+        "declaration"
+      ]
+    }
+  }
+]

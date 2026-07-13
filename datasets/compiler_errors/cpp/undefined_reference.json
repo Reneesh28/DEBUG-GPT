@@ -1,0 +1,1986 @@
+[
+  {
+    "id": "CP_COMPILER_000063",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid calculate_0();\n\nint main() {\n    calculate_0();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `calculate_0()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `calculate_0()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `calculate_0` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `calculate_0` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid calculate_0() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    calculate_0();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000064",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid process_1();\n\nint main() {\n    process_1();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `process_1()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `process_1()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `process_1` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `process_1` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid process_1() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    process_1();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000065",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid compute_2();\n\nint main() {\n    compute_2();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `compute_2()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `compute_2()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `compute_2` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `compute_2` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid compute_2() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    compute_2();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000066",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid execute_3();\n\nint main() {\n    execute_3();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `execute_3()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `execute_3()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `execute_3` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `execute_3` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid execute_3() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    execute_3();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000067",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid run_4();\n\nint main() {\n    run_4();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `run_4()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `run_4()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `run_4` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `run_4` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid run_4() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    run_4();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000068",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid start_5();\n\nint main() {\n    start_5();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `start_5()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `start_5()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `start_5` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `start_5` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid start_5() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    start_5();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000069",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid initialize_6();\n\nint main() {\n    initialize_6();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `initialize_6()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `initialize_6()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `initialize_6` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `initialize_6` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid initialize_6() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    initialize_6();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000070",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid update_7();\n\nint main() {\n    update_7();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `update_7()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `update_7()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `update_7` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `update_7` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid update_7() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    update_7();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000071",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid render_8();\n\nint main() {\n    render_8();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `render_8()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `render_8()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `render_8` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `render_8` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid render_8() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    render_8();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000072",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid display_9();\n\nint main() {\n    display_9();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `display_9()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `display_9()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `display_9` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `display_9` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid display_9() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    display_9();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000073",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid fetch_10();\n\nint main() {\n    fetch_10();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `fetch_10()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `fetch_10()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `fetch_10` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `fetch_10` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid fetch_10() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    fetch_10();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000074",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid load_11();\n\nint main() {\n    load_11();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `load_11()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `load_11()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `load_11` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `load_11` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid load_11() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    load_11();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000075",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid save_12();\n\nint main() {\n    save_12();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `save_12()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `save_12()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `save_12` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `save_12` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid save_12() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    save_12();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000076",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid delete_13();\n\nint main() {\n    delete_13();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `delete_13()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `delete_13()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `delete_13` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `delete_13` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid delete_13() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    delete_13();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000077",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid create_14();\n\nint main() {\n    create_14();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `create_14()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `create_14()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `create_14` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `create_14` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid create_14() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    create_14();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000078",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid read_15();\n\nint main() {\n    read_15();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `read_15()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `read_15()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `read_15` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `read_15` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid read_15() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    read_15();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000079",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid write_16();\n\nint main() {\n    write_16();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `write_16()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `write_16()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `write_16` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `write_16` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid write_16() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    write_16();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000080",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid parse_17();\n\nint main() {\n    parse_17();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `parse_17()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `parse_17()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `parse_17` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `parse_17` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid parse_17() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    parse_17();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000081",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid validate_18();\n\nint main() {\n    validate_18();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `validate_18()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `validate_18()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `validate_18` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `validate_18` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid validate_18() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    validate_18();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000082",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid verify_19();\n\nint main() {\n    verify_19();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `verify_19()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `verify_19()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `verify_19` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `verify_19` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid verify_19() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    verify_19();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000083",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid calculate_20();\n\nint main() {\n    calculate_20();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `calculate_20()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `calculate_20()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `calculate_20` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `calculate_20` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid calculate_20() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    calculate_20();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000084",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid process_21();\n\nint main() {\n    process_21();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `process_21()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `process_21()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `process_21` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `process_21` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid process_21() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    process_21();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000085",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid compute_22();\n\nint main() {\n    compute_22();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `compute_22()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `compute_22()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `compute_22` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `compute_22` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid compute_22() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    compute_22();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000086",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid execute_23();\n\nint main() {\n    execute_23();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `execute_23()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `execute_23()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `execute_23` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `execute_23` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid execute_23() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    execute_23();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000087",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid run_24();\n\nint main() {\n    run_24();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `run_24()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `run_24()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `run_24` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `run_24` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid run_24() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    run_24();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000088",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid start_25();\n\nint main() {\n    start_25();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `start_25()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `start_25()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `start_25` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `start_25` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid start_25() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    start_25();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000089",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid initialize_26();\n\nint main() {\n    initialize_26();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `initialize_26()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `initialize_26()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `initialize_26` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `initialize_26` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid initialize_26() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    initialize_26();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000090",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid update_27();\n\nint main() {\n    update_27();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `update_27()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `update_27()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `update_27` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `update_27` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid update_27() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    update_27();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000091",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid render_28();\n\nint main() {\n    render_28();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `render_28()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `render_28()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `render_28` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `render_28` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid render_28() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    render_28();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000092",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid display_29();\n\nint main() {\n    display_29();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `display_29()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `display_29()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `display_29` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `display_29` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid display_29() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    display_29();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000093",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid fetch_30();\n\nint main() {\n    fetch_30();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `fetch_30()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `fetch_30()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `fetch_30` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `fetch_30` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid fetch_30() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    fetch_30();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000094",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid load_31();\n\nint main() {\n    load_31();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `load_31()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `load_31()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `load_31` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `load_31` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid load_31() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    load_31();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000095",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid save_32();\n\nint main() {\n    save_32();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `save_32()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `save_32()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `save_32` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `save_32` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid save_32() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    save_32();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000096",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid delete_33();\n\nint main() {\n    delete_33();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `delete_33()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `delete_33()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `delete_33` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `delete_33` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid delete_33() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    delete_33();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000097",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid create_34();\n\nint main() {\n    create_34();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `create_34()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `create_34()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `create_34` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `create_34` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid create_34() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    create_34();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000098",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid read_35();\n\nint main() {\n    read_35();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `read_35()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `read_35()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `read_35` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `read_35` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid read_35() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    read_35();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000099",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid write_36();\n\nint main() {\n    write_36();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `write_36()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `write_36()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `write_36` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `write_36` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid write_36() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    write_36();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000100",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid parse_37();\n\nint main() {\n    parse_37();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `parse_37()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `parse_37()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `parse_37` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `parse_37` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid parse_37() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    parse_37();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000101",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid validate_38();\n\nint main() {\n    validate_38();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `validate_38()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `validate_38()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `validate_38` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `validate_38` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid validate_38() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    validate_38();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000102",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid verify_39();\n\nint main() {\n    verify_39();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `verify_39()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `verify_39()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `verify_39` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `verify_39` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid verify_39() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    verify_39();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000103",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid calculate_40();\n\nint main() {\n    calculate_40();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `calculate_40()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `calculate_40()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `calculate_40` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `calculate_40` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid calculate_40() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    calculate_40();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000104",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid process_41();\n\nint main() {\n    process_41();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `process_41()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `process_41()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `process_41` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `process_41` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid process_41() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    process_41();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000105",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid compute_42();\n\nint main() {\n    compute_42();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `compute_42()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `compute_42()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `compute_42` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `compute_42` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid compute_42() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    compute_42();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000106",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid execute_43();\n\nint main() {\n    execute_43();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `execute_43()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `execute_43()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `execute_43` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `execute_43` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid execute_43() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    execute_43();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000107",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid run_44();\n\nint main() {\n    run_44();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `run_44()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `run_44()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `run_44` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `run_44` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid run_44() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    run_44();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000108",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid start_45();\n\nint main() {\n    start_45();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `start_45()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `start_45()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `start_45` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `start_45` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid start_45() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    start_45();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000109",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid initialize_46();\n\nint main() {\n    initialize_46();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `initialize_46()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `initialize_46()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `initialize_46` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `initialize_46` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid initialize_46() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    initialize_46();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000110",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid update_47();\n\nint main() {\n    update_47();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `update_47()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `update_47()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `update_47` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `update_47` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid update_47() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    update_47();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000111",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid render_48();\n\nint main() {\n    render_48();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `render_48()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `render_48()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `render_48` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `render_48` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid render_48() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    render_48();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000112",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid display_49();\n\nint main() {\n    display_49();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `display_49()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `display_49()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `display_49` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `display_49` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid display_49() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    display_49();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000113",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid fetch_50();\n\nint main() {\n    fetch_50();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `fetch_50()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `fetch_50()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `fetch_50` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `fetch_50` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid fetch_50() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    fetch_50();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000114",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid load_51();\n\nint main() {\n    load_51();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `load_51()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `load_51()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `load_51` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `load_51` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid load_51() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    load_51();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000115",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid save_52();\n\nint main() {\n    save_52();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `save_52()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `save_52()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `save_52` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `save_52` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid save_52() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    save_52();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000116",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid delete_53();\n\nint main() {\n    delete_53();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `delete_53()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `delete_53()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `delete_53` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `delete_53` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid delete_53() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    delete_53();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000117",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid create_54();\n\nint main() {\n    create_54();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `create_54()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `create_54()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `create_54` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `create_54` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid create_54() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    create_54();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000118",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid read_55();\n\nint main() {\n    read_55();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `read_55()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `read_55()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `read_55` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `read_55` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid read_55() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    read_55();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000119",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid write_56();\n\nint main() {\n    write_56();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `write_56()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `write_56()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `write_56` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `write_56` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid write_56() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    write_56();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000120",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid parse_57();\n\nint main() {\n    parse_57();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `parse_57()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `parse_57()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `parse_57` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `parse_57` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid parse_57() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    parse_57();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000121",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid validate_58();\n\nint main() {\n    validate_58();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `validate_58()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `validate_58()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `validate_58` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `validate_58` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid validate_58() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    validate_58();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000122",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid verify_59();\n\nint main() {\n    verify_59();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `verify_59()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `verify_59()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `verify_59` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `verify_59` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid verify_59() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    verify_59();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000123",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid calculate_60();\n\nint main() {\n    calculate_60();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `calculate_60()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `calculate_60()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `calculate_60` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `calculate_60` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid calculate_60() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    calculate_60();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000124",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Resolve the undefined reference linker error.",
+    "input": {
+      "title": "Undefined Reference",
+      "code": "#include <iostream>\n\nvoid process_61();\n\nint main() {\n    process_61();\n    return 0;\n}\n",
+      "error_message": "/tmp/ccXXXXXX.o: In function `main':\nmain.cpp:(.text+0x5): undefined reference to `process_61()'\ncollect2: error: ld returned 1 exit status"
+    },
+    "output": {
+      "technical": "The function prototype for `process_61()` exists, but the linker failed because its implementation is missing.",
+      "beginner": "You promised the computer a function named `process_61` exists, but you didn't write its actual code.",
+      "analogy": "It's like handing out a menu with a dish on it, but the kitchen doesn't know the recipe.",
+      "solution": "Provide the definition (body) for the `process_61` function.",
+      "prevention": "Ensure declared functions have a definition.",
+      "optimized_code": "#include <iostream>\n\nvoid process_61() {\n    std::cout << \"Executed\" << std::endl;\n}\n\nint main() {\n    process_61();\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "linker",
+        "undefined-reference"
+      ]
+    }
+  }
+]

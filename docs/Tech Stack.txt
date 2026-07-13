@@ -1,0 +1,100 @@
+DebugGPT – Final Tech Stack
+Layer	Technology	Purpose
+Frontend	Streamlit	Simple web interface for code input, file upload, debugging results, and AI explanations
+Backend API	FastAPI	Handles API requests, validation, code analysis, RAG retrieval, and model inference
+Programming Language	Python 3.11	Core development language across all modules
+LLM Base Model	Mistral 7B Instruct	Primary open-source model for code understanding, debugging, and reasoning
+Fine-Tuning Framework	PEFT (LoRA)	Parameter-efficient fine-tuning of Mistral 7B
+Training Framework	Hugging Face Transformers + TRL	Model training, tokenization, and inference
+Quantization	BitsAndBytes (QLoRA - 4 Bit)	Reduces GPU memory usage during training and inference
+Embedding Model	BAAI/bge-small-en-v1.5	Converts code snippets and errors into vector embeddings for retrieval
+Vector Database	ChromaDB	Stores debugging examples, errors, fixes, and retrieved context
+Code Analysis Engine	Python AST + Regex + Static Rules	Detects common coding mistakes before LLM processing
+Dataset Processing	Pandas, NumPy	Data cleaning, transformation, and preprocessing
+Model Serving	Hugging Face Transformers Pipeline	Loads Mistral + LoRA adapter for inference
+API Validation	Pydantic	Request and response schema validation
+File Handling	Python OS, Pathlib	Reading and processing uploaded files
+Supported Files	.cpp, .py, .log, .ipynb	User code and error log uploads
+Containerization	Docker	Consistent development and deployment environment
+Multi-Container Management	Docker Compose	Runs Streamlit, FastAPI, ChromaDB, and Model services together
+Version Control	Git	Source code management
+Repository Hosting	GitHub	Project collaboration and code hosting
+API Testing	Postman	Testing FastAPI endpoints
+Documentation	Swagger UI (FastAPI Built-in)	Auto-generated API documentation
+Logging	Python Logging Module	Application monitoring and debugging
+Development Environment	VS Code	Primary IDE
+Training Environment	Local GPU + CUDA	LoRA fine-tuning and model experimentation
+Operating System	Windows / Linux	Development and execution environment
+AI & ML Stack
+Category	Technology
+Base LLM	Mistral 7B Instruct
+Fine-Tuning	LoRA (PEFT)
+Training Library	Transformers + TRL
+Quantization	QLoRA (4-bit)
+Embeddings	BAAI/bge-small-en-v1.5
+Vector Database	ChromaDB
+Retrieval Method	RAG (Retrieval-Augmented Generation)
+Inference	Hugging Face Transformers
+Backend Stack
+Category	Technology
+API Framework	FastAPI
+Validation	Pydantic
+Business Logic	Python Services
+Error Analysis	AST + Regex + Rule Engine
+Logging	Python Logging
+Frontend Stack
+Category	Technology
+UI Framework	Streamlit
+File Upload	Streamlit File Uploader
+Chat Interface	Streamlit Chat Components
+Visualization	Streamlit Native Components
+DevOps Stack
+Category	Technology
+Containerization	Docker
+Orchestration	Docker Compose
+Version Control	Git
+Repository	GitHub
+API Testing	Postman
+Final Architecture
+User
+ │
+ ▼
+Streamlit Frontend
+ │
+ ▼
+FastAPI Backend
+ │
+ ├──────────────┐
+ ▼              ▼
+Rule Engine   ChromaDB
+(AST/Regex)   (RAG)
+ │              │
+ └──────┬───────┘
+        ▼
+ Fine-Tuned Mistral 7B
+     (LoRA Adapter)
+        │
+        ▼
+ AI Response
+        │
+        ▼
+ Error Explanation
+ Bug Detection
+ Code Fixes
+ Optimization
+ Learning Mode
+Tech Stack Summary (for PPT)
+Category	Technology
+Frontend	Streamlit
+Backend	FastAPI
+AI Model	Mistral 7B Instruct
+Fine-Tuning	LoRA (PEFT)
+Embeddings	BAAI/bge-small-en-v1.5
+RAG	ChromaDB
+Analysis Engine	AST + Regex Hybrid Analyzer
+Language	Python 3.11
+Containerization	Docker
+Version Control	GitHub
+Deployment	Localhost (Docker Compose)
+
+This stack is technically strong, feasible on a student timeline, and showcases AI/ML, LLMs, RAG, backend engineering, and DevOps in a single project.

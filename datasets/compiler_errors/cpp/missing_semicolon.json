@@ -1,0 +1,1986 @@
+[
+  {
+    "id": "CP_COMPILER_000125",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    int count_0 = 25\n    std::cout << count_0 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << count_0 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `count_0` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `count_0`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int count_0 = 25;\n    std::cout << count_0 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000126",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    float total_1 = 51\n    std::cout << total_1 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << total_1 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `total_1` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `total_1`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    float total_1 = 51;\n    std::cout << total_1 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000127",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    double index_2 = 81\n    std::cout << index_2 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << index_2 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `index_2` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `index_2`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    double index_2 = 81;\n    std::cout << index_2 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000128",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    char sum_3 = 53\n    std::cout << sum_3 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << sum_3 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `sum_3` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `sum_3`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    char sum_3 = 53;\n    std::cout << sum_3 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000129",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    long average_4 = 65\n    std::cout << average_4 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << average_4 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `average_4` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `average_4`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    long average_4 = 65;\n    std::cout << average_4 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000130",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    short result_5 = 97\n    std::cout << result_5 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << result_5 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `result_5` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `result_5`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    short result_5 = 97;\n    std::cout << result_5 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000131",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    unsigned int value_6 = 42\n    std::cout << value_6 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << value_6 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `value_6` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `value_6`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    unsigned int value_6 = 42;\n    std::cout << value_6 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000132",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    int temp_7 = 58\n    std::cout << temp_7 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << temp_7 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `temp_7` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `temp_7`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int temp_7 = 58;\n    std::cout << temp_7 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000133",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    float max_val_8 = 76\n    std::cout << max_val_8 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << max_val_8 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `max_val_8` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `max_val_8`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    float max_val_8 = 76;\n    std::cout << max_val_8 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000134",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    double min_val_9 = 62\n    std::cout << min_val_9 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << min_val_9 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `min_val_9` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `min_val_9`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    double min_val_9 = 62;\n    std::cout << min_val_9 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000135",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    char counter_10 = 67\n    std::cout << counter_10 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << counter_10 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `counter_10` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `counter_10`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    char counter_10 = 67;\n    std::cout << counter_10 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000136",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    long limit_11 = 52\n    std::cout << limit_11 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << limit_11 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `limit_11` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `limit_11`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    long limit_11 = 52;\n    std::cout << limit_11 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000137",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    short threshold_12 = 24\n    std::cout << threshold_12 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << threshold_12 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `threshold_12` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `threshold_12`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    short threshold_12 = 24;\n    std::cout << threshold_12 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000138",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    unsigned int score_13 = 96\n    std::cout << score_13 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << score_13 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `score_13` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `score_13`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    unsigned int score_13 = 96;\n    std::cout << score_13 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000139",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    int age_14 = 80\n    std::cout << age_14 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << age_14 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `age_14` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `age_14`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int age_14 = 80;\n    std::cout << age_14 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000140",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    float size_15 = 89\n    std::cout << size_15 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << size_15 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `size_15` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `size_15`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    float size_15 = 89;\n    std::cout << size_15 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000141",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    double length_16 = 84\n    std::cout << length_16 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << length_16 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `length_16` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `length_16`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    double length_16 = 84;\n    std::cout << length_16 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000142",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    char width_17 = 78\n    std::cout << width_17 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << width_17 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `width_17` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `width_17`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    char width_17 = 78;\n    std::cout << width_17 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000143",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    long height_18 = 56\n    std::cout << height_18 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << height_18 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `height_18` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `height_18`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    long height_18 = 56;\n    std::cout << height_18 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000144",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    short depth_19 = 10\n    std::cout << depth_19 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << depth_19 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `depth_19` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `depth_19`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    short depth_19 = 10;\n    std::cout << depth_19 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000145",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    unsigned int count_20 = 3\n    std::cout << count_20 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << count_20 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `count_20` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `count_20`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    unsigned int count_20 = 3;\n    std::cout << count_20 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000146",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    int total_21 = 70\n    std::cout << total_21 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << total_21 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `total_21` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `total_21`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int total_21 = 70;\n    std::cout << total_21 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000147",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    float index_22 = 5\n    std::cout << index_22 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << index_22 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `index_22` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `index_22`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    float index_22 = 5;\n    std::cout << index_22 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000148",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    double sum_23 = 95\n    std::cout << sum_23 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << sum_23 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `sum_23` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `sum_23`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    double sum_23 = 95;\n    std::cout << sum_23 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000149",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    char average_24 = 16\n    std::cout << average_24 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << average_24 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `average_24` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `average_24`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    char average_24 = 16;\n    std::cout << average_24 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000150",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    long result_25 = 27\n    std::cout << result_25 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << result_25 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `result_25` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `result_25`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    long result_25 = 27;\n    std::cout << result_25 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000151",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    short value_26 = 96\n    std::cout << value_26 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << value_26 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `value_26` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `value_26`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    short value_26 = 96;\n    std::cout << value_26 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000152",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    unsigned int temp_27 = 74\n    std::cout << temp_27 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << temp_27 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `temp_27` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `temp_27`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    unsigned int temp_27 = 74;\n    std::cout << temp_27 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000153",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    int max_val_28 = 40\n    std::cout << max_val_28 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << max_val_28 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `max_val_28` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `max_val_28`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int max_val_28 = 40;\n    std::cout << max_val_28 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000154",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    float min_val_29 = 100\n    std::cout << min_val_29 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << min_val_29 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `min_val_29` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `min_val_29`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    float min_val_29 = 100;\n    std::cout << min_val_29 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000155",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    double counter_30 = 84\n    std::cout << counter_30 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << counter_30 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `counter_30` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `counter_30`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    double counter_30 = 84;\n    std::cout << counter_30 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000156",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    char limit_31 = 94\n    std::cout << limit_31 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << limit_31 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `limit_31` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `limit_31`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    char limit_31 = 94;\n    std::cout << limit_31 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000157",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    long threshold_32 = 94\n    std::cout << threshold_32 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << threshold_32 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `threshold_32` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `threshold_32`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    long threshold_32 = 94;\n    std::cout << threshold_32 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000158",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    short score_33 = 66\n    std::cout << score_33 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << score_33 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `score_33` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `score_33`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    short score_33 = 66;\n    std::cout << score_33 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000159",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    unsigned int age_34 = 53\n    std::cout << age_34 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << age_34 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `age_34` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `age_34`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    unsigned int age_34 = 53;\n    std::cout << age_34 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000160",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    int size_35 = 92\n    std::cout << size_35 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << size_35 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `size_35` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `size_35`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int size_35 = 92;\n    std::cout << size_35 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000161",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    float length_36 = 63\n    std::cout << length_36 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << length_36 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `length_36` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `length_36`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    float length_36 = 63;\n    std::cout << length_36 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000162",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    double width_37 = 99\n    std::cout << width_37 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << width_37 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `width_37` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `width_37`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    double width_37 = 99;\n    std::cout << width_37 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000163",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    char height_38 = 61\n    std::cout << height_38 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << height_38 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `height_38` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `height_38`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    char height_38 = 61;\n    std::cout << height_38 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000164",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    long depth_39 = 79\n    std::cout << depth_39 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << depth_39 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `depth_39` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `depth_39`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    long depth_39 = 79;\n    std::cout << depth_39 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000165",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    short count_40 = 49\n    std::cout << count_40 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << count_40 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `count_40` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `count_40`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    short count_40 = 49;\n    std::cout << count_40 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000166",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    unsigned int total_41 = 88\n    std::cout << total_41 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << total_41 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `total_41` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `total_41`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    unsigned int total_41 = 88;\n    std::cout << total_41 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000167",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    int index_42 = 2\n    std::cout << index_42 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << index_42 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `index_42` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `index_42`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int index_42 = 2;\n    std::cout << index_42 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000168",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    float sum_43 = 57\n    std::cout << sum_43 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << sum_43 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `sum_43` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `sum_43`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    float sum_43 = 57;\n    std::cout << sum_43 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000169",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    double average_44 = 48\n    std::cout << average_44 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << average_44 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `average_44` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `average_44`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    double average_44 = 48;\n    std::cout << average_44 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000170",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    char result_45 = 35\n    std::cout << result_45 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << result_45 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `result_45` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `result_45`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    char result_45 = 35;\n    std::cout << result_45 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000171",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    long value_46 = 28\n    std::cout << value_46 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << value_46 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `value_46` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `value_46`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    long value_46 = 28;\n    std::cout << value_46 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000172",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    short temp_47 = 64\n    std::cout << temp_47 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << temp_47 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `temp_47` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `temp_47`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    short temp_47 = 64;\n    std::cout << temp_47 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000173",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    unsigned int max_val_48 = 55\n    std::cout << max_val_48 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << max_val_48 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `max_val_48` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `max_val_48`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    unsigned int max_val_48 = 55;\n    std::cout << max_val_48 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000174",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    int min_val_49 = 20\n    std::cout << min_val_49 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << min_val_49 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `min_val_49` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `min_val_49`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int min_val_49 = 20;\n    std::cout << min_val_49 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000175",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    float counter_50 = 16\n    std::cout << counter_50 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << counter_50 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `counter_50` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `counter_50`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    float counter_50 = 16;\n    std::cout << counter_50 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000176",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    double limit_51 = 53\n    std::cout << limit_51 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << limit_51 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `limit_51` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `limit_51`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    double limit_51 = 53;\n    std::cout << limit_51 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000177",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    char threshold_52 = 42\n    std::cout << threshold_52 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << threshold_52 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `threshold_52` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `threshold_52`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    char threshold_52 = 42;\n    std::cout << threshold_52 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000178",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    long score_53 = 43\n    std::cout << score_53 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << score_53 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `score_53` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `score_53`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    long score_53 = 43;\n    std::cout << score_53 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000179",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    short age_54 = 56\n    std::cout << age_54 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << age_54 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `age_54` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `age_54`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    short age_54 = 56;\n    std::cout << age_54 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000180",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    unsigned int size_55 = 88\n    std::cout << size_55 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << size_55 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `size_55` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `size_55`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    unsigned int size_55 = 88;\n    std::cout << size_55 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000181",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    int length_56 = 79\n    std::cout << length_56 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << length_56 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `length_56` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `length_56`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    int length_56 = 79;\n    std::cout << length_56 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000182",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    float width_57 = 82\n    std::cout << width_57 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << width_57 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `width_57` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `width_57`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    float width_57 = 82;\n    std::cout << width_57 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000183",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    double height_58 = 71\n    std::cout << height_58 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << height_58 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `height_58` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `height_58`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    double height_58 = 71;\n    std::cout << height_58 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000184",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    char depth_59 = 96\n    std::cout << depth_59 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << depth_59 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `depth_59` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `depth_59`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    char depth_59 = 96;\n    std::cout << depth_59 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000185",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    long count_60 = 78\n    std::cout << count_60 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << count_60 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `count_60` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `count_60`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    long count_60 = 78;\n    std::cout << count_60 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  },
+  {
+    "id": "CP_COMPILER_000186",
+    "language": "cpp",
+    "category": "compiler_error",
+    "instruction": "Fix the missing semicolon syntax error.",
+    "input": {
+      "title": "Missing Semicolon",
+      "code": "#include <iostream>\n\nint main() {\n    short total_61 = 49\n    std::cout << total_61 << std::endl;\n    return 0;\n}\n",
+      "error_message": "main.cpp: In function \u2018int main()\u2019:\nmain.cpp:4:5: error: expected \u2018,\u2019 or \u2018;\u2019 before \u2018std\u2019\n    4 |     std::cout << total_61 << std::endl;\n      |     ^~~"
+    },
+    "output": {
+      "technical": "A statement in C++ must be terminated with a semicolon. The compiler encountered `std::cout` but the previous statement declaring `total_61` was not terminated.",
+      "beginner": "You forgot to put a semicolon (;) at the end of the line where you created `total_61`. Semicolons are like periods in English sentences.",
+      "analogy": "Imagine writing a paragraph without any punctuation. The computer gets confused about where one instruction ends and the next begins.",
+      "solution": "Add a semicolon at the end of the variable declaration line.",
+      "prevention": "Always double-check the ends of your statements for semicolons.",
+      "optimized_code": "#include <iostream>\n\nint main() {\n    short total_61 = 49;\n    std::cout << total_61 << std::endl;\n    return 0;\n}\n",
+      "complexity": {
+        "before": "O(1)",
+        "after": "O(1)"
+      }
+    },
+    "metadata": {
+      "difficulty": "easy",
+      "source": "synthetic",
+      "language_version": "C++17",
+      "tags": [
+        "syntax",
+        "semicolon"
+      ]
+    }
+  }
+]
