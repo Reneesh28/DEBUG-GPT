@@ -26,7 +26,133 @@ def analyze_python(code: str) -> list[dict]:
 
     issues.extend(check_syntax(code))
     issues.extend(check_imports(code))
+    issues.extend(check_undefined_variables(code))
+    issues.extend(check_division_by_zero(code))
 
+    return issues
+
+
+class UndefinedVariableVisitor(ast.NodeVisitor):
+    def __init__(self):
+        self.defined_names = set()
+        self.used_names = []  # List of tuples (name, lineno)
+
+    def visit_Import(self, node):
+        for alias in node.names:
+            name = alias.asname or alias.name
+            self.defined_names.add(name.split('.')[0])
+        self.generic_visit(node)
+
+    def visit_ImportFrom(self, node):
+        for alias in node.names:
+            name = alias.asname or alias.name
+            self.defined_names.add(name)
+        self.generic_visit(node)
+
+    def visit_FunctionDef(self, node):
+        self.defined_names.add(node.name)
+        self.generic_visit(node)
+
+    def visit_ClassDef(self, node):
+        self.defined_names.add(node.name)
+        self.generic_visit(node)
+
+    def visit_Name(self, node):
+        if isinstance(node.ctx, ast.Store):
+            self.defined_names.add(node.id)
+        elif isinstance(node.ctx, ast.Load):
+            self.used_names.append((node.id, node.lineno))
+        self.generic_visit(node)
+
+    def visit_arg(self, node):
+        self.defined_names.add(node.arg)
+        self.generic_visit(node)
+
+
+def check_undefined_variables(code: str) -> list[dict]:
+    """
+    Detect references to undefined variables.
+    """
+
+    try:
+        tree = ast.parse(code)
+    except SyntaxError:
+        return []
+
+    visitor = UndefinedVariableVisitor()
+    visitor.visit(tree)
+
+    import builtins
+    builtins_set = set(dir(builtins))
+
+    issues = []
+    seen = set()
+    for name, lineno in visitor.used_names:
+        if name not in visitor.defined_names and name not in builtins_set:
+            key = (name, lineno)
+            if key not in seen:
+                seen.add(key)
+                issues.append({
+                    "issue": "Undefined variable",
+                    "language": "python",
+                    "severity": "error",
+                    "confidence": 0.90,
+                    "line": lineno,
+                    "message": (
+                        f"Variable '{name}' is referenced before assignment "
+                        f"or is not defined."
+                    ),
+                    "suggestion": (
+                        f"Define variable '{name}' before using it or correct the spelling."
+                    ),
+                    "rule_id": "python_undefined_variable",
+                })
+    return issues
+
+
+class DivisionByZeroVisitor(ast.NodeVisitor):
+    def __init__(self):
+        self.errors = []
+
+    def visit_BinOp(self, node):
+        if isinstance(node.op, (ast.Div, ast.FloorDiv, ast.Mod)):
+            denominator = node.right
+            is_zero = False
+            if isinstance(denominator, ast.Constant) and denominator.value in (0, 0.0):
+                is_zero = True
+            elif isinstance(denominator, ast.Num) and denominator.n in (0, 0.0):
+                is_zero = True
+
+            if is_zero:
+                self.errors.append(node.lineno)
+        self.generic_visit(node)
+
+
+def check_division_by_zero(code: str) -> list[dict]:
+    """
+    Detect division or modulo by zero.
+    """
+
+    try:
+        tree = ast.parse(code)
+    except SyntaxError:
+        return []
+
+    visitor = DivisionByZeroVisitor()
+    visitor.visit(tree)
+
+    issues = []
+    for lineno in visitor.errors:
+        issues.append({
+            "issue": "Division by zero",
+            "language": "python",
+            "severity": "error",
+            "confidence": 1.0,
+            "line": lineno,
+            "message": "Division or modulo by zero detected.",
+            "suggestion": "Ensure the denominator is not zero.",
+            "rule_id": "python_division_by_zero",
+        })
     return issues
 
 

@@ -117,3 +117,48 @@ def test_unknown_language():
     assert len(issues) == 1
     assert issues[0]["rule_id"] == "unsupported_language"
     assert issues[0]["language"] == "unknown"
+
+
+def test_cpp_array_out_of_bounds():
+    code = """
+    #include <iostream>
+    int main() {
+        int arr[5];
+        std::cout << arr[10] << std::endl;
+        return 0;
+    }
+    """
+
+    issues = analyze(code, "cpp")
+
+    assert any(
+        issue["rule_id"] == "cpp_array_out_of_bounds"
+        for issue in issues
+    )
+
+
+def test_python_undefined_variable():
+    code = """
+for i in range(10):
+    print(x)
+    """
+
+    issues = analyze(code, "python")
+
+    assert any(
+        issue["rule_id"] == "python_undefined_variable"
+        for issue in issues
+    )
+
+
+def test_python_division_by_zero():
+    code = """
+x = 5 / 0
+    """
+
+    issues = analyze(code, "python")
+
+    assert any(
+        issue["rule_id"] == "python_division_by_zero"
+        for issue in issues
+    )

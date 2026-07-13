@@ -182,3 +182,30 @@ def search_by_difficulty(
             "difficulty": difficulty,
         },
     )
+
+
+def retrieve_context(
+    query: str,
+    top_k: int = 5,
+) -> list[dict[str, Any]]:
+    """
+    Retrieve the most relevant debugging context.
+
+    This is the function the FastAPI backend should use.
+    It searches across all ChromaDB collections.
+
+    Args:
+        query:
+            User code or error.
+
+        top_k:
+            Number of retrieved documents.
+
+    Returns:
+        List of retrieved debugging examples.
+    """
+
+    return search_all(
+        query=query,
+        top_k=top_k,
+    )

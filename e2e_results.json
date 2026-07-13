@@ -1,0 +1,649 @@
+{
+    "Test 1: Health Endpoint": {
+        "status": "PASS",
+        "code": 200,
+        "response": {
+            "status": "healthy",
+            "version": "1.0.0"
+        }
+    },
+    "Test 2: Analyze Endpoint (Code)": {
+        "status": "PASS",
+        "code": 200,
+        "response": {
+            "success": true,
+            "language": "cpp",
+            "issues": [
+                {
+                    "issue": "Array out of bounds",
+                    "severity": "error",
+                    "confidence": 0.95,
+                    "line": 6,
+                    "message": "Array 'arr' has size 5, but is accessed at index 10.",
+                    "suggestion": "Ensure the index is less than the array size.",
+                    "rule_id": "cpp_array_out_of_bounds"
+                }
+            ],
+            "rag_context": [
+                {
+                    "id": "CP_COMPILER_000538",
+                    "document": "Fix the C++ compiler error: 'std::string' was not declared in this scope.\n\nMissing #include for string\n#include <iostream>\n\nint compute() {\n    std::string values;\n    return 0;\n}\nmain.cpp: In function 'int compute()':\nmain.cpp:4:5: error: 'std::string' was not declared in this scope\n\nThe identifier 'std::string' is part of the C++ standard library, which requires specific headers to be included. Without `#include <string>`, the compiler doesn't know what 'std::string' is.\nYou are trying to use 'string', but you forgot to tell C++ to load the 'string' library at the top of your file.\nIt's like writing a letter and stopping in the middle of a\nApply the appropriate syntax fix, import, or type conversion as expected by the C++ language rules.\nUse modern IDEs which flag syntax errors and missing includes in real-time as you type.\n#include <iostream>\n#include <string>\n\nint compute() {\n    std::string values;\n    return 0;\n}\n{'before': 'O(1)', 'after': 'O(1)'}",
+                    "metadata": {
+                        "category": "compiler_error",
+                        "difficulty": "easy",
+                        "language": "cpp",
+                        "source": "Generated C++ Compiler Error Variations",
+                        "tags": "compiler-error, missing-include, standard-library",
+                        "title": ""
+                    },
+                    "distance": 0.34125658869743347,
+                    "collection": "compiler_errors"
+                },
+                {
+                    "id": "CP_COMPILER_000838",
+                    "document": "Fix the C++ compiler error: 'std::string' was not declared in this scope.\n\nMissing #include for string\n#include <iostream>\n\nint compute() {\n    std::string values;\n    return 0;\n}\nmain.cpp: In function 'int compute()':\nmain.cpp:4:5: error: 'std::string' was not declared in this scope\n\nThe identifier 'std::string' is part of the C++ standard library, which requires specific headers to be included. Without `#include <string>`, the compiler doesn't know what 'std::string' is.\nYou are trying to use 'string', but you forgot to tell C++ to load the 'string' library at the top of your file.\nIt's like writing a letter and stopping in the middle of a\nApply the appropriate syntax fix, import, or type conversion as expected by the C++ language rules.\nUse modern IDEs which flag syntax errors and missing includes in real-time as you type.\n#include <iostream>\n#include <string>\n\nint compute() {\n    std::string values;\n    return 0;\n}\n{'before': 'O(1)', 'after': 'O(1)'}",
+                    "metadata": {
+                        "category": "compiler_error",
+                        "difficulty": "easy",
+                        "language": "cpp",
+                        "source": "Generated C++ Compiler Error Variations",
+                        "tags": "compiler-error, missing-include, standard-library",
+                        "title": ""
+                    },
+                    "distance": 0.34125658869743347,
+                    "collection": "compiler_errors"
+                },
+                {
+                    "id": "CP_COMPILER_001138",
+                    "document": "Fix the C++ compiler error: 'std::string' was not declared in this scope.\n\nMissing #include for string\n#include <iostream>\n\nint compute() {\n    std::string values;\n    return 0;\n}\nmain.cpp: In function 'int compute()':\nmain.cpp:4:5: error: 'std::string' was not declared in this scope\n\nThe identifier 'std::string' is part of the C++ standard library, which requires specific headers to be included. Without `#include <string>`, the compiler doesn't know what 'std::string' is.\nYou are trying to use 'string', but you forgot to tell C++ to load the 'string' library at the top of your file.\nIt's like writing a letter and stopping in the middle of a\nApply the appropriate syntax fix, import, or type conversion as expected by the C++ language rules.\nUse modern IDEs which flag syntax errors and missing includes in real-time as you type.\n#include <iostream>\n#include <string>\n\nint compute() {\n    std::string values;\n    return 0;\n}\n{'before': 'O(1)', 'after': 'O(1)'}",
+                    "metadata": {
+                        "category": "compiler_error",
+                        "difficulty": "easy",
+                        "language": "cpp",
+                        "source": "Generated C++ Compiler Error Variations",
+                        "tags": "compiler-error, missing-include, standard-library",
+                        "title": ""
+                    },
+                    "distance": 0.34125658869743347,
+                    "collection": "compiler_errors"
+                },
+                {
+                    "id": "CP_COMPILER_001438",
+                    "document": "Fix the C++ compiler error: 'std::string' was not declared in this scope.\n\nMissing #include for string\n#include <iostream>\n\nint compute() {\n    std::string values;\n    return 0;\n}\nmain.cpp: In function 'int compute()':\nmain.cpp:4:5: error: 'std::string' was not declared in this scope\n\nThe identifier 'std::string' is part of the C++ standard library, which requires specific headers to be included. Without `#include <string>`, the compiler doesn't know what 'std::string' is.\nYou are trying to use 'string', but you forgot to tell C++ to load the 'string' library at the top of your file.\nIt's like writing a letter and stopping in the middle of a\nApply the appropriate syntax fix, import, or type conversion as expected by the C++ language rules.\nUse modern IDEs which flag syntax errors and missing includes in real-time as you type.\n#include <iostream>\n#include <string>\n\nint compute() {\n    std::string values;\n    return 0;\n}\n{'before': 'O(1)', 'after': 'O(1)'}",
+                    "metadata": {
+                        "category": "compiler_error",
+                        "difficulty": "easy",
+                        "language": "cpp",
+                        "source": "Generated C++ Compiler Error Variations",
+                        "tags": "compiler-error, missing-include, standard-library",
+                        "title": ""
+                    },
+                    "distance": 0.34125658869743347,
+                    "collection": "compiler_errors"
+                },
+                {
+                    "id": "CP_COMPILER_000508",
+                    "document": "Fix the C++ compiler error: 'std::string' was not declared in this scope.\n\nMissing #include for string\n#include <iostream>\n\nint calculate() {\n    std::string items;\n    return 0;\n}\nmain.cpp: In function 'int calculate()':\nmain.cpp:4:5: error: 'std::string' was not declared in this scope\n\nThe identifier 'std::string' is part of the C++ standard library, which requires specific headers to be included. Without `#include <string>`, the compiler doesn't know what 'std::string' is.\nYou are trying to use 'string', but you forgot to tell C++ to load the 'string' library at the top of your file.\nIt's like writing a letter and stopping in the middle of a\nApply the appropriate syntax fix, import, or type conversion as expected by the C++ language rules.\nUse modern IDEs which flag syntax errors and missing includes in real-time as you type.\n#include <iostream>\n#include <string>\n\nint calculate() {\n    std::string items;\n    return 0;\n}\n{'before': 'O(1)', 'after': 'O(1)'}",
+                    "metadata": {
+                        "category": "compiler_error",
+                        "difficulty": "easy",
+                        "language": "cpp",
+                        "source": "Generated C++ Compiler Error Variations",
+                        "tags": "compiler-error, missing-include, standard-library",
+                        "title": ""
+                    },
+                    "distance": 0.3423428237438202,
+                    "collection": "compiler_errors"
+                }
+            ],
+            "execution_time": 0.2361
+        }
+    },
+    "Test 3: Analyze Endpoint (Upload)": {
+        "status": "PASS",
+        "code": 200,
+        "response": {
+            "success": true,
+            "language": "cpp",
+            "issues": [
+                {
+                    "issue": "Array out of bounds",
+                    "severity": "error",
+                    "confidence": 0.95,
+                    "line": 6,
+                    "message": "Array 'arr' has size 5, but is accessed at index 10.",
+                    "suggestion": "Ensure the index is less than the array size.",
+                    "rule_id": "cpp_array_out_of_bounds"
+                }
+            ],
+            "rag_context": [
+                {
+                    "id": "CP_COMPILER_000538",
+                    "document": "Fix the C++ compiler error: 'std::string' was not declared in this scope.\n\nMissing #include for string\n#include <iostream>\n\nint compute() {\n    std::string values;\n    return 0;\n}\nmain.cpp: In function 'int compute()':\nmain.cpp:4:5: error: 'std::string' was not declared in this scope\n\nThe identifier 'std::string' is part of the C++ standard library, which requires specific headers to be included. Without `#include <string>`, the compiler doesn't know what 'std::string' is.\nYou are trying to use 'string', but you forgot to tell C++ to load the 'string' library at the top of your file.\nIt's like writing a letter and stopping in the middle of a\nApply the appropriate syntax fix, import, or type conversion as expected by the C++ language rules.\nUse modern IDEs which flag syntax errors and missing includes in real-time as you type.\n#include <iostream>\n#include <string>\n\nint compute() {\n    std::string values;\n    return 0;\n}\n{'before': 'O(1)', 'after': 'O(1)'}",
+                    "metadata": {
+                        "category": "compiler_error",
+                        "difficulty": "easy",
+                        "language": "cpp",
+                        "source": "Generated C++ Compiler Error Variations",
+                        "tags": "compiler-error, missing-include, standard-library",
+                        "title": ""
+                    },
+                    "distance": 0.34125658869743347,
+                    "collection": "compiler_errors"
+                },
+                {
+                    "id": "CP_COMPILER_000838",
+                    "document": "Fix the C++ compiler error: 'std::string' was not declared in this scope.\n\nMissing #include for string\n#include <iostream>\n\nint compute() {\n    std::string values;\n    return 0;\n}\nmain.cpp: In function 'int compute()':\nmain.cpp:4:5: error: 'std::string' was not declared in this scope\n\nThe identifier 'std::string' is part of the C++ standard library, which requires specific headers to be included. Without `#include <string>`, the compiler doesn't know what 'std::string' is.\nYou are trying to use 'string', but you forgot to tell C++ to load the 'string' library at the top of your file.\nIt's like writing a letter and stopping in the middle of a\nApply the appropriate syntax fix, import, or type conversion as expected by the C++ language rules.\nUse modern IDEs which flag syntax errors and missing includes in real-time as you type.\n#include <iostream>\n#include <string>\n\nint compute() {\n    std::string values;\n    return 0;\n}\n{'before': 'O(1)', 'after': 'O(1)'}",
+                    "metadata": {
+                        "category": "compiler_error",
+                        "difficulty": "easy",
+                        "language": "cpp",
+                        "source": "Generated C++ Compiler Error Variations",
+                        "tags": "compiler-error, missing-include, standard-library",
+                        "title": ""
+                    },
+                    "distance": 0.34125658869743347,
+                    "collection": "compiler_errors"
+                },
+                {
+                    "id": "CP_COMPILER_001138",
+                    "document": "Fix the C++ compiler error: 'std::string' was not declared in this scope.\n\nMissing #include for string\n#include <iostream>\n\nint compute() {\n    std::string values;\n    return 0;\n}\nmain.cpp: In function 'int compute()':\nmain.cpp:4:5: error: 'std::string' was not declared in this scope\n\nThe identifier 'std::string' is part of the C++ standard library, which requires specific headers to be included. Without `#include <string>`, the compiler doesn't know what 'std::string' is.\nYou are trying to use 'string', but you forgot to tell C++ to load the 'string' library at the top of your file.\nIt's like writing a letter and stopping in the middle of a\nApply the appropriate syntax fix, import, or type conversion as expected by the C++ language rules.\nUse modern IDEs which flag syntax errors and missing includes in real-time as you type.\n#include <iostream>\n#include <string>\n\nint compute() {\n    std::string values;\n    return 0;\n}\n{'before': 'O(1)', 'after': 'O(1)'}",
+                    "metadata": {
+                        "category": "compiler_error",
+                        "difficulty": "easy",
+                        "language": "cpp",
+                        "source": "Generated C++ Compiler Error Variations",
+                        "tags": "compiler-error, missing-include, standard-library",
+                        "title": ""
+                    },
+                    "distance": 0.34125658869743347,
+                    "collection": "compiler_errors"
+                },
+                {
+                    "id": "CP_COMPILER_001438",
+                    "document": "Fix the C++ compiler error: 'std::string' was not declared in this scope.\n\nMissing #include for string\n#include <iostream>\n\nint compute() {\n    std::string values;\n    return 0;\n}\nmain.cpp: In function 'int compute()':\nmain.cpp:4:5: error: 'std::string' was not declared in this scope\n\nThe identifier 'std::string' is part of the C++ standard library, which requires specific headers to be included. Without `#include <string>`, the compiler doesn't know what 'std::string' is.\nYou are trying to use 'string', but you forgot to tell C++ to load the 'string' library at the top of your file.\nIt's like writing a letter and stopping in the middle of a\nApply the appropriate syntax fix, import, or type conversion as expected by the C++ language rules.\nUse modern IDEs which flag syntax errors and missing includes in real-time as you type.\n#include <iostream>\n#include <string>\n\nint compute() {\n    std::string values;\n    return 0;\n}\n{'before': 'O(1)', 'after': 'O(1)'}",
+                    "metadata": {
+                        "category": "compiler_error",
+                        "difficulty": "easy",
+                        "language": "cpp",
+                        "source": "Generated C++ Compiler Error Variations",
+                        "tags": "compiler-error, missing-include, standard-library",
+                        "title": ""
+                    },
+                    "distance": 0.34125658869743347,
+                    "collection": "compiler_errors"
+                },
+                {
+                    "id": "CP_COMPILER_000508",
+                    "document": "Fix the C++ compiler error: 'std::string' was not declared in this scope.\n\nMissing #include for string\n#include <iostream>\n\nint calculate() {\n    std::string items;\n    return 0;\n}\nmain.cpp: In function 'int calculate()':\nmain.cpp:4:5: error: 'std::string' was not declared in this scope\n\nThe identifier 'std::string' is part of the C++ standard library, which requires specific headers to be included. Without `#include <string>`, the compiler doesn't know what 'std::string' is.\nYou are trying to use 'string', but you forgot to tell C++ to load the 'string' library at the top of your file.\nIt's like writing a letter and stopping in the middle of a\nApply the appropriate syntax fix, import, or type conversion as expected by the C++ language rules.\nUse modern IDEs which flag syntax errors and missing includes in real-time as you type.\n#include <iostream>\n#include <string>\n\nint calculate() {\n    std::string items;\n    return 0;\n}\n{'before': 'O(1)', 'after': 'O(1)'}",
+                    "metadata": {
+                        "category": "compiler_error",
+                        "difficulty": "easy",
+                        "language": "cpp",
+                        "source": "Generated C++ Compiler Error Variations",
+                        "tags": "compiler-error, missing-include, standard-library",
+                        "title": ""
+                    },
+                    "distance": 0.3423428237438202,
+                    "collection": "compiler_errors"
+                }
+            ],
+            "execution_time": 0.2374
+        }
+    },
+    "Test 4: Debug Endpoint": {
+        "status": "PASS",
+        "code": 200,
+        "response": {
+            "success": true,
+            "issues": [
+                {
+                    "issue": "Undefined variable",
+                    "severity": "error",
+                    "confidence": 0.9,
+                    "line": 2,
+                    "message": "Variable 'x' is referenced before assignment or is not defined.",
+                    "suggestion": "Define variable 'x' before using it or correct the spelling.",
+                    "rule_id": "python_undefined_variable"
+                }
+            ],
+            "debug_suggestions": [
+                "Define variable 'x' before using it or correct the spelling."
+            ],
+            "rag_context": [
+                {
+                    "id": "PY_LOGICAL_000142",
+                    "document": "Fix the logical bug caused by off-by-one range error.\n\nOff-By-One Range Error\ndef execute(numbers):\n    # Trying to iterate up to the length of the list, but range(1, len) misses the 0th index and stops before len\n    for i in range(1, len(numbers)):\n        print(numbers[i])\n\nexecute(['A', 'B', 'C']) # Skips 'A'\nLogical Bug: Incorrect bounds in `range()` cause the loop to skip elements.\n\nThe `range(start, stop)` function generates a sequence from `start` (inclusive) to `stop` (exclusive). By using `range(1, len())`, the loop completely skips the 0th index (the first element) of the list.\nPython lists start at index 0. Because you told the range to start at 1, the loop completely skips the very first item in the list.\nIt's like expecting a specific behavior but overlooking a fundamental rule of how the system operates.\nApply the correct syntax, loop bounds, return logic, or operator depending on the logical bug.\nWrite unit tests to verify function outputs, and use static analysis tools like PyLint to catch anti-patterns.\ndef execute(numbers):\n    for i in range(len(numbers)):\n        print(numbers[i])\n\nexecute(['A', 'B', 'C'])\n{'before': 'O(N) or O(1)', 'after': 'O(N) or O(1)'}",
+                    "metadata": {
+                        "category": "logical_bug",
+                        "difficulty": "medium",
+                        "language": "python",
+                        "source": "Generated Python Logical Bug Variations",
+                        "tags": "logical-bug, off-by-one, range, loops",
+                        "title": ""
+                    },
+                    "distance": 0.5278284549713135,
+                    "collection": "logical_bugs"
+                },
+                {
+                    "id": "PY_LOGICAL_000242",
+                    "document": "Fix the logical bug caused by off-by-one range error.\n\nOff-By-One Range Error\ndef execute(numbers):\n    # Trying to iterate up to the length of the list, but range(1, len) misses the 0th index and stops before len\n    for i in range(1, len(numbers)):\n        print(numbers[i])\n\nexecute(['A', 'B', 'C']) # Skips 'A'\nLogical Bug: Incorrect bounds in `range()` cause the loop to skip elements.\n\nThe `range(start, stop)` function generates a sequence from `start` (inclusive) to `stop` (exclusive). By using `range(1, len())`, the loop completely skips the 0th index (the first element) of the list.\nPython lists start at index 0. Because you told the range to start at 1, the loop completely skips the very first item in the list.\nIt's like expecting a specific behavior but overlooking a fundamental rule of how the system operates.\nApply the correct syntax, loop bounds, return logic, or operator depending on the logical bug.\nWrite unit tests to verify function outputs, and use static analysis tools like PyLint to catch anti-patterns.\ndef execute(numbers):\n    for i in range(len(numbers)):\n        print(numbers[i])\n\nexecute(['A', 'B', 'C'])\n{'before': 'O(N) or O(1)', 'after': 'O(N) or O(1)'}",
+                    "metadata": {
+                        "category": "logical_bug",
+                        "difficulty": "medium",
+                        "language": "python",
+                        "source": "Generated Python Logical Bug Variations",
+                        "tags": "logical-bug, off-by-one, range, loops",
+                        "title": ""
+                    },
+                    "distance": 0.5278284549713135,
+                    "collection": "logical_bugs"
+                },
+                {
+                    "id": "PY_LOGICAL_000442",
+                    "document": "Fix the logical bug caused by off-by-one range error.\n\nOff-By-One Range Error\ndef execute(numbers):\n    # Trying to iterate up to the length of the list, but range(1, len) misses the 0th index and stops before len\n    for i in range(1, len(numbers)):\n        print(numbers[i])\n\nexecute(['A', 'B', 'C']) # Skips 'A'\nLogical Bug: Incorrect bounds in `range()` cause the loop to skip elements.\n\nThe `range(start, stop)` function generates a sequence from `start` (inclusive) to `stop` (exclusive). By using `range(1, len())`, the loop completely skips the 0th index (the first element) of the list.\nPython lists start at index 0. Because you told the range to start at 1, the loop completely skips the very first item in the list.\nIt's like expecting a specific behavior but overlooking a fundamental rule of how the system operates.\nApply the correct syntax, loop bounds, return logic, or operator depending on the logical bug.\nWrite unit tests to verify function outputs, and use static analysis tools like PyLint to catch anti-patterns.\ndef execute(numbers):\n    for i in range(len(numbers)):\n        print(numbers[i])\n\nexecute(['A', 'B', 'C'])\n{'before': 'O(N) or O(1)', 'after': 'O(N) or O(1)'}",
+                    "metadata": {
+                        "category": "logical_bug",
+                        "difficulty": "medium",
+                        "language": "python",
+                        "source": "Generated Python Logical Bug Variations",
+                        "tags": "logical-bug, off-by-one, range, loops",
+                        "title": ""
+                    },
+                    "distance": 0.5278284549713135,
+                    "collection": "logical_bugs"
+                },
+                {
+                    "id": "PY_LOGICAL_000542",
+                    "document": "Fix the logical bug caused by off-by-one range error.\n\nOff-By-One Range Error\ndef execute(numbers):\n    # Trying to iterate up to the length of the list, but range(1, len) misses the 0th index and stops before len\n    for i in range(1, len(numbers)):\n        print(numbers[i])\n\nexecute(['A', 'B', 'C']) # Skips 'A'\nLogical Bug: Incorrect bounds in `range()` cause the loop to skip elements.\n\nThe `range(start, stop)` function generates a sequence from `start` (inclusive) to `stop` (exclusive). By using `range(1, len())`, the loop completely skips the 0th index (the first element) of the list.\nPython lists start at index 0. Because you told the range to start at 1, the loop completely skips the very first item in the list.\nIt's like expecting a specific behavior but overlooking a fundamental rule of how the system operates.\nApply the correct syntax, loop bounds, return logic, or operator depending on the logical bug.\nWrite unit tests to verify function outputs, and use static analysis tools like PyLint to catch anti-patterns.\ndef execute(numbers):\n    for i in range(len(numbers)):\n        print(numbers[i])\n\nexecute(['A', 'B', 'C'])\n{'before': 'O(N) or O(1)', 'after': 'O(N) or O(1)'}",
+                    "metadata": {
+                        "category": "logical_bug",
+                        "difficulty": "medium",
+                        "language": "python",
+                        "source": "Generated Python Logical Bug Variations",
+                        "tags": "logical-bug, off-by-one, range, loops",
+                        "title": ""
+                    },
+                    "distance": 0.5278284549713135,
+                    "collection": "logical_bugs"
+                },
+                {
+                    "id": "PY_LOGICAL_000742",
+                    "document": "Fix the logical bug caused by off-by-one range error.\n\nOff-By-One Range Error\ndef execute(numbers):\n    # Trying to iterate up to the length of the list, but range(1, len) misses the 0th index and stops before len\n    for i in range(1, len(numbers)):\n        print(numbers[i])\n\nexecute(['A', 'B', 'C']) # Skips 'A'\nLogical Bug: Incorrect bounds in `range()` cause the loop to skip elements.\n\nThe `range(start, stop)` function generates a sequence from `start` (inclusive) to `stop` (exclusive). By using `range(1, len())`, the loop completely skips the 0th index (the first element) of the list.\nPython lists start at index 0. Because you told the range to start at 1, the loop completely skips the very first item in the list.\nIt's like expecting a specific behavior but overlooking a fundamental rule of how the system operates.\nApply the correct syntax, loop bounds, return logic, or operator depending on the logical bug.\nWrite unit tests to verify function outputs, and use static analysis tools like PyLint to catch anti-patterns.\ndef execute(numbers):\n    for i in range(len(numbers)):\n        print(numbers[i])\n\nexecute(['A', 'B', 'C'])\n{'before': 'O(N) or O(1)', 'after': 'O(N) or O(1)'}",
+                    "metadata": {
+                        "category": "logical_bug",
+                        "difficulty": "medium",
+                        "language": "python",
+                        "source": "Generated Python Logical Bug Variations",
+                        "tags": "logical-bug, off-by-one, range, loops",
+                        "title": ""
+                    },
+                    "distance": 0.5278284549713135,
+                    "collection": "logical_bugs"
+                }
+            ],
+            "execution_time": 0.2249
+        }
+    },
+    "Test 5: Explain Endpoint": {
+        "status": "PASS",
+        "code": 200,
+        "response": {
+            "success": true,
+            "technical": "Detailed AI explanation will be available after LoRA integration.",
+            "beginner": "Beginner explanation will be generated after AI integration.",
+            "analogy": "Real-world analogy will be generated after AI integration.",
+            "references": [
+                {
+                    "id": "CP_RUNTIME_000033",
+                    "document": "Fix the segmentation fault caused by dereferencing a null pointer.\n\nNull Pointer Dereference\n#include <iostream>\n\nint main() {\n    int* threshold_32 = nullptr;\n    std::cout << *threshold_32 << std::endl;\n    return 0;\n}\n\nSegmentation fault (core dumped)\n\nA segmentation fault occurs because the pointer `threshold_32` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.\nYou are trying to read a value from a pointer (`threshold_32`) that doesn't point to anything (it's null).\nIt's like trying to open a door that doesn't exist. You end up walking into a wall.\nEnsure `threshold_32` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.\nAlways initialize pointers and check if they are null before dereferencing them.\n#include <iostream>\n\nint main() {\n    int val = 10;\n    int* threshold_32 = &val;\n    std::cout << *threshold_32 << std::endl;\n    return 0;\n}\n\n{'before': 'O(1)', 'after': 'O(1)'}",
+                    "metadata": {
+                        "category": "runtime_error",
+                        "difficulty": "medium",
+                        "language": "cpp",
+                        "source": "synthetic",
+                        "tags": "pointers, segmentation-fault, memory",
+                        "title": ""
+                    },
+                    "distance": 0.45731621980667114,
+                    "collection": "runtime_errors"
+                },
+                {
+                    "id": "CP_RUNTIME_000040",
+                    "document": "Fix the segmentation fault caused by dereferencing a null pointer.\n\nNull Pointer Dereference\n#include <iostream>\n\nint main() {\n    int* depth_39 = nullptr;\n    std::cout << *depth_39 << std::endl;\n    return 0;\n}\n\nSegmentation fault (core dumped)\n\nA segmentation fault occurs because the pointer `depth_39` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.\nYou are trying to read a value from a pointer (`depth_39`) that doesn't point to anything (it's null).\nIt's like trying to open a door that doesn't exist. You end up walking into a wall.\nEnsure `depth_39` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.\nAlways initialize pointers and check if they are null before dereferencing them.\n#include <iostream>\n\nint main() {\n    int val = 10;\n    int* depth_39 = &val;\n    std::cout << *depth_39 << std::endl;\n    return 0;\n}\n\n{'before': 'O(1)', 'after': 'O(1)'}",
+                    "metadata": {
+                        "category": "runtime_error",
+                        "difficulty": "medium",
+                        "language": "cpp",
+                        "source": "synthetic",
+                        "tags": "pointers, segmentation-fault, memory",
+                        "title": ""
+                    },
+                    "distance": 0.45840662717819214,
+                    "collection": "runtime_errors"
+                },
+                {
+                    "id": "CP_RUNTIME_000016",
+                    "document": "Fix the segmentation fault caused by dereferencing a null pointer.\n\nNull Pointer Dereference\n#include <iostream>\n\nint main() {\n    int* size_15 = nullptr;\n    std::cout << *size_15 << std::endl;\n    return 0;\n}\n\nSegmentation fault (core dumped)\n\nA segmentation fault occurs because the pointer `size_15` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.\nYou are trying to read a value from a pointer (`size_15`) that doesn't point to anything (it's null).\nIt's like trying to open a door that doesn't exist. You end up walking into a wall.\nEnsure `size_15` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.\nAlways initialize pointers and check if they are null before dereferencing them.\n#include <iostream>\n\nint main() {\n    int val = 10;\n    int* size_15 = &val;\n    std::cout << *size_15 << std::endl;\n    return 0;\n}\n\n{'before': 'O(1)', 'after': 'O(1)'}",
+                    "metadata": {
+                        "category": "runtime_error",
+                        "difficulty": "medium",
+                        "language": "cpp",
+                        "source": "synthetic",
+                        "tags": "pointers, segmentation-fault, memory",
+                        "title": ""
+                    },
+                    "distance": 0.4611470699310303,
+                    "collection": "runtime_errors"
+                },
+                {
+                    "id": "CP_RUNTIME_000001",
+                    "document": "Fix the segmentation fault caused by dereferencing a null pointer.\n\nNull Pointer Dereference\n#include <iostream>\n\nint main() {\n    int* count_0 = nullptr;\n    std::cout << *count_0 << std::endl;\n    return 0;\n}\n\nSegmentation fault (core dumped)\n\nA segmentation fault occurs because the pointer `count_0` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.\nYou are trying to read a value from a pointer (`count_0`) that doesn't point to anything (it's null).\nIt's like trying to open a door that doesn't exist. You end up walking into a wall.\nEnsure `count_0` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.\nAlways initialize pointers and check if they are null before dereferencing them.\n#include <iostream>\n\nint main() {\n    int val = 10;\n    int* count_0 = &val;\n    std::cout << *count_0 << std::endl;\n    return 0;\n}\n\n{'before': 'O(1)', 'after': 'O(1)'}",
+                    "metadata": {
+                        "category": "runtime_error",
+                        "difficulty": "medium",
+                        "language": "cpp",
+                        "source": "synthetic",
+                        "tags": "pointers, segmentation-fault, memory",
+                        "title": ""
+                    },
+                    "distance": 0.46262526512145996,
+                    "collection": "runtime_errors"
+                },
+                {
+                    "id": "CP_RUNTIME_000036",
+                    "document": "Fix the segmentation fault caused by dereferencing a null pointer.\n\nNull Pointer Dereference\n#include <iostream>\n\nint main() {\n    int* size_35 = nullptr;\n    std::cout << *size_35 << std::endl;\n    return 0;\n}\n\nSegmentation fault (core dumped)\n\nA segmentation fault occurs because the pointer `size_35` is initialized to `nullptr` and then dereferenced. The program attempts to access a memory address it does not have permission to read.\nYou are trying to read a value from a pointer (`size_35`) that doesn't point to anything (it's null).\nIt's like trying to open a door that doesn't exist. You end up walking into a wall.\nEnsure `size_35` points to valid memory before dereferencing it, for example, by allocating memory with `new int` or pointing it to an existing variable.\nAlways initialize pointers and check if they are null before dereferencing them.\n#include <iostream>\n\nint main() {\n    int val = 10;\n    int* size_35 = &val;\n    std::cout << *size_35 << std::endl;\n    return 0;\n}\n\n{'before': 'O(1)', 'after': 'O(1)'}",
+                    "metadata": {
+                        "category": "runtime_error",
+                        "difficulty": "medium",
+                        "language": "cpp",
+                        "source": "synthetic",
+                        "tags": "pointers, segmentation-fault, memory",
+                        "title": ""
+                    },
+                    "distance": 0.46350526809692383,
+                    "collection": "runtime_errors"
+                }
+            ],
+            "execution_time": 0.2177
+        }
+    },
+    "Test 6: Optimize Endpoint": {
+        "status": "PASS",
+        "code": 200,
+        "response": {
+            "success": true,
+            "current_complexity": null,
+            "optimized_complexity": null,
+            "recommendations": [
+                "Define an entry point using int main().",
+                "Include the required standard library headers."
+            ],
+            "rag_context": [
+                {
+                    "id": "PY_RUNTIME_002160",
+                    "document": "Fix the TypeError caused by iterating over an integer.\n\nIterating Over an Integer\ndef calculate(minimum):\n    total = 0\n    # Integers are not iterable\n    for i in minimum:\n        total += i\n    return total\n\ncalculate(100)\nTraceback (most recent call last):\n  File \"main.py\", line 7, in <module>\n    calculate(100)\n  File \"main.py\", line 4, in calculate\n    for i in minimum:\nTypeError: 'int' object is not iterable\n\nThe `for...in` loop requires the target object to implement the `__iter__` or `__getitem__` methods (be an iterable). Primitives like `int` do not implement these methods, causing a TypeError.\nYou tried to loop over a single number (`100`). You can loop over a list of items or text, but to loop a specific number of times, you need to use `range(100)`.\nIt's like trying to plug a square peg into a round hole. The operation you want to perform is fundamentally incompatible with the shape of the data.\nApply the correct type conversion (e.g., `str()`), check for `None`, supply missing arguments, or use `range()` for iteration.\nUse Python Type Hints (`def func(a: int) -> int:`) and a type checker like MyPy to catch these incompatibilities before runtime.\ndef calculate(minimum):\n    total = 0\n    for i in range(minimum):\n        total += i\n    return total\n\ncalculate(100)\n{'before': 'O(1)', 'after': 'O(1)'}",
+                    "metadata": {
+                        "category": "runtime_error",
+                        "difficulty": "easy",
+                        "language": "python",
+                        "source": "Generated Python TypeError Variations",
+                        "tags": "type-error, iterable, loops, integers",
+                        "title": ""
+                    },
+                    "distance": 0.5218385457992554,
+                    "collection": "runtime_errors"
+                },
+                {
+                    "id": "PY_RUNTIME_002360",
+                    "document": "Fix the TypeError caused by iterating over an integer.\n\nIterating Over an Integer\ndef calculate(minimum):\n    total = 0\n    # Integers are not iterable\n    for i in minimum:\n        total += i\n    return total\n\ncalculate(100)\nTraceback (most recent call last):\n  File \"main.py\", line 7, in <module>\n    calculate(100)\n  File \"main.py\", line 4, in calculate\n    for i in minimum:\nTypeError: 'int' object is not iterable\n\nThe `for...in` loop requires the target object to implement the `__iter__` or `__getitem__` methods (be an iterable). Primitives like `int` do not implement these methods, causing a TypeError.\nYou tried to loop over a single number (`100`). You can loop over a list of items or text, but to loop a specific number of times, you need to use `range(100)`.\nIt's like trying to plug a square peg into a round hole. The operation you want to perform is fundamentally incompatible with the shape of the data.\nApply the correct type conversion (e.g., `str()`), check for `None`, supply missing arguments, or use `range()` for iteration.\nUse Python Type Hints (`def func(a: int) -> int:`) and a type checker like MyPy to catch these incompatibilities before runtime.\ndef calculate(minimum):\n    total = 0\n    for i in range(minimum):\n        total += i\n    return total\n\ncalculate(100)\n{'before': 'O(1)', 'after': 'O(1)'}",
+                    "metadata": {
+                        "category": "runtime_error",
+                        "difficulty": "easy",
+                        "language": "python",
+                        "source": "Generated Python TypeError Variations",
+                        "tags": "type-error, iterable, loops, integers",
+                        "title": ""
+                    },
+                    "distance": 0.5218385457992554,
+                    "collection": "runtime_errors"
+                },
+                {
+                    "id": "PY_RUNTIME_002560",
+                    "document": "Fix the TypeError caused by iterating over an integer.\n\nIterating Over an Integer\ndef calculate(minimum):\n    total = 0\n    # Integers are not iterable\n    for i in minimum:\n        total += i\n    return total\n\ncalculate(100)\nTraceback (most recent call last):\n  File \"main.py\", line 7, in <module>\n    calculate(100)\n  File \"main.py\", line 4, in calculate\n    for i in minimum:\nTypeError: 'int' object is not iterable\n\nThe `for...in` loop requires the target object to implement the `__iter__` or `__getitem__` methods (be an iterable). Primitives like `int` do not implement these methods, causing a TypeError.\nYou tried to loop over a single number (`100`). You can loop over a list of items or text, but to loop a specific number of times, you need to use `range(100)`.\nIt's like trying to plug a square peg into a round hole. The operation you want to perform is fundamentally incompatible with the shape of the data.\nApply the correct type conversion (e.g., `str()`), check for `None`, supply missing arguments, or use `range()` for iteration.\nUse Python Type Hints (`def func(a: int) -> int:`) and a type checker like MyPy to catch these incompatibilities before runtime.\ndef calculate(minimum):\n    total = 0\n    for i in range(minimum):\n        total += i\n    return total\n\ncalculate(100)\n{'before': 'O(1)', 'after': 'O(1)'}",
+                    "metadata": {
+                        "category": "runtime_error",
+                        "difficulty": "easy",
+                        "language": "python",
+                        "source": "Generated Python TypeError Variations",
+                        "tags": "type-error, iterable, loops, integers",
+                        "title": ""
+                    },
+                    "distance": 0.5218385457992554,
+                    "collection": "runtime_errors"
+                },
+                {
+                    "id": "PY_RUNTIME_002760",
+                    "document": "Fix the TypeError caused by iterating over an integer.\n\nIterating Over an Integer\ndef calculate(minimum):\n    total = 0\n    # Integers are not iterable\n    for i in minimum:\n        total += i\n    return total\n\ncalculate(100)\nTraceback (most recent call last):\n  File \"main.py\", line 7, in <module>\n    calculate(100)\n  File \"main.py\", line 4, in calculate\n    for i in minimum:\nTypeError: 'int' object is not iterable\n\nThe `for...in` loop requires the target object to implement the `__iter__` or `__getitem__` methods (be an iterable). Primitives like `int` do not implement these methods, causing a TypeError.\nYou tried to loop over a single number (`100`). You can loop over a list of items or text, but to loop a specific number of times, you need to use `range(100)`.\nIt's like trying to plug a square peg into a round hole. The operation you want to perform is fundamentally incompatible with the shape of the data.\nApply the correct type conversion (e.g., `str()`), check for `None`, supply missing arguments, or use `range()` for iteration.\nUse Python Type Hints (`def func(a: int) -> int:`) and a type checker like MyPy to catch these incompatibilities before runtime.\ndef calculate(minimum):\n    total = 0\n    for i in range(minimum):\n        total += i\n    return total\n\ncalculate(100)\n{'before': 'O(1)', 'after': 'O(1)'}",
+                    "metadata": {
+                        "category": "runtime_error",
+                        "difficulty": "easy",
+                        "language": "python",
+                        "source": "Generated Python TypeError Variations",
+                        "tags": "type-error, iterable, loops, integers",
+                        "title": ""
+                    },
+                    "distance": 0.5218385457992554,
+                    "collection": "runtime_errors"
+                },
+                {
+                    "id": "PY_RUNTIME_002960",
+                    "document": "Fix the TypeError caused by iterating over an integer.\n\nIterating Over an Integer\ndef calculate(minimum):\n    total = 0\n    # Integers are not iterable\n    for i in minimum:\n        total += i\n    return total\n\ncalculate(100)\nTraceback (most recent call last):\n  File \"main.py\", line 7, in <module>\n    calculate(100)\n  File \"main.py\", line 4, in calculate\n    for i in minimum:\nTypeError: 'int' object is not iterable\n\nThe `for...in` loop requires the target object to implement the `__iter__` or `__getitem__` methods (be an iterable). Primitives like `int` do not implement these methods, causing a TypeError.\nYou tried to loop over a single number (`100`). You can loop over a list of items or text, but to loop a specific number of times, you need to use `range(100)`.\nIt's like trying to plug a square peg into a round hole. The operation you want to perform is fundamentally incompatible with the shape of the data.\nApply the correct type conversion (e.g., `str()`), check for `None`, supply missing arguments, or use `range()` for iteration.\nUse Python Type Hints (`def func(a: int) -> int:`) and a type checker like MyPy to catch these incompatibilities before runtime.\ndef calculate(minimum):\n    total = 0\n    for i in range(minimum):\n        total += i\n    return total\n\ncalculate(100)\n{'before': 'O(1)', 'after': 'O(1)'}",
+                    "metadata": {
+                        "category": "runtime_error",
+                        "difficulty": "easy",
+                        "language": "python",
+                        "source": "Generated Python TypeError Variations",
+                        "tags": "type-error, iterable, loops, integers",
+                        "title": ""
+                    },
+                    "distance": 0.5218385457992554,
+                    "collection": "runtime_errors"
+                }
+            ],
+            "execution_time": 0.2304
+        }
+    },
+    "Test 7: Invalid Language": {
+        "status": "PASS",
+        "code": 422,
+        "response": {
+            "success": false,
+            "error": "Validation Error",
+            "details": [
+                {
+                    "type": "literal_error",
+                    "loc": [
+                        "language"
+                    ],
+                    "msg": "Input should be 'cpp' or 'python'",
+                    "input": "java",
+                    "ctx": {
+                        "expected": "'cpp' or 'python'"
+                    },
+                    "url": "https://errors.pydantic.dev/2.9/v/literal_error"
+                }
+            ]
+        }
+    },
+    "Test 8: Empty Code": {
+        "status": "PASS",
+        "code": 400,
+        "response": {
+            "success": false,
+            "error": "HTTP Error",
+            "details": "Either 'code' or 'file' must be provided."
+        }
+    },
+    "Test 9: Unsupported File": {
+        "status": "PASS",
+        "code": 415,
+        "response": {
+            "success": false,
+            "error": "HTTP Error",
+            "details": "Unsupported file type '.pdf'. Supported types: .cpp, .ipynb, .log, .py"
+        }
+    },
+    "Test 10: Empty File": {
+        "status": "PASS",
+        "code": 400,
+        "response": {
+            "success": false,
+            "error": "HTTP Error",
+            "details": "Uploaded file is empty."
+        }
+    },
+    "Test 11: Large File": {
+        "status": "PASS",
+        "code": 413,
+        "response": {
+            "success": false,
+            "error": "HTTP Error",
+            "details": "File exceeds maximum size (5 MB)."
+        }
+    },
+    "Test 12: UTF-8 Validation": {
+        "status": "PASS",
+        "code": 400,
+        "response": {
+            "success": false,
+            "error": "HTTP Error",
+            "details": "File must use UTF-8 encoding."
+        }
+    },
+    "Test 13: Swagger Docs": {
+        "status": "PASS",
+        "code": 200,
+        "has_endpoints": true,
+        "has_schemas": true
+    },
+    "Test 15: Rule Engine": {
+        "status": "PASS",
+        "obo_passed": true,
+        "dbz_passed": true,
+        "mi_passed": true,
+        "il_passed": true,
+        "responses": {
+            "obo": [
+                {
+                    "issue": "Missing main() function",
+                    "severity": "error",
+                    "confidence": 1.0,
+                    "line": null,
+                    "message": "No main() function was found.",
+                    "suggestion": "Define an entry point using int main().",
+                    "rule_id": "cpp_missing_main"
+                },
+                {
+                    "issue": "Missing header",
+                    "severity": "warning",
+                    "confidence": 0.98,
+                    "line": 1,
+                    "message": "No #include directive was found.",
+                    "suggestion": "Include the required standard library headers.",
+                    "rule_id": "cpp_missing_header"
+                },
+                {
+                    "issue": "Possible off-by-one error",
+                    "severity": "warning",
+                    "confidence": 0.85,
+                    "line": null,
+                    "message": "Loop uses '<=' which may iterate one extra time.",
+                    "suggestion": "Verify whether '<' should be used instead.",
+                    "rule_id": "logical_off_by_one"
+                }
+            ],
+            "dbz": [
+                {
+                    "issue": "Division by zero",
+                    "severity": "error",
+                    "confidence": 1.0,
+                    "line": 1,
+                    "message": "Division or modulo by zero detected.",
+                    "suggestion": "Ensure the denominator is not zero.",
+                    "rule_id": "python_division_by_zero"
+                }
+            ],
+            "mi": [
+                {
+                    "issue": "Missing module",
+                    "severity": "warning",
+                    "confidence": 0.95,
+                    "line": 1,
+                    "message": "Module 'non_existent_module_foo' was not found.",
+                    "suggestion": "Install the module or verify the module name.",
+                    "rule_id": "python_missing_import"
+                }
+            ],
+            "il": [
+                {
+                    "issue": "Missing main() function",
+                    "severity": "error",
+                    "confidence": 1.0,
+                    "line": null,
+                    "message": "No main() function was found.",
+                    "suggestion": "Define an entry point using int main().",
+                    "rule_id": "cpp_missing_main"
+                },
+                {
+                    "issue": "Missing header",
+                    "severity": "warning",
+                    "confidence": 0.98,
+                    "line": 1,
+                    "message": "No #include directive was found.",
+                    "suggestion": "Include the required standard library headers.",
+                    "rule_id": "cpp_missing_header"
+                },
+                {
+                    "issue": "Possible infinite loop",
+                    "severity": "warning",
+                    "confidence": 0.8,
+                    "line": null,
+                    "message": "Loop appears to run indefinitely.",
+                    "suggestion": "Ensure the loop has a valid termination condition.",
+                    "rule_id": "logical_infinite_loop"
+                }
+            ]
+        }
+    },
+    "Test 16: RAG Verification": {
+        "status": "PASS",
+        "len_ok": true,
+        "sorted_ok": true,
+        "props_ok": true,
+        "distances": [
+            0.34125658869743347,
+            0.34125658869743347,
+            0.34125658869743347,
+            0.34125658869743347,
+            0.3423428237438202
+        ]
+    },
+    "Test 17: Error Handling": {
+        "status": "PASS",
+        "code": 500,
+        "response": {
+            "success": false,
+            "error": "Internal Server Error",
+            "details": "An unexpected error occurred while processing the request."
+        }
+    },
+    "Test 18: Response Validation": {
+        "status": "PASS",
+        "health_ok": true,
+        "analyze_ok": true,
+        "debug_ok": true,
+        "explain_ok": true,
+        "optimize_ok": true
+    }
+}

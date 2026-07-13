@@ -27,6 +27,55 @@ def analyze_cpp(code: str) -> list[dict]:
     issues.extend(check_missing_header(code))
     issues.extend(check_missing_semicolon(code))
     issues.extend(check_bracket_balance(code))
+    issues.extend(check_array_out_of_bounds(code))
+
+    return issues
+
+
+def check_array_out_of_bounds(code: str) -> list[dict]:
+    """
+    Detect potential array out-of-bounds access for static array declarations.
+    """
+
+    issues: list[dict] = []
+
+    # Find static array declarations like: int arr[5];
+    decl_pattern = re.compile(
+        r"\b(?:int|double|float|char|bool|long|short)\s+(\w+)\s*\[\s*(\d+)\s*\]"
+    )
+    arrays = {}  # name -> (size, line_number)
+
+    for line_number, raw_line in enumerate(code.splitlines(), start=1):
+        for match in decl_pattern.finditer(raw_line):
+            name, size_str = match.groups()
+            arrays[name] = (int(size_str), line_number)
+
+    # Find subsequent accesses like: arr[10]
+    access_pattern = re.compile(r"\b(\w+)\s*\[\s*(\d+)\s*\]")
+
+    for line_number, raw_line in enumerate(code.splitlines(), start=1):
+        for match in access_pattern.finditer(raw_line):
+            name, index_str = match.groups()
+            if name in arrays:
+                size, decl_line = arrays[name]
+                index = int(index_str)
+                # Only warn if access index >= array size and it's not the declaration line
+                if line_number != decl_line and index >= size:
+                    issues.append({
+                        "issue": "Array out of bounds",
+                        "language": "cpp",
+                        "severity": "error",
+                        "confidence": 0.95,
+                        "line": line_number,
+                        "message": (
+                            f"Array '{name}' has size {size}, but is accessed "
+                            f"at index {index}."
+                        ),
+                        "suggestion": (
+                            "Ensure the index is less than the array size."
+                        ),
+                        "rule_id": "cpp_array_out_of_bounds",
+                    })
 
     return issues
 
