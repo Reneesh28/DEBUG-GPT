@@ -20,10 +20,18 @@ Collections:
     - educational_explanations
 """
 
+import logging
+import os
+
+os.environ["ANONYMIZED_TELEMETRY"] = "False"
+
 from pathlib import Path
 
 import chromadb
 from chromadb.config import Settings
+
+# Silence the broken posthog telemetry logger (ChromaDB 1.5.x bug).
+logging.getLogger("chromadb.telemetry.product.posthog").setLevel(logging.CRITICAL)
 
 
 # ── Configuration ──────────────────────────────────────────────────────────
