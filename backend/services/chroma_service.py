@@ -25,13 +25,14 @@ import os
 
 os.environ["ANONYMIZED_TELEMETRY"] = "False"
 
+# Silence the broken posthog telemetry logger (ChromaDB 0.5.x bug).
+# Must be set BEFORE importing chromadb, which fires telemetry on import.
+logging.getLogger("chromadb.telemetry.product.posthog").setLevel(logging.CRITICAL)
+
 from pathlib import Path
 
 import chromadb
 from chromadb.config import Settings
-
-# Silence the broken posthog telemetry logger (ChromaDB 1.5.x bug).
-logging.getLogger("chromadb.telemetry.product.posthog").setLevel(logging.CRITICAL)
 
 
 # ── Configuration ──────────────────────────────────────────────────────────
