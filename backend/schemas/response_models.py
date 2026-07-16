@@ -66,6 +66,8 @@ class DebugResponse(BaseModel):
 
     debug_suggestions: list[str] = Field(default_factory=list)
 
+    llm_analysis: dict[str, Any] = Field(default_factory=dict)
+
     rag_context: list[RagResult] = Field(default_factory=list)
 
     execution_time: float
@@ -84,6 +86,10 @@ class ExplainResponse(BaseModel):
 
     analogy: str
 
+    solution: str | None = None
+
+    optimized_code: str | None = None
+
     references: list[RagResult] = Field(default_factory=list)
 
     execution_time: float
@@ -101,6 +107,8 @@ class OptimizeResponse(BaseModel):
     optimized_complexity: str | None = None
 
     recommendations: list[str] = Field(default_factory=list)
+
+    optimized_code: str | None = None
 
     rag_context: list[RagResult] = Field(default_factory=list)
 

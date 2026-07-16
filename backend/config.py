@@ -27,3 +27,7 @@ SUPPORTED_FILE_TYPES = {
 
 # Maximum upload size (5 MB)
 MAX_FILE_SIZE = 5 * 1024 * 1024
+
+# LLM Configuration
+BASE_MODEL_NAME = "mistralai/Mistral-7B-Instruct-v0.2"
+LORA_ADAPTER_PATH = BASE_DIR / "models" / "debuggpt-lora"

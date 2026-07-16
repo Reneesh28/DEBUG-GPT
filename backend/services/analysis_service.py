@@ -24,6 +24,7 @@ from typing import Any
 
 from backend.services.analyzer import analyze
 from backend.services.rag_service import retrieve_context
+from backend.services.llm_service import llm_service
 
 logger = logging.getLogger(__name__)
 
@@ -150,7 +151,7 @@ def debug_code(
     language: str,
 ) -> dict[str, Any]:
     """
-    Generate debugging suggestions.
+    Generate debugging suggestions using Rule Engine and LLM.
     """
 
     analysis = analyze_code(
@@ -166,10 +167,18 @@ def debug_code(
         if suggestion:
             suggestions.append(suggestion)
 
+    # Use LLM to find logical bugs
+    llm_raw = llm_service.generate(
+        instruction="Find and fix the logical bug in this code.",
+        input_text=f"Code:\n{code}"
+    )
+    llm_parsed = llm_service.parse_output(llm_raw)
+
     return {
         "success": True,
         "issues": analysis["issues"],
         "debug_suggestions": suggestions,
+        "llm_analysis": llm_parsed,
         "rag_context": analysis["rag_context"],
         "execution_time": analysis["execution_time"],
     }
@@ -180,13 +189,10 @@ def explain_error(
     language: str | None = None,
 ) -> dict[str, Any]:
     """
-    Retrieve similar debugging cases for an error.
-
-    Full AI-generated explanations will be added
-    after the LoRA model is integrated.
+    Retrieve similar debugging cases and use LLM to explain the error.
     """
 
-    logger.info("Explaining error.")
+    logger.info("Explaining error using LLM.")
 
     start_time = time.perf_counter()
 
@@ -197,6 +203,12 @@ def explain_error(
             top_k=5,
         )
 
+        llm_raw = llm_service.generate(
+            instruction="Explain this compiler error and provide a fix.",
+            input_text=f"Error:\n{error}"
+        )
+        llm_parsed = llm_service.parse_output(llm_raw)
+
         execution_time = round(
             time.perf_counter() - start_time,
             4,
@@ -204,18 +216,11 @@ def explain_error(
 
         return {
             "success": True,
-            "technical": (
-                "Detailed AI explanation will be available "
-                "after LoRA integration."
-            ),
-            "beginner": (
-                "Beginner explanation will be generated "
-                "after AI integration."
-            ),
-            "analogy": (
-                "Real-world analogy will be generated "
-                "after AI integration."
-            ),
+            "technical": llm_parsed.get("technical", "Analysis failed to generate technical explanation."),
+            "beginner": llm_parsed.get("beginner", "Analysis failed to generate beginner explanation."),
+            "analogy": llm_parsed.get("analogy", "Analysis failed to generate analogy."),
+            "solution": llm_parsed.get("solution", ""),
+            "optimized_code": llm_parsed.get("optimized_code", ""),
             "references": _format_rag_results(
                 rag_results
             ),
@@ -234,10 +239,7 @@ def optimize_code(
     language: str,
 ) -> dict[str, Any]:
     """
-    Generate optimization recommendations.
-
-    Complexity analysis will be enhanced
-    after LoRA integration.
+    Generate optimization recommendations using Rule Engine and LLM.
     """
 
     analysis = analyze_code(
@@ -253,11 +255,21 @@ def optimize_code(
         if suggestion:
             recommendations.append(suggestion)
 
+    llm_raw = llm_service.generate(
+        instruction="Suggest performance optimizations for this code.",
+        input_text=f"Code:\n{code}"
+    )
+    llm_parsed = llm_service.parse_output(llm_raw)
+
+    if llm_parsed.get("solution"):
+        recommendations.append(llm_parsed["solution"])
+
     return {
         "success": True,
-        "current_complexity": None,
-        "optimized_complexity": None,
+        "current_complexity": llm_parsed.get("complexity_before"),
+        "optimized_complexity": llm_parsed.get("complexity_after"),
         "recommendations": recommendations,
+        "optimized_code": llm_parsed.get("optimized_code"),
         "rag_context": analysis["rag_context"],
         "execution_time": analysis["execution_time"],
     }

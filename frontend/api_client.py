@@ -8,7 +8,7 @@ import requests
 
 BASE_URL = "http://127.0.0.1:8000"
 
-TIMEOUT = 30
+TIMEOUT = 300
 
 
 class APIClientError(Exception):
